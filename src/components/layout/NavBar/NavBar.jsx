@@ -1,6 +1,7 @@
 import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import MobileNav from "./MobileNav";
 
 function NavBar() {
   const navigation = useNavigate();
@@ -19,33 +20,49 @@ function NavBar() {
         <Stack
           direction={"row"}
           justifyContent={"space-between"}
+          alignItems={"center"}
           width={"100%"}
         >
           <Typography variant="h6" fontWeight={600}>
             LOGO
           </Typography>
-          <Stack direction={"row"} spacing={2}>
-            <Button
-              variant="text"
-              className="nav-link"
-              onClick={() => navigation("/")}
+          <Stack direction={"row"} spacing={2} alignItems={"center"}>
+            <Box
+              display={{
+                xs: "none",
+                sm: "block",
+              }}
             >
-              Home
-            </Button>
-            <Button
-              variant="text"
-              className="nav-link"
-              onClick={() => navigation("/about")}
+              <Button
+                variant="text"
+                className="nav-link"
+                onClick={() => navigation("/")}
+              >
+                Home
+              </Button>
+              <Button
+                variant="text"
+                className="nav-link"
+                onClick={() => navigation("/about")}
+              >
+                About
+              </Button>
+              <Button
+                variant="text"
+                className="nav-link"
+                onClick={() => navigation("/contact")}
+              >
+                Contact
+              </Button>
+            </Box>
+            <Box
+              display={{
+                xs: "block",
+                sm: "none",
+              }}
             >
-              About
-            </Button>
-            <Button
-              variant="text"
-              className="nav-link"
-              onClick={() => navigation("/contact")}
-            >
-              Contact
-            </Button>
+              <MobileNav />
+            </Box>
           </Stack>
         </Stack>
       </Toolbar>
