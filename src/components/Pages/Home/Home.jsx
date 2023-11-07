@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import HeroPage from "./HeroPage";
 
 function Home() {
   return (
-    <h1>Home</h1>
-  )
+    <>
+      <HeroPage />
+    </>
+  );
 }
 
-export default Home
+export default Home;
