@@ -28,7 +28,7 @@ function BannerSlide() {
             <Typography variant="h2" letterSpacing={2}>
               TITLE
             </Typography>
-            <Typography variant="h5">
+            <Typography variant="body1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consectetur magni amet esse beatae facere itaque, sapiente,
               molestiae rem incidunt error dolore sed odio. Rerum dolor

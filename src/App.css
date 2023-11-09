@@ -1,23 +1,22 @@
-.nav-link {
-  position: relative;
-  font-weight: 600 !important;
+:root {
+  --primary-color: #e31e24;
+  --secondary-color: #264796;
+  --warning-color: #ffe003;
+  --success-color: #25db0f;
+  --tarnation: 0.2s ease-in-out;
 }
 
-.nav-link:hover {
-  background-color: transparent !important;
+.navLink {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--tarnation);
 }
 
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background-color: deepskyblue;
-  transition: 0.2s ease-in-out;
+.navLink.active {
+  color: var(--primary-color);
 }
 
-.nav-link:hover::after {
-  width: 100%;
+.navLink:hover {
+  color: var(--primary-color);
 }

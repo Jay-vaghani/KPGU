@@ -4,7 +4,7 @@ import HeroPage from "./HeroPage";
 function Home() {
   return (
     <>
-      <HeroPage />
+      <h1>Home</h1>
     </>
   );
 }
