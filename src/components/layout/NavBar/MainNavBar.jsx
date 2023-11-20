@@ -1,8 +1,33 @@
-import { AppBar, Box, Stack } from "@mui/material";
-import React from "react";
-import NavBarLinks from "./NavBarLinks";
+import { AppBar, Box, Button, Stack, Typography } from "@mui/material";
+import React, { useState } from "react";
+import Drawer from "./Drawer";
+import {
+  AboutLink,
+  Academic,
+  Admission,
+  Campus,
+  HomeLink,
+  Placements,
+  ResearchAndPublication,
+} from "./Links";
 
 function MainNavBar() {
+  const width = {
+    xs: "170px",
+    lg: "200px",
+  };
+
+  const [drawerStatus, setDrawerStatus] = useState(false);
+  const [drawerData, setDrawerData] = useState("About");
+
+  const toggleDrawer = (linkData) => {
+    setDrawerStatus(!drawerStatus);
+  };
+
+  const linkDataFunction = (linkData) => {
+    setDrawerData(linkData);
+  };
+
   return (
     <AppBar position="sticky" elevation={0} color="transparent">
       <Stack
@@ -11,28 +36,86 @@ function MainNavBar() {
         alignItems={"center"}
         justifyContent={"space-between"}
       >
-        <Box
-          width={{
-            xs: "170px",
-            lg: "200px",
-          }}
-        >
+        <Box width={width}>
           <img
             src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1699517175/KPGU/logo.svg"
             alt="Logo"
             width={"100%"}
           />
         </Box>
-        <Stack direction={"row"} spacing={1.5}>
-          <NavBarLinks link={"/"} name={"Home"} />
-          <NavBarLinks link={"/about"} name={"About Us"} />
-          <NavBarLinks link={"/"} name={"Academic"} />
-          <NavBarLinks link={"/"} name={"CAMPUS"} />
-          <NavBarLinks link={"/"} name={"ADMISSIONS"} />
-          <NavBarLinks link={"/"} name={"PLACEMENTS"} />
-          <NavBarLinks link={"/"} name={"RESEARCH & PUBLICATIONS"} />
+        <Stack direction={"row"} spacing={1}>
+          <Button size="small">
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              Home
+            </Typography>
+          </Button>
+          <Button
+            size="small"
+            onClick={() => {
+              toggleDrawer();
+              linkDataFunction(AboutLink);
+            }}
+          >
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              ABOUT US
+            </Typography>
+          </Button>
+          <Button
+            size="small"
+            onClick={() => {
+              toggleDrawer();
+              linkDataFunction(Academic);
+            }}
+          >
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              ACADEMIC
+            </Typography>
+          </Button>
+          <Button
+            size="small"
+            onClick={() => {
+              toggleDrawer();
+              linkDataFunction(Campus);
+            }}
+          >
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              CAMPUS
+            </Typography>
+          </Button>
+          <Button
+            size="small"
+            onClick={() => {
+              toggleDrawer();
+              linkDataFunction(Admission);
+            }}
+          >
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              ADMISSIONS
+            </Typography>
+          </Button>
+          <Button size="small">
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              PLACEMENTS
+            </Typography>
+          </Button>
+          <Button
+            size="small"
+            onClick={() => {
+              toggleDrawer();
+              linkDataFunction(ResearchAndPublication);
+            }}
+          >
+            <Typography fontWeight={600} className="navLink" fontSize={"15px"}>
+              RESEARCH & PUBLICATIONS
+            </Typography>
+          </Button>
         </Stack>
       </Stack>
+      <Drawer
+        drawerStatus={drawerStatus}
+        toggleDrawer={toggleDrawer}
+        drawerData={drawerData}
+      />
     </AppBar>
   );
 }

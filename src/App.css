@@ -7,10 +7,14 @@
 }
 
 .navLink {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
   font-weight: 600;
   text-decoration: none;
   transition: var(--tarnation);
+}
+
+.MuiAccordionSummary-content {
+  margin: 0 !important;
 }
 
 .navLink.active {
@@ -18,5 +22,5 @@
 }
 
 .navLink:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
