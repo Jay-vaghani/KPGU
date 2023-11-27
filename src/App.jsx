@@ -4,6 +4,8 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { About, Contact, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
+import { createContext } from "react";
+import { AppProvider } from "./contexts/AppContext";
 
 function App() {
   const theme = createTheme({
@@ -25,14 +27,16 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Box>
+      <AppProvider>
+        <Box>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Box>
+      </AppProvider>
     </ThemeProvider>
   );
 }

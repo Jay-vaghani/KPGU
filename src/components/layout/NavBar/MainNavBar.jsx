@@ -6,8 +6,6 @@ import {
   Academic,
   Admission,
   Campus,
-  HomeLink,
-  Placements,
   ResearchAndPublication,
 } from "./Links";
 
@@ -18,9 +16,9 @@ function MainNavBar() {
   };
 
   const [drawerStatus, setDrawerStatus] = useState(false);
-  const [drawerData, setDrawerData] = useState("About");
+  const [drawerData, setDrawerData] = useState("");
 
-  const toggleDrawer = (linkData) => {
+  const toggleDrawer = () => {
     setDrawerStatus(!drawerStatus);
   };
 
