@@ -12,10 +12,8 @@ function NavBar() {
 
   return (
     <>
-      <Box display={innerWith < 1035 ? "none" : "block"}>
-        <ContactNavbar />
-      </Box>
-      <MainNavBar />
+      <ContactNavbar innerWith={innerWith} />
+      <MainNavBar innerWith={innerWith} />
     </>
   );
 }

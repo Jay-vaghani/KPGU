@@ -1,12 +1,7 @@
 import React from "react";
-import MobileLinks from "./MobileLinks";
 
 function MobileNavbar() {
-  return (
-    <div>
-      MobileNavbar <MobileLinks />
-    </div>
-  );
+  return <div>MobileNavbar</div>;
 }
 
 export default MobileNavbar;

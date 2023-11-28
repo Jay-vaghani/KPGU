@@ -1,5 +1,6 @@
 import {
   AccessTimeTwoTone,
+  CallRounded,
   Facebook,
   ForwardToInboxTwoTone,
   Instagram,
@@ -10,6 +11,7 @@ import {
 import {
   AppBar,
   Box,
+  Button,
   Grid,
   IconButton,
   Stack,
@@ -18,13 +20,13 @@ import {
 } from "@mui/material";
 import React from "react";
 
-function ContactNavbar() {
+function ContactNavbar({ innerWith }) {
   return (
     <AppBar position="static" elevation={0} color="transparent">
       <Stack width={"100%"} position={"relative"} bgcolor={"yellow"}>
         <Box
           width={"50%"}
-          height={"80px"}
+          height={innerWidth < 770 ? "77px" : "80px"}
           position={"absolute"}
           top={0}
           left={0}
@@ -33,7 +35,7 @@ function ContactNavbar() {
         ></Box>
         <Box
           width={"50%"}
-          height={"80px"}
+          height={innerWidth < 770 ? "77px" : "80px"}
           position={"absolute"}
           top={0}
           right={0}
@@ -49,7 +51,8 @@ function ContactNavbar() {
           sm={5.5}
           md={4.5}
           lg={3.5}
-          p={2}
+          px={innerWith < 450 ? 1 : 2}
+          py={2}
           bgcolor={"secondary.main"}
           sx={{
             position: "relative",
@@ -68,6 +71,7 @@ function ContactNavbar() {
           <Stack
             direction={"row"}
             alignItems={"center"}
+            justifyContent={"start"}
             color={"whitesmoke"}
             mt={0.6}
             spacing={{
@@ -75,11 +79,17 @@ function ContactNavbar() {
               md: 3,
             }}
           >
-            <Typography variant="body1" fontWeight={"600"} zIndex={9999}>
+            <Typography
+              variant="body1"
+              fontWeight={"600"}
+              sx={{ display: innerWith < 685 ? "none" : "block" }}
+              zIndex={9}
+            >
               Follow Us on
             </Typography>
-            <Stack direction={"row"} spacing={0}>
+            <Stack direction={"row"} spacing={0} justifyContent={"start"}>
               <IconButton
+                sx={{ pl: 0 }}
                 color="inherit"
                 href="https://www.facebook.com/KPGU.Vadodara/"
                 target="_blank"
@@ -114,7 +124,8 @@ function ContactNavbar() {
         {/* RIGHT SIDE */}
         <Grid
           item
-          p={2}
+          py={2}
+          px={innerWith < 450 ? 1 : 2}
           xs={6}
           sm={6.5}
           md={7.5}
@@ -122,7 +133,12 @@ function ContactNavbar() {
           bgcolor={"secondary.main"}
         >
           <Stack direction={"row"} justifyContent={"end"} spacing={3}>
-            <Stack direction={"row"} alignItems={"center"} color={"whitesmoke"}>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              color={"whitesmoke"}
+              display={innerWith < 770 ? "none" : "flex"}
+            >
               <Box>
                 <IconButton color="inherit" href="tel:8238046519">
                   <WifiCalling3TwoTone
@@ -147,7 +163,12 @@ function ContactNavbar() {
                 </a>
               </Box>
             </Stack>
-            <Stack direction={"row"} alignItems={"center"} color={"whitesmoke"}>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              color={"whitesmoke"}
+              display={innerWith < 770 ? "none" : "flex"}
+            >
               <Box>
                 <IconButton color="inherit" href="tel:8238046519">
                   <ForwardToInboxTwoTone
@@ -172,7 +193,12 @@ function ContactNavbar() {
                 </a>
               </Box>
             </Stack>
-            <Stack direction={"row"} alignItems={"center"} color={"whitesmoke"}>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              color={"whitesmoke"}
+              display={innerWith < 1015 ? "none" : "flex"}
+            >
               <Box>
                 <IconButton color="inherit" href="tel:8238046519">
                   <AccessTimeTwoTone
@@ -190,6 +216,32 @@ function ContactNavbar() {
                 </Typography>
               </Box>
             </Stack>
+
+            <Box
+              m={0}
+              width={"100%"}
+              pt={0.5}
+              justifyContent={"center"}
+              sx={{ gap: "0.5%" }}
+              display={innerWith < 770 ? "flex" : "none"}
+            >
+              <Button
+                href="tel:8238046519"
+                disableElevation
+                variant="contained"
+                startIcon={<WifiCalling3TwoTone />}
+              >
+                call
+              </Button>
+              <Button
+                href="tel:8238046519"
+                disableElevation
+                variant="contained"
+                startIcon={<ForwardToInboxTwoTone />}
+              >
+                Email
+              </Button>
+            </Box>
           </Stack>
         </Grid>
       </Grid>
