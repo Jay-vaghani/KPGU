@@ -113,6 +113,7 @@ function MainNavBar() {
         drawerStatus={drawerStatus}
         toggleDrawer={toggleDrawer}
         drawerData={drawerData}
+        setDrawerStatus={setDrawerStatus}
       />
     </AppBar>
   );
