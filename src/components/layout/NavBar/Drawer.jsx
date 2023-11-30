@@ -16,11 +16,14 @@ import {
 import React, { useContext, useEffect } from "react";
 import { AppContext } from "../../../contexts/AppContext";
 
-function Drawer({ drawerStatus, toggleDrawer, drawerData, setDrawerStatus }) {
+function Drawer({
+  drawerStatus,
+  toggleDrawer,
+  drawerData,
+  setDrawerStatus,
+  closeMobileMainDrawer,
+}) {
   const { someValue, setSomeValue } = useContext(AppContext);
-
-  // console.log("ok");
-  // console.log("ok2");
 
   const mainFun = (which, dataVal) => {
     if (which === "nestedDrawerToggle") {
@@ -36,8 +39,6 @@ function Drawer({ drawerStatus, toggleDrawer, drawerData, setDrawerStatus }) {
     }
 
     if (which === "closeAllDrawer") {
-      console.log("close");
-
       setSomeValue((prev) => {
         return prev.map((item) => ({
           title: item.title,
@@ -45,10 +46,9 @@ function Drawer({ drawerStatus, toggleDrawer, drawerData, setDrawerStatus }) {
         }));
       });
     }
-    setDrawerStatus(false)
+    closeMobileMainDrawer ? closeMobileMainDrawer() : "";
+    setDrawerStatus(false);
   };
-
-   console.log(someValue);
 
   useEffect(() => {
     if (drawerData.dropdown) {
@@ -78,7 +78,7 @@ function Drawer({ drawerStatus, toggleDrawer, drawerData, setDrawerStatus }) {
       }}
     >
       <Stack
-        sx={{ width: "550px" }}
+        sx={{ width: "auto" }}
         direction={"row"}
         alignItems={"center"}
         justifyContent={"space-between"}
@@ -102,7 +102,7 @@ function Drawer({ drawerStatus, toggleDrawer, drawerData, setDrawerStatus }) {
             mainFun("closeAllDrawer");
             setDrawerStatus(false);
           }}
-          sx={{ p: 0 }}
+          sx={{ p: 0, ml: 4 }}
         >
           <CancelTwoTone color="inherit" />
         </IconButton>

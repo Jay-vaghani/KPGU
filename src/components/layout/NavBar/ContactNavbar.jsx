@@ -26,7 +26,7 @@ function ContactNavbar({ innerWith }) {
       <Stack width={"100%"} position={"relative"} bgcolor={"yellow"}>
         <Box
           width={"50%"}
-          height={innerWidth < 770 ? "77px" : "80px"}
+          height={innerWidth < 770 ? "0px" : "80px"}
           position={"absolute"}
           top={0}
           left={0}
@@ -35,7 +35,7 @@ function ContactNavbar({ innerWith }) {
         ></Box>
         <Box
           width={"50%"}
-          height={innerWidth < 770 ? "77px" : "80px"}
+          height={innerWidth < 770 ? "0px" : "80px"}
           position={"absolute"}
           top={0}
           right={0}
@@ -47,12 +47,13 @@ function ContactNavbar({ innerWith }) {
         {/* LEFT SIDE */}
         <Grid
           item
-          xs={6}
+          xs={6.3}
           sm={5.5}
           md={4.5}
           lg={3.5}
           px={innerWith < 450 ? 1 : 2}
-          py={2}
+          py={innerWith < 450 ? 0.5 : 2}
+
           bgcolor={"secondary.main"}
           sx={{
             position: "relative",
@@ -73,7 +74,6 @@ function ContactNavbar({ innerWith }) {
             alignItems={"center"}
             justifyContent={"start"}
             color={"whitesmoke"}
-            mt={0.6}
             spacing={{
               sm: 1,
               md: 3,
@@ -124,9 +124,9 @@ function ContactNavbar({ innerWith }) {
         {/* RIGHT SIDE */}
         <Grid
           item
-          py={2}
+          py={innerWith < 450 ? 0.5 : 2}
           px={innerWith < 450 ? 1 : 2}
-          xs={6}
+          xs={5.7}
           sm={6.5}
           md={7.5}
           lg={8.5}
@@ -222,22 +222,28 @@ function ContactNavbar({ innerWith }) {
               width={"100%"}
               pt={0.5}
               justifyContent={"center"}
-              sx={{ gap: "0.5%" }}
+              sx={{ gap: "5%" }}
               display={innerWith < 770 ? "flex" : "none"}
             >
               <Button
+                sx={{
+                  fontSize: "12px",
+                }}
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
-                startIcon={<WifiCalling3TwoTone />}
+                startIcon={<WifiCalling3TwoTone fontSize="inherit" />}
               >
                 call
               </Button>
               <Button
+                sx={{
+                  fontSize: "12px",
+                }}
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
-                startIcon={<ForwardToInboxTwoTone />}
+                startIcon={<ForwardToInboxTwoTone fontSize="inherit" />}
               >
                 Email
               </Button>

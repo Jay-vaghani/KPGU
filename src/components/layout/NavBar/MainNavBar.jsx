@@ -13,7 +13,8 @@ import MobileNavbar from "./MobileNavBar/MobileNavbar";
 
 function MainNavBar({ innerWith }) {
   const width = {
-    xs: "170px",
+    xs: "120px",
+    sm: "170px",
     lg: "200px",
   };
 
@@ -36,7 +37,7 @@ function MainNavBar({ innerWith }) {
           <DesktopNavBar />
         </Box>
         <Box display={innerWith < 1060 ? "block" : "none"}>
-          <MobileNavbar />
+          <MobileNavbar innerWith={innerWith} />
         </Box>
       </Stack>
     </AppBar>
