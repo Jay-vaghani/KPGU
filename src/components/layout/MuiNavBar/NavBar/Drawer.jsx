@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useContext, useEffect } from "react";
-import { AppContext } from "../../../contexts/AppContext";
+import { AppContext } from "../../../../contexts/AppContext";
 
 function Drawer({
   drawerStatus,
@@ -23,11 +23,10 @@ function Drawer({
   setDrawerStatus,
   closeMobileMainDrawer,
 }) {
-  const { someValue, setSomeValue } = useContext(AppContext);
+  const { someValue, setSomeValue, innerWith } = useContext(AppContext);
 
   const mainFun = (which, dataVal) => {
     if (which === "nestedDrawerToggle") {
-      console.log("open");
       setSomeValue((prev) => {
         const updatedArray = prev.map((item) =>
           item.title === dataVal.title
@@ -85,7 +84,7 @@ function Drawer({
         p={2}
         bgcolor={"secondary.main"}
         color={"#fff"}
-        py={2.5}
+        py={innerWith > 770 ? 3.4 : innerWith < 440 ? 1.4 : 2.9}
       >
         <Typography
           variant="h6"
@@ -145,9 +144,6 @@ function Drawer({
                         someValue.find((item) => item.title === linkData.title)
                           ?.value || false
                       }
-                      toggleDrawer={() =>
-                        mainFun("nestedDrawerToggle", linkData)
-                      }
                       drawerData={linkData}
                     />
                   </Box>
@@ -159,6 +155,7 @@ function Drawer({
                     className="navLink"
                     onClick={() => {
                       mainFun("closeAllDrawer");
+                      setDrawerStatus(false);
                     }}
                   >
                     <ListItemText>

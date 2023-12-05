@@ -1,6 +1,5 @@
-import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import ContactNavbar from "./ContactNavbar";
+import React, { useState } from "react";
+import ContactNavbar from "../../ContactNavbar";
 import MainNavBar from "./MainNavBar";
 
 function NavBar() {
@@ -12,7 +11,6 @@ function NavBar() {
 
   return (
     <>
-      <ContactNavbar innerWith={innerWith} />
       <MainNavBar innerWith={innerWith} />
     </>
   );

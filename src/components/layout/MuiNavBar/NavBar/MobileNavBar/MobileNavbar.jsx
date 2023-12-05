@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { HighlightOffTwoTone, MenuOpenRounded } from "@mui/icons-material";
 import {
   IconButton,
@@ -16,14 +16,15 @@ import {
   ResearchAndPublication,
 } from "../Links";
 import Drawer from "../Drawer";
+import { AppContext } from "../../../../../contexts/AppContext";
 
-function MobileNavbar({ innerWith }) {
+function MobileNavbar() {
   const [mobileMenuDrawerOpen, setMobileMenuDrawerOpen] = useState(false);
   const [mobileLinkDrawer, setMobileLinkDrawer] = useState(false);
   const [mobileLinkData, setMobileLinkData] = useState(null);
+  const { innerWith } = useContext(AppContext);
 
   const MobileMenuDrawerToggle = () => {
-    console.log("mobile close");
     setMobileMenuDrawerOpen(!mobileMenuDrawerOpen);
   };
 
@@ -41,7 +42,7 @@ function MobileNavbar({ innerWith }) {
         <MenuOpenRounded fontSize="large" />
       </IconButton>
       <SwipeableDrawer
-        sx={{ width: "auto" }}
+        sx={{ width: "auto", minHeight: "100" }}
         open={mobileMenuDrawerOpen}
         anchor="right"
         onClose={MobileMenuDrawerToggle}

@@ -1,11 +1,15 @@
 import { Box, createTheme } from "@mui/material";
-import NavBar from "./components/layout/NavBar/NavBar";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { About, Contact, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { createContext } from "react";
 import { AppProvider } from "./contexts/AppContext";
+// ========================Mui Navbar========================
+// import NavBar from "./components/layout/MuiNavBar/NavBar/NavBar";
+import ContactNavbar from "./components/layout/ContactNavbar";
+// ========================Bootstrap Navbar========================
+import MainNavbar from "./components/layout/BootstrapNavbar/MainNavbar";
 
 function App() {
   const theme = createTheme({
@@ -29,7 +33,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <AppProvider>
         <Box>
-          <NavBar />
+          <ContactNavbar />
+          <MainNavbar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

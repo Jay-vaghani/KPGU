@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Drawer from "../Drawer";
 import { AboutLink, Academic, Admission, Campus, ResearchAndPublication } from "../Links";
 
-function DesktopNavBar() {
+function DesktopNavBar({innerWith}) {
   const [drawerStatus, setDrawerStatus] = useState(false);
   const [drawerData, setDrawerData] = useState("");
 
@@ -90,6 +90,7 @@ function DesktopNavBar() {
         toggleDrawer={toggleDrawer}
         drawerData={drawerData}
         setDrawerStatus={setDrawerStatus}
+        innerWith={innerWith}
       />
     </>
   );

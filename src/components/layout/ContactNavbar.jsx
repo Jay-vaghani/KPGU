@@ -18,9 +18,12 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../contexts/AppContext";
 
-function ContactNavbar({ innerWith }) {
+function ContactNavbar() {
+  const { innerWith, maxWidth } = useContext(AppContext);
+
   return (
     <AppBar position="static" elevation={0} color="transparent">
       <Stack width={"100%"} position={"relative"} bgcolor={"yellow"}>
@@ -43,7 +46,7 @@ function ContactNavbar({ innerWith }) {
           zIndex={"-999"}
         ></Box>
       </Stack>
-      <Grid container maxWidth={"1240px"} mx={"auto"}>
+      <Grid container maxWidth={maxWidth} mx={"auto"}>
         {/* LEFT SIDE */}
         <Grid
           item
@@ -53,7 +56,6 @@ function ContactNavbar({ innerWith }) {
           lg={3.5}
           px={innerWith < 450 ? 1 : 2}
           py={innerWith < 450 ? 0.5 : 2}
-
           bgcolor={"secondary.main"}
           sx={{
             position: "relative",
@@ -78,6 +80,7 @@ function ContactNavbar({ innerWith }) {
               sm: 1,
               md: 3,
             }}
+            pt={innerWith > 770 ? 0.8 : 0}
           >
             <Typography
               variant="body1"
@@ -170,7 +173,7 @@ function ContactNavbar({ innerWith }) {
               display={innerWith < 770 ? "none" : "flex"}
             >
               <Box>
-                <IconButton color="inherit" href="tel:8238046519">
+                <IconButton color="inherit" href="mailto:info@kpgu.edu.in">
                   <ForwardToInboxTwoTone
                     sx={{
                       fontSize: "32px",
@@ -240,7 +243,7 @@ function ContactNavbar({ innerWith }) {
                 sx={{
                   fontSize: "12px",
                 }}
-                href="tel:8238046519"
+                href="mailto:info@kpgu.edu.in"
                 disableElevation
                 variant="contained"
                 startIcon={<ForwardToInboxTwoTone fontSize="inherit" />}

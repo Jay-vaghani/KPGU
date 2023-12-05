@@ -24,3 +24,8 @@
 .navLink:hover {
   color: var(--primary-color) !important;
 }
+
+.navbar {
+  max-width: 1240px;
+  margin: auto;
+}
