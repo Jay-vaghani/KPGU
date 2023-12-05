@@ -6,9 +6,14 @@
   --tarnation: 0.2s ease-in-out;
 }
 
+/* COSTUME CSS  */
+
+.margin-none {
+  margin: 0;
+}
+
 .navLink {
   color: var(--secondary-color) !important;
-  font-weight: 600;
   text-decoration: none;
   transition: var(--tarnation);
 }
@@ -25,7 +30,71 @@
   color: var(--primary-color) !important;
 }
 
+/* Bootstrap Css Edit */
+
 .navbar {
   max-width: 1240px;
   margin: auto;
+}
+
+.nav-link {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: var(--secondary-color) !important;
+  transition: var(--tarnation);
+  text-transform: uppercase !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.dropdown-menu {
+  font-size: 0.9rem !important;
+  border: none !important;
+  text-transform: uppercase !important;
+}
+.accordion-body {
+  padding: 0.25rem 0.75rem !important;
+  text-transform: uppercase !important;
+  border-left: 2px solid var(--secondary-color);
+}
+
+.accordion-button {
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: var(--secondary-color) !important;
+  transition: var(--tarnation);
+  text-transform: uppercase !important;
+  padding: 0.25rem 0.9rem !important;
+
+}
+.accordion-button:hover {
+  color: var(--primary-color) !important;
+}
+
+.accordion-button.collapsed {
+  padding: 0.25rem 0.9rem !important;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: transparent !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  padding: 0.25rem 0.9rem !important;
+}
+
+.dropdown-item {
+  font-weight: 500 !important;
+  color: var(--secondary-color) !important;
+  transition: var(--tarnation);
+  text-transform: uppercase !important;
+}
+
+.dropdown-item:hover {
+  color: var(--primary-color) !important;
 }
