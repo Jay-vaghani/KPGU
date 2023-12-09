@@ -37,6 +37,11 @@
   margin: auto;
 }
 
+.navbar-toggler{
+  box-shadow: none !important;
+  border: none !important;
+}
+
 .nav-link {
   font-size: 0.9rem !important;
   font-weight: 600 !important;

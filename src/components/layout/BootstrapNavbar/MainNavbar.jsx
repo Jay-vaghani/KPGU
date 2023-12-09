@@ -7,10 +7,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Accordion from 'react-bootstrap/Accordion';
-import { AboutLink } from "../MuiNavBar/NavBar/Links";
 
 function MainNavbar() {
-    const { maxWidth } = useContext(AppContext);
     const width = {
         xs: "120px",
         sm: "170px",
@@ -33,10 +31,10 @@ function MainNavbar() {
                     <Nav className="ms-auto">
                         <Nav.Link href="#home">HOME</Nav.Link>
                         <NavDropdown title="ABOUT US" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Sponsoring Body-SKECT</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">OUR LEADERSHIP</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">KPGU Vadodara</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">SIGNIFICANT ACHIEVEMENTS</NavDropdown.Item>
+                            <NavDropdown.Item >Sponsoring Body-SKECT</NavDropdown.Item>
+                            <NavDropdown.Item >OUR LEADERSHIP</NavDropdown.Item>
+                            <NavDropdown.Item >KPGU Vadodara</NavDropdown.Item>
+                            <NavDropdown.Item >SIGNIFICANT ACHIEVEMENTS</NavDropdown.Item>
                             <NavDropdown.Item >VISION & MISSION</NavDropdown.Item>
                             <NavDropdown.Item >MESSAGE FROM DR. KIRAN C. PATEL</NavDropdown.Item>
                             <NavDropdown.Item >MESSAGE FROM THE PRESIDENT'S DESK</NavDropdown.Item>
@@ -72,14 +70,13 @@ function MainNavbar() {
                         <NavDropdown title="ACADEMIC" id="basic-nav-dropdown">
                             <Accordion flush>
                                 <Accordion.Item eventKey="2" >
-                                    <Accordion.Header>Faculty&nbsp;of&nbsp;Engineering&nbsp;&&nbsp;Technology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Accordion.Header>
+                                    <Accordion.Header>Faculty&nbsp;of&nbsp;Engineering&nbsp;&&nbsp;Technology&nbsp;&nbsp;&nbsp;</Accordion.Header>
                                     <Accordion.Body>
                                         <Accordion flush>
                                             <Accordion.Item eventKey="3" >
                                                 <NavDropdown.Item >
-                                                    <p className="margin-none">Krishna School of Emerging</p>
-                                                    <p className="margin-none">Technology & Applied Research</p></NavDropdown.Item>
-                                                <Accordion.Header>Krishna&nbsp;School&nbsp;of&nbsp;Diploma&nbsp;&&nbsp;Studies&nbsp;&nbsp;&nbsp;</Accordion.Header>
+                                                    Krishna School of Emerging<br />Technology & Applied Research</NavDropdown.Item>
+                                                <Accordion.Header>Krishna&nbsp;School&nbsp;of&nbsp;Diploma&nbsp;&<br />Studies</Accordion.Header>
                                                 <Accordion.Body>
                                                     <Accordion flush>
                                                         <Accordion.Item eventKey="1" >
@@ -142,7 +139,7 @@ function MainNavbar() {
                                                             <Accordion.Header>PG</Accordion.Header>
                                                             <Accordion.Body>
                                                                 <NavDropdown.Item >Musculoskeletal & Sports</NavDropdown.Item>
-                                                                <NavDropdown.Item >Neurological & Psychosomatic Disorders</NavDropdown.Item>
+                                                                <NavDropdown.Item >Neurological & Psychosomatic<br />Disorders</NavDropdown.Item>
                                                                 <NavDropdown.Item >Cardiorespiratory & Intensive Care</NavDropdown.Item>                                                            </Accordion.Body>
                                                         </Accordion.Item>
                                                     </Accordion>
@@ -255,9 +252,36 @@ function MainNavbar() {
                             <NavDropdown.Item >Arts & Cultural Programs</NavDropdown.Item>
                             <NavDropdown.Item >Sports & Recreation</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#link">ADMISSIONS</Nav.Link>
+                        <NavDropdown title="ADMISSIONS" id="basic-nav-dropdown">
+                            <NavDropdown.Item >UG PROGRAMMES</NavDropdown.Item>
+                            <NavDropdown.Item >PG PROGRAMMES</NavDropdown.Item>
+                            <NavDropdown.Item >DOCTORAL PROGRAMMES</NavDropdown.Item>
+                            <Accordion flush>
+                                <Accordion.Item eventKey="0" >
+                                    <Accordion.Header>ADMISSION PROCEDURE</Accordion.Header>
+                                    <Accordion.Body>
+                                        <NavDropdown.Item >UG/PG Programs</NavDropdown.Item>
+                                        <NavDropdown.Item >Admission Policy</NavDropdown.Item>
+                                        <NavDropdown.Item >ACADEMIC COUNCIL</NavDropdown.Item>
+                                        <NavDropdown.Item >International Student <br /> Admission</NavDropdown.Item>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+                            <NavDropdown.Item >Hostel Life</NavDropdown.Item>
+                            <NavDropdown.Item >SCHOLARSHIPS & FREE-SHIPS</NavDropdown.Item>
+                            <NavDropdown.Item >EDUCATION LOAN</NavDropdown.Item>
+                            <NavDropdown.Item >TRANSPORTATION</NavDropdown.Item>
+                            <NavDropdown.Item >EXAMINATION SYSTEM</NavDropdown.Item>
+                        </NavDropdown>
                         <Nav.Link href="#link">PLACEMENTS</Nav.Link>
-                        <Nav.Link href="#link">RESEARCH & PUBLICATIONS</Nav.Link>
+                        <NavDropdown title="RESEARCH & PUBLICATIONS" id="basic-nav-dropdown">
+                            <NavDropdown.Item >RESEARCH & INNOVATION</NavDropdown.Item>
+                            <NavDropdown.Item >START-UPS</NavDropdown.Item>
+                            <NavDropdown.Item >PUBLICATIONS</NavDropdown.Item>
+                            <NavDropdown.Item >IPR</NavDropdown.Item>
+                            <NavDropdown.Item >FDPS</NavDropdown.Item>
+                            <NavDropdown.Item >KPGU JOURNAL</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -266,21 +290,6 @@ function MainNavbar() {
 }
 
 export default MainNavbar;
-
-{
-    /* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item >
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown> */
-}
-
 
 
 

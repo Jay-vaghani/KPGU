@@ -203,7 +203,7 @@ function ContactNavbar() {
               display={innerWith < 1015 ? "none" : "flex"}
             >
               <Box>
-                <IconButton color="inherit" href="tel:8238046519">
+                <IconButton color="inherit">
                   <AccessTimeTwoTone
                     sx={{
                       fontSize: "32px",
