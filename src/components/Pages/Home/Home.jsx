@@ -1,11 +1,17 @@
 import React from "react";
 import { Stack } from "react-bootstrap";
+import BannerSlide from "./BannerSlide";
+
+
+
+// import required modules
+
 
 
 function Home() {
   return (
-    <Stack >
-      <h1>Home</h1>
+    <Stack>
+      <BannerSlide />
     </Stack>
   );
 }

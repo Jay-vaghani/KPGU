@@ -5,9 +5,11 @@ import { About, Contact, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { createContext } from "react";
 import { AppProvider } from "./contexts/AppContext";
+import ContactNavbar from "./components/layout/ContactNavbar";
+
+
 // ========================Mui Navbar========================
 // import NavBar from "./components/layout/MuiNavBar/NavBar/NavBar";
-import ContactNavbar from "./components/layout/ContactNavbar";
 // ========================Bootstrap Navbar========================
 import MainNavbar from "./components/layout/BootstrapNavbar/MainNavbar";
 

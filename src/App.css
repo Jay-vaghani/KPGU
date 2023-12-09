@@ -37,7 +37,7 @@
   margin: auto;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   box-shadow: none !important;
   border: none !important;
 }
@@ -58,11 +58,13 @@
   font-size: 0.9rem !important;
   border: none !important;
   text-transform: uppercase !important;
+  padding: 0.25rem 0.5rem !important;
 }
 .accordion-body {
-  padding: 0.25rem 0.75rem !important;
+  padding: 0.25rem 0.5rem !important;
   text-transform: uppercase !important;
   border-left: 2px solid var(--secondary-color);
+  background: url("") ;
 }
 
 .accordion-button {
@@ -71,15 +73,14 @@
   color: var(--secondary-color) !important;
   transition: var(--tarnation);
   text-transform: uppercase !important;
-  padding: 0.25rem 0.9rem !important;
-
+  padding: 0.25rem 0rem !important;
 }
 .accordion-button:hover {
   color: var(--primary-color) !important;
 }
 
 .accordion-button.collapsed {
-  padding: 0.25rem 0.9rem !important;
+  padding: 0.25rem 0rem !important;
   background-color: transparent;
 }
 
@@ -90,7 +91,7 @@
 
 .accordion-button:focus {
   box-shadow: none !important;
-  padding: 0.25rem 0.9rem !important;
+  padding: 0.25rem 0.1rem !important;
 }
 
 .dropdown-item {
@@ -98,8 +99,23 @@
   color: var(--secondary-color) !important;
   transition: var(--tarnation);
   text-transform: uppercase !important;
+  padding: 0.25rem 0.1rem !important;
 }
 
 .dropdown-item:hover {
   color: var(--primary-color) !important;
+}
+
+/* Banner  */
+
+.banner-heading {
+  font-size: clamp(2.5rem, 9vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.banner-text {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-weight: 500;
+  ;
 }

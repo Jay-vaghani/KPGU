@@ -1,44 +1,73 @@
-import { Grid, Stack, Typography } from "@mui/material";
-import React from "react";
-import { SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
+import { Box, Grid, Paper, Stack } from "@mui/material";
+import { useContext } from "react";
+import { AppContext } from "../../../contexts/AppContext";
+import { Button } from "react-bootstrap";
+import Carousel from "react-material-ui-carousel";
 
-function BannerSlide() {
-  const swiperCss = {
-    height: "100vh",
-    display: "flex",
-    alignItems: "center",
-    color: "#fff",
-  };
+function BannerSlide({ imageLink, title, text }) {
+
+  const { maxWidth } = useContext(AppContext);
+
+  var items = [
+    {
+      name: "Random Name #1",
+      description: "Probably the most random thing you have ever seen!"
+    },
+    {
+      name: "Random Name #2",
+      description: "Hello World!"
+    }
+  ]
+
   return (
-    <SwiperSlide
-      style={{
-        ...swiperCss,
-        background:
-          "linear-gradient(90deg, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 100%) , url('https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/hero-banner-1') center /cover",
-      }}
-    >
-      <Stack px={2} mt={10}>
-        <Grid container>
-          <Grid item xs={12} md={8}>
-            <Typography variant="h2" letterSpacing={2}>
-              TITLE
-            </Typography>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur magni amet esse beatae facere itaque, sapiente,
-              molestiae rem incidunt error dolore sed odio. Rerum dolor
-              cupiditate dolorum, ea nam natus deleniti neque facere iste
-              corporis.
-            </Typography>
-          </Grid>
-        </Grid>
-      </Stack>
-    </SwiperSlide>
+    <Stack minHeight={"100vh"}>
+      <Carousel indicators={false} height={"100vh"}>
+        <Box
+          height={"100%"}
+          color={"#fff"}
+          p={1}
+          sx={{
+            background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-2") center / cover',
+          }}>
+          <Stack height={"100%"} direction={"row"} alignItems={"flex-end"} justifyContent={"space-around"}>
+            <Grid container maxWidth={maxWidth} mx={"auto"} >
+              <Grid item xs={12} sm={7.5}>
+                <h1 className="banner-heading" >KPGU</h1>
+                <p className="banner-text">
+                  KPGU has always been at the forefront when it comes to modern technology and has
+                  been recognized as highly preferable choice for Computer Science and
+                  Engineering</p>
+              </Grid>
+              <Grid item xs={12} sm={4.5} alignItems={"center"} justifyContent={"end"} display={"flex"}>
+                <img src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/g20-image" alt="G20" style={{ maxWidth: 300, borderRadius: "" }} />
+              </Grid>
+            </Grid>
+          </Stack>
+        </Box>
+        <Box
+          height={"100%"}
+          color={"#fff"}
+          p={1}
+          sx={{
+            background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-1") center / cover',
+          }}>
+          <Stack height={"100%"} direction={"row"} alignItems={"flex-end"} justifyContent={"space-around"}>
+            <Grid container maxWidth={maxWidth} mx={"auto"} >
+              <Grid item xs={12} sm={7.5}>
+                <h1 className="banner-heading" >KPGU</h1>
+                <p className="banner-text">
+                  KPGU has always been at the forefront when it comes to modern technology and has
+                  been recognized as highly preferable choice for Computer Science and
+                  Engineering</p>
+              </Grid>
+              <Grid item xs={12} sm={4.5} alignItems={"center"} justifyContent={"end"} display={"flex"}>
+                <img src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/g20-image" alt="G20" style={{ maxWidth: 300, borderRadius: "" }} />
+              </Grid>
+            </Grid>
+          </Stack>
+        </Box>
+      </Carousel>
+    </Stack>
   );
 }
 
