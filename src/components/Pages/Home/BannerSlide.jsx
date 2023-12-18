@@ -5,67 +5,75 @@ import { Button } from "react-bootstrap";
 import Carousel from "react-material-ui-carousel";
 
 function BannerSlide({ imageLink, title, text }) {
-
   const { maxWidth } = useContext(AppContext);
 
-  var items = [
+  var slides = [
     {
-      name: "Random Name #1",
-      description: "Probably the most random thing you have ever seen!"
+      bannerImg:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-1",
     },
     {
-      name: "Random Name #2",
-      description: "Hello World!"
-    }
-  ]
+      bannerImg:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-2",
+    },
+  ];
 
   return (
     <Stack minHeight={"100vh"}>
-      <Carousel indicators={false} height={"100vh"}>
-        <Box
-          height={"100%"}
-          color={"#fff"}
-          p={1}
-          sx={{
-            background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-2") center / cover',
-          }}>
-          <Stack height={"100%"} direction={"row"} alignItems={"flex-end"} justifyContent={"space-around"}>
-            <Grid container maxWidth={maxWidth} mx={"auto"} >
-              <Grid item xs={12} sm={7.5}>
-                <h1 className="banner-heading" >KPGU</h1>
-                <p className="banner-text">
-                  KPGU has always been at the forefront when it comes to modern technology and has
-                  been recognized as highly preferable choice for Computer Science and
-                  Engineering</p>
+      <Carousel
+        indicators={false}
+        height={"100vh"}
+        navButtonsAlwaysInvisible={true}
+      >
+        {slides.map((item) => (
+          <Box
+            height={"100%"}
+            color={"#fff"}
+            p={1}
+            sx={{
+              background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(${item.bannerImg}) center / cover`,
+            }}
+          >
+            <Stack
+              height={"100%"}
+              direction={"row"}
+              alignItems={"flex-end"}
+              justifyContent={"space-around"}
+            >
+              <Grid container maxWidth={maxWidth} mx={"auto"}>
+                <Grid item xs={12} sm={7.5}>
+                  <h1 className="banner-heading">KPGU</h1>
+                  <p className="banner-text">
+                    KPGU has always been at the forefront when it comes to
+                    modern technology and has been recognized as highly
+                    preferable choice for Computer Science and Engineering
+                  </p>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  sm={4.5}
+                  alignItems={"center"}
+                  justifyContent={{
+                    xs: "center",
+                    sm: "end",
+                  }}
+                  display={"flex"}
+                >
+                  <img
+                    src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/g20-image"
+                    alt="G20"
+                    style={{
+                      maxWidth: 300,
+                      width: "100%",
+                      borderRadius: "15px",
+                    }}
+                  />
+                </Grid>
               </Grid>
-              <Grid item xs={12} sm={4.5} alignItems={"center"} justifyContent={"end"} display={"flex"}>
-                <img src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/g20-image" alt="G20" style={{ maxWidth: 300, borderRadius: "" }} />
-              </Grid>
-            </Grid>
-          </Stack>
-        </Box>
-        <Box
-          height={"100%"}
-          color={"#fff"}
-          p={1}
-          sx={{
-            background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-1") center / cover',
-          }}>
-          <Stack height={"100%"} direction={"row"} alignItems={"flex-end"} justifyContent={"space-around"}>
-            <Grid container maxWidth={maxWidth} mx={"auto"} >
-              <Grid item xs={12} sm={7.5}>
-                <h1 className="banner-heading" >KPGU</h1>
-                <p className="banner-text">
-                  KPGU has always been at the forefront when it comes to modern technology and has
-                  been recognized as highly preferable choice for Computer Science and
-                  Engineering</p>
-              </Grid>
-              <Grid item xs={12} sm={4.5} alignItems={"center"} justifyContent={"end"} display={"flex"}>
-                <img src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/g20-image" alt="G20" style={{ maxWidth: 300, borderRadius: "" }} />
-              </Grid>
-            </Grid>
-          </Stack>
-        </Box>
+            </Stack>
+          </Box>
+        ))}
       </Carousel>
     </Stack>
   );
