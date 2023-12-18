@@ -7,7 +7,6 @@ import { createContext } from "react";
 import { AppProvider } from "./contexts/AppContext";
 import ContactNavbar from "./components/layout/ContactNavbar";
 
-
 // ========================Mui Navbar========================
 // import NavBar from "./components/layout/MuiNavBar/NavBar/NavBar";
 // ========================Bootstrap Navbar========================

@@ -1,10 +1,14 @@
 import {
   AccessTimeTwoTone,
-  CallRounded,
   Facebook,
   ForwardToInboxTwoTone,
   Instagram,
   LinkedIn,
+  LocalLibrary,
+  LocalLibraryRounded,
+  LocalLibraryTwoTone,
+  MenuBook,
+  RateReviewTwoTone,
   WifiCalling3TwoTone,
   YouTube,
 } from "@mui/icons-material";
@@ -140,86 +144,35 @@ function ContactNavbar() {
               direction={"row"}
               alignItems={"center"}
               color={"whitesmoke"}
+              spacing={"5%"}
               display={innerWith < 770 ? "none" : "flex"}
             >
-              <Box>
-                <IconButton color="inherit" href="tel:8238046519">
-                  <WifiCalling3TwoTone
-                    sx={{
-                      fontSize: "32px",
-                    }}
-                  />
-                </IconButton>
-              </Box>
-              <Box>
-                <Typography variant="subtitle2">Click Call Now !</Typography>
-
-                <a
-                  href="tel:8238046519"
-                  style={{
-                    color: "whitesmoke",
-                  }}
-                >
-                  <Typography variant="body1" fontWeight={600}>
-                    +91 8238046519
-                  </Typography>
-                </a>
-              </Box>
+              <Button
+                startIcon={<WifiCalling3TwoTone />}
+                href="tel:8238046519"
+                color="primary"
+                variant="contained"
+                disableElevation
+              >
+                Call
+              </Button>
+              <Button
+                startIcon={<RateReviewTwoTone />}
+                color="primary"
+                variant="contained"
+                disableElevation
+              >
+                Apply
+              </Button>
+              <Button
+                startIcon={<LocalLibraryTwoTone />}
+                color="primary"
+                variant="contained"
+                disableElevation
+              >
+                Student
+              </Button>
             </Stack>
-            <Stack
-              direction={"row"}
-              alignItems={"center"}
-              color={"whitesmoke"}
-              display={innerWith < 770 ? "none" : "flex"}
-            >
-              <Box>
-                <IconButton color="inherit" href="mailto:info@kpgu.edu.in">
-                  <ForwardToInboxTwoTone
-                    sx={{
-                      fontSize: "32px",
-                    }}
-                  />
-                </IconButton>
-              </Box>
-              <Box>
-                <Typography variant="subtitle2">Click Email Now !</Typography>
-
-                <a
-                  href="mailto:info@kpgu.edu.in"
-                  style={{
-                    color: "whitesmoke",
-                  }}
-                >
-                  <Typography variant="body1" fontWeight={600}>
-                    info@kpgu.edu.in
-                  </Typography>
-                </a>
-              </Box>
-            </Stack>
-            <Stack
-              direction={"row"}
-              alignItems={"center"}
-              color={"whitesmoke"}
-              display={innerWith < 1015 ? "none" : "flex"}
-            >
-              <Box>
-                <IconButton color="inherit">
-                  <AccessTimeTwoTone
-                    sx={{
-                      fontSize: "32px",
-                    }}
-                  />
-                </IconButton>
-              </Box>
-              <Box>
-                <Typography variant="subtitle2">Work Hours</Typography>
-
-                <Typography variant="body1" fontWeight={600}>
-                  Mon-Sat: 8am-6pm
-                </Typography>
-              </Box>
-            </Stack>
-
             <Box
               m={0}
               width={"100%"}
@@ -235,20 +188,20 @@ function ContactNavbar() {
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
+                size="small"
+
                 startIcon={<WifiCalling3TwoTone fontSize="inherit" />}
               >
                 call
               </Button>
               <Button
-                sx={{
-                  fontSize: "12px",
-                }}
-                href="mailto:info@kpgu.edu.in"
-                disableElevation
+                startIcon={<LocalLibraryTwoTone />}
+                color="primary"
                 variant="contained"
-                startIcon={<ForwardToInboxTwoTone fontSize="inherit" />}
+                disableElevation
+                size="small"
               >
-                Email
+                Student
               </Button>
             </Box>
           </Stack>
