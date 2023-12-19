@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
-import { AppContext } from "../../../contexts/AppContext";
-import { Box, Button } from "@mui/material";
+import React from "react";
+import { Box } from "@mui/material";
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";

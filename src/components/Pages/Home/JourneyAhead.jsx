@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { AppContext } from "../../../contexts/AppContext";
 import { Button } from "@mui/material";
 import { PhotoLibraryRounded, SchoolRounded } from "@mui/icons-material";

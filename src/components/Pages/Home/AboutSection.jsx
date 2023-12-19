@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Stack, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { AppContext } from "../../../contexts/AppContext";
 import { DoneAllRounded } from "@mui/icons-material";
 
@@ -81,8 +81,8 @@ function AboutSection() {
           excellence in technical education.
         </Typography>
         <Grid container gap={1} mt={2}>
-          {ProgramsItems.map((item) => (
-            <Programs name={item} />
+          {ProgramsItems.map((item, index) => (
+            <Programs name={item} key={index} />
           ))}
         </Grid>
       </Grid>

@@ -1,10 +1,9 @@
-import { Box, Grid, Paper, Stack } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 import { useContext } from "react";
 import { AppContext } from "../../../contexts/AppContext";
-import { Button } from "react-bootstrap";
 import Carousel from "react-material-ui-carousel";
 
-function BannerSlide({ imageLink, title, text }) {
+function BannerSlide() {
   const { maxWidth } = useContext(AppContext);
 
   var slides = [
@@ -25,8 +24,9 @@ function BannerSlide({ imageLink, title, text }) {
         height={"100vh"}
         navButtonsAlwaysInvisible={true}
       >
-        {slides.map((item) => (
+        {slides.map((item, index) => (
           <Box
+            key={index}
             height={"100%"}
             color={"#fff"}
             p={1}

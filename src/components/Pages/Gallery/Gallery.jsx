@@ -12,51 +12,99 @@ import { CloseRounded } from "@mui/icons-material";
 
 const itemData = [
     {
-        img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-1",
         title: "Bed",
     },
     {
-        img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-2",
         title: "Books",
     },
     {
-        img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-3",
         title: "Sink",
     },
     {
-        img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-4",
         title: "Kitchen",
     },
     {
-        img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-5",
         title: "Blinds",
     },
     {
-        img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-6",
         title: "Chairs",
     },
     {
-        img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-7",
         title: "Laptop",
     },
     {
-        img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-8",
         title: "Doors",
     },
     {
-        img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-9",
         title: "Coffee",
     },
     {
-        img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-10",
         title: "Storage",
     },
     {
-        img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-11",
         title: "Candle",
     },
     {
-        img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-12",
+        title: "Coffee table",
+    },    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-13",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-14",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-15",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-16",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-17",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-18",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-19",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-20",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-21",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-22",
+        title: "Coffee table",
+    },
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-23",
+        title: "Coffee table",
+    },
+    
+    {
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Images/Gallery/gallery-25",
         title: "Coffee table",
     },
 ];
