@@ -33,7 +33,7 @@ function ContactNavbar() {
       <Stack width={"100%"} position={"relative"} bgcolor={"yellow"}>
         <Box
           width={"50%"}
-          height={innerWidth < 770 ? "0px" : "80px"}
+          height={innerWidth < 770 ? "0px" : "72px"}
           position={"absolute"}
           top={0}
           left={0}
@@ -42,7 +42,7 @@ function ContactNavbar() {
         ></Box>
         <Box
           width={"50%"}
-          height={innerWidth < 770 ? "0px" : "80px"}
+          height={innerWidth < 770 ? "0px" : "72px"}
           position={"absolute"}
           top={0}
           right={0}
@@ -54,7 +54,7 @@ function ContactNavbar() {
         {/* LEFT SIDE */}
         <Grid
           item
-          xs={6.3}
+          xs={5.7}
           sm={5.5}
           md={4.5}
           lg={3.5}
@@ -96,7 +96,7 @@ function ContactNavbar() {
             </Typography>
             <Stack direction={"row"} spacing={0} justifyContent={"start"}>
               <IconButton
-                sx={{ pl: 0 }}
+                sx={{ pl: 0, p: "5%" }}
                 color="inherit"
                 href="https://www.facebook.com/KPGU.Vadodara/"
                 target="_blank"
@@ -104,6 +104,7 @@ function ContactNavbar() {
                 <Facebook />
               </IconButton>
               <IconButton
+                sx={{ p: "5%" }}
                 color="inherit"
                 href="https://in.linkedin.com/company/kpgu-vadodara"
                 target="_blank"
@@ -111,6 +112,7 @@ function ContactNavbar() {
                 <LinkedIn />
               </IconButton>
               <IconButton
+                sx={{ p: "5%" }}
                 color="inherit"
                 href="https://www.youtube.com/@kpguvadodara6247/featured"
                 target="_blank"
@@ -118,6 +120,7 @@ function ContactNavbar() {
                 <YouTube />
               </IconButton>
               <IconButton
+                sx={{ p: "5%" }}
                 color="inherit"
                 href="https://www.instagram.com/kpgu_official/"
                 target="_blank"
@@ -131,13 +134,15 @@ function ContactNavbar() {
         {/* RIGHT SIDE */}
         <Grid
           item
-          py={innerWith < 450 ? 0.5 : 2}
           px={innerWith < 450 ? 1 : 2}
-          xs={5.7}
+          xs={6.3}
           sm={6.5}
           md={7.5}
           lg={8.5}
           bgcolor={"secondary.main"}
+          display={"flex"}
+          justifyContent={"end"}
+          alignItems={"center"}
         >
           <Stack direction={"row"} justifyContent={"end"} spacing={3}>
             <Stack
@@ -176,7 +181,6 @@ function ContactNavbar() {
             <Box
               m={0}
               width={"100%"}
-              pt={0.5}
               justifyContent={"center"}
               sx={{ gap: "5%" }}
               display={innerWith < 770 ? "flex" : "none"}

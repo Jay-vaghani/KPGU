@@ -42,12 +42,9 @@ function AboutSection() {
       width={maxWidth}
       mx={"auto"}
       mt={7}
-      px={{
-        xs: 1,
-        md: 2,
-      }}
+      px={"3%"}
     >
-      <Grid item sm={12} md={6}>
+      <Grid item sm={12} md={5}>
         <img
           src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/about-banner"
           alt="about us"
@@ -59,11 +56,12 @@ function AboutSection() {
       <Grid
         item
         sm={12}
-        md={6}
-        p={{
+        md={7}
+        px={{
           xs: 0,
           sm: 3,
         }}
+        pb={3}
         mt={{
           xs: 3,
           sm: 0,

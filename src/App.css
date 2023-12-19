@@ -30,6 +30,10 @@
   color: var(--primary-color) !important;
 }
 
+.smooth-shadow {
+  box-shadow: 0px 3px 20px rgba(128, 128, 128, 0.08);
+}
+
 /* Bootstrap Css Edit */
 
 .navbar {
@@ -129,4 +133,37 @@
 .about-text {
   font-size: clamp(1.2rem, 3vw, 1.3rem) !important;
   font-weight: 500 !important;
+}
+
+/* JOURNEY AHEAD SECTION  */
+
+.journey-heading {
+  font-size: clamp(2.5rem, 9vw, 2.7rem) !important;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.journey-text {
+  font-size: clamp(1.2rem, 3vw, 1.3rem) !important;
+  font-weight: 500 !important;
+}
+
+/* Gallery */
+
+.filter {
+  height: 0;
+  overflow: hidden;
+  transition: var(--tarnation);
+}
+.filter.active {
+  height: 30px;
+  min-width: 525px;
+}
+
+.gallery-image{
+  cursor: pointer;
+  transition: var(--tarnation);
+}
+.gallery-image:hover{
+  scale: 1.09;
 }

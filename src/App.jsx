@@ -11,6 +11,7 @@ import ContactNavbar from "./components/layout/ContactNavbar";
 // import NavBar from "./components/layout/MuiNavBar/NavBar/NavBar";
 // ========================Bootstrap Navbar========================
 import MainNavbar from "./components/layout/BootstrapNavbar/MainNavbar";
+import Gallery from "./components/Pages/Gallery/Gallery";
 
 function App() {
   const theme = createTheme({
@@ -41,6 +42,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </Box>
       </AppProvider>
