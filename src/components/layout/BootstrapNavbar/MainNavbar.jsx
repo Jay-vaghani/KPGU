@@ -15,11 +15,11 @@ function MainNavbar() {
   };
   return (
     <Navbar expand="lg" className="bg-white ">
-      <Container fluid>
+      <Container fluid className="px-0">
         <Navbar.Brand style={{ width: "70px" }}>
           <Box width={width}>
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1699517175/KPGU/logo.svg"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1700155108/KPGU/logo.svg"
               alt="Logo"
               width={"100%"}
             />

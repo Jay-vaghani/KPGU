@@ -9,11 +9,11 @@ function BannerSlide() {
   var slides = [
     {
       bannerImg:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-1",
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
     },
     {
       bannerImg:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/banner-2",
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-1.jpg",
     },
   ];
 
@@ -29,7 +29,7 @@ function BannerSlide() {
             key={index}
             height={"100%"}
             color={"#fff"}
-            p={1}
+            py={1}
             sx={{
               background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(${item.bannerImg}) center / cover`,
             }}
@@ -40,7 +40,7 @@ function BannerSlide() {
               alignItems={"flex-end"}
               justifyContent={"space-around"}
             >
-              <Grid container maxWidth={maxWidth} mx={"auto"}>
+              <Grid container maxWidth={maxWidth} mx={"auto"} px={"3%"}>
                 <Grid item xs={12} sm={7.5}>
                   <h1 className="banner-heading">KPGU</h1>
                   <p className="banner-text">
@@ -61,7 +61,7 @@ function BannerSlide() {
                   display={"flex"}
                 >
                   <img
-                    src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/g20-image"
+                    src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1702116057/KPGU/Banners/g20-image.webp"
                     alt="G20"
                     style={{
                       maxWidth: 300,

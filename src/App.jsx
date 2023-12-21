@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Box, createTheme } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import { About, Contact, Home } from "./components/Pages/index";
+import { About, Contact,Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { AppProvider } from "./contexts/AppContext";
 import ContactNavbar from "./components/layout/ContactNavbar";

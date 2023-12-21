@@ -31,14 +31,18 @@
 }
 
 .smooth-shadow {
-  box-shadow: 0px 3px 20px rgba(128, 128, 128, 0.08);
+  box-shadow: 0px 0px 13px rgb(245 245 245);
+}
+.smooth-shadow-card {
+  box-shadow: -3px 3px 10px rgb(245 245 245);
 }
 
 /* Bootstrap Css Edit */
 
 .navbar {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: auto;
+  padding: 0 3% !important;
 }
 
 .navbar-toggler {
@@ -139,13 +143,28 @@
 
 .journey-heading {
   font-size: clamp(2.5rem, 9vw, 2.7rem) !important;
-  font-weight: 600;
-  letter-spacing: 4px;
+}
+
+.journey-heading-2 {
+  font-size: clamp(1.7rem, 8vw, 2.7rem) !important;
+}
+
+.journey-card-heading {
+  font-size: clamp(1.25rem, 6vw, 1.4rem) !important;
 }
 
 .journey-text {
   font-size: clamp(1.2rem, 3vw, 1.3rem) !important;
   font-weight: 500 !important;
+}
+
+.journey-card {
+  border-bottom: 3px solid #264796;
+  transition: var(--tarnation);
+}
+.journey-card:hover {
+  border-bottom: 5px solid #264796;
+  transform: translateY(-10px);
 }
 
 /* Gallery */
@@ -160,10 +179,10 @@
   min-width: 525px;
 }
 
-.gallery-image{
+.gallery-image {
   cursor: pointer;
   transition: var(--tarnation);
 }
-.gallery-image:hover{
+.gallery-image:hover {
   scale: 1.09;
 }

@@ -21,7 +21,7 @@ function AboutSection() {
         item
         xs={12}
         lg={5.91}
-        p={3}
+        p={2}
         bgcolor={"primary.main"}
         borderRadius={2}
         color={"#fff"}
@@ -37,16 +37,10 @@ function AboutSection() {
   };
 
   return (
-    <Grid
-      container
-      width={maxWidth}
-      mx={"auto"}
-      mt={7}
-      px={"3%"}
-    >
+    <Grid container width={maxWidth} mx={"auto"} mt={7} p={"3%"} className="smooth-shadow">
       <Grid item sm={12} md={5}>
         <img
-          src="https://res.cloudinary.com/dby2vbxv3/image/upload/f_auto,q_auto/v1/KPGU/Banners/about-banner"
+          src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1702911780/KPGU/Banners/about-banner.jpg"
           alt="about us"
           width={"100%"}
           height={"100%"}
@@ -59,7 +53,7 @@ function AboutSection() {
         md={7}
         px={{
           xs: 0,
-          sm: 3,
+          sm: 4,
         }}
         pb={3}
         mt={{

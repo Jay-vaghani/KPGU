@@ -3,6 +3,7 @@ import { Stack } from "react-bootstrap";
 import BannerSlide from "./BannerSlide";
 import AboutSection from "./AboutSection";
 import JourneyAhead from "./JourneyAhead";
+import Career from "./Career";
 
 // import required modules
 
@@ -12,6 +13,7 @@ function Home() {
       <BannerSlide />
       <AboutSection />
       <JourneyAhead />
+      <Career />
     </Stack>
   );
 }
