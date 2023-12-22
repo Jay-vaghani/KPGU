@@ -20,7 +20,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
 
 function ContactNavbar() {
-  const { innerWith, maxWidth } = useContext(AppContext);
+  const { innerWidth, maxWidth } = useContext(AppContext);
 
   return (
     <AppBar position="static" elevation={0} color="transparent">
@@ -52,8 +52,8 @@ function ContactNavbar() {
           sm={5.5}
           md={4.5}
           lg={3.5}
-          px={innerWith < 450 ? 1 : 2}
-          py={innerWith < 450 ? 0.5 : 2}
+          px={innerWidth < 450 ? 1 : 2}
+          py={innerWidth < 450 ? 0.5 : 2}
           bgcolor={"secondary.main"}
           sx={{
             position: "relative",
@@ -78,12 +78,12 @@ function ContactNavbar() {
               sm: 1,
               md: 3,
             }}
-            pt={innerWith > 770 ? 0.8 : 0}
+            pt={innerWidth > 770 ? 0.8 : 0}
           >
             <Typography
               variant="body1"
               fontWeight={"600"}
-              sx={{ display: innerWith < 685 ? "none" : "block" }}
+              sx={{ display: innerWidth < 685 ? "none" : "block" }}
               zIndex={9}
             >
               Follow Us on
@@ -128,7 +128,7 @@ function ContactNavbar() {
         {/* RIGHT SIDE */}
         <Grid
           item
-          px={innerWith < 450 ? 1 : 2}
+          px={innerWidth < 450 ? 1 : 2}
           xs={6.3}
           sm={6.5}
           md={7.5}
@@ -144,7 +144,7 @@ function ContactNavbar() {
               alignItems={"center"}
               color={"whitesmoke"}
               spacing={"5%"}
-              display={innerWith < 770 ? "none" : "flex"}
+              display={innerWidth < 770 ? "none" : "flex"}
             >
               <Button
                 startIcon={<WifiCalling3TwoTone />}
@@ -177,17 +177,13 @@ function ContactNavbar() {
               width={"100%"}
               justifyContent={"center"}
               sx={{ gap: "5%" }}
-              display={innerWith < 770 ? "flex" : "none"}
+              display={innerWidth < 770 ? "flex" : "none"}
             >
               <Button
-                sx={{
-                  fontSize: "12px",
-                }}
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
                 size="small"
-
                 startIcon={<WifiCalling3TwoTone fontSize="inherit" />}
               >
                 call

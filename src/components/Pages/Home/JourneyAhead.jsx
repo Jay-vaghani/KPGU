@@ -129,6 +129,7 @@ function JourneyAhead() {
           variant="h2"
           className="journey-heading-2"
           textAlign={"center"}
+          fontWeight={600}
         >
           Gain Valuable Knowledge &&nbsp;Experience
         </Typography>
