@@ -121,19 +121,18 @@ function JourneyAhead() {
         width={maxWidth}
         mx={"auto"}
         mt={7}
-        p={"3%"}
         className="smooth-shadow rounded-4"
-        justifyContent={"center"}
+        p={"3%"}
+        py={5}
       >
         <Typography
           variant="h2"
           className="journey-heading-2"
-          textAlign={"center"}
           fontWeight={600}
         >
-          Gain Valuable Knowledge &&nbsp;Experience
+          TO THE JOURNEY AHEAD
         </Typography>
-        <Grid container mt={5} spacing={2}>
+        <Grid container mt={3} spacing={2}>
           <Grid item xs={12} sm={6} md={4}>
             <Box borderRadius={4} p={1} className="journey-card">
               <Box position={"relative"}>
@@ -165,7 +164,7 @@ function JourneyAhead() {
                 height={{
                   xs: "auto",
                   sm: "230px",
-                  lg: "170px"
+                  lg: "170px",
                 }}
               >
                 <Typography
@@ -220,7 +219,7 @@ function JourneyAhead() {
                 height={{
                   xs: "auto",
                   sm: "230px",
-                  lg: "170px"
+                  lg: "170px",
                 }}
               >
                 <Typography
@@ -274,7 +273,7 @@ function JourneyAhead() {
                 height={{
                   xs: "auto",
                   sm: "230px",
-                  lg: "170px"
+                  lg: "170px",
                 }}
               >
                 <Typography

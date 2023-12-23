@@ -37,7 +37,7 @@ function AboutSection() {
   };
 
   return (
-    <Grid container width={maxWidth} mx={"auto"} mt={7} p={"3%"} className="smooth-shadow">
+    <Grid container width={maxWidth} mx={"auto"} mt={7} p={"3%"} py={5} className="smooth-shadow rounded-4">
       <Grid item sm={12} md={5}>
         <img
           src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1702911780/KPGU/Banners/about-banner.jpg"

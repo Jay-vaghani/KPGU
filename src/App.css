@@ -146,7 +146,7 @@
 }
 
 .journey-heading-2 {
-  font-size: clamp(1.5rem, 7vw, 2.7rem) !important;
+  font-size: clamp(1.5rem, 10.5vw, 2.7rem) !important;
 }
 
 .journey-card-heading {

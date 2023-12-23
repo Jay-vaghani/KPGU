@@ -5,6 +5,8 @@ import AboutSection from "./AboutSection";
 import JourneyAhead from "./JourneyAhead";
 import GoalsSection from "./GoalsSection";
 import Testimonials from "./Testimonials";
+import Events from "./Events";
+import News from "./News";
 
 // import required modules
 
@@ -16,6 +18,8 @@ function Home() {
       <JourneyAhead />
       <GoalsSection />
       <Testimonials />
+      <Events />
+      <News />
     </Stack>
   );
 }

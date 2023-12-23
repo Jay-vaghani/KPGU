@@ -13,6 +13,7 @@ function GoalsSection() {
       mx={"auto"}
       mt={7}
       p={"3%"}
+      py={5}
       className="smooth-shadow rounded-4"
     >
       <Grid
@@ -25,7 +26,7 @@ function GoalsSection() {
         md={6}
         bgcolor={"primary.main"}
         color={"#fff"}
-        borderRadius={"50px 50px 0px 50px"}
+        borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
           <Typography variant="h2" className="journey-heading-2" gutterBottom>
@@ -123,7 +124,7 @@ function GoalsSection() {
         md={6}
         bgcolor={"secondary.main"}
         color={"#fff"}
-        borderRadius={"0px 50px 50px 50px"}
+        borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
           <Typography variant="h2" className="journey-heading-2" gutterBottom>
