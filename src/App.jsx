@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Box, createTheme } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import { About, Contact,Home } from "./components/Pages/index";
+import { About, Contact, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { AppProvider } from "./contexts/AppContext";
 import ContactNavbar from "./components/layout/ContactNavbar";
@@ -13,6 +13,7 @@ import "./App.css";
 import MainNavbar from "./components/layout/BootstrapNavbar/MainNavbar";
 import Gallery from "./components/Pages/Gallery/Gallery";
 import Loading from "./Utils/Loading";
+import Footer from "./components/Common/Footer";
 
 function App() {
   const theme = createTheme({
@@ -52,6 +53,7 @@ function App() {
               }
             />
           </Routes>
+          <Footer />
         </Box>
       </AppProvider>
     </ThemeProvider>

@@ -49,7 +49,7 @@ function Testimonials() {
       container
       width={maxWidth}
       mx={"auto"}
-      my={7}
+      mt={7}
       p={"3%"}
       py={5}
       className="smooth-shadow rounded-4"
