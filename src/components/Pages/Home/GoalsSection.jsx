@@ -29,7 +29,7 @@ function GoalsSection() {
         borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
-          <Typography variant="h2" className="journey-heading-2" gutterBottom>
+          <Typography variant="h2" className="journey-heading-2" fontWeight={500} gutterBottom>
             VISION
           </Typography>
           <Typography variant="body1" className="journey-text">
@@ -127,7 +127,7 @@ function GoalsSection() {
         borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
-          <Typography variant="h2" className="journey-heading-2" gutterBottom>
+          <Typography variant="h2" className="journey-heading-2" fontWeight={500} gutterBottom>
             MISSION
           </Typography>
           <Typography variant="body1" className="journey-text">

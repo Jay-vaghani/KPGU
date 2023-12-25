@@ -175,7 +175,7 @@ function ContactNavbar() {
             <Box
               m={0}
               width={"100%"}
-              justifyContent={"center"}
+              justifyContent={"end"}
               sx={{ gap: "5%" }}
               display={innerWidth < 770 ? "flex" : "none"}
             >
@@ -183,8 +183,9 @@ function ContactNavbar() {
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
+                sx={{fontSize: innerWidth < 370? "0.6rem" : ""}}
                 size="small"
-                startIcon={<WifiCalling3TwoTone fontSize="inherit" />}
+                startIcon={<WifiCalling3TwoTone />}
               >
                 call
               </Button>
@@ -192,6 +193,7 @@ function ContactNavbar() {
                 startIcon={<LocalLibraryTwoTone />}
                 color="primary"
                 variant="contained"
+                sx={{fontSize: innerWidth < 370? "0.6rem" : ""}}
                 disableElevation
                 size="small"
               >
