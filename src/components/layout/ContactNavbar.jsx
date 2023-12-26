@@ -153,11 +153,12 @@ function ContactNavbar() {
                 variant="contained"
                 disableElevation
               >
-                Call
+                8238046519
               </Button>
               <Button
                 startIcon={<RateReviewTwoTone />}
                 color="primary"
+                href="mailto:info@kpgu.edu.in"
                 variant="contained"
                 disableElevation
               >
@@ -183,17 +184,32 @@ function ContactNavbar() {
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
-                sx={{fontSize: innerWidth < 370? "0.6rem" : ""}}
+                sx={{ fontSize: innerWidth < 370 ? "0.6rem" : "" }}
                 size="small"
                 startIcon={<WifiCalling3TwoTone />}
               >
-                call
+                <Box
+                  display={{
+                    xs: "none",
+                    sm: "block",
+                  }}
+                >
+                  8238046519
+                </Box>
+                <Box
+                  display={{
+                    xs: "block",
+                    sm: "none",
+                  }}
+                >
+                  call 
+                </Box>
               </Button>
               <Button
                 startIcon={<LocalLibraryTwoTone />}
                 color="primary"
                 variant="contained"
-                sx={{fontSize: innerWidth < 370? "0.6rem" : ""}}
+                sx={{ fontSize: innerWidth < 370 ? "0.6rem" : "" }}
                 disableElevation
                 size="small"
               >

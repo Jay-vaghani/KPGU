@@ -29,16 +29,19 @@ function GoalsSection() {
         borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
-          <Typography variant="h2" className="journey-heading-2" fontWeight={500} gutterBottom>
+          <Typography
+            variant="h2"
+            className="journey-heading-2"
+            fontWeight={500}
+            gutterBottom
+          >
             VISION
           </Typography>
           <Typography variant="body1" className="journey-text">
-            KPGU dreams of global acclaim, a value-driven beacon where teaching
-            ignites, research delves deep, and outreach bridges borders. Open
-            doors welcome diverse minds to a tapestry woven with collaboration
-            and innovation. Education, a sculptor of responsible citizens,
-            shapes not just graduates, but leaders with hearts for the world's
-            grand tapestry.
+            KPGU Aspires to be globally acclaimed a value driven University,
+            recognized for excellence in teaching, research and outreach
+            promoting access and inclusion collaborative and innovative culture
+            and prepare socially responsible global citizens.
           </Typography>
         </Box>
       </Grid>
@@ -88,30 +91,18 @@ function GoalsSection() {
         md={6}
         position={"relative"}
         zIndex={-10}
-        height={400}
-        sx={{
-          transform: "translateY(-10.5%)",
-          overflowX: {
-            xs: "clip",
-            md: "visible",
-          },
-        }}
+        // height={400}
       >
         <img
           src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703227665/KPGU/Banners/mission-banner.webp"
           alt="mission banner"
-          width={"109.5%"}
-          height={
-            innerWidth < 990
-              ? innerWidth < 989
-                ? innerWidth < 909
-                  ? "121.5%"
-                  : "114%"
-                : "115.5%"
-              : "110.5%"
-          }
           className="object-fit-cover"
-          style={{ borderRadius: innerWidth < 900 ? "0" : "0 32% 0 0" }}
+          style={{
+            width: innerWidth < 901 ? "100%" : "109%",
+            height: innerWidth < 901 ? "132%" : "108.5%",
+            borderRadius: innerWidth < 901 ? "0" : "0 28% 0 0",
+            transform: "translateY(-8%)",
+          }}
         />
       </Grid>
       <Grid
@@ -127,17 +118,32 @@ function GoalsSection() {
         borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
-          <Typography variant="h2" className="journey-heading-2" fontWeight={500} gutterBottom>
+          <Typography
+            variant="h2"
+            className="journey-heading-2"
+            fontWeight={500}
+            gutterBottom
+          >
             MISSION
           </Typography>
-          <Typography variant="body1" className="journey-text">
-            KPGU ignites vibrant minds within its diverse tapestry, woven with
-            threads of a changing world. Drawn by exceptional faculty, students
-            collaborate, innovate, and flourish. Education, a sculptor of
-            well-rounded individuals, kindles scientific spirit, empathy, and
-            creativity. Here, not just professionals emerge, but responsible
-            citizens and leaders, empowered to leave a lasting mark on the
-            global landscape.
+          <Typography variant="body1" gutterBottom className="journey-text">
+            1. Globalization through creation, acquisition, preservation and
+            exchange of knowledge.
+          </Typography>
+          <Typography variant="body1" gutterBottom className="journey-text">
+            2. To provide collaborative environment for exchange of ideas,
+            virtues & values.
+          </Typography>
+          <Typography variant="body1" gutterBottom className="journey-text">
+            3. To develop good human being possessing scientific temper,
+            compassion, empathy, courage and creative imagination.
+          </Typography>
+          <Typography variant="body1" gutterBottom className="journey-text">
+            4. To nurture innovative and socially cultured global citizen.
+          </Typography>
+          <Typography variant="body1" gutterBottom className="journey-text">
+            5. To foster multifaceted excellence in education and research
+            outreach.
           </Typography>
         </Box>
       </Grid>

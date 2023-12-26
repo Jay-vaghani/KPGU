@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Accordion from "react-bootstrap/Accordion";
+import { useNavigate } from "react-router-dom";
 
 function MainNavbar() {
   const width = {
@@ -13,13 +14,16 @@ function MainNavbar() {
     sm: "170px",
     lg: "200px",
   };
+
+  let navigate = useNavigate();
+
   return (
     <Navbar expand="lg" className="bg-white ">
       <Container fluid className="px-0">
         <Navbar.Brand style={{ width: "70px" }}>
           <Box width={width}>
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1700155108/KPGU/logo.svg"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"
               alt="Logo"
               width={"100%"}
             />
@@ -28,8 +32,12 @@ function MainNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <NavDropdown title="ABOUT US" id="basic-nav-dropdown">
+            <Nav.Link onClick={() => navigate("/")}>HOME</Nav.Link>
+            <NavDropdown
+              title="ABOUT US"
+              id="basic-nav-dropdown"
+              onClick={() => navigate("/about")}
+            >
               <NavDropdown.Item>Sponsoring Body-SKECT</NavDropdown.Item>
               <NavDropdown.Item>OUR LEADERSHIP</NavDropdown.Item>
               <NavDropdown.Item>KPGU Vadodara</NavDropdown.Item>

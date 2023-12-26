@@ -1,6 +1,13 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
-import { Grid, Box, Button, Stack, Typography } from "@mui/material";
+import {
+  Grid,
+  Box,
+  Button,
+  Stack,
+  Typography,
+  IconButton,
+} from "@mui/material";
 import {
   AntiRaggingIcon,
   EqualOpportunityIcon,
@@ -12,10 +19,15 @@ import {
   TelePhoneIcon,
 } from "../../Utils/Icons/CustomIcon";
 import {
+  Copyright,
+  FacebookRounded,
   HealthAndSafetyRounded,
+  Instagram,
+  LinkedIn,
   MarkEmailReadRounded,
   PhoneInTalkRounded,
   SchoolRounded,
+  YouTube,
 } from "@mui/icons-material";
 
 function Footer() {
@@ -69,7 +81,7 @@ function Footer() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236440.11092306007!2d72.88288329453124!3d22.187784800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc3e15a4fce63%3A0x5f75d8caf42dbaec!2sKPGU%2C%20Vadodara%20(Formerly%20BITS%20Edu%20Campus)!5e0!3m2!1sen!2sin!4v1703494925840!5m2!1sen!2sin"
             width="100%"
             height="200"
-            style={{borderRadius: "7px"}}
+            style={{ borderRadius: "7px" }}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -104,7 +116,22 @@ function Footer() {
               href="tel:1800 843 9999"
               target="_blank"
             >
-              Click to call
+              <Box
+                display={{
+                  xs: "none",
+                  sm: "block",
+                }}
+              >
+                Toll Free: 1800 843 9999
+              </Box>
+              <Box
+                display={{
+                  xs: "block",
+                  sm: "none",
+                }}
+              >
+                Click to call
+              </Box>
             </Button>
             <Button
               startIcon={<PhoneInTalkRounded />}
@@ -113,7 +140,22 @@ function Footer() {
               href="tel:7861805306"
               target="_blank"
             >
-              call button 1
+              <Box
+                display={{
+                  xs: "none",
+                  sm: "block",
+                }}
+              >
+                Mobile 1 : 7861805306
+              </Box>
+              <Box
+                display={{
+                  xs: "block",
+                  sm: "none",
+                }}
+              >
+                call button 1
+              </Box>
             </Button>
             <Button
               startIcon={<PhoneInTalkRounded />}
@@ -122,14 +164,28 @@ function Footer() {
               href="tel:8238046519"
               target="_blank"
             >
-              call button 2
+              <Box
+                display={{
+                  xs: "none",
+                  sm: "block",
+                }}
+              >
+                Mobile 2 : 8238046519
+              </Box>
+              <Box
+                display={{
+                  xs: "block",
+                  sm: "none",
+                }}
+              >
+                call button 2
+              </Box>
             </Button>
             <Button
               startIcon={<MarkEmailReadRounded />}
               sx={{ fill: "#fff", justifyContent: "start" }}
               variant="contained"
-              href="tel:8238046519"
-              target="_blank"
+              href="mailto:info@kpgu.edu.in"
             >
               Click to mail
             </Button>
@@ -224,6 +280,56 @@ function Footer() {
           </Stack>
         </Grid>
       </Grid>
+      <Stack
+        justifyContent={"space-between"}
+        maxWidth={maxWidth}
+        mx={"auto"}
+        direction={{
+          xs: "column",
+          sm: "row",
+        }}
+        alignItems={"center"}
+        py={2}
+      >
+        <Typography variant="h6" textTransform={"uppercase"} fontWeight={600}>
+          Copyright <Copyright sx={{ mb: 0.55 }} /> {new Date().getFullYear()}{" "}
+          KPGU. All rights reserved.
+        </Typography>
+        <Stack direction={"row"}>
+          <IconButton
+            color="primary"
+            size="large"
+            target="_blank"
+            href="https://www.facebook.com/KPGU.Vadodara/"
+          >
+            <FacebookRounded fontSize="large" />
+          </IconButton>
+          <IconButton
+            color="primary"
+            size="large"
+            target="_blank"
+            href="https://www.instagram.com/kpgu_official/?hl=en"
+          >
+            <Instagram fontSize="large" />
+          </IconButton>
+          <IconButton
+            color="primary"
+            size="large"
+            target="_blank"
+            href="https://in.linkedin.com/company/kpgu-vadodara"
+          >
+            <LinkedIn fontSize="large" />
+          </IconButton>
+          <IconButton
+            color="primary"
+            size="large"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCpnW4eginLfg2rCcMjAn5dA"
+          >
+            <YouTube fontSize="large" />
+          </IconButton>
+        </Stack>
+      </Stack>
     </Box>
   );
 }

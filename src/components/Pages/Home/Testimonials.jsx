@@ -81,8 +81,23 @@ function Testimonials() {
           startIcon={<CallRounded />}
           variant="contained"
           color="secondary"
-        >
-          contact now
+        ><Box
+        display={{
+          xs: "none",
+          sm: "block",
+        }}
+      >
+        8238046519
+      </Box>
+      <Box
+        display={{
+          xs: "block",
+          sm: "none",
+        }}
+      >
+        contact now 
+      </Box>
+          
         </Button>
       </Grid>
       <Grid item xs={12} lg={8} overflow={"clip"}>

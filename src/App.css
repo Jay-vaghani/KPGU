@@ -8,8 +8,44 @@
 
 /* COSTUME CSS  */
 
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+  display: inline-block;
+  position: absolute;
+  top: -11px;
+  left: -11.5px;
+  z-index: -999;
+  
+}
+
+.dot2 {
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+  display: inline-block;
+  z-index: -999;
+}
+
 .margin-none {
   margin: 0;
+}
+
+.color-primary {
+  color: #e31e24;
+}
+
+.color-secondary {
+  color: #264796;
 }
 
 .navLink {
