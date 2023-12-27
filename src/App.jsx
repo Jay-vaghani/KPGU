@@ -14,6 +14,9 @@ import MainNavbar from "./components/layout/BootstrapNavbar/MainNavbar";
 import Gallery from "./components/Pages/Gallery/Gallery";
 import Loading from "./Utils/Loading";
 import Footer from "./components/Common/Footer";
+import SKECT from "./components/Pages/About/pages/SKECT";
+import OurLeadership from "./components/Pages/About/pages/OurLeadership";
+import Achievements from "./components/Pages/About/pages/Achievements";
 
 function App() {
   const theme = createTheme({
@@ -42,7 +45,11 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About />}>
+              <Route path="skect" element={<SKECT />} />
+              <Route path="our-leadership" element={<OurLeadership />} />
+              <Route path="achievements" element={<Achievements />} />
+            </Route>
             <Route path="/contact" element={<Contact />} />
             <Route
               path="/gallery"

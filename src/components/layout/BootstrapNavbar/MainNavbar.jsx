@@ -33,15 +33,19 @@ function MainNavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link onClick={() => navigate("/")}>HOME</Nav.Link>
-            <NavDropdown
-              title="ABOUT US"
-              id="basic-nav-dropdown"
-              onClick={() => navigate("/about")}
-            >
-              <NavDropdown.Item>Sponsoring Body-SKECT</NavDropdown.Item>
-              <NavDropdown.Item>OUR LEADERSHIP</NavDropdown.Item>
+            <NavDropdown title="ABOUT US" id="basic-nav-dropdown">
+              <NavDropdown.Item onClick={() => navigate("/about/skect")}>
+                Sponsoring Body-SKECT
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() => navigate("/about/our-leadership")}
+              >
+                OUR LEADERSHIP
+              </NavDropdown.Item>
               <NavDropdown.Item>KPGU Vadodara</NavDropdown.Item>
-              <NavDropdown.Item>SIGNIFICANT ACHIEVEMENTS</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/achievements")}>
+                SIGNIFICANT ACHIEVEMENTS
+              </NavDropdown.Item>
               <NavDropdown.Item>VISION & MISSION</NavDropdown.Item>
               <NavDropdown.Item>
                 MESSAGE FROM DR. KIRAN C. PATEL
