@@ -73,6 +73,7 @@ function News() {
       p={"3%"}
       py={5}
       className="smooth-shadow rounded-4"
+      bgcolor={"#fff"}
     >
       <Typography
         variant="h2"

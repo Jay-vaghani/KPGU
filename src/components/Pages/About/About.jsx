@@ -30,6 +30,18 @@ function About() {
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }
+    if (location === "kpgu-vadodara") {
+      setBanner({
+        title: "KPGU VADODARA",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "vision-mission") {
+      setBanner({
+        title: "VISION & MISSION",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
   }, [location]);
 
   return (

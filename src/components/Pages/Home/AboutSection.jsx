@@ -37,7 +37,7 @@ function AboutSection() {
   };
 
   return (
-    <Grid container width={maxWidth} mx={"auto"} mt={7} p={"3%"} py={5} className="smooth-shadow rounded-4">
+    <Grid container width={maxWidth} mx={"auto"} mt={7} p={"3%"} py={5} className="smooth-shadow rounded-4" bgcolor={"#fff"}>
       <Grid item sm={12} md={5}>
         <img
           src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1702911780/KPGU/Banners/about-banner.jpg"
@@ -74,7 +74,7 @@ function AboutSection() {
           serving the society. It has been able to attain enviable level of
           excellence in technical education.
         </Typography>
-        <Grid container gap={1} mt={2}>
+        <Grid container gap={1} mt={2} >
           {ProgramsItems.map((item, index) => (
             <Programs name={item} key={index} />
           ))}

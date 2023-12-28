@@ -52,9 +52,10 @@ function SKECT() {
         <Paragraph content={para} key={index} />
       ))}
       <Grid container mt={10} spacing={3}>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3} >
           <Box
             className="smooth-shadow-card h-100"
+            bgcolor={"#fff"}
             borderRadius={4}
             overflow={"hidden"}
           >
@@ -79,9 +80,10 @@ function SKECT() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3} >
           <Box
             className="smooth-shadow-card h-100"
+            bgcolor={"#fff"}
             borderRadius={4}
             overflow={"hidden"}
           >
@@ -106,9 +108,10 @@ function SKECT() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3} >
           <Box
             className="smooth-shadow-card h-100"
+            bgcolor={"#fff"}
             borderRadius={4}
             overflow={"hidden"}
           >
@@ -133,9 +136,10 @@ function SKECT() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3} >
           <Box
             className="smooth-shadow-card h-100"
+            bgcolor={"#fff"}
             borderRadius={4}
             overflow={"hidden"}
           >

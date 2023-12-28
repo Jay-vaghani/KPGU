@@ -15,6 +15,7 @@ function GoalsSection() {
       p={"3%"}
       py={5}
       className="smooth-shadow rounded-4"
+      bgcolor={"#fff"}
     >
       <Grid
         item
@@ -26,6 +27,8 @@ function GoalsSection() {
         md={6}
         bgcolor={"primary.main"}
         color={"#fff"}
+        zIndex={99}
+
         borderRadius={"0px 50px 0px 50px"}
       >
         <Box p={"7%"}>
@@ -54,7 +57,7 @@ function GoalsSection() {
         xs={12}
         md={6}
         position={"relative"}
-        zIndex={-10}
+        zIndex={9}
         height={400}
         sx={{
           transform: {
@@ -90,7 +93,7 @@ function GoalsSection() {
         xs={12}
         md={6}
         position={"relative"}
-        zIndex={-10}
+        zIndex={9}
         // height={400}
       >
         <img
@@ -116,6 +119,7 @@ function GoalsSection() {
         bgcolor={"secondary.main"}
         color={"#fff"}
         borderRadius={"0px 50px 0px 50px"}
+        zIndex={99}
       >
         <Box p={"7%"}>
           <Typography

@@ -11,9 +11,13 @@ function Paragraph({ content }) {
   return (
     //
     <Typography
-      variant="h5"
+      variant="h6"
       position={"relative"}
       mb={3.5}
+      textAlign={{
+        xs: "start",
+        sm: "justify"
+      }}
       pl={3}
       borderLeft={"3px solid #264796"}
     >

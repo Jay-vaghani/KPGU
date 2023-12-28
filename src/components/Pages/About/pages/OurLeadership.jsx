@@ -7,6 +7,7 @@ import {
   RightQuoteIcon,
 } from "../../../../Utils/Icons/CustomIcon";
 import Paragraph from "../../../Common/Paragraph";
+import Quote from "../../../Common/Quote";
 
 function OurLeadership() {
   const { maxWidth, innerWidth } = useContext(AppContext);
@@ -67,8 +68,7 @@ function OurLeadership() {
 
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <h4 className=" fw-semibold color-secondary">KPGU'S LEADERSHIP</h4>
-      <h3 className="display-4 fw-semibold mb-4">Our Leadership</h3>{" "}
+      <h4 className=" fw-semibold color-secondary mb-4">KPGU'S LEADERSHIP</h4>
       <Grid
         container
         className="smooth-shadow"
@@ -86,31 +86,19 @@ function OurLeadership() {
         </Grid>
         <Grid item xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shree Jagdish Bhai D Patel</h3>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b> Hon’ble President</b>,<br />
             Drs. Kiran & Pallavi Patel Global University [KPGU, Vadodara]
           </p>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Founder President & Managing Trustee</b> <br />
             Shree Krishna Educational & Charitable Trust, Vadodara
           </p>
-          <Box mt={2} color={"#264796cf"} fontWeight={600}>
-            <p
-              className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-1  ${
-                innerWidth < 400 ? "text-justify" : "text-center"
-              }`}
-            >
-              <sup style={{ fill: "#264796cf", padding: "0 10px 0 0px" }}>
-                <LeftQuoteIcon />
-              </sup>
-              Education” is not meant merely to earn a degree; rather it’s an
-              earnest pursuit of nurturing Academic, Co-Academic, Careerist &
-              Global Citizenry Traits that foster attainment of Life Goals
-              <sub style={{ fill: "#264796cf", padding: "0 0 0 10px" }}>
-                <RightQuoteIcon />
-              </sub>
-            </p>
-          </Box>
+          <Quote
+            quote={
+              "Education” is not meant merely to earn a degree; rather it’s an earnest pursuit of nurturing Academic, Co-Academic, Careerist & Global Citizenry Traits that foster attainment of Life Goals"
+            }
+          />
         </Grid>
       </Grid>
       <Box mt={5}>
@@ -137,12 +125,12 @@ function OurLeadership() {
         </Grid>
         <Grid item xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Dr. Kiran C. Patel</h3>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Patron</b>,<br />
             Drs. Kiran & Pallavi Patel Global University [
             <small>KPGU, Vadodara</small>]
           </p>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Indian-American Philanthropist & Cardiologist</b> <br />
             Tampa, Florida, USA
           </p>
@@ -172,30 +160,19 @@ function OurLeadership() {
         </Grid>
         <Grid item xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shrimati Kamalben J Patel</h3>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Chairman & Vice Managing Trustee</b>,<br />
             Shree Krishna Educational & Charitable Trust
           </p>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Vice President & Governing Body</b> <br />
             Drs Kiran & Pallavi Patel Global University KPGU, Vadodara
           </p>
-          <Box mt={2} color={"#264796cf"} fontWeight={600}>
-            <p
-              className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-1  ${
-                innerWidth < 400 ? "text-justify" : "text-center"
-              }`}
-            >
-              <sup style={{ fill: "#264796cf", padding: "0 10px 0 0px" }}>
-                <LeftQuoteIcon />
-              </sup>
-              Every woman is strong, an embodiment of strength & sacrifice
-              Empower her with equity she shall nurture the humankind
-              <sub style={{ fill: "#264796cf", padding: "0 0 0 10px" }}>
-                <RightQuoteIcon />
-              </sub>
-            </p>
-          </Box>
+          <Quote
+            quote={
+              "Every woman is strong, an embodiment of strength & sacrifice Empower her with equity she shall nurture the humankind"
+            }
+          />
         </Grid>
       </Grid>
       <Box mt={5}>
@@ -222,31 +199,19 @@ function OurLeadership() {
         </Grid>
         <Grid item xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shree Dhruvkumar J Patel</h3>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Member of the Board of Management</b>,<br />
             Drs. Kiran & Pallavi Patel Global University [KPGU, Vadodara]
           </p>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Managing Director</b> <br />
             Dr. Kiran C. Patel Medical College & Research Institute, Bharuch
           </p>
-          <Box mt={2} color={"#264796cf"} fontWeight={600}>
-            <p
-              className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-1  ${
-                innerWidth < 400 ? "text-justify" : "text-center"
-              }`}
-            >
-              <sup style={{ fill: "#264796cf", padding: "0 10px 0 0px" }}>
-                <LeftQuoteIcon />
-              </sup>
-              One, who is willing to accept, adapt & ensure behavioral
-              modifications in concurrence with the changing dynamics of the
-              globalized world, can alone succeed & progress
-              <sub style={{ fill: "#264796cf", padding: "0 0 0 10px" }}>
-                <RightQuoteIcon />
-              </sub>
-            </p>
-          </Box>
+          <Quote
+            quote={
+              "One, who is willing to accept, adapt & ensure behavioral modifications in concurrence with the changing dynamics of the globalized world, can alone succeed & progress"
+            }
+          />
         </Grid>
       </Grid>
       <Box mt={5}>
@@ -273,11 +238,11 @@ function OurLeadership() {
         </Grid>
         <Grid item xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shree Krishna J Patel</h3>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>The Secretary</b>,<br />
             Krishna Educational & Charitable Trust
           </p>
-          <p className={`${innerWidth < 400 ? "fs-4" : "fs-3"} mb-2`}>
+          <p className={`fs-4 mb-2`}>
             <b>Governing Body</b> <br />
             Drs. Kiran & Pallavi Patel Global University [KPGU, Vadodara]
           </p>

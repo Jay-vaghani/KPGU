@@ -54,6 +54,8 @@ function Testimonials() {
       py={5}
       className="smooth-shadow rounded-4"
       rowGap={innerWidth > 1200 ? 0 : 4}
+      bgcolor={"#fff"}
+
     >
       <Grid item xs={12} lg={4}>
         <Box pr={3}>

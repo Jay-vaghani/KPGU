@@ -24,6 +24,7 @@ function JourneyAhead() {
         p={"3%"}
         className="smooth-shadow rounded-4"
         rowGap={5}
+        bgcolor={"#fff"}
       >
         <Grid item xs={12} md={6}>
           <img
@@ -124,6 +125,7 @@ function JourneyAhead() {
         className="smooth-shadow rounded-4"
         p={"3%"}
         py={5}
+        bgcolor={"#fff"}
       >
         <Typography
           variant="h2"
@@ -170,7 +172,7 @@ function JourneyAhead() {
                 <Typography
                   variant="h4"
                   className="journey-card-heading"
-                  textTransform={"uppercase"}
+                  textTransform={"capitalize"}
                   fontWeight={600}
                   gutterBottom
                 >
@@ -178,7 +180,7 @@ function JourneyAhead() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  textTransform={"uppercase"}
+                  textTransform={"capitalize"}
                   fontWeight={500}
                 >
                   KPGU aims at providing students with industry centric
@@ -225,7 +227,7 @@ function JourneyAhead() {
                 <Typography
                   variant="h4"
                   className="journey-card-heading"
-                  textTransform={"uppercase"}
+                  textTransform={"capitalize"}
                   fontWeight={600}
                   gutterBottom
                 >
@@ -233,7 +235,7 @@ function JourneyAhead() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  textTransform={"uppercase"}
+                  textTransform={"capitalize"}
                   fontWeight={500}
                 >
                   KPGU has an excellent Industry - Institution interaction with
@@ -279,7 +281,7 @@ function JourneyAhead() {
                 <Typography
                   variant="h4"
                   className="journey-card-heading"
-                  textTransform={"uppercase"}
+                  textTransform={"capitalize"}
                   fontWeight={600}
                   gutterBottom
                 >
@@ -287,7 +289,7 @@ function JourneyAhead() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  textTransform={"uppercase"}
+                  textTransform={"capitalize"}
                   fontWeight={500}
                 >
                   KPGU has an excellent Industry - Institution interaction with
