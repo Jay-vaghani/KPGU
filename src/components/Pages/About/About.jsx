@@ -42,6 +42,18 @@ function About() {
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }
+    if (location === "dr-kiran-c-patel-message") {
+      setBanner({
+        title: "MESSAGE FROM DR. KIRAN C. PATEL",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "message-from-the-presidents-desk") {
+      setBanner({
+        title: "MESSAGE FROM THE PRESIDENT’S DESK",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
   }, [location]);
 
   return (

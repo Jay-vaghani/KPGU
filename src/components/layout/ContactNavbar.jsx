@@ -184,7 +184,7 @@ function ContactNavbar() {
                 href="tel:8238046519"
                 disableElevation
                 variant="contained"
-                sx={{ fontSize: innerWidth < 370 ? "0.6rem" : "" }}
+                sx={{ fontSize: innerWidth < 385 ? "0.65rem" : "" }}
                 size="small"
                 startIcon={<WifiCalling3TwoTone />}
               >
@@ -209,7 +209,7 @@ function ContactNavbar() {
                 startIcon={<LocalLibraryTwoTone />}
                 color="primary"
                 variant="contained"
-                sx={{ fontSize: innerWidth < 370 ? "0.6rem" : "" }}
+                sx={{ fontSize: innerWidth < 385 ? "0.65rem" : "" }}
                 disableElevation
                 size="small"
               >

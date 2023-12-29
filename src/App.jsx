@@ -19,6 +19,8 @@ import OurLeadership from "./components/Pages/About/pages/OurLeadership";
 import Achievements from "./components/Pages/About/pages/Achievements";
 import KpguVadodara from "./components/Pages/About/pages/KpguVadodara";
 import VisionMission from "./components/Pages/About/pages/VisionMission";
+import DrKiranCPatelMessage from "./components/Pages/About/pages/DrKiranCPatelMessage";
+import MessageFromThePresidentsDesk from "./components/Pages/About/pages/MessageFromThePresidentsDesk";
 
 function App() {
   const theme = createTheme({
@@ -53,6 +55,8 @@ function App() {
               <Route path="achievements" element={<Achievements />} />
               <Route path="kpgu-vadodara" element={<KpguVadodara />} />
               <Route path="vision-mission" element={<VisionMission />} />
+              <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
+              <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk/>} />
             </Route>
             <Route path="/contact" element={<Contact />} />
             <Route

@@ -127,8 +127,11 @@ function OurLeadership() {
           <h3 className="display-5 fw-semibold">Dr. Kiran C. Patel</h3>
           <p className={`fs-4 mb-2`}>
             <b>Patron</b>,<br />
-            Drs. Kiran & Pallavi Patel Global University [
-            <small>KPGU, Vadodara</small>]
+            Drs. Kiran & Pallavi Patel Global University [ KPGU, Vadodara]
+          </p>
+          <p className={`fs-4 mb-2`}>
+            <b>Chairman</b>,<br />
+            Dr Kiran C Patel Medical College & Research Institute [KMCRI] Bharuch
           </p>
           <p className={`fs-4 mb-2`}>
             <b>Indian-American Philanthropist & Cardiologist</b> <br />

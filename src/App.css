@@ -19,7 +19,6 @@
   top: -11px;
   left: -11.5px;
   z-index: -999;
-  
 }
 
 .dot2 {
@@ -104,6 +103,9 @@
   text-transform: uppercase !important;
   padding: 0.25rem 0.5rem !important;
 }
+
+
+
 .accordion-body {
   padding: 0.25rem 0.5rem !important;
   text-transform: uppercase !important;

@@ -1,14 +1,23 @@
+button,
+p {
+  border: none;
+  background: none;
+}
+
 .NavigationMenuRoot {
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: center;
-  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1;
 }
 
 .NavigationMenuList {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: white;
   padding: 4px;
   border-radius: 6px;
@@ -19,14 +28,12 @@
 
 .NavigationMenuTrigger,
 .NavigationMenuLink {
-  padding: 8px 12px;
   outline: none;
   user-select: none;
-  font-weight: 500;
-  line-height: 1;
-  border-radius: 4px;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 1rem;
   color: var(--violet-11);
+  padding: 0 7px;
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {
@@ -47,7 +54,8 @@
 .NavigationMenuLink {
   display: block;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -106,6 +114,7 @@
     hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
   height: var(--radix-navigation-menu-viewport-height);
   transition: width, height, 300ms ease;
+  z-index: 999;
 }
 .NavigationMenuViewport[data-state="open"] {
   animation: scaleIn 200ms ease;
@@ -126,17 +135,12 @@
   column-gap: 10px;
   list-style: none;
 }
-@media only screen and (min-width: 600px) {
   .List.one {
-    width: 500px;
-    grid-template-columns: 0.75fr 1fr;
+    width: 960px;
   }
   .List.two {
-    width: 600px;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(3, 1fr);
+    width: 960px;
   }
-}
 
 .ListItemLink {
   display: block;
@@ -203,7 +207,7 @@
 .ViewportPosition {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
   top: 100%;
   left: 0;
@@ -213,7 +217,6 @@
 .CaretDown {
   position: relative;
   color: var(--violet-10);
-  top: 1px;
   transition: transform 250ms ease;
 }
 [data-state="open"] > .CaretDown {

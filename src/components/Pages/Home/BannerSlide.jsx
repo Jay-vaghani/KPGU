@@ -23,6 +23,7 @@ function BannerSlide() {
         indicators={false}
         height={"100vh"}
         navButtonsAlwaysInvisible={true}
+        sx={{ zIndex: "-99" }}
       >
         {slides.map((item, index) => (
           <Box

@@ -32,8 +32,8 @@ function EduCard({ name, des, img, link }) {
           <Button
             target="_blank"
             variant="contained"
-            sx={{ position: "absolute", bottom: 16, left: 16 }}
             endIcon={<KeyboardDoubleArrowRightRounded />}
+            sx={{position: "absolute", bottom: 0}}
           >
             View
           </Button>

@@ -94,7 +94,7 @@ function KpguVadodara() {
         className="smooth-shadow"
         my={4}
       >
-        <h2 className="text-center fw-semibold">VISION</h2>
+        <h2 className="text-center fw-semibold pt-2">VISION</h2>
         <Quote
           quote={
             "The Drs. Kiran & Pallavi Patel Global University seeks to be an Organization of Universal Eminence Serving the Cause of Higher Education, Health Care and Service to the Mankind, Ever in Pursuit of Newer Horizons, ingrained with Spirit of Continual Progress of Stakeholders."
