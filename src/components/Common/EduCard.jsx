@@ -25,7 +25,6 @@ function EduCard({ name, des, img, link }) {
           </Typography>
           <Typography variant="body1" fontWeight={600} color={"#535353"} mb={3}>
             {des}
-            Technology.
           </Typography>
           <br />
 
@@ -33,7 +32,7 @@ function EduCard({ name, des, img, link }) {
             target="_blank"
             variant="contained"
             endIcon={<KeyboardDoubleArrowRightRounded />}
-            sx={{position: "absolute", bottom: 0}}
+            sx={{position: "absolute", bottom: 16}}
           >
             View
           </Button>

@@ -33,11 +33,12 @@ function DrKiranCPatelMessage() {
         borderRadius={3}
         overflow={"clip"}
         my={5}
+        bgcolor={"#fff"}
       >
         <Grid item xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703666253/KPGU/Images/Dr-Kiran-C-Patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Dr_Kiran_C_Patel.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />

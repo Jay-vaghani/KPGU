@@ -3,7 +3,7 @@ import { AppContext } from "../../../../contexts/AppContext";
 import { Box, Grid, Typography } from "@mui/material";
 import Paragraph from "../../../Common/Paragraph";
 
-function MessageFromThePresidentsDesk() {
+function MessageFromTheProvost() {
   const { maxWidth } = useContext(AppContext);
 
   const paragraphs = [
@@ -38,24 +38,20 @@ function MessageFromThePresidentsDesk() {
         my={5}
         bgcolor={"#fff"}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} height={"300px"}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703666253/KPGU/Images/Jagdishbhai-D-Patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703926605/KPGU/Images/a-b-Chaudhary.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />
           </Box>
         </Grid>
         <Grid item xs={12} md={8} p={2}>
-          <h3 className="display-5 fw-semibold">Shree Jagdish Bhai D. Patel</h3>
+          <h3 className="display-5 fw-semibold">A.B. Chaudhary</h3>
           <p className={`fs-4 mb-2`}>
-            <b>Hon’ble President</b>,<br />
+            <b>Hon. Provost</b>,<br />
             Drs. Kiran & Pallavi Patel Global University [KPGU, Vadodara]
-          </p>
-          <p className={`fs-4 mb-2`}>
-            <b>Founder President and Managing Trustee</b>,<br />
-            Shree Krishna Educational & Charitable Trust, Vadodara
           </p>
         </Grid>
       </Grid>
@@ -73,4 +69,4 @@ function MessageFromThePresidentsDesk() {
   );
 }
 
-export default MessageFromThePresidentsDesk;
+export default MessageFromTheProvost;

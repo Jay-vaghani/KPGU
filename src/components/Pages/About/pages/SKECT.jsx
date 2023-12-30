@@ -89,7 +89,7 @@ function SKECT() {
           >
             <Box>
               <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703584293/KPGU/Images/kamal-j-patel.webp"
+                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Kamal_J_Patel.webp"
                 alt="photo"
                 className="img-fluid"
               />
@@ -117,7 +117,7 @@ function SKECT() {
           >
             <Box>
               <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703584293/KPGU/Images/Dhruvkumar-J-Patel.webp"
+                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Dhruvkumar_J_Patel.webp"
                 alt="photo"
                 className="img-fluid"
               />
@@ -145,7 +145,7 @@ function SKECT() {
           >
             <Box>
               <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703653957/KPGU/Images/Krishna-J-Patel.webp"
+                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Krishna_J_Patel.webp"
                 alt="photo"
                 className="img-fluid"
               />

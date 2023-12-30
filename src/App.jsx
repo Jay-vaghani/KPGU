@@ -21,6 +21,11 @@ import KpguVadodara from "./components/Pages/About/pages/KpguVadodara";
 import VisionMission from "./components/Pages/About/pages/VisionMission";
 import DrKiranCPatelMessage from "./components/Pages/About/pages/DrKiranCPatelMessage";
 import MessageFromThePresidentsDesk from "./components/Pages/About/pages/MessageFromThePresidentsDesk";
+import MessageFromTheProvost from "./components/Pages/About/pages/MessageFromTheProvost";
+import AcademicCouncil from "./components/Pages/About/pages/Governance/AcademicCouncil";
+import BoardOfManagement from "./components/Pages/About/pages/Governance/BoardOfManagement";
+import BoardOfStudies from "./components/Pages/About/pages/Governance/BoardOfStudies";
+import FinanceCommittee from "./components/Pages/About/pages/Governance/FinanceCommittee";
 
 function App() {
   const theme = createTheme({
@@ -57,6 +62,9 @@ function App() {
               <Route path="vision-mission" element={<VisionMission />} />
               <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
               <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk/>} />
+              <Route path="message-from-the-provost" element={<MessageFromTheProvost/>} />
+              <Route path="governance/academic-council" element={<AcademicCouncil />} />
+              <Route path="governance/finance-committee" element={<FinanceCommittee />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
             <Route

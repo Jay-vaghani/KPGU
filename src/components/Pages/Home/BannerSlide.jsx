@@ -18,10 +18,10 @@ function BannerSlide() {
   ];
 
   return (
-    <Stack minHeight={"100vh"}>
+    <Stack minHeight={"80vh"}>
       <Carousel
         indicators={false}
-        height={"100vh"}
+        height={"80vh"}
         navButtonsAlwaysInvisible={true}
         sx={{ zIndex: "-99" }}
       >

@@ -47,7 +47,7 @@ const DesktopNav = () => {
     },
     {
       title: "MESSAGE FROM THE PROVOST",
-      link: "/",
+      link: "about/message-from-the-provost",
     },
     {
       title: "Governance",

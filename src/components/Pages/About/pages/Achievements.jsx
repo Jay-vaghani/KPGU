@@ -3,9 +3,45 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../../contexts/AppContext";
 import Paragraph from "../../../Common/Paragraph";
 import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
+import EduCard from "../../../Common/EduCard";
 
 function Achievements() {
   const { maxWidth, innerWidth } = useContext(AppContext);
+
+  const Institutions = [
+    {
+      title: "Babaria Institute of Technology",
+      des: "BITS Edu Campus established in the year 2004 with only one institute i.e. Babaria Institute of Technology with a mission to impart world class professional education in the field of Engineering and Technology.",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+    },
+    {
+      title: "BITS Institute of Physiotherapy",
+      des: "BITS Institute of Physiotherapy is currently offering Bachelor of Physiotherapy (B.P.T) course since Academic Year 2014-15. Course duration Bachelor of Physiotherapy (B.P.T) course is full time 4 1/2 years (4years+6months compulsory rotatory Internship). Granted intake capacity is 75 seats.",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+    },
+    {
+      title: "Babaria Institute of Pharmacy",
+      des: "Babaria Institute of Pharmacy since its inception in 2005 has always nurtured an ambition of shaping the globally competent pharmacy professional of future. It offers GTU affiliated UG and PG courses in Pharmacy.",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+    },
+    {
+      title:
+        "Krishna Ayurved Medical College with attached Matrushri Davalba Ayurved Hospital",
+      des: "Krishna Ayurved Medical College, Vadodara (Krishna Ayurved Medical School) is currently offering Bachelor of Ayurvedic Medicine and Surgery (B.A.M.S) course since Academic Year 2019-20.",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+    },
+    {
+      title: "Krishna Nursing College",
+      des: "No content",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+    },
+    {
+      title: "Krishna Science College",
+      des: "No content",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+    },
+  ];
+
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
       <h4 className=" fw-semibold color-secondary">KPGU'S SPONSORING</h4>
@@ -31,47 +67,10 @@ function Achievements() {
         <li className="fs-5 mb-3 text-capital fw-semibold ">
           Established following Six Professional Institutions.
         </li>
-        <Grid container my={5}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Box
-              className="smooth-shadow-card"
-              borderRadius={4}
-              overflow={"clip"}
-              bgcolor={"#fff"}
-            >
-              <Box>
-                <img
-                  src="https://images.unsplash.com/photo-1543505298-b8be9b52a21a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Babaria Institute of Technology"
-                  className="img-fluid"
-                />
-              </Box>
-              <Box p={2}>
-                <Typography variant="h6" fontWeight={600} mb={1}>
-                  Babaria Institute of Technology
-                </Typography>
-                <Typography
-                  variant="body1"
-                  fontWeight={600}
-                  color={"#535353"}
-                  mb={3}
-                >
-                  BITS Edu Campus established in the year 2004 with only one
-                  institute i.e. Babaria Institute of Technology with a mission
-                  to impart world class professional education in the field of
-                  Engineering and Technology.
-                </Typography>
-                <Button
-                  target="_blank"
-                  variant="contained"
-                  href="https://bitstechnology.org/"
-                  endIcon={<KeyboardDoubleArrowRightRounded />}
-                >
-                  View
-                </Button>
-              </Box>
-            </Box>
-          </Grid>
+        <Grid container my={5} spacing={3}>
+          {Institutions.map(({ des, img, title }, index) => (
+            <EduCard name={title} des={des} img={img} key={index} />
+          ))}
         </Grid>
         <li className="fs-5 mb-3 text-capital fw-semibold ">
           These six institutions have been offering 6 UG programs that include

@@ -75,7 +75,7 @@ function OurLeadership() {
         borderRadius={3}
         overflow={"clip"}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item bgcolor={"#fff"} xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
               src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703584293/KPGU/Images/Jagdishbhai-D-Patel.webp"
@@ -84,7 +84,7 @@ function OurLeadership() {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={8} p={2}>
+        <Grid item bgcolor={"#fff"} xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shree Jagdish Bhai D Patel</h3>
           <p className={`fs-4 mb-2`}>
             <b> Hon’ble President</b>,<br />
@@ -114,16 +114,16 @@ function OurLeadership() {
         overflow={"clip"}
         mt={8}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item bgcolor={"#fff"} xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703666253/KPGU/Images/Dr-Kiran-C-Patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Dr_Kiran_C_Patel.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={8} p={2}>
+        <Grid item bgcolor={"#fff"} xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Dr. Kiran C. Patel</h3>
           <p className={`fs-4 mb-2`}>
             <b>Patron</b>,<br />
@@ -152,16 +152,16 @@ function OurLeadership() {
         overflow={"clip"}
         mt={8}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item bgcolor={"#fff"} xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703584293/KPGU/Images/kamal-j-patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Kamal_J_Patel.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={8} p={2}>
+        <Grid item bgcolor={"#fff"} xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shrimati Kamalben J Patel</h3>
           <p className={`fs-4 mb-2`}>
             <b>Chairman & Vice Managing Trustee</b>,<br />
@@ -191,16 +191,16 @@ function OurLeadership() {
         overflow={"clip"}
         mt={8}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item bgcolor={"#fff"} xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703584293/KPGU/Images/Dhruvkumar-J-Patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Dhruvkumar_J_Patel.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={8} p={2}>
+        <Grid item bgcolor={"#fff"} xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shree Dhruvkumar J Patel</h3>
           <p className={`fs-4 mb-2`}>
             <b>Member of the Board of Management</b>,<br />
@@ -230,16 +230,16 @@ function OurLeadership() {
         overflow={"clip"}
         mt={8}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item bgcolor={"#fff"} xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703653957/KPGU/Images/Krishna-J-Patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Krishna_J_Patel.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={8} p={2}>
+        <Grid item bgcolor={"#fff"} xs={12} md={8} p={2}>
           <h3 className="display-5 fw-semibold">Shree Krishna J Patel</h3>
           <p className={`fs-4 mb-2`}>
             <b>The Secretary</b>,<br />

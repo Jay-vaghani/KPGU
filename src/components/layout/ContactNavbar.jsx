@@ -88,7 +88,7 @@ function ContactNavbar() {
             >
               Follow Us on
             </Typography>
-            <Stack direction={"row"} spacing={0} justifyContent={"start"}>
+            <Stack direction={"row"} spacing={0} justifyContent={"start"} sx={{ml: "10px !important"}}>
               <IconButton
                 sx={{ pl: 0, p: "5%" }}
                 color="inherit"
