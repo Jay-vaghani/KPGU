@@ -61,8 +61,8 @@ function MobileNavBar() {
               <NavDropdown.Item onClick={() => navigate("/about/message-from-the-presidents-desk")}>
                 MESSAGE FROM THE PRESIDENT'S DESK
               </NavDropdown.Item>
-              <NavDropdown.Item>MESSAGE FROM THE PROVOST</NavDropdown.Item>
-              <NavDropdown.Item>GOVERNANCE</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/message-from-the-provost")}>MESSAGE FROM THE PROVOST</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/governance/governing-body")}>GOVERNANCE</NavDropdown.Item>
               <NavDropdown.Item>UNIVERSITY OFFICERS</NavDropdown.Item>
               <NavDropdown.Item>STATUTORY RECOGNITION</NavDropdown.Item>
               <NavDropdown.Item>ACCREDITATIONS & RECOGNITION</NavDropdown.Item>

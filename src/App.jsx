@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Box, createTheme } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import { About, Contact, Home } from "./components/Pages/index";
+import { About, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { AppProvider } from "./contexts/AppContext";
 import ContactNavbar from "./components/layout/ContactNavbar";
@@ -26,6 +26,8 @@ import AcademicCouncil from "./components/Pages/About/pages/Governance/AcademicC
 import BoardOfManagement from "./components/Pages/About/pages/Governance/BoardOfManagement";
 import BoardOfStudies from "./components/Pages/About/pages/Governance/BoardOfStudies";
 import FinanceCommittee from "./components/Pages/About/pages/Governance/FinanceCommittee";
+import GoverningBody from "./components/Pages/About/pages/Governance/GoverningBody";
+import Governance from "./components/Pages/About/pages/Governance/Governance";
 
 function App() {
   const theme = createTheme({
@@ -63,10 +65,14 @@ function App() {
               <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
               <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk/>} />
               <Route path="message-from-the-provost" element={<MessageFromTheProvost/>} />
-              <Route path="governance/academic-council" element={<AcademicCouncil />} />
-              <Route path="governance/finance-committee" element={<FinanceCommittee />} />
-            </Route>
-            <Route path="/contact" element={<Contact />} />
+              <Route path="governance" element={<Governance />}>
+                <Route path="governing-body" element={<GoverningBody />} />
+                <Route path="board-of-management" element={<BoardOfManagement />} />
+                <Route path="academic-council" element={<AcademicCouncil />} />
+                <Route path="board-of-studies" element={<BoardOfStudies />} />
+                <Route path="finance-committee" element={<FinanceCommittee />} />
+              </Route>
+            </Route>  
             <Route
               path="/gallery"
               element={

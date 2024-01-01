@@ -51,7 +51,7 @@ const DesktopNav = () => {
     },
     {
       title: "Governance",
-      link: "/",
+      link: "about/governance/governing-body",
     },
     {
       title: "UNIVERSITY OFFICERS",
