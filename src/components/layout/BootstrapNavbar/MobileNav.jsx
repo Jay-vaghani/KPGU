@@ -64,10 +64,10 @@ function MobileNavBar() {
               <NavDropdown.Item onClick={() => navigate("/about/message-from-the-provost")}>MESSAGE FROM THE PROVOST</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/about/governance/governing-body")}>GOVERNANCE</NavDropdown.Item>
               <NavDropdown.Item>UNIVERSITY OFFICERS</NavDropdown.Item>
-              <NavDropdown.Item>STATUTORY RECOGNITION</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/statutory-recognition")}>STATUTORY RECOGNITION</NavDropdown.Item>
               <NavDropdown.Item>ACCREDITATIONS & RECOGNITION</NavDropdown.Item>
-              <NavDropdown.Item>APPROVALS</NavDropdown.Item>
-              <NavDropdown.Item>AWARDS & ACCOLADES</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/approvals/institute-of-technology")}>APPROVALS</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/awards-accolades")}>AWARDS & ACCOLADES</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="ACADEMIC" id="basic-nav-dropdown">
               <NavDropdown.Item>

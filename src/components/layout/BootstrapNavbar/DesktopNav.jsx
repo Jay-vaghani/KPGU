@@ -21,57 +21,52 @@ const DesktopNav = () => {
       link: "about/skect",
     },
     {
-      title: "OUR LEADERSHIP",
-      link: "about/our-leadership",
+      title: "MESSAGE FROM THE PRESIDENT'S DESK",
+      link: "about/message-from-the-presidents-desk",
     },
-    {
-      title: "SIGNIFICANT ACHIEVEMENTS",
-      link: "about/achievements",
-    },
-
     {
       title: "KPGU Vadodara",
       link: "about/kpgu-vadodara",
-    },
-    {
-      title: "Vision & Mission",
-      link: "about/vision-mission",
     },
     {
       title: "MESSAGE FROM DR. KIRAN C. PATEL",
       link: "about/dr-kiran-c-patel-message",
     },
     {
-      title: "MESSAGE FROM THE PRESIDENT'S DESK",
-      link: "about/message-from-the-presidents-desk",
+      title: "Vision & Mission",
+      link: "about/vision-mission",
     },
     {
       title: "MESSAGE FROM THE PROVOST",
       link: "about/message-from-the-provost",
     },
     {
-      title: "Governance",
-      link: "about/governance/governing-body",
+      title: "OUR LEADERSHIP",
+      link: "about/our-leadership",
     },
     {
       title: "UNIVERSITY OFFICERS",
       link: "/",
     },
     {
+      title: "Governance",
+      link: "about/governance/governing-body",
+    },
+    {
+      title: "SIGNIFICANT ACHIEVEMENTS",
+      link: "about/achievements",
+    },
+    {
       title: "STATUTORY RECOGNITION",
-      link: "/",
-    },
-    {
-      title: "ACCREDITATIONS & RECOGNITION",
-      link: "/",
-    },
-    {
-      title: "Approvals",
-      link: "/",
+      link: "about/statutory-recognition",
     },
     {
       title: "AWARDS & ACCOLADES",
-      link: "/",
+      link: "about/awards-accolades",
+    },
+    {
+      title: "Approvals",
+      link: "about/approvals/institute-of-technology",
     },
   ];
 
@@ -220,7 +215,6 @@ const DesktopNav = () => {
           onClick={() => navigate(link)}
           color="secondary"
           variant="text"
-          
           disableElevation
           sx={{ fontWeight: 600, fontSize: "0.9", justifyContent: "start" }}
         >
@@ -231,131 +225,131 @@ const DesktopNav = () => {
   );
 
   return (
-      <NavigationMenu.Root className="NavigationMenuRoot my-2">
-        <Box width={width}>
-          <img
-            src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"
-            alt="logo"
-          />
-        </Box>
-        <NavigationMenu.List className="NavigationMenuList">
-          {/* ======================================== HOME ======================================== */}
-          <NavigationMenu.Item onClick={() => navigate("/")}>
-            <NavigationMenu.Link className="NavigationMenuLink">
-              HOME
-            </NavigationMenu.Link>
-          </NavigationMenu.Item>
-          {/* ======================================== ABOUT US ======================================== */}
-          <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="NavigationMenuTrigger">
-              ABOUT US
-              <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
-            </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="NavigationMenuContent">
-              <Grid
-                container
-                justifyContent={"space-between"}
-                spacing={2}
-                className="List one"
-              >
-                {AboutMenuList.map(({ link, title }, index) => (
-                  <MenuItem title={title} link={link} key={index} />
-                ))}
-              </Grid>
-            </NavigationMenu.Content>
-          </NavigationMenu.Item>
-          {/* ======================================== ACADEMIC ======================================== */}
-          <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="NavigationMenuTrigger">
-              ACADEMIC
-              <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
-            </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="NavigationMenuContent">
-              <Grid
-                container
-                justifyContent={"space-between"}
-                spacing={2}
-                className="List one"
-              >
-                {AcademicMenuList.map(({ link, title }, index) => (
-                  <MenuItem title={title} link={link} key={index} />
-                ))}
-              </Grid>
-            </NavigationMenu.Content>
-          </NavigationMenu.Item>
-          {/* ======================================== CAMPUS ======================================== */}
-          <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="NavigationMenuTrigger">
-              CAMPUS
-              <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
-            </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="NavigationMenuContent">
-              <Grid
-                container
-                justifyContent={"space-between"}
-                spacing={2}
-                className="List one"
-              >
-                {CampusMenuList.map(({ link, title }, index) => (
-                  <MenuItem title={title} link={link} key={index} />
-                ))}
-              </Grid>
-            </NavigationMenu.Content>
-          </NavigationMenu.Item>
-          {/* ======================================== ADMISSIONS ======================================== */}
-          <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="NavigationMenuTrigger">
-              ADMISSIONS
-              <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
-            </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="NavigationMenuContent">
-              <Grid
-                container
-                justifyContent={"space-between"}
-                spacing={2}
-                className="List one"
-              >
-                {AdmissionMenuList.map(({ link, title }, index) => (
-                  <MenuItem title={title} link={link} key={index} />
-                ))}
-              </Grid>
-            </NavigationMenu.Content>
-          </NavigationMenu.Item>
-          {/* ======================================== RESEARCH & PUBLICATIONSv ======================================== */}
-          <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="NavigationMenuTrigger">
-              RESEARCH & PUBLICATIONS
-              <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
-            </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="NavigationMenuContent">
-              <Grid
-                container
-                justifyContent={"space-between"}
-                spacing={2}
-                className="List one"
-              >
-                {ResearchAndPublicationList.map(({ link, title }, index) => (
-                  <MenuItem title={title} link={link} key={index} />
-                ))}
-              </Grid>
-            </NavigationMenu.Content>
-          </NavigationMenu.Item>
-          {/* ======================================== PLACEMENTS ======================================== */}
-          <NavigationMenu.Item onClick={() => navigate("/")}>
-            <NavigationMenu.Link className="NavigationMenuLink">
-              PLACEMENTS
-            </NavigationMenu.Link>
-          </NavigationMenu.Item>
-          {/* ======================================== Navigation Indicator ======================================== */}
-          <NavigationMenu.Indicator className="NavigationMenuIndicator">
-            <div className="Arrow" />
-          </NavigationMenu.Indicator>
-        </NavigationMenu.List>
-        {/* ======================================== Navigation Box Position======================================== */}
-        <div className="ViewportPosition">
-          <NavigationMenu.Viewport className="NavigationMenuViewport" />
-        </div>
-      </NavigationMenu.Root>
+    <NavigationMenu.Root className="NavigationMenuRoot my-2">
+      <Box width={width}>
+        <img
+          src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"
+          alt="logo"
+        />
+      </Box>
+      <NavigationMenu.List className="NavigationMenuList">
+        {/* ======================================== HOME ======================================== */}
+        <NavigationMenu.Item onClick={() => navigate("/")}>
+          <NavigationMenu.Link className="NavigationMenuLink">
+            HOME
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+        {/* ======================================== ABOUT US ======================================== */}
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            ABOUT US
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {AboutMenuList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
+        {/* ======================================== ACADEMIC ======================================== */}
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            ACADEMIC
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {AcademicMenuList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
+        {/* ======================================== CAMPUS ======================================== */}
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            CAMPUS
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {CampusMenuList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
+        {/* ======================================== ADMISSIONS ======================================== */}
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            ADMISSIONS
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {AdmissionMenuList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
+        {/* ======================================== RESEARCH & PUBLICATIONSv ======================================== */}
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            RESEARCH & PUBLICATIONS
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {ResearchAndPublicationList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
+        {/* ======================================== PLACEMENTS ======================================== */}
+        <NavigationMenu.Item onClick={() => navigate("/")}>
+          <NavigationMenu.Link className="NavigationMenuLink">
+            PLACEMENTS
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+        {/* ======================================== Navigation Indicator ======================================== */}
+        <NavigationMenu.Indicator className="NavigationMenuIndicator">
+          <div className="Arrow" />
+        </NavigationMenu.Indicator>
+      </NavigationMenu.List>
+      {/* ======================================== Navigation Box Position======================================== */}
+      <div className="ViewportPosition">
+        <NavigationMenu.Viewport className="NavigationMenuViewport" />
+      </div>
+    </NavigationMenu.Root>
   );
 };
 

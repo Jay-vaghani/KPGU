@@ -7,7 +7,7 @@ function About() {
 
   let location =
     useLocation().pathname.split("/")[
-      useLocation().pathname.split("/").length - 1
+    useLocation().pathname.split("/").length - 1
     ];
 
   useEffect(() => {
@@ -54,9 +54,45 @@ function About() {
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }
+    if (location === "message-from-the-provost") {
+      setBanner({
+        title: "MESSAGE FROM THE PROVOST",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
     if (location === "governing-body") {
       setBanner({
         title: "GOVERNING BODY-SKECT",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "statutory-recognition") {
+      setBanner({
+        title: "STATUTORY RECOGNITION",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "institute-of-technology") {
+      setBanner({
+        title: "INSTITUTE OF TECHNOLOGY",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "institute-of-pharmacy") {
+      setBanner({
+        title: "INSTITUTE OF PHARMACY",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "ugc-approval") {
+      setBanner({
+        title: "UGC APPROVAL",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "awards-accolades") {
+      setBanner({
+        title: "AWARDS & ACCOLADES",
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }

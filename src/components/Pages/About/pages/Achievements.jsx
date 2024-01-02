@@ -6,7 +6,7 @@ import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
 import EduCard from "../../../Common/EduCard";
 
 function Achievements() {
-  const { maxWidth, innerWidth } = useContext(AppContext);
+  const { maxWidth } = useContext(AppContext);
 
   const Institutions = [
     {

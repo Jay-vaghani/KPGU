@@ -28,6 +28,12 @@ import BoardOfStudies from "./components/Pages/About/pages/Governance/BoardOfStu
 import FinanceCommittee from "./components/Pages/About/pages/Governance/FinanceCommittee";
 import GoverningBody from "./components/Pages/About/pages/Governance/GoverningBody";
 import Governance from "./components/Pages/About/pages/Governance/Governance";
+import StatutoryRecognition from "./components/Pages/About/pages/StatutoryRecognition";
+import Approvals from "./components/Pages/About/pages/Approvals/Approvals";
+import UgcApproval from "./components/Pages/About/pages/Approvals/UgcApproval";
+import InstituteOfTechnology from "./components/Pages/About/pages/Approvals/InstituteOfPharmacy";
+import InstituteOfPharmacy from "./components/Pages/About/pages/Approvals/InstituteOfTechnology";
+import AwardsAccolades from "./components/Pages/About/pages/AwardsAccolades";
 
 function App() {
   const theme = createTheme({
@@ -63,8 +69,10 @@ function App() {
               <Route path="kpgu-vadodara" element={<KpguVadodara />} />
               <Route path="vision-mission" element={<VisionMission />} />
               <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
-              <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk/>} />
-              <Route path="message-from-the-provost" element={<MessageFromTheProvost/>} />
+              <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk />} />
+              <Route path="message-from-the-provost" element={<MessageFromTheProvost />} />
+              <Route path="statutory-recognition" element={<StatutoryRecognition />} />
+              <Route path="awards-accolades" element={<AwardsAccolades />} />
               <Route path="governance" element={<Governance />}>
                 <Route path="governing-body" element={<GoverningBody />} />
                 <Route path="board-of-management" element={<BoardOfManagement />} />
@@ -72,7 +80,13 @@ function App() {
                 <Route path="board-of-studies" element={<BoardOfStudies />} />
                 <Route path="finance-committee" element={<FinanceCommittee />} />
               </Route>
-            </Route>  
+              <Route path="approvals" element={<Approvals />}>
+                <Route path="institute-of-technology" element={<InstituteOfTechnology />} />
+                <Route path="institute-of-pharmacy" element={<InstituteOfPharmacy />} />
+                <Route path="ugc-approval" element={<UgcApproval />} />
+              </Route>
+
+            </Route>
             <Route
               path="/gallery"
               element={

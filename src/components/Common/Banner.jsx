@@ -10,7 +10,7 @@ function Banner({ banner }) {
     <Stack
       direction={"row"}
       minHeight={"50vh"}
-      alignItems={"center"}
+      alignItems={"end"}
       sx={{
         background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%), url(${banner.img}) bottom / cover`,
       }}

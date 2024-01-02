@@ -120,7 +120,7 @@ p {
   animation: scaleIn 200ms ease;
 }
 .NavigationMenuViewport[data-state="closed"] {
-  animation: scaleOut 200ms ease;
+  animation: scaleOut 500ms ease;
 }
 @media only screen and (min-width: 600px) {
   .NavigationMenuViewport {

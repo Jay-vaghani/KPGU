@@ -5,7 +5,7 @@ import React from "react";
 function GoverningBody() {
   return (
     <Grid container spacing={2}>
-      {/* ======================================================== Shree Jagdish Bhai D. Patel ======================================================== */}
+      {/* ======================================================== Shree Jagdishbhai D. Patel ======================================================== */}
       <Grid item xs={12} md={6}>
         <Box
           className="smooth-shadow-card rounded-2 h-100"
@@ -20,7 +20,7 @@ function GoverningBody() {
             />
           </Box>
           <Box p={2}>
-            <h4 className="fw-semibold">Shree Jagdish Bhai D. Patel</h4>
+            <h4 className="fw-semibold">Shree Jagdishbhai D. Patel</h4>
             <h5 className="fw-semibold mb-0 mt-3">Designation</h5>
             <h6>President</h6>
             <h5 className="fw-semibold mb-0 mt-3">

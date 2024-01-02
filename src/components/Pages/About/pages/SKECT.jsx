@@ -69,7 +69,7 @@ function SKECT() {
             <Box p={2}>
               <Box>
                 <Typography variant="h5" fontWeight={600}>
-                  Shree Jagdish Bhai D. Patel
+                  Shree Jagdishbhai D. Patel
                 </Typography>
               </Box>
               <Box>
