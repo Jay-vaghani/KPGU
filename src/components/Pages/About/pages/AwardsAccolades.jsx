@@ -124,7 +124,7 @@ function AwardsAccolades() {
       {
         title: "Computer Society of India",
         des: "” Distinguished Institution ” Awarded to Babaria Institute of Technology",
-        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1704263239/KPGU/Awards/gcrrh0zpvvjogktvhnfl.webp",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1704354643/KPGU/Awards/2017/ComputerSocietyOfIndia-2017.webp",
         time: "2016-2017",
       },
       {
@@ -443,7 +443,7 @@ function AwardsAccolades() {
     </Stack>
   );
 
-  const AwardsComponentCard = ({ title, time, img, des }) => (
+  const AwardsComponentCard = ({ title, time, img, des, index }) => (
     <Grid item xs={12} sm={6} md={4}>
       <Box
         className="smooth-shadow-card h-100"
@@ -456,6 +456,7 @@ function AwardsAccolades() {
         </Box>
         <Box p={2}>
           <Box>
+            {/* <h1>{index}</h1> */}
             <h4 className="color-secondary fw-semibold mb-3">{title}</h4>
             <h6 className="fw-bold" style={{ color: "#474747f4" }}>
               {des}
@@ -477,7 +478,7 @@ function AwardsAccolades() {
     </Grid>
   );
 
-  const StudentAwardsComponentCard = ({ name, time, img, des, medal }) => (
+  const StudentAwardsComponentCard = ({ name, time, img, des, medal, index }) => (
     <Grid item xs={12} sm={6} md={4}>
       <Box
         className="smooth-shadow-card h-100"
@@ -490,6 +491,7 @@ function AwardsAccolades() {
         </Box>
         <Box p={2}>
           <Box>
+            {/* <h1>{index}</h1> */}
             <h4 className="color-secondary fw-semibold mb-3">{name}</h4>
             <h6 className="fw-bold" style={{ color: "#474747f4" }}>
               {des}
@@ -549,9 +551,8 @@ function AwardsAccolades() {
           <img
             src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Jagdishbhai_D_Patel_2.webp"
             alt="Jagdishbhai D Patel"
-            className={`w-100 ${
-              innerWidth < 900 ? "" : "h-75"
-            } object-fit-cover`}
+            className={`w-100 ${innerWidth < 900 ? "" : "h-75"
+              } object-fit-cover`}
           />
           <Box p={2} textAlign={"start"}>
             <h4 className="fw-semibold color-secondary">
@@ -565,7 +566,7 @@ function AwardsAccolades() {
         <Grid item xs={12} md={8} pr={1} pt={1} pb={1.5}>
           <Box pl={1}>
             {PresidentAwards.map(({ des }, index) => (
-              <AwardsComponentList des={des} key={index} />
+              <AwardsComponentList des={des} key={index} index={index} />
             ))}
           </Box>
         </Grid>
@@ -585,6 +586,8 @@ function AwardsAccolades() {
           <AwardsComponentList des={des} key={index} />
         ))}
       </Box>
+
+      {/*  Awards received by Krishna School for Emerging Technologies & Applied Research From Gujarat Technological University  */}
 
       <Box
         bgcolor={"#fff"}
@@ -607,11 +610,14 @@ function AwardsAccolades() {
                 time={time}
                 title={title}
                 key={index}
+                index={index}
               />
             )
           )}
         </Grid>
       </Box>
+
+      {/* Awards received by Krishna School for Emerging Technologies & Applied Research */}
 
       <Box
         bgcolor={"#fff"}
@@ -633,11 +639,14 @@ function AwardsAccolades() {
                 time={time}
                 title={title}
                 key={index}
+                index={index}
               />
             )
           )}
         </Grid>
       </Box>
+
+      {/* Awards Given by Krishna School for Emerging Technologies & Applied Research To Students */}
 
       <Box
         bgcolor={"#fff"}
@@ -661,11 +670,14 @@ function AwardsAccolades() {
                 medal={medal}
                 name={name}
                 key={index}
+                index={index}
               />
             )
           )}
         </Grid>
       </Box>
+
+      {/* Awards received by Krishna School for Pharmaceutical Sciences & Research Research From Gujarat Technological University, Ahmadabad */}
 
       <Box
         bgcolor={"#fff"}
@@ -676,7 +688,7 @@ function AwardsAccolades() {
       >
         <h4 className=" fw-semibold color-secondary mb-4">
           Awards received by Krishna School for Pharmaceutical Sciences &
-          Research Research From <br />
+          Research From <br />
           Gujarat Technological University, Ahmadabad <br /> [Earlier Known As
           Babaria Institute of Pharmacy]
         </h4>
@@ -689,11 +701,14 @@ function AwardsAccolades() {
                 time={time}
                 title={title}
                 key={index}
+                index={index}
               />
             )
           )}
         </Grid>
       </Box>
+
+      {/* Awards received by Krishna School for Pharmaceutical Sciences & Research Research */}
 
       <Box
         bgcolor={"#fff"}
@@ -716,11 +731,14 @@ function AwardsAccolades() {
                 time={time}
                 title={title}
                 key={index}
+                index={index}
               />
             )
           )}
         </Grid>
       </Box>
+
+      {/* Awards received by Krishna School for Physiotherapy & Rehabilitation */}
 
       <Box
         bgcolor={"#fff"}
@@ -742,11 +760,14 @@ function AwardsAccolades() {
                 time={time}
                 title={title}
                 key={index}
+                index={index}
               />
             )
           )}
         </Grid>
       </Box>
+
+      {/* Awards received by Krishna School for Physiotherapy & Rehabilitation From Gujarat University */}
 
       <Box
         bgcolor={"#fff"}
@@ -772,6 +793,7 @@ function AwardsAccolades() {
                 medal={medal}
                 name={name}
                 key={index}
+                index={index}
               />
             )
           )}

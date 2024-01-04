@@ -61,7 +61,7 @@ function JourneyAhead() {
           </Typography>
           <Button
             variant="contained"
-            onClick={() => navigate("/gallery")}
+            onClick={() => navigate("/campus/gallery")}
             startIcon={<PhotoLibraryRounded />}
             disableElevation
             size="large"

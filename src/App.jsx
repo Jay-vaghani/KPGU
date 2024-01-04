@@ -11,8 +11,6 @@ import "./App.css";
 // import NavBar from "./components/layout/MuiNavBar/NavBar/NavBar";
 // ========================Bootstrap Navbar========================
 import MainNavbar from "./components/layout/BootstrapNavbar/MainNavbar";
-import Gallery from "./components/Pages/Gallery/Gallery";
-import Loading from "./Utils/Loading";
 import Footer from "./components/Common/Footer";
 import SKECT from "./components/Pages/About/pages/SKECT";
 import OurLeadership from "./components/Pages/About/pages/OurLeadership";
@@ -94,14 +92,6 @@ function App() {
             <Route path="/campus" element={<Campus />}>
               <Route path="gallery" element={<CampusGallery />} />
             </Route>
-            <Route
-              path="/gallery"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <Gallery />
-                </Suspense>
-              }
-            />
           </Routes>
           {/* <Footer /> */}
         </Box>
