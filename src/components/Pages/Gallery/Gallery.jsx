@@ -130,7 +130,7 @@ function Gallery() {
             setCols(3);
         }
         if (innerWidth >= 1200) {
-            setCols(4);
+            setCols(3);
         }
     }, [cols]);
 

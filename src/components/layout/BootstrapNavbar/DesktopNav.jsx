@@ -46,7 +46,7 @@ const DesktopNav = () => {
     },
     {
       title: "UNIVERSITY OFFICERS",
-      link: "/",
+      link: "about/university-officers",
     },
     {
       title: "Governance",
@@ -96,11 +96,11 @@ const DesktopNav = () => {
   const CampusMenuList = [
     {
       title: "Infrastructure",
-      link: "/",
+      link: "",
     },
     {
       title: "Gallery",
-      link: "/",
+      link: "campus/gallery",
     },
     {
       title: "ATM & Bank Facilities",

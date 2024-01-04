@@ -34,6 +34,9 @@ import UgcApproval from "./components/Pages/About/pages/Approvals/UgcApproval";
 import InstituteOfTechnology from "./components/Pages/About/pages/Approvals/InstituteOfPharmacy";
 import InstituteOfPharmacy from "./components/Pages/About/pages/Approvals/InstituteOfTechnology";
 import AwardsAccolades from "./components/Pages/About/pages/AwardsAccolades";
+import UniversityOfficers from "./components/Pages/About/pages/UniversityOfficers";
+import Campus from "./components/Pages/Campus/Campus";
+import CampusGallery from "./components/Pages/Campus/pages/CampusGallery";
 
 function App() {
   const theme = createTheme({
@@ -73,6 +76,7 @@ function App() {
               <Route path="message-from-the-provost" element={<MessageFromTheProvost />} />
               <Route path="statutory-recognition" element={<StatutoryRecognition />} />
               <Route path="awards-accolades" element={<AwardsAccolades />} />
+              <Route path="university-officers" element={<UniversityOfficers />} />
               <Route path="governance" element={<Governance />}>
                 <Route path="governing-body" element={<GoverningBody />} />
                 <Route path="board-of-management" element={<BoardOfManagement />} />
@@ -86,6 +90,9 @@ function App() {
                 <Route path="ugc-approval" element={<UgcApproval />} />
               </Route>
 
+            </Route>
+            <Route path="/campus" element={<Campus />}>
+              <Route path="gallery" element={<CampusGallery />} />
             </Route>
             <Route
               path="/gallery"
