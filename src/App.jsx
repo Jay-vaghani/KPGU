@@ -52,6 +52,8 @@ import MultimediaClassrooms from "./components/Pages/Campus/pages/Infrastructure
 import SmartClassrooms from "./components/Pages/Campus/pages/Infrastructure/SmartClassrooms";
 import Laboratories from "./components/Pages/Campus/pages/Infrastructure/Laboratories";
 
+
+
 function App() {
   const theme = createTheme({
     palette: {
