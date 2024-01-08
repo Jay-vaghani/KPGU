@@ -56,8 +56,8 @@ function MobileNavBar() {
               <NavDropdown.Item>Studies Policy & Humanities OfFaculty</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="CAMPUS" id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={() => navigate("/campus/")}>Infrastructure</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => navigate("/campus/")}>Gallery</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/campus/infrastructure")}>Infrastructure</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/campus/gallery")}>Gallery</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/campus/")}>ATM & Bank Facilities</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/campus/")}>Dining & Cafeteria</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/campus/")}>Health Facilities</NavDropdown.Item>

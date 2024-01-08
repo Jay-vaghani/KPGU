@@ -35,6 +35,22 @@ import AwardsAccolades from "./components/Pages/About/pages/AwardsAccolades";
 import UniversityOfficers from "./components/Pages/About/pages/UniversityOfficers";
 import Campus from "./components/Pages/Campus/Campus";
 import CampusGallery from "./components/Pages/Campus/pages/CampusGallery";
+import Infrastructure from "./components/Pages/Campus/pages/Infrastructure/Infrastructure";
+import Parking from "./components/Pages/Campus/pages/Infrastructure/Parking";
+import BankAndAtm from "./components/Pages/Campus/pages/Infrastructure/BankAndAtm";
+import Playground from "./components/Pages/Campus/pages/Infrastructure/Playground";
+import RoPlant from "./components/Pages/Campus/pages/Infrastructure/RoPlant";
+import StationaryStall from "./components/Pages/Campus/pages/Infrastructure/StationaryStall";
+import HostelMess from "./components/Pages/Campus/pages/Infrastructure/HostelMess";
+import HostelRoom from "./components/Pages/Campus/pages/Infrastructure/HostelRoom";
+import Hostels from "./components/Pages/Campus/pages/Infrastructure/hostels";
+import Workshop from "./components/Pages/Campus/pages/Infrastructure/Workshop";
+import Auditorium from "./components/Pages/Campus/pages/Infrastructure/Auditorium";
+import Library from "./components/Pages/Campus/pages/Infrastructure/Library";
+import Cafeteria from "./components/Pages/Campus/pages/Infrastructure/Cafeteria";
+import MultimediaClassrooms from "./components/Pages/Campus/pages/Infrastructure/MultimediaClassrooms";
+import SmartClassrooms from "./components/Pages/Campus/pages/Infrastructure/SmartClassrooms";
+import Laboratories from "./components/Pages/Campus/pages/Infrastructure/Laboratories";
 
 function App() {
   const theme = createTheme({
@@ -91,6 +107,23 @@ function App() {
             </Route>
             <Route path="/campus" element={<Campus />}>
               <Route path="gallery" element={<CampusGallery />} />
+              <Route path="infrastructure" element={<Infrastructure />}>
+                <Route path="smart-classrooms" element={<SmartClassrooms />} />
+                <Route path="multimedia-classrooms" element={<MultimediaClassrooms />} />
+                <Route path="laboratories" element={<Laboratories />} />
+                <Route path="cafeteria" element={<Cafeteria />} />
+                <Route path="library" element={<Library />} />
+                <Route path="auditorium" element={<Auditorium />} />
+                <Route path="workshop" element={<Workshop />} />
+                <Route path="hostels" element={<Hostels />} />
+                <Route path="hostel-room" element={<HostelRoom />} />
+                <Route path="hostel-mess" element={<HostelMess />} />
+                <Route path="stationary-stall" element={<StationaryStall />} />
+                <Route path="ro-plant" element={<RoPlant />} />
+                <Route path="playground" element={<Playground />} />
+                <Route path="bank-atm" element={<BankAndAtm />} />
+                <Route path="parking" element={<Parking />} />
+              </Route>
             </Route>
           </Routes>
           {/* <Footer /> */}
