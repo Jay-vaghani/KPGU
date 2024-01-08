@@ -18,10 +18,10 @@ function Campus() {
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }
-    if (location === "infrastructure") {
+    if (location === "smart-classrooms") {
 
       setBanner({
-        title: "Infrastructure",
+        title: "Smart Classrooms",
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }

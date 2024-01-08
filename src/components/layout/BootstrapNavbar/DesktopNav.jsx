@@ -96,7 +96,7 @@ const DesktopNav = () => {
   const CampusMenuList = [
     {
       title: "Infrastructure",
-      link: "campus/infrastructure",
+      link: "campus/infrastructure/smart-classrooms",
     },
     {
       title: "Gallery",

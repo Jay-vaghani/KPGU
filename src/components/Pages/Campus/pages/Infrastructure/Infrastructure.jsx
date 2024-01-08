@@ -62,9 +62,6 @@ function Infrastructure() {
                     </Grid>
                     <Grid item xs={12} lg={9}>
                         <Box
-                            p={2}
-                            bgcolor={"#fff"}
-                            className={"smooth-shadow"}
                             borderRadius={1}
                             minHeight={"100%"}
                         >
