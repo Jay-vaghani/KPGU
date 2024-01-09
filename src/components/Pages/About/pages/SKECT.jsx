@@ -61,7 +61,7 @@ function SKECT() {
           >
             <Box>
               <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703584293/KPGU/Images/Jagdishbhai-D-Patel.webp"
+                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Jagdishbhai_D_Patel.webp"
                 alt="photo"
                 className="img-fluid"
               />
