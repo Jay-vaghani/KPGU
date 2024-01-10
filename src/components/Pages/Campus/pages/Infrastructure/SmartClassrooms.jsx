@@ -9,7 +9,10 @@ function SmartClassrooms() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>ICT Enabled Smart Classrooms</h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     The Smart classrooms are equipped with latest configuration PCs with Projector and other amenities to enhance teaching-learning process. Fully Air-conditioned ICT enabled classrooms that provide an environment where leaning happens naturally.
                 </Typography>
             </Box>

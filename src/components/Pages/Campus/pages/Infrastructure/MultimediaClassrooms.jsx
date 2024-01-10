@@ -9,7 +9,10 @@ function MultimediaClassrooms() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Multimedia enabled Specious classrooms</h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     The classrooms have been designed exploiting Natural Elements like wind, daylight & positioning with sun diagram. This adds to not only the ambience but also the functionality of the purpose. The chairs in the classrooms are ergonomically designed to make the students stay for the day comfortable & relaxed. Care is also taken in the smallest details such as maintaining roominess by optimizing length & breadth ratio and eliminating the generation of echoes. All the classrooms are ready with Audio-Visual (Multimedia) Facilities.
                 </Typography>
             </Box>

@@ -9,7 +9,10 @@ function Cafeteria() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Cafeteria</h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     Right from the very first day of its inception Krishana Edu Campus has provided its students with the facility for food, where they get breakfast, lunch and all other stuff. All health oriented measures are taken here for maintaining neat and clean hygienic space for all.
                 </Typography>
             </Box>

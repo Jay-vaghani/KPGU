@@ -41,7 +41,7 @@ function MessageFromThePresidentsDesk() {
         <Grid item xs={12} md={4}>
           <Box className="w-100 h-100 ">
             <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703666253/KPGU/Images/Jagdishbhai-D-Patel.webp"
+              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Jagdishbhai_D_Patel.webp"
               className="w-100 h-100 object-fit-cover"
               alt="photo"
             />

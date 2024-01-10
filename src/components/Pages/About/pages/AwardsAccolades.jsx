@@ -518,7 +518,6 @@ function AwardsAccolades() {
             </Button>
             <Stack direction={"row"} flexWrap={"wrap"}>
               {medal.map((e, i) => {
-                console.log(i);
                 return (
                   <IconButton size="small" key={i}>
                     <WorkspacePremiumRounded

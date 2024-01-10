@@ -9,7 +9,10 @@ function HostelMess() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Hostel Mess </h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     Hostel Mess is equipped with modern gadgets for cooking hygienic and nutritive food and Ben marry system is used to serve warm food on the dining table.
                 </Typography>
 

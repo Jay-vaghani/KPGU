@@ -9,7 +9,10 @@ function Playground() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Playground </h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     Sports facilities include indoor arena with provision for table-tennis, carom, chess etc. and outdoor sports ground with kits for Cricket, Volley Ball etc.
                 </Typography>
             </Box>

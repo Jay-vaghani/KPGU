@@ -9,7 +9,10 @@ function HostelRoom() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Hostel Room </h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     Other facilities include Medical center, Direct Telephone Booth, Wi-Fi internet, Elevator, stand-by Electrical Power back-up Generator, Provision store, Laundry and Garden with Lush green Lawns. The Hostel can accommodate 450 boys and 170 girls’ students separately with hospitality that can match a 3- star Hotel.
                 </Typography>
 

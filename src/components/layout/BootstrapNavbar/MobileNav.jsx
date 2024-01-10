@@ -43,7 +43,7 @@ function MobileNavBar() {
               <NavDropdown.Item onClick={() => navigate("/about/message-from-the-presidents-desk")}>MESSAGE FROM THE PRESIDENT'S DESK</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/about/message-from-the-provost")}>MESSAGE FROM THE PROVOST</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/about/governance/governing-body")}>GOVERNANCE</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => navigate("/about/governance/university-officers")}>UNIVERSITY OFFICERS</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about/university-officers")}>UNIVERSITY OFFICERS</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/about/statutory-recognition")}>STATUTORY RECOGNITION</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/about/approvals/institute-of-technology")}>APPROVALS</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/about/awards-accolades")}>AWARDS & ACCOLADES</NavDropdown.Item>
@@ -56,7 +56,7 @@ function MobileNavBar() {
               <NavDropdown.Item>Studies Policy & Humanities OfFaculty</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="CAMPUS" id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={() => navigate("/campus/infrastructure")}>Infrastructure</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/campus/infrastructure/smart-classrooms")}>Infrastructure</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/campus/gallery")}>Gallery</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/campus/")}>ATM & Bank Facilities</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate("/campus/")}>Dining & Cafeteria</NavDropdown.Item>

@@ -9,7 +9,10 @@ function Parking() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Parking </h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     Available in campus spacious parking facility.
                 </Typography>
             </Box>

@@ -10,7 +10,10 @@ function RoPlant() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>RO Plant</h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     With view to providing hygienic clean drinking water for student, Krishna Edu Campus has installed a Reverse Osmosis Plant (RO Plant)
                 </Typography>
 

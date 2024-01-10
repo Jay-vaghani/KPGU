@@ -200,6 +200,8 @@ export function LeftQuoteIcon() {
   );
 }
 
+
+
 export function HumanResourcesIcon() {
   return (
     <SvgIcon>

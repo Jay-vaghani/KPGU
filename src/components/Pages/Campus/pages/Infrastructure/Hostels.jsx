@@ -9,7 +9,10 @@ function Hostels() {
             </Box>
             <Box p={2}>
                 <h3 className='color-secondary fw-bold'>Hostels </h3>
-                <Typography variant='body1' fontSize={18} textAlign={"justify"}>
+                <Typography variant='body1' fontSize={18} textAlign={{
+                    xs: "start",
+                    sm: "justify"
+                }}>
                     With a key focus on developing a self-sustained residential campus, Hostel facility is provided with separate accommodation for Male and Female students, with fully furnished AC and Non AC (2 bed & 3 bed) rooms having attached bath, balcony and a common Dining Hall as well as Audio-Visual Lounge.
                 </Typography>
 

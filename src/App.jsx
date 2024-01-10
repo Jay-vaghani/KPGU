@@ -43,7 +43,7 @@ import RoPlant from "./components/Pages/Campus/pages/Infrastructure/RoPlant";
 import StationaryStall from "./components/Pages/Campus/pages/Infrastructure/StationaryStall";
 import HostelMess from "./components/Pages/Campus/pages/Infrastructure/HostelMess";
 import HostelRoom from "./components/Pages/Campus/pages/Infrastructure/HostelRoom";
-import Hostels from "./components/Pages/Campus/pages/Infrastructure/Hostels";
+import Hostels from "./components/Pages/Campus/pages/Infrastructure/hostels";
 import Workshop from "./components/Pages/Campus/pages/Infrastructure/Workshop";
 import Auditorium from "./components/Pages/Campus/pages/Infrastructure/Auditorium";
 import Library from "./components/Pages/Campus/pages/Infrastructure/Library";
@@ -51,8 +51,14 @@ import Cafeteria from "./components/Pages/Campus/pages/Infrastructure/Cafeteria"
 import MultimediaClassrooms from "./components/Pages/Campus/pages/Infrastructure/MultimediaClassrooms";
 import SmartClassrooms from "./components/Pages/Campus/pages/Infrastructure/SmartClassrooms";
 import Laboratories from "./components/Pages/Campus/pages/Infrastructure/Laboratories";
-
-
+import FacultyOfEngineeringAndTechnology from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/FacultyOfEngineeringAndTechnology";
+import KrishnaSchoolOfEmergingTechnologyAndAppliedResearch from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch";
+import KrishnaSchoolOfDiplomaStudies from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/KrishnaSchoolOfDiplomaStudies";
+import KrishnaSchoolOfTechnology from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/KrishnaSchoolOfTechnology";
+import KseDiploma from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/Diploma/Diploma";
+import KsetUG from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/UG/KsetUG";
+import KsetPG from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/PG/KsetPG";
+import KsetPgManagement from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/PgManagement/KsetPgManagement";
 
 function App() {
   const theme = createTheme({
@@ -125,6 +131,18 @@ function App() {
                 <Route path="playground" element={<Playground />} />
                 <Route path="bank-atm" element={<BankAndAtm />} />
                 <Route path="parking" element={<Parking />} />
+              </Route>
+            </Route>
+            <Route path="/academics">
+              <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />}>
+                <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />}>
+                  <Route path="diploma" element={<KseDiploma />} />
+                  <Route path="ug" element={<KsetUG />} />
+                  <Route path="pg" element={<KsetPG />} />
+                  <Route path="pg-management" element={<KsetPgManagement />} />
+                </Route>
+                <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
+                <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
               </Route>
             </Route>
           </Routes>

@@ -73,7 +73,7 @@ const DesktopNav = () => {
   const AcademicMenuList = [
     {
       title: "Faculty of Engineering & Technology",
-      link: "/",
+      link: "academics/faculty-of-engineering-and-technology/krishna-school-of-emerging-technology-and-applied-research/diploma",
     },
     {
       title: "Faculty Of Medicine & Healthcare",
@@ -226,7 +226,8 @@ const DesktopNav = () => {
 
   return (
     <NavigationMenu.Root className="NavigationMenuRoot my-2">
-      <Box width={width}>
+          
+      <Box width={width} px={innerWidth < 450 ? 1 : 2}>
         <img
           src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"
           alt="logo"
