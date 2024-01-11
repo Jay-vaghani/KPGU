@@ -43,7 +43,7 @@ import RoPlant from "./components/Pages/Campus/pages/Infrastructure/RoPlant";
 import StationaryStall from "./components/Pages/Campus/pages/Infrastructure/StationaryStall";
 import HostelMess from "./components/Pages/Campus/pages/Infrastructure/HostelMess";
 import HostelRoom from "./components/Pages/Campus/pages/Infrastructure/HostelRoom";
-// import Hostels from "./components/Pages/Campus/pages/Infrastructure/hostels";
+import Hostels from "./components/Pages/Campus/pages/Infrastructure/Hostels";
 import Workshop from "./components/Pages/Campus/pages/Infrastructure/Workshop";
 import Auditorium from "./components/Pages/Campus/pages/Infrastructure/Auditorium";
 import Library from "./components/Pages/Campus/pages/Infrastructure/Library";
@@ -149,7 +149,7 @@ function App() {
                 <Route path="library" element={<Library />} />
                 <Route path="auditorium" element={<Auditorium />} />
                 <Route path="workshop" element={<Workshop />} />
-                {/* <Route path="hostels" element={<Hostels />} /> */}
+                <Route path="hostels" element={<Hostels />} />
                 <Route path="hostel-room" element={<HostelRoom />} />
                 <Route path="hostel-mess" element={<HostelMess />} />
                 <Route path="stationary-stall" element={<StationaryStall />} />
