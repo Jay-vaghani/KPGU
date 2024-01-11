@@ -1,8 +1,8 @@
-import { Grid } from "@mui/material";
 import React from "react";
+import { Grid } from "@mui/material";
 import ProgramCard from "../../../../../../Common/ProgramCard";
 
-function KseDiploma() {
+function KsetDiploma() {
   const Programs = [
     {
       title: "Computer Science & Engineering",
@@ -27,4 +27,4 @@ function KseDiploma() {
   );
 }
 
-export default KseDiploma;
+export default KsetDiploma;

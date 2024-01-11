@@ -21,6 +21,8 @@ function ProgramCard({ title, des, link, pageLink }) {
           <Button
             href={link}
             variant="contained"
+            color="secondary"
+            // disableElevation
             endIcon={<DescriptionRounded />}
           >
             download
@@ -28,6 +30,8 @@ function ProgramCard({ title, des, link, pageLink }) {
           <Button
             href={pageLink}
             variant="contained"
+            color="secondary"
+            // disableElevation
             endIcon={<DoubleArrowRounded />}
           >
             read more

@@ -77,19 +77,19 @@ const DesktopNav = () => {
     },
     {
       title: "Faculty Of Medicine & Healthcare",
-      link: "/",
+      link: "academics/faculty-of-medicine-and-healthcare/krishna-school-of-pharmacy-and-research/ug",
     },
     {
       title: "Faculty Of Science",
-      link: "/",
+      link: "academics/faculty-of-sciences/krishna-school-of-sciences/ug",
     },
     {
       title: "Faculty Of Commerce & Management",
-      link: "/",
+      link: "academics/faculty-of-commerce-and-management/krishna-school-of-business-management/ug",
     },
     {
       title: "Faculty Of Humanities & Policy Studies",
-      link: "",
+      link: "academics/faculty-of-humanities-and-policy-studies/krishna-school-of-arts-and-humanities/ug",
     },
   ];
 

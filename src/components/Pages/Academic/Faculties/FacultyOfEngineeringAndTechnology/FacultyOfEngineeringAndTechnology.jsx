@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Box, Grid, Tab, Tabs } from "@mui/material";
 import { AppContext } from "../../../../../contexts/AppContext";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function FacultyOfEngineeringAndTechnology() {
   const { maxWidth, innerWidth } = useContext(AppContext);
@@ -18,9 +18,23 @@ function FacultyOfEngineeringAndTechnology() {
     setValue(newValue);
   };
 
+  const navigate = useNavigate()
+
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <Grid container spacing={2} position={"relative"}>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <Box
+            bgcolor={"#fff"}
+            p={2}
+            borderRadius={2}
+            className="smooth-shadow"
+          >
+            <h2 className="fw-bold text-center">
+              FACULTY OF ENGINEERING & TECHNOLOGY
+            </h2>
+          </Box>
+        </Grid>
         <Grid item xs={12} lg={3}>
           <Box
             bgcolor={"#fff"}
@@ -33,24 +47,31 @@ function FacultyOfEngineeringAndTechnology() {
               onChange={handleChange}
               aria-label="basic tabs example"
               orientation={`${innerWidth < 1200 ? "horizontal" : "vertical"}`}
-              variant={`${innerWidth < 1200 ? innerWidth < 1000? "scrollable" :  "fullWidth" : "scrollable"}`}
+              variant={`${innerWidth < 1200
+                  ? innerWidth < 1000
+                    ? "scrollable"
+                    : "fullWidth"
+                  : "scrollable"
+                }`}
               indicatorColor="secondary"
               textColor="secondary"
-              
             >
               <Tab
                 label="Krishna School of Emerging Technology & Applied Research"
                 value={"KSET"}
                 sx={tabCss}
+                onClick={() => navigate("krishna-school-of-emerging-technology-and-applied-research/diploma")}
               />
               <Tab
-                label="Krishna&nbsp;School&nbsp;of Diploma Studies"
+                label="Krishna School of Diploma Studies"
                 sx={tabCss}
+                onClick={() => navigate("krishna-school-of-diploma-studies/diploma")}
                 value={"KSDS"}
               />
               <Tab
-                label="Krishna&nbsp;School&nbsp;of Technology"
+                label="Krishna School of Technology"
                 sx={tabCss}
+                onClick={() => navigate("krishna-school-of-technology/ug")}
                 value={"KST"}
               />
             </Tabs>

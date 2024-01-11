@@ -17,6 +17,12 @@ function KsetUG() {
       pageLink: ""
     },
     {
+      title: "B. Tech in Mechanical Engineering",
+      des: "Build your career with B.Tech in Computer Science & Engineering program. Master the core principles of hardware, software, programming languages, algorithms, and networking.",
+      link: "",
+      pageLink: ""
+    },
+    {
       title: "B. Tech in Electrical Engineering",
       des: "Build your career with B.Tech in Computer Science & Engineering program. Master the core principles of hardware, software, programming languages, algorithms, and networking.",
       link: "",

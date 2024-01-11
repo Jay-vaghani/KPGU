@@ -12,9 +12,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const tabCss = {
     textTransform: "uppercase",
     fontWeight: 600,
-    // alignItems: "start",
     textAlign: "start",
-    // width: "min-content",
   };
 
   const handleChange = (event, newValue) => {
@@ -24,7 +22,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   return (
     <Box>
       <h3 className="fw-bold">
-        Krishna School Of Emerging Technology And Applied Research [KSET]
+        Krishna School Of Emerging Technology And Applied Research [K.S.E.T]
       </h3>
 
       <Box my={4}>
