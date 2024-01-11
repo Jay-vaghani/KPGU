@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Box, createTheme } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import { About, Home } from "./components/Pages/index";
