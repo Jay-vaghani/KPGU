@@ -73,23 +73,27 @@ const DesktopNav = () => {
   const AcademicMenuList = [
     {
       title: "Faculty of Engineering & Technology",
-      link: "academics/faculty-of-engineering-and-technology/krishna-school-of-emerging-technology-and-applied-research/diploma",
+      link: "academics/faculty-of-engineering-and-technology",
     },
     {
       title: "Faculty Of Medicine & Healthcare",
-      link: "academics/faculty-of-medicine-and-healthcare/krishna-school-of-pharmacy-and-research/ug",
+      link: "academics/faculty-of-medicine-and-healthcare",
+
     },
     {
       title: "Faculty Of Science",
-      link: "academics/faculty-of-sciences/krishna-school-of-sciences/ug",
+      link: "academics/faculty-of-sciences",
+
     },
     {
       title: "Faculty Of Commerce & Management",
-      link: "academics/faculty-of-commerce-and-management/krishna-school-of-business-management/ug",
+      link: "academics/faculty-of-commerce-and-management",
+
     },
     {
       title: "Faculty Of Humanities & Policy Studies",
-      link: "academics/faculty-of-humanities-and-policy-studies/krishna-school-of-arts-and-humanities/ug",
+      link: "academics/faculty-of-humanities-and-policy-studies",
+
     },
   ];
 
@@ -139,40 +143,41 @@ const DesktopNav = () => {
   const AdmissionMenuList = [
     {
       title: "UG PROGRAMMES",
-      link: "/",
+      link: "admission/ug-programs",
     },
     {
       title: "PG PROGRAMMES",
-      link: "/",
+      link: "admission/pg-programs",
     },
     {
       title: "DOCTORAL PROGRAMMES",
-      link: "/",
+      link: "admission/doctoral-programmes",
     },
     {
       title: "ADMISSION PROCEDURE",
-      link: "/",
+      link: "admission/admission-procedure",
     },
     {
       title: "Hostel Life",
-      link: "/",
+      link: "admission/hostel-life",
     },
     {
       title: "SCHOLARSHIPS & FREE-SHIPS",
-      link: "/",
+      link: "admission/scholarships",
     },
     {
       title: "EDUCATION LOAN",
-      link: "/",
+      link: "admission/education-loan",
     },
     {
       title: "TRANSPORTATION",
-      link: "/",
+      link: "admission/transportation",
     },
     {
       title: "EXAMINATION SYSTEM",
-      link: "/",
+      link: "admission/examination-system",
     },
+
   ];
 
   const ResearchAndPublicationList = [
@@ -226,7 +231,7 @@ const DesktopNav = () => {
 
   return (
     <NavigationMenu.Root className="NavigationMenuRoot my-2">
-          
+
       <Box width={width} px={innerWidth < 450 ? 1 : 2}>
         <img
           src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"

@@ -51,40 +51,39 @@ import Cafeteria from "./components/Pages/Campus/pages/Infrastructure/Cafeteria"
 import MultimediaClassrooms from "./components/Pages/Campus/pages/Infrastructure/MultimediaClassrooms";
 import SmartClassrooms from "./components/Pages/Campus/pages/Infrastructure/SmartClassrooms";
 import Laboratories from "./components/Pages/Campus/pages/Infrastructure/Laboratories";
-import FacultyOfEngineeringAndTechnology from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/FacultyOfEngineeringAndTechnology";
-import KrishnaSchoolOfEmergingTechnologyAndAppliedResearch from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch";
-import KrishnaSchoolOfDiplomaStudies from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/KrishnaSchoolOfDiplomaStudies";
-import KrishnaSchoolOfTechnology from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/KrishnaSchoolOfTechnology";
-import KsetDiploma from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/Diploma/KsetDiploma";
-import KsetUG from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/UG/KsetUG";
-import KsetPG from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/PG/KsetPG";
-import KsetPgManagement from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch/PgManagement/KsetPgManagement";
-import KsdsDiploma from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Diploma/KsdsDiploma";
-import KstUG from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/UG/KstUG";
-import KstPG from "./components/Pages/Academic/Faculties/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/PG/KstPG";
-import FacultyOfMedicineAndHealthcare from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/FacultyOfMedicineAndHealthcare";
-import KrishnaSchoolOfPharmacyAndResearch from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPharmacyAndResearch/KrishnaSchoolOfPharmacyAndResearch";
-import KrishnaAyurvedMedicalCollege from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaAyurvedMedicalCollege/KrishnaAyurvedMedicalCollege";
-import KrishnaSchoolOfNursing from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfNursing/KrishnaSchoolOfNursing";
-import KrishnaSchoolOfPhysiotherapyAndRehabilitation from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPhysiotherapyAndRehabilitation/KrishnaSchoolOfPhysiotherapyAndRehabilitation";
-import KspUG from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPharmacyAndResearch/UG/KspUG";
-import KspPG from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPharmacyAndResearch/PG/KspPG";
-import KsnUG from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfNursing/UG/KsnUG";
-import KsprUG from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPhysiotherapyAndRehabilitation/UG/KsprUG";
-import KsprPG from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPhysiotherapyAndRehabilitation/PG/KsprPG";
-import KamcUG from "./components/Pages/Academic/Faculties/FacultyOfMedicineAndHealthcare/KrishnaAyurvedMedicalCollege/UG/KamcUG";
-import KrishnaSchoolOfSciences from "./components/Pages/Academic/Faculties/FacultyOfScience/KrishnaSchoolOfSciences/KrishnaSchoolOfSciences";
-import KssUG from "./components/Pages/Academic/Faculties/FacultyOfScience/KrishnaSchoolOfSciences/UG/KssUG";
-import FacultyOfScience from "./components/Pages/Academic/Faculties/FacultyOfScience/FacultyOfScience";
-import FacultyOfHumanitiesAndPolicyStudies from "./components/Pages/Academic/Faculties/FacultyOfHumanitiesAndPolicyStudies/FacultyOfHumanitiesAndPolicyStudies";
-import KrishnaSchoolOfArtsAndHumanities from "./components/Pages/Academic/Faculties/FacultyOfHumanitiesAndPolicyStudies/KrishnaSchoolOfArtsAndHumanities/KrishnaSchoolOfArtsAndHumanities";
-import KsahUG from "./components/Pages/Academic/Faculties/FacultyOfHumanitiesAndPolicyStudies/KrishnaSchoolOfArtsAndHumanities/UG/KsahUG";
-import FacultyOfCommerceAndManagement from "./components/Pages/Academic/Faculties/FacultyOfCommerceAndManagement/FacultyOfCommerceAndManagement";
-import KrishnaSchoolOfCommerce from "./components/Pages/Academic/Faculties/FacultyOfCommerceAndManagement/KrishnaSchoolOfCommerce/KrishnaSchoolOfCommerce";
-import KscUG from "./components/Pages/Academic/Faculties/FacultyOfCommerceAndManagement/KrishnaSchoolOfCommerce/UG/KscUG";
-import KrishnaSchoolOfBusinessManagement from "./components/Pages/Academic/Faculties/FacultyOfCommerceAndManagement/KrishnaSchoolOfBusinessManagement/KrishnaSchoolOfBusinessManagement";
-import KsbmUG from "./components/Pages/Academic/Faculties/FacultyOfCommerceAndManagement/KrishnaSchoolOfBusinessManagement/UG/KsbmUG";
-import KsbmPG from "./components/Pages/Academic/Faculties/FacultyOfCommerceAndManagement/KrishnaSchoolOfBusinessManagement/PG/KsbmPG";
+
+
+import Admission from "./components/Pages/Admission/Admission";
+import AdmissionProcedure from "./components/Pages/Admission/AdmissionProcedure/AdmissionProcedure";
+import DoctoralProgrammes from "./components/Pages/Admission/DoctoralProgrammes/DoctoralProgrammes";
+import EducationLoan from "./components/Pages/Admission/EducationLoan/EducationLoan";
+import ExaminationSystem from "./components/Pages/Admission/ExaminationSystem/ExaminationSystem";
+import HostelLife from "./components/Pages/Admission/HostelLife/HostelLife";
+import PgPrograms from "./components/Pages/Admission/PgPrograms/PgPrograms";
+import UgPrograms from "./components/Pages/Admission/UgPrograms/UgPrograms";
+import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships";
+import Transportation from "./components/Pages/Admission/Transportation/Transportation";
+
+
+import Academic from "./components/Pages/Academic/Schools";
+import FacultyOfCommerceAndManagement from "./components/Pages/Academic/FacultiesNew/FacultyOfCommerceAndManagement/FacultyOfCommerceAndManagement";
+import FacultyOfEngineeringAndTechnology from "./components/Pages/Academic/FacultiesNew/FacultyOfEngineeringAndTechnology/FacultyOfEngineeringAndTechnology";
+import FacultyOfHumanitiesAndPolicyStudies from "./components/Pages/Academic/FacultiesNew/FacultyOfHumanitiesAndPolicyStudies/FacultyOfHumanitiesAndPolicyStudies";
+import FacultyOfMedicineAndHealthcare from "./components/Pages/Academic/FacultiesNew/FacultyOfMedicineAndHealthcare/FacultyOfMedicineAndHealthcare";
+import FacultyOfSciences from "./components/Pages/Academic/FacultiesNew/FacultyOfSciences/FacultyOfSciences";
+
+import KrishnaSchoolOfBusinessManagement from "./components/Pages/Academic/Schools/FacultyOfCommerceAndManagement/KrishnaSchoolOfBusinessManagement/KrishnaSchoolOfBusinessManagement";
+import KrishnaSchoolOfCommerce from "./components/Pages/Academic/Schools/FacultyOfCommerceAndManagement/KrishnaSchoolOfCommerce/KrishnaSchoolOfCommerce";
+import KrishnaSchoolOfArtsAndHumanities from "./components/Pages/Academic/Schools/FacultyOfHumanitiesAndPolicyStudies/KrishnaSchoolOfArtsAndHumanities/KrishnaSchoolOfArtsAndHumanities";
+import KrishnaSchoolOfSciences from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/KrishnaSchoolOfSciences";
+import KrishnaSchoolOfPhysiotherapyAndRehabilitation from "./components/Pages/Academic/Schools/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPhysiotherapyAndRehabilitation/KrishnaSchoolOfPhysiotherapyAndRehabilitation";
+import KrishnaSchoolOfNursing from "./components/Pages/Academic/Schools/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfNursing/KrishnaSchoolOfNursing";
+import KrishnaAyurvedMedicalCollege from "./components/Pages/Academic/Schools/FacultyOfMedicineAndHealthcare/KrishnaAyurvedMedicalCollege/KrishnaAyurvedMedicalCollege";
+import KrishnaSchoolOfPharmacyAndResearch from "./components/Pages/Academic/Schools/FacultyOfMedicineAndHealthcare/KrishnaSchoolOfPharmacyAndResearch/KrishnaSchoolOfPharmacyAndResearch";
+import KrishnaSchoolOfTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/KrishnaSchoolOfTechnology";
+import KrishnaSchoolOfDiplomaStudies from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/KrishnaSchoolOfDiplomaStudies";
+import KrishnaSchoolOfEmergingTechnologyAndAppliedResearch from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch";
+
 
 function App() {
   const theme = createTheme({
@@ -159,58 +158,43 @@ function App() {
                 <Route path="parking" element={<Parking />} />
               </Route>
             </Route>
-            <Route path="/academics">
-              <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />}>
-                <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />}>
-                  <Route path="diploma" element={<KsetDiploma />} />
-                  <Route path="ug" element={<KsetUG />} />
-                  <Route path="pg" element={<KsetPG />} />
-                  <Route path="pg-management" element={<KsetPgManagement />} />
-                </Route>
-                <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} >
-                  <Route path="diploma" element={<KsdsDiploma />} />
-                </Route>
-                <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} >
-                  <Route path="ug" element={<KstUG />} />
-                  <Route path="pg" element={<KstPG />} />
-                </Route>
-              </Route>
-              <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />}>
-                <Route path="krishna-school-of-pharmacy-and-research" element={<KrishnaSchoolOfPharmacyAndResearch />}>
-                  <Route path="ug" element={<KspUG />} />
-                  <Route path="pg" element={<KspPG />} />
-                </Route>
-                <Route path="krishna-ayurved-medical-college" element={<KrishnaAyurvedMedicalCollege />}>
-                  <Route path="ug" element={<KamcUG />} />
-                </Route>
-                <Route path="krishna-school-of-nursing" element={<KrishnaSchoolOfNursing />}>
-                  <Route path="ug" element={<KsnUG />} />
-                </Route>
-                <Route path="krishna-school-of-physiotherapy-and-rehabilitation" element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />}>
-                  <Route path="ug" element={<KsprUG />} />
-                  <Route path="pg" element={<KsprPG />} />
-                </Route>
-              </Route>
-              <Route path="faculty-of-sciences" element={<FacultyOfScience />}>
-                <Route path="krishna-school-of-sciences" element={<KrishnaSchoolOfSciences />}>
-                  <Route path="ug" element={<KssUG />} />
-                </Route>
-              </Route>
-              <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />}>
-                <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />}>
-                  <Route path="ug" element={<KsahUG />} />
-                </Route>
-              </Route>
-              <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />}>
-                <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />}>
-                  <Route path="ug" element={<KscUG />} />
-                </Route>
-                <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />}>
-                  <Route path="ug" element={<KsbmUG />} />
-                  <Route path="pg" element={<KsbmPG />} />
-                </Route>
-              </Route>
+
+            <Route path="/academics" element={<Academic />}>
+              {/* ======================== Faculty ======================== */}
+              <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />} />
+              <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />} />
+              <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />} />
+              <Route path="faculty-of-sciences" element={<FacultyOfSciences />} />
+              <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />} />
+              {/* ======================== Schools ======================== */}
+
+              <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />} />
+              <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />} />
+              <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />} />
+              <Route path="krishna-school-of-sciences" element={<KrishnaSchoolOfSciences />} />
+              <Route path="krishna-school-of-physiotherapy-and-rehabilitation" element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />} />
+              <Route path="krishna-school-of-nursing" element={<KrishnaSchoolOfNursing />} />
+              <Route path="krishna-ayurved-medical-college" element={<KrishnaAyurvedMedicalCollege />} />
+              <Route path="krishna-school-of-pharmacy-and-research" element={<KrishnaSchoolOfPharmacyAndResearch />} />
+              <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
+              <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
+              <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
+
+
             </Route>
+
+            <Route path="/admission" element={<Admission />}>
+              <Route path="admission-procedure" element={< AdmissionProcedure />}></Route>
+              <Route path="doctoral-programmes" element={<DoctoralProgrammes />}></Route>
+              <Route path="education-loan" element={<EducationLoan />}></Route>
+              <Route path="examination-system" element={<ExaminationSystem />}></Route>
+              <Route path="hostel-life" element={<HostelLife />}></Route>
+              <Route path="pg-programs" element={<PgPrograms />}></Route>
+              <Route path="ug-programs" element={<UgPrograms />}></Route>
+              <Route path="scholarships" element={<Scholarships />}></Route>
+              <Route path="transportation" element={<Transportation />}></Route>
+            </Route>
+
           </Routes>
           {/* <Footer /> */}
         </Box>
@@ -220,3 +204,11 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+

@@ -1,8 +1,12 @@
 import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
 import { Box, Grid, Typography, Button } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function EduCard({ name, des, img, link }) {
+
+  const navigate = useNavigate()
+
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Box
@@ -20,7 +24,7 @@ function EduCard({ name, des, img, link }) {
           />
         </Box>
         <Box p={2}>
-          <Typography variant="h6" fontWeight={600} mb={1}>
+          <Typography variant="h6" fontWeight={600} mb={1} color={"secondary.main"}>
             {name}
           </Typography>
           <Typography variant="body1" fontWeight={600} color={"#535353"} mb={3}>
@@ -31,10 +35,12 @@ function EduCard({ name, des, img, link }) {
           <Button
             target="_blank"
             variant="contained"
+            color="secondary"
             endIcon={<KeyboardDoubleArrowRightRounded />}
-            sx={{position: "absolute", bottom: 16}}
+            sx={{ position: "absolute", bottom: 16 }}
+            onClick={() => navigate(link)}
           >
-            View
+            View more
           </Button>
         </Box>
       </Box>
