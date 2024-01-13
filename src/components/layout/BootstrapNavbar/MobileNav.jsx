@@ -134,7 +134,7 @@ function MobileNavBar() {
             <NavDropdown title="ACADEMIC" id="basic-nav-dropdown">
               <NavDropdown.Item onClick={() => {
                 closeMenu()
-                navigate("academics/faculty-of-engineering-and-technology/krishna-school-of-emerging-technology-and-applied-research/diploma")
+                navigate("academics/faculty-of-engineering-and-technology")
               }
               }>
                 Faculty of Engineering Technology</NavDropdown.Item>
