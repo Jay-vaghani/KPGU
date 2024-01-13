@@ -1,43 +1,53 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { AppContext } from '../../../../../../contexts/AppContext';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Tab, Typography } from '@mui/material';
 import SchoolWelcomeSection from '../../../../../Common/SchoolWelcomeSection';
 import DirectorsMessage from '../../../../../Common/DirectorsMessage';
 import FacultyStaff from '../../../../../Common/FacultyStaff';
+import Quote from '../../../../../Common/Quote';
+import { TabContext, TabList, TabPanel } from '@mui/lab';
+
 
 function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const { maxWidth } = useContext(AppContext);
 
   const Faculties = [
     {
-      name: "Name 1",
+      name: "Name",
       designation: "Assistant Professor",
       experience: 12,
       cv: "",
       qualification: "P.H.D"
     },
     {
-      name: "Name 2",
+      name: "Name",
       designation: "Assistant Professor",
       experience: 13,
       cv: "",
       qualification: "P.H.D"
     },
     {
-      name: "Name 3",
+      name: "Name",
       designation: "Assistant Professor",
       experience: 14,
       cv: "",
       qualification: "P.H.D"
     },
     {
-      name: "Name 4",
+      name: "Name",
       designation: "Assistant Professor",
       experience: 15,
       cv: "",
       qualification: "P.H.D"
     },
   ]
+
+
+  const [value, setValue] = useState('1');
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
@@ -61,10 +71,29 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         <Box mb={4}>
           <h2 className='fw-bold color-secondary fs-1'>Faculty Members</h2>
         </Box>
-        <Grid container spacing={3}>
-          {Faculties.map(({ name, cv, designation, experience, qualification }) => <FacultyStaff name={name} cv={cv} qualification={qualification} designation={designation} experience={experience} />)}
-
+        <Grid container spacing={2}>
+          {Faculties.map(({ name, cv, designation, experience, qualification }, index) => <FacultyStaff name={name} cv={cv} qualification={qualification} designation={designation} experience={experience} key={index} />)}
         </Grid>
+      </Box>
+      <Box mt={4} bgcolor={"#fff"} borderRadius={4} className='smooth-shadow' p={2}>
+        <h2 className='fw-bold color-secondary fs-1'>Vision</h2>
+        <Quote quote={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."} right={true} />
+      </Box>
+      <Box mt={4} bgcolor={"#fff"} borderRadius={4} className='smooth-shadow' p={2}>
+        <h2 className='fw-bold color-secondary fs-1'>Mission</h2>
+        <Quote quote={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."} right={true} />
+      </Box>
+      <Box mt={4} bgcolor={"#fff"} borderRadius={4} className='smooth-shadow' p={2}>
+        <TabContext value={value} >
+          <TabList textColor='secondary' indicatorColor='secondary' variant='scrollable' onChange={handleChange} aria-label="lab API tabs example">
+            <Tab className='fw-bold' label="deploma" value="1" />
+            <Tab className='fw-bold' label="ug" value="2" />
+            <Tab className='fw-bold' label="pg" value="3" />
+          </TabList>
+          <TabPanel value="1">Item One</TabPanel>
+          <TabPanel value="2">Item Two</TabPanel>
+          <TabPanel value="3">Item Three</TabPanel>
+        </TabContext>
       </Box>
     </Box>
   )

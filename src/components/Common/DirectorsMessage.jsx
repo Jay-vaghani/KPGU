@@ -26,7 +26,7 @@ function DirectorsMessage({ dirImg, dirName, dirEmail, dirMessage, dirOf, dirOfS
                 <h2 className='fw-bold color-secondary mb-1'>Message From Director </h2>
                 <h5 className='fw-bold color-secondary'>Welcome To KPGU</h5>
                 <Box mt={4}>
-                    {dirMessage.map((para) => <Paragraph content={para} />)}
+                    {dirMessage.map((para, index) => <Paragraph content={para} key={index} />)}
                 </Box>
 
 
