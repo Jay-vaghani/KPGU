@@ -24,6 +24,7 @@ function ProgramCard({ title, des, link, pageLink }) {
             color="secondary"
             // disableElevation
             endIcon={<DescriptionRounded />}
+            sx={{px: "12px"}}
           >
             download
           </Button>
@@ -33,8 +34,9 @@ function ProgramCard({ title, des, link, pageLink }) {
             color="secondary"
             // disableElevation
             endIcon={<DoubleArrowRounded />}
+            sx={{px: "12px"}}
           >
-            read more
+            More details
           </Button>
         </Stack>
       </Box>

@@ -14,19 +14,19 @@ function Schools() {
     useEffect(() => {
         if (location === "faculty-of-engineering-and-technology") {
             setBanner({
-                title: "Faculty Of Engineering And Technology",
+                title: "Faculty Of Engineering & Technology",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
         if (location === "faculty-of-medicine-and-healthcare") {
             setBanner({
-                title: "Faculty Of Medicine And Healthcare",
+                title: "Faculty Of Medicine & Healthcare",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
         if (location === "faculty-of-commerce-and-management") {
             setBanner({
-                title: "Faculty Of Commerce And Management",
+                title: "Faculty Of Commerce & Management",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
@@ -38,7 +38,7 @@ function Schools() {
         }
         if (location === "faculty-of-humanities-and-policy-studies") {
             setBanner({
-                title: "Faculty Of Humanities And Policy Studies",
+                title: "Faculty Of Humanities & Policy Studies",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
@@ -48,7 +48,7 @@ function Schools() {
 
         if (location === "krishna-school-of-emerging-technology-and-applied-research") {
             setBanner({
-                title: "Krishna School Of Emerging Technology And Applied Research",
+                title: "Krishna School Of Emerging Technology & Applied Research",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
@@ -66,7 +66,7 @@ function Schools() {
         }
         if (location === "krishna-school-of-pharmacy-and-research") {
             setBanner({
-                title: "Krishna School Of Pharmacy And Research",
+                title: "Krishna School Of Pharmacy & Research",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
@@ -84,7 +84,7 @@ function Schools() {
         }
         if (location === "krishna-school-of-physiotherapy-and-rehabilitation") {
             setBanner({
-                title: "Krishna School Of Physiotherapy And Rehabilitation",
+                title: "Krishna School Of Physiotherapy & Rehabilitation",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
@@ -96,7 +96,7 @@ function Schools() {
         }
         if (location === "krishna-school-of-arts-and-humanities") {
             setBanner({
-                title: "Krishna School Of Arts And Humanities",
+                title: "Krishna School Of Arts & Humanities",
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }

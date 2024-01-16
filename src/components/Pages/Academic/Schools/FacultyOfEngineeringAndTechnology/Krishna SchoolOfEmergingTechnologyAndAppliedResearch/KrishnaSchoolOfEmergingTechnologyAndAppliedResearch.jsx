@@ -6,6 +6,8 @@ import DirectorsMessage from '../../../../../Common/DirectorsMessage';
 import FacultyStaff from '../../../../../Common/FacultyStaff';
 import Quote from '../../../../../Common/Quote';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
+import ProgramCard from '../../../../../Common/ProgramCard';
+import AnnouncementCard from '../../../../../Common/AnnouncementCard';
 
 
 function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
@@ -42,6 +44,99 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
   ]
 
+  const UG = [
+    {
+      title: "B. Tech in Computer Science & Engineering",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: ""
+    },
+    {
+      title: "B. Tech in Information Technology",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: ""
+    },
+    {
+      title: "B. Tech in Mechanical Engineering",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: ""
+    },
+    {
+      title: "B. Tech in Electrical Engineering",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: ""
+    },
+    {
+      title: "B. Tech in Civil Engineering",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: ""
+    },
+  ]
+
+  const PG = [
+    {
+      title: "M. Tech in Advance Manufacturing System ",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: "",
+    },
+    {
+      title: "M. Tech in Data Science",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: "",
+    },
+  ]
+
+  const Diploma = [
+    {
+      title: "Computer Science & Engineering",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: "",
+    },
+    {
+      title: "Information Technology",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: "",
+    },
+  ]
+
+  const PGManagement = [
+    {
+      title: "MBA",
+      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
+      link: "",
+      pageLink: "",
+    },
+  ]
+
+  const Announcements = [
+    {
+      title: "Announcement 1",
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat, dolores eaque molestiae consectetur error ! Nobis ducimus officiis eaque",
+      date: "1-1-2024",
+      img: "https://thumbs.dreamstime.com/z/corporate-announcement-poster-template-vector-flyer-business-conference-social-media-event-banner-134120981.jpg?w=992",
+    },
+    {
+      title: "Announcement 2",
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat, dolores eaque molestiae consectetur error ! Nobis ducimus officiis eaque",
+      date: "1-1-2024",
+      img: "https://thumbs.dreamstime.com/z/corporate-announcement-poster-template-vector-flyer-business-conference-social-media-event-banner-134120981.jpg?w=992",
+    },
+    {
+      title: "Announcement 3",
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat, dolores eaque molestiae consectetur error ! Nobis ducimus officiis eaque",
+      date: "1-1-2024",
+      img: "https://thumbs.dreamstime.com/z/corporate-announcement-poster-template-vector-flyer-business-conference-social-media-event-banner-134120981.jpg?w=992",
+    },
+
+  ]
 
   const [value, setValue] = useState('1');
 
@@ -52,7 +147,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
       <SchoolWelcomeSection
-        title={"Krishna School Of Emerging Technology And Applied Research [KSET]"}
+        title={"Krishna School Of Emerging Technology & Applied Research [KSET]"}
         des={"The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."}
       />
       <DirectorsMessage
@@ -89,14 +184,42 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
             <Tab className='fw-bold' label="deploma" value="1" />
             <Tab className='fw-bold' label="ug" value="2" />
             <Tab className='fw-bold' label="pg" value="3" />
+            <Tab className='fw-bold' label="pg management" value="4" />
           </TabList>
-          <TabPanel value="1">Item One</TabPanel>
-          <TabPanel value="2">Item Two</TabPanel>
-          <TabPanel value="3">Item Three</TabPanel>
+          <TabPanel value="1" sx={{ px: "0 !important" }}>
+            <Grid container spacing={2}>
+              {Diploma.map(({ des, link, pageLink, title }, index) => <ProgramCard des={des} link={link} pageLink={pageLink} title={title} key={index} />)}
+            </Grid>
+          </TabPanel>
+          <TabPanel value="2" sx={{ px: "0 !important" }}>
+            <Grid container spacing={2}>
+              {UG.map(({ des, link, pageLink, title }, index) => <ProgramCard des={des} link={link} pageLink={pageLink} title={title} key={index} />)}
+            </Grid>
+          </TabPanel>
+          <TabPanel value="3" sx={{ px: "0 !important" }}>
+            <Grid container spacing={2}>
+              {PG.map(({ des, link, pageLink, title }, index) => <ProgramCard des={des} link={link} pageLink={pageLink} title={title} key={index} />)}
+            </Grid>
+          </TabPanel>
+          <TabPanel value="4" sx={{ px: "0 !important" }}>
+            <Grid container spacing={2}>
+              {PGManagement.map(({ des, link, pageLink, title }, index) => <ProgramCard des={des} link={link} pageLink={pageLink} title={title} key={index} />)}
+            </Grid>
+          </TabPanel>
         </TabContext>
+      </Box>
+      <Box mt={4} bgcolor={"#fff"} borderRadius={4} className='smooth-shadow' p={2}>
+        <Box mb={4}>
+          <h2 className='fw-bold color-secondary fs-1'>Announcements</h2>
+          <Grid container spacing={3} mt={1}>
+            {Announcements.map(({ date, des, img, title }, index) => <AnnouncementCard date={date} des={des} img={img} title={title} key={index} />)}
+          </Grid>
+        </Box>
       </Box>
     </Box>
   )
 }
 
 export default KrishnaSchoolOfEmergingTechnologyAndAppliedResearch
+
+
