@@ -33,24 +33,7 @@ import InstituteOfTechnology from "./components/Pages/About/pages/Approvals/Inst
 import InstituteOfPharmacy from "./components/Pages/About/pages/Approvals/InstituteOfTechnology";
 import AwardsAccolades from "./components/Pages/About/pages/AwardsAccolades";
 import UniversityOfficers from "./components/Pages/About/pages/UniversityOfficers";
-import Campus from "./components/Pages/Campus/Campus";
-import CampusGallery from "./components/Pages/Campus/pages/CampusGallery";
-import Infrastructure from "./components/Pages/Campus/pages/Infrastructure/Infrastructure";
-import Parking from "./components/Pages/Campus/pages/Infrastructure/Parking";
-import BankAndAtm from "./components/Pages/Campus/pages/Infrastructure/BankAndAtm";
-import Playground from "./components/Pages/Campus/pages/Infrastructure/Playground";
-import RoPlant from "./components/Pages/Campus/pages/Infrastructure/RoPlant";
-import StationaryStall from "./components/Pages/Campus/pages/Infrastructure/StationaryStall";
-import HostelMess from "./components/Pages/Campus/pages/Infrastructure/HostelMess";
-import HostelRoom from "./components/Pages/Campus/pages/Infrastructure/HostelRoom";
-import Hostels from "./components/Pages/Campus/pages/Infrastructure/Hostels";
-import Workshop from "./components/Pages/Campus/pages/Infrastructure/Workshop";
-import Auditorium from "./components/Pages/Campus/pages/Infrastructure/Auditorium";
-import Library from "./components/Pages/Campus/pages/Infrastructure/Library";
-import Cafeteria from "./components/Pages/Campus/pages/Infrastructure/Cafeteria";
-import MultimediaClassrooms from "./components/Pages/Campus/pages/Infrastructure/MultimediaClassrooms";
-import SmartClassrooms from "./components/Pages/Campus/pages/Infrastructure/SmartClassrooms";
-import Laboratories from "./components/Pages/Campus/pages/Infrastructure/Laboratories";
+
 
 
 import Admission from "./components/Pages/Admission/Admission";
@@ -62,7 +45,9 @@ import HostelLife from "./components/Pages/Admission/HostelLife/HostelLife";
 import PgPrograms from "./components/Pages/Admission/PgPrograms/PgPrograms";
 import UgPrograms from "./components/Pages/Admission/UgPrograms/UgPrograms";
 import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships";
-import Transportation from "./components/Pages/Admission/Transportation/Transportation";
+
+
+// ========================================== ACADEMIES ==========================================
 
 
 import Academic from "./components/Pages/Academic/Schools";
@@ -83,6 +68,13 @@ import KrishnaSchoolOfPharmacyAndResearch from "./components/Pages/Academic/Scho
 import KrishnaSchoolOfTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/KrishnaSchoolOfTechnology";
 import KrishnaSchoolOfDiplomaStudies from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/KrishnaSchoolOfDiplomaStudies";
 import KrishnaSchoolOfEmergingTechnologyAndAppliedResearch from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/KrishnaSchoolOfEmergingTechnologyAndAppliedResearch";
+import Campus from "./components/Pages/Campus/Campus";
+import CampusLife from "./components/Pages/Campus/pages/CampusLife/CampusLife";
+import Facilities from "./components/Pages/Campus/pages/Facilities/Facilities";
+import Gallery from "./components/Pages/Campus/pages/Gallery/Gallery";
+
+
+// ========================================== CAMPUS ==========================================
 
 
 function App() {
@@ -138,26 +130,7 @@ function App() {
               </Route>
 
             </Route>
-            <Route path="/campus" element={<Campus />}>
-              <Route path="gallery" element={<CampusGallery />} />
-              <Route path="infrastructure" element={<Infrastructure />}>
-                <Route path="smart-classrooms" element={<SmartClassrooms />} />
-                <Route path="multimedia-classrooms" element={<MultimediaClassrooms />} />
-                <Route path="laboratories" element={<Laboratories />} />
-                <Route path="cafeteria" element={<Cafeteria />} />
-                <Route path="library" element={<Library />} />
-                <Route path="auditorium" element={<Auditorium />} />
-                <Route path="workshop" element={<Workshop />} />
-                <Route path="hostels" element={<Hostels />} />
-                <Route path="hostel-room" element={<HostelRoom />} />
-                <Route path="hostel-mess" element={<HostelMess />} />
-                <Route path="stationary-stall" element={<StationaryStall />} />
-                <Route path="ro-plant" element={<RoPlant />} />
-                <Route path="playground" element={<Playground />} />
-                <Route path="bank-atm" element={<BankAndAtm />} />
-                <Route path="parking" element={<Parking />} />
-              </Route>
-            </Route>
+
 
             <Route path="/academics" element={<Academic />}>
               {/* ======================== Faculty ======================== */}
@@ -179,20 +152,19 @@ function App() {
               <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
               <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
               <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
+            </Route>
 
-
+            <Route path="/campus" element={<Campus />}>
+              <Route path="campus-life" element={<CampusLife />}></Route>
+              <Route path="facilities" element={<Facilities />}></Route>
+              <Route path="gallery" element={<Gallery />}></Route>
             </Route>
 
             <Route path="/admission" element={<Admission />}>
               <Route path="admission-procedure" element={< AdmissionProcedure />}></Route>
               <Route path="doctoral-programmes" element={<DoctoralProgrammes />}></Route>
-              <Route path="education-loan" element={<EducationLoan />}></Route>
-              <Route path="examination-system" element={<ExaminationSystem />}></Route>
-              <Route path="hostel-life" element={<HostelLife />}></Route>
               <Route path="pg-programs" element={<PgPrograms />}></Route>
               <Route path="ug-programs" element={<UgPrograms />}></Route>
-              <Route path="scholarships" element={<Scholarships />}></Route>
-              <Route path="transportation" element={<Transportation />}></Route>
             </Route>
 
           </Routes>

@@ -99,44 +99,16 @@ const DesktopNav = () => {
 
   const CampusMenuList = [
     {
-      title: "Infrastructure",
-      link: "campus/infrastructure/smart-classrooms",
+      title: "Facilities",
+      link: "campus/facilities",
+    },
+    {
+      title: "Campus Life",
+      link: "campus/campus-life",
     },
     {
       title: "Gallery",
       link: "campus/gallery",
-    },
-    {
-      title: "ATM & Bank Facilities",
-      link: "/",
-    },
-    {
-      title: "Dining & Cafeteria",
-      link: "/",
-    },
-    {
-      title: "Health Facilities",
-      link: "/",
-    },
-    {
-      title: "Library & Information System",
-      link: "/",
-    },
-    {
-      title: "Safety & Security",
-      link: "/",
-    },
-    {
-      title: "Environment",
-      link: "/",
-    },
-    {
-      title: "Arts & Cultural Programs",
-      link: "/",
-    },
-    {
-      title: "Sports & Recreation",
-      link: "/",
     },
   ];
 

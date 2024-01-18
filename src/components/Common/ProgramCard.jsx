@@ -12,9 +12,12 @@ function ProgramCard({ title, des, link, pageLink }) {
         position={"relative"}
       >
         <h4 className="fw-semibold">{title}</h4>
-        <Typography variant="body1" fontSize={"1.1rem"}>
+        {/* <Typography variant="body1" fontSize={"1.1rem"}>
           {des}
-        </Typography>
+        </Typography> */}
+        <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Course Duration:</span> 4 Years</h6>
+        <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Eligibility:</span> Lorem ipsum dolor sit amet.</h6>
+        <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Fees:</span> 1,00,000</h6>
         <br />
         <br />
         <Stack direction={"row"} sx={{ position: "absolute", bottom: 16 }} spacing={1} >
@@ -24,20 +27,11 @@ function ProgramCard({ title, des, link, pageLink }) {
             color="secondary"
             // disableElevation
             endIcon={<DescriptionRounded />}
-            sx={{px: "12px"}}
+            sx={{ px: "12px" }}
           >
             download
           </Button>
-          <Button
-            href={pageLink}
-            variant="contained"
-            color="secondary"
-            // disableElevation
-            endIcon={<DoubleArrowRounded />}
-            sx={{px: "12px"}}
-          >
-            More details
-          </Button>
+
         </Stack>
       </Box>
     </Grid>
