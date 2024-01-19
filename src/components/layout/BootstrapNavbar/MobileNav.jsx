@@ -211,7 +211,7 @@ function MobileNavBar() {
               <NavDropdown.Item
                 onClick={() => {
                   closeMenu();
-                  navigate("/campus/gallery");
+                  navigate("/campus/facilities");
                 }}
               >
                 Gallery

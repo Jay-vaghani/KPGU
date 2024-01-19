@@ -9,7 +9,7 @@ p {
   margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 1;
 }
@@ -31,9 +31,12 @@ p {
   outline: none;
   user-select: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--violet-11);
-  padding: 0 7px;
+  text-decoration: none;
+  cursor: pointer;
+
+  padding: 14px 7px;
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {
@@ -51,13 +54,6 @@ p {
   gap: 2px;
 }
 
-.NavigationMenuLink {
-  display: block;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
-}
 
 .NavigationMenuContent {
   position: absolute;
@@ -129,17 +125,13 @@ p {
 }
 
 .List {
-  display: grid;
   padding: 22px;
-  margin: 0;
-  column-gap: 10px;
-  list-style: none;
 }
   .List.one {
-    width: 960px;
+    width: 1077px;
   }
   .List.two {
-    width: 960px;
+    width: 1077px;
   }
 
 .ListItemLink {
@@ -207,9 +199,9 @@ p {
 .ViewportPosition {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
-  top: 100%;
+  top: 95%;
   left: 0;
   perspective: 2000px;
 }

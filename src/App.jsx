@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import { About, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { AppProvider } from "./contexts/AppContext";
-import ContactNavbar from "./components/layout/ContactNavbar";
 import "./App.css";
 
 // ========================Mui Navbar========================
@@ -72,6 +71,7 @@ import Campus from "./components/Pages/Campus/Campus";
 import CampusLife from "./components/Pages/Campus/pages/CampusLife/CampusLife";
 import Facilities from "./components/Pages/Campus/pages/Facilities/Facilities";
 import Gallery from "./components/Pages/Campus/pages/Gallery/Gallery";
+import ContactNavbar from "./components/layout/BootstrapNavbar/ContactNavbar";
 
 
 // ========================================== CAMPUS ==========================================
@@ -99,7 +99,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <AppProvider>
         <Box>
-          <ContactNavbar />
+        <ContactNavbar />
           <MainNavbar />
 
           <Routes>

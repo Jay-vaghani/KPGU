@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../../../contexts/AppContext";
 import {
   DoneAllRounded,
-  GavelRounded,
+  BalanceRounded,
   KeyboardDoubleArrowRightRounded,
 } from "@mui/icons-material";
 import Paragraph from "../../../Common/Paragraph";
@@ -123,8 +123,8 @@ function KpguVadodara() {
           color={"secondary"}
           display={"flex"}
         >
-          <Box pr={2}>
-            <GavelRounded color="inherit" />
+          <Box pr={1}>
+            <BalanceRounded fontSize="large" color="inherit" />
           </Box>
           <Box>Gujarat Private Universities Act 2009,</Box>
         </Typography>
@@ -134,8 +134,8 @@ function KpguVadodara() {
           color={"secondary"}
           display={"flex"}
         >
-          <Box pr={2}>
-            <GavelRounded color="inherit" />
+          <Box pr={1}>
+            <BalanceRounded fontSize="large" color="inherit" />
           </Box>
           <Box>
             Gujarat Private Universities (Amendment) Act 2009 (Act No. 15 of
@@ -148,8 +148,8 @@ function KpguVadodara() {
           color={"secondary"}
           display={"flex"}
         >
-          <Box pr={2}>
-            <GavelRounded color="inherit" />
+          <Box pr={1}>
+            <BalanceRounded fontSize="large" color="inherit" />
           </Box>
           <Box>
             Education Department Notification No: GH/SH/14/EPU/2020/

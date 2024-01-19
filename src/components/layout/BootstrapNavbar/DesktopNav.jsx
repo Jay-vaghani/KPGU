@@ -3,17 +3,11 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
 import { KeyboardArrowDownRounded } from "@mui/icons-material";
 import "./MainNavStyle.css";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const DesktopNav = () => {
   const navigate = useNavigate();
-
-  const width = {
-    xs: "120px",
-    sm: "170px",
-    lg: "200px",
-  };
 
   const AboutMenuList = [
     {
@@ -202,14 +196,7 @@ const DesktopNav = () => {
   );
 
   return (
-    <NavigationMenu.Root className="NavigationMenuRoot my-2">
-
-      <Box width={width} px={innerWidth < 450 ? 1 : 2}>
-        <img
-          src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"
-          alt="logo"
-        />
-      </Box>
+    <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
         {/* ======================================== HOME ======================================== */}
         <NavigationMenu.Item onClick={() => navigate("/")}>
