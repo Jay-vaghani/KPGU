@@ -108,42 +108,25 @@ const DesktopNav = () => {
 
   const AdmissionMenuList = [
     {
-      title: "UG PROGRAMMES",
-      link: "admission/ug-programs",
-    },
-    {
-      title: "PG PROGRAMMES",
-      link: "admission/pg-programs",
-    },
-    {
-      title: "DOCTORAL PROGRAMMES",
-      link: "admission/doctoral-programmes",
-    },
-    {
-      title: "ADMISSION PROCEDURE",
-      link: "admission/admission-procedure",
-    },
-    {
-      title: "Hostel Life",
-      link: "admission/hostel-life",
+      title: "PROGRAMS",
+      link: "admission/programs",
     },
     {
       title: "SCHOLARSHIPS & FREE-SHIPS",
       link: "admission/scholarships",
     },
     {
+      title: "ADMISSION PROCEDURE",
+      link: "admission/admission-procedure",
+    },
+    {
       title: "EDUCATION LOAN",
       link: "admission/education-loan",
     },
     {
-      title: "TRANSPORTATION",
-      link: "admission/transportation",
+      title: "INTERNATIONAL STUDENTS",
+      link: "admission/international-students",
     },
-    {
-      title: "EXAMINATION SYSTEM",
-      link: "admission/examination-system",
-    },
-
   ];
 
   const ResearchAndPublicationList = [

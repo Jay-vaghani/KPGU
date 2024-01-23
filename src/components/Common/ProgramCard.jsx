@@ -17,10 +17,10 @@ function ProgramCard({ title, des, link, pageLink }) {
         </Typography> */}
         <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Course Duration:</span> 4 Years</h6>
         <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Eligibility:</span> Lorem ipsum dolor sit amet.</h6>
-        <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Fees:</span> 1,00,000</h6>
+        <h6 className='text-secondary fw-semibold mb-2'><span className="color-secondary fw-bold">Fees As Per (FRC):</span> 1,00,000</h6>
         <br />
         <br />
-        <Stack direction={"row"} sx={{ position: "absolute", bottom: 16 }} spacing={1} >
+        <Stack direction={"row"} sx={{ position: "absolute", bottom: 16 }} spacing={1}>
           <Button
             href={link}
             variant="contained"

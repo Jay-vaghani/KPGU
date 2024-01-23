@@ -10,9 +10,8 @@ import { useNavigate } from "react-router-dom";
 
 function MobileNavBar() {
   const width = {
-    xs: "120px",
-    sm: "170px",
-    lg: "200px",
+    xs: "60vw",
+    sm: "320px",
   };
 
   let navigate = useNavigate();

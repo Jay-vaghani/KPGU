@@ -32,7 +32,7 @@ function BannerSlide() {
             color={"#fff"}
             py={1}
             sx={{
-              background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(${item.bannerImg}) center / cover`,
+              background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(${item.bannerImg}) center / cover fixed`,
             }}
           >
             <Stack

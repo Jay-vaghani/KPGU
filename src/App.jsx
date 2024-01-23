@@ -37,13 +37,7 @@ import UniversityOfficers from "./components/Pages/About/pages/UniversityOfficer
 
 import Admission from "./components/Pages/Admission/Admission";
 import AdmissionProcedure from "./components/Pages/Admission/AdmissionProcedure/AdmissionProcedure";
-import DoctoralProgrammes from "./components/Pages/Admission/DoctoralProgrammes/DoctoralProgrammes";
-import EducationLoan from "./components/Pages/Admission/EducationLoan/EducationLoan";
-import ExaminationSystem from "./components/Pages/Admission/ExaminationSystem/ExaminationSystem";
-import HostelLife from "./components/Pages/Admission/HostelLife/HostelLife";
-import PgPrograms from "./components/Pages/Admission/PgPrograms/PgPrograms";
-import UgPrograms from "./components/Pages/Admission/UgPrograms/UgPrograms";
-import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships";
+
 
 
 // ========================================== ACADEMIES ==========================================
@@ -72,6 +66,10 @@ import CampusLife from "./components/Pages/Campus/pages/CampusLife/CampusLife";
 import Facilities from "./components/Pages/Campus/pages/Facilities/Facilities";
 import Gallery from "./components/Pages/Campus/pages/Gallery/Gallery";
 import ContactNavbar from "./components/layout/BootstrapNavbar/ContactNavbar";
+import Programs from "./components/Pages/Admission/Programs/Programs";
+import EducationLoan from "./components/Pages/Admission/EducationLoan/EducationLoan";
+import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships";
+import InternationalStudents from "./components/Pages/Admission/InternationalStudents/InternationalStudents";
 
 
 // ========================================== CAMPUS ==========================================
@@ -161,10 +159,11 @@ function App() {
             </Route>
 
             <Route path="/admission" element={<Admission />}>
-              <Route path="admission-procedure" element={< AdmissionProcedure />}></Route>
-              <Route path="doctoral-programmes" element={<DoctoralProgrammes />}></Route>
-              <Route path="pg-programs" element={<PgPrograms />}></Route>
-              <Route path="ug-programs" element={<UgPrograms />}></Route>
+              <Route path="programs" element={<Programs />}></Route>
+              <Route path="admission-procedure" element={<AdmissionProcedure />}></Route>
+              <Route path="education-loan" element={<EducationLoan />}></Route>
+              <Route path="international-students" element={<InternationalStudents />}></Route>
+              <Route path="scholarships" element={<Scholarships />}></Route>
             </Route>
 
           </Routes>

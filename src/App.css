@@ -203,22 +203,3 @@
   transform: translateY(-10px);
 }
 
-/* Gallery */
-
-.filter {
-  height: 0;
-  overflow: hidden;
-  transition: var(--tarnation);
-}
-.filter.active {
-  height: 30px;
-  min-width: 525px;
-}
-
-.gallery-image {
-  cursor: pointer;
-  transition: var(--tarnation);
-}
-.gallery-image:hover {
-  scale: 1.09;
-}

@@ -31,7 +31,7 @@ p {
   outline: none;
   user-select: none;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--violet-11);
   text-decoration: none;
   cursor: pointer;
@@ -153,7 +153,7 @@ p {
 
 .ListItemHeading {
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1;
   margin-bottom: 5px;
   color: var(--violet-12);
 }
