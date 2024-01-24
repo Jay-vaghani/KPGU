@@ -70,6 +70,7 @@ import Programs from "./components/Pages/Admission/Programs/Programs";
 import EducationLoan from "./components/Pages/Admission/EducationLoan/EducationLoan";
 import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships";
 import InternationalStudents from "./components/Pages/Admission/InternationalStudents/InternationalStudents";
+import AdmissionInquiry from "./components/Pages/AdmissionInquiry/AdmissionInquiry";
 
 
 // ========================================== CAMPUS ==========================================
@@ -97,7 +98,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <AppProvider>
         <Box>
-        <ContactNavbar />
+          <ContactNavbar />
           <MainNavbar />
 
           <Routes>
@@ -165,7 +166,7 @@ function App() {
               <Route path="international-students" element={<InternationalStudents />}></Route>
               <Route path="scholarships" element={<Scholarships />}></Route>
             </Route>
-
+            <Route path="/admission-inquiry" element={<AdmissionInquiry />}></Route>
           </Routes>
           {/* <Footer /> */}
         </Box>

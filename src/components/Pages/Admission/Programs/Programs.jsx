@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Box, Button, Grid, Tab } from "@mui/material";
 import { AppContext } from "../../../../contexts/AppContext";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
+import ProgramCard from "../../../Common/ProgramCard";
 
 function Programs() {
     const { maxWidth, innerWidth } = useContext(AppContext);
@@ -12,81 +13,475 @@ function Programs() {
         setCategory(newValue);
     };
 
+    const DiplomaPrograms = [
+        {
+            faculty: "FACULTY OF ENGINEERING & TECHNOLOGY",
+            programs: [
+                {
+                    title: "Computer Science & Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "Mechanical Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "Civil Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "Chemical Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "Information Technology",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "Electrical Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "Computer Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ],
+        },
+    ];
 
     const UgPrograms = [
         {
             faculty: "FACULTY OF ENGINEERING & TECHNOLOGY",
-            ugPrograms: [
+            programs: [
                 {
-                    title: "B. Tech in Computer Science & Engineering"
+                    title: "B. Tech in Computer Science & Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B. Tech in Information Technology"
+                    title: "B. Tech in Information Technology",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B. Tech in Mechanical Engineering"
+                    title: "B. Tech in Mechanical Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B. Tech in Electrical Engineering"
+                    title: "B. Tech in Electrical Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B. Tech in Civil Engineering"
+                    title: "B. Tech in Civil Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B.Tech in Computer Engineering"
+                    title: "B.Tech in Computer Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B.Tech in Food Technology"
+                    title: "B.Tech in Food Technology",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
-            ]
+            ],
         },
         {
             faculty: "FACULTY OF SCIENCE",
-            ugPrograms: [
+            programs: [
                 {
-                    title: "B.Sc [Honours] in Physics, Chemistry & Mathematics"
+                    title: "B.Sc [Honours] in Physics, Chemistry & Mathematics",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B.Sc [Honours] in Chemistry, Biotechnology & Microbiology"
+                    title: "B.Sc [Honours] in Chemistry, Biotechnology & Microbiology",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
-            ]
+            ],
         },
         {
             faculty: "FACULTY OF HUMANITIES & POLICY STUDIES",
-            ugPrograms: [
+            programs: [
                 {
-                    title: "B.A. [Honours]"
+                    title: "B.A. [Honours]",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ],
+        },
+        {
+            faculty: "FACULTY OF MEDICINE & HEALTHCARE",
+            programs: [
+                {
+                    title: "B. Pharm",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "BAMS",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "B.Sc. (Nursing)",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "GNM",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "B.P.T",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ],
+        },
+        {
+            faculty: "Faculty Of Commerce & Management",
+            programs: [
+                {
+                    title: "B. Com (Honours) in Wealth Management & Computerized GST",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "B.B.A [Honours]",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ]
+        }
+    ];
+
+    const PgPrograms = [
+        {
+            faculty: "Faculty Of Engineering & Technology",
+            programs: [
+                {
+                    title: "M. Tech in Advance Manufacturing System",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Tech in Data Science",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Tech in Computer Science & Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Tech in Computer Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Tech in Electrical Engineering",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Tech in Information Technology",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ],
+        },
+        {
+            faculty: "Faculty Of Medicine & Healthcare",
+            programs: [
+                {
+                    title: "M. Pharm in Pharmaceutics",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Pharm in Pharmacology",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Pharm in Pharmaceutical Quality Assurance",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Pharm in Pharmaceutical Technology",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M.P.T in Musculoskeletal & Sports",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M.P.T in Neurological & Psychosomatic disorders",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M.P.T in Cardio - Respiratory & Intensive Care",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
             ]
         },
         {
-            faculty: "FACULTY OF MEDICINE & HEALTHCARE",
-            ugPrograms: [
+            faculty: "Faculty Of Commerce & Management",
+            programs: [
                 {
-                    title: "B. Pharm"
+                    title: "Master of Business Administration [M.B.A]",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ]
+        }
+    ];
+
+    const DoctoralProgram = [
+        {
+            faculty: "Under Graduate",
+            programs: [
+                {
+                    title: "B. Pharm",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "BAMS"
+                    title: "BAMS",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B.Sc. (Nursing)"
+                    title: "B.Sc. (Nursing)",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "GNM"
+                    title: "GNM",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
                 {
-                    title: "B.P.T"
+                    title: "B.P.T",
+                    link: "",
+                    duration: "4",
+                    eligibility:
+                        "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+            ],
+        },
+        {
+            faculty: "Post Graduate",
+            programs: [
+                {
+                    title: "M. Pharm in Pharmaceutics",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Pharm in Pharmacology",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Pharm in Pharmaceutical Quality Assurance",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M. Pharm in Pharmaceutical Technology",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M.P.T in Musculoskeletal & Sports",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M.P.T in Neurological & Psychosomatic disorders",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
+                },
+                {
+                    title: "M.P.T in Cardio - Respiratory & Intensive Care",
+                    link: "",
+                    duration: "4",
+                    eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+                    fees: "1,00,000",
                 },
             ]
         }
     ]
+
+    const ProgramComponents = ({ faculty, programs }) => (
+        <>
+            <h3 className="color-secondary my-5 fw-bold text-uppercase">{faculty}</h3>
+            <Grid container spacing={2}>
+                {programs.map(({ title, link, duration, eligibility, fees }, index) => (
+                    <ProgramCard
+                        title={title}
+                        link={link}
+                        duration={duration}
+                        eligibility={eligibility}
+                        fees={fees}
+                        key={index}
+                    />
+                ))}
+
+            </Grid>
+        </>
+    );
 
     return (
         <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
             <h4 className="color-secondary mb-4 fw-bold">FIND YOUR PROGRAMMES</h4>
             <TabContext value={category}>
                 <Grid container spacing={2} position={"relative"}>
-                    <Grid item xs={12} lg={4}>
+                    <Grid item xs={12} lg={12}>
                         <Box
                             position={"sticky"}
                             top={0}
@@ -100,29 +495,20 @@ function Programs() {
                                 indicatorColor="secondary"
                                 aria-label="lab API tabs example"
                                 textColor="secondary"
-                                orientation={`${innerWidth < 1200 ? "horizontal" : "vertical"}`}
-                                variant="scrollable"
+                                variant={`${innerWidth < 890 ? "scrollable" : "fullWidth"}`}
                             >
+                                <Tab label="diploma" value="diploma" sx={{ fontWeight: 600 }} />
                                 <Tab
-                                    className="align-items-start"
-                                    label="diploma"
-                                    value="diploma"
-                                    sx={{ fontWeight: 600 }}
-                                />
-                                <Tab
-                                    className="align-items-start"
                                     label="ug programs"
                                     value="ug programs"
                                     sx={{ fontWeight: 600 }}
                                 />
                                 <Tab
-                                    className="align-items-start"
                                     label="pg programs"
                                     value="pg programs"
                                     sx={{ fontWeight: 600 }}
                                 />
                                 <Tab
-                                    className="align-items-start"
                                     label="doctoral program"
                                     value="doctoral program"
                                     sx={{ fontWeight: 600 }}
@@ -130,63 +516,49 @@ function Programs() {
                             </TabList>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} lg={8}>
+                    <Grid item xs={12} lg={12}>
                         <Box
                             p={2}
                             bgcolor={"#fff"}
                             className={"smooth-shadow"}
                             borderRadius={4}
                         >
-                            <TabPanel value="diploma">
-                                <h4 className="color-secondary mb-4 fw-bold">FACULTY OF ENGINEERING & TECHNOLOGY</h4>
-                                <Grid container spacing={2}>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Computer Science & Engineering</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Information Technology</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Mechanical Engineering</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Electrical Engineering</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Civil Engineering</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Computer Engineering</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <Box className="smooth-shadow-card" p={2} borderRadius={4}>
-                                            <h5 className="color-secondary mb-2 fw-bold">Chemical Engineering</h5>
-                                            <Button variant="contained" size="small" disableElevation className="fw-bold" color="secondary" >apply</Button>
-                                        </Box>
-                                    </Grid>
-                                </Grid>
+                            <TabPanel sx={{ p: 0 }} value="diploma">
+                                {DiplomaPrograms.map(({ faculty, programs }, index) => (
+                                    <ProgramComponents
+                                        faculty={faculty}
+                                        programs={programs}
+                                        key={index}
+                                    />
+                                ))}
                             </TabPanel>
-                            <TabPanel value="ug programs">UG PROGRAMS</TabPanel>
-                            <TabPanel value="pg programs">PG PROGRAMS</TabPanel>
-                            <TabPanel value="doctoral program">DOCTORAL PROGRAM</TabPanel>
+                            <TabPanel sx={{ p: 0 }} value="ug programs">
+                                {UgPrograms.map(({ faculty, programs }, index) => (
+                                    <ProgramComponents
+                                        faculty={faculty}
+                                        programs={programs}
+                                        key={index}
+                                    />
+                                ))}
+                            </TabPanel>
+                            <TabPanel sx={{ p: 0 }} value="pg programs">
+                                {PgPrograms.map(({ faculty, programs }, index) => (
+                                    <ProgramComponents
+                                        faculty={faculty}
+                                        programs={programs}
+                                        key={index}
+                                    />
+                                ))}
+                            </TabPanel>
+                            <TabPanel value="doctoral program">
+                                {DoctoralProgram.map(({ faculty, programs }, index) => (
+                                    <ProgramComponents
+                                        faculty={faculty}
+                                        programs={programs}
+                                        key={index}
+                                    />
+                                ))}
+                            </TabPanel>
                         </Box>
                     </Grid>
                 </Grid>
@@ -197,12 +569,15 @@ function Programs() {
 
 export default Programs;
 
-
 // {
 //     faculty: "",
-//     ugPrograms: [
+//     programs: [
 //         {
-//             title: ""
+//             title: "",
+//             link: "",
+//             duration: "4",
+//             eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
+//             fees: "1,00,000",
 //         },
 //     ]
 // }
