@@ -89,7 +89,7 @@ function App() {
         main: "#ffe003",
       },
       success: {
-        main: "#25db0f",
+        main: "#00a537",
       },
     },
   });
