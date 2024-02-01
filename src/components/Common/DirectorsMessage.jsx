@@ -16,7 +16,7 @@ function DirectorsMessage({ dirImg, dirName, dirEmail, dirMessage, dirOf, dirOfS
                 <Grid item xs={12} md={8}>
                     <Box bgcolor={"#fff"} height={"100%"} p={2}>
                         <h2 className='fs-1 fw-semibold'>{dirName}</h2>
-                        <h5 className='text-secondary fw-semibold mb-0'>Director Of <br /></h5>
+                        <h5 className='text-secondary fw-semibold mb-0'>Director <br /></h5>
                         <h4 className='color-secondary fw-bold'>{dirOf} <br />{dirOfShort}</h4>
                         <Button variant='contained' color='secondary' href={`mailto:${dirEmail}`} disableElevation startIcon={<MarkunreadRounded />} className='text-lowercase mt-2'>{dirEmail}</Button>
                     </Box>
