@@ -48,6 +48,8 @@ import {
   ArunachalPradesh,
 } from "./CityList";
 
+import toast, { Toaster } from "react-hot-toast";
+
 import {
   After10th,
   AfterDiplomaEngineeringD2D,
@@ -70,7 +72,7 @@ import axios from "axios";
 import { LoadingButton } from "@mui/lab";
 
 function AdmissionInquiry() {
-  const BackendUrl = "http://localhost:5000";
+  const BackendUrl = "https://kpgu-backend.up.railway.app";
   const { maxWidth } = useContext(AppContext);
   const [loadingState, setLoadingState] = useState(false);
 
@@ -268,7 +270,7 @@ function AdmissionInquiry() {
 
   const form = useForm();
 
-  const { register, control, handleSubmit, formState } = form;
+  const { register, control, handleSubmit, formState, watch } = form;
 
   const { errors } = formState;
 
@@ -287,10 +289,14 @@ function AdmissionInquiry() {
       })
       .then((res) => {
         console.log(res);
+        console.log("ok");
+        res.data.success === false ? toast.error(res.data.message) : "";
+        res.data.success === true ? toast.success(res.data.message) : "";
+
         setLoadingState(false);
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
         setLoadingState(false);
       });
   };
@@ -586,6 +592,10 @@ function AdmissionInquiry() {
                             value: true,
                             message: "Please Enter Your Email",
                           },
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Please Enter Valid Email Address",
+                          },
                         })}
                       />
                     </Box>
@@ -608,6 +618,10 @@ function AdmissionInquiry() {
                             value: true,
                             message: "Please Enter Your Number",
                           },
+                          pattern: {
+                            value: /^\d{10}$/,
+                            message: "Please Enter Valid Phone Number",
+                          },
                         })}
                       />
                     </Box>
@@ -620,6 +634,7 @@ function AdmissionInquiry() {
                         label="Student Category"
                         select
                         variant="filled"
+                        value={watch("category") || ""}
                         id="category"
                         helperText={
                           errors.category ? errors.category.message : false
@@ -803,7 +818,7 @@ function AdmissionInquiry() {
           height="350px"
           style={{ borderRadius: "7px" }}
           allowFullScreen=""
-          loading="lazy"
+          loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <Button
@@ -817,7 +832,7 @@ function AdmissionInquiry() {
           open in maps
         </Button>
       </Box>
-      <DevTool control={control} />
+      <Toaster />
     </>
   );
 }
