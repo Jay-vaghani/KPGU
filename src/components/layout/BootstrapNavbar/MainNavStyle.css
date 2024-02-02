@@ -309,3 +309,9 @@ p {
     opacity: 0;
   }
 }
+
+/* Bootstrap custom nave  */
+
+.nav-link{
+  font-size: 1rem !important;
+}

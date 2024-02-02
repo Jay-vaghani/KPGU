@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -7,10 +7,11 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Accordion from "react-bootstrap/Accordion";
 import { useNavigate } from "react-router-dom";
+import { FeedRounded, WorkRounded } from "@mui/icons-material";
 
 function MobileNavBar() {
   const width = {
-    xs: "60vw",
+    xs: "64vw",
     sm: "320px",
   };
 
@@ -35,6 +36,10 @@ function MobileNavBar() {
               src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703583684/KPGU/logo.svg"
               alt="Logo"
               width={"100%"}
+              onClick={() => {
+                closeMenu();
+                navigate("/");
+              }}
             />
           </Box>
         </Navbar.Brand>
@@ -240,6 +245,28 @@ function MobileNavBar() {
               <NavDropdown.Item>KPGU JOURNAL</NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <Button
+            variant="contained"
+            color="info"
+            startIcon={<FeedRounded />}
+            onClick={() => {
+              closeMenu();
+              navigate("/admission-inquiry");
+            }}
+            sx={{ mb: 1.5 }}
+          >
+            admission inquiry
+          </Button>
+          <br />
+          <Button
+            variant="contained"
+            color="info"
+            disableElevation
+            sx={{ mb: 1.5 }}
+            startIcon={<WorkRounded />}
+          >
+            Career
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

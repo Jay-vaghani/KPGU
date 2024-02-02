@@ -270,7 +270,7 @@ function AdmissionInquiry() {
 
   const form = useForm();
 
-  const { register, control, handleSubmit, formState, watch } = form;
+  const { register, handleSubmit, formState, watch, reset, resetField } = form;
 
   const { errors } = formState;
 
@@ -294,10 +294,12 @@ function AdmissionInquiry() {
         res.data.success === true ? toast.success(res.data.message) : "";
 
         setLoadingState(false);
+        reset();
       })
       .catch((error) => {
         console.error(error);
         setLoadingState(false);
+        reset();
       });
   };
 
@@ -314,7 +316,7 @@ function AdmissionInquiry() {
         mt={4}
       >
         <h1 className="mb-0 fw-bold color-secondary">
-          ADMISSION INQUIRY FOR YEAR{" "}
+          ADMISSION INQUIRY FORM FOR YEAR{" "}
           <Typography
             variant="caption"
             fontSize={"inherit"}
@@ -326,7 +328,15 @@ function AdmissionInquiry() {
       </Box>
       <Box maxWidth={maxWidth} mx={"auto"} borderRadius={4} mt={4}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={5}>
+          <Grid
+            item
+            xs={12}
+            md={5}
+            order={{
+              xs: 2,
+              md: 1,
+            }}
+          >
             <Box
               bgcolor={"#fff"}
               height={`auto`}
@@ -334,7 +344,7 @@ function AdmissionInquiry() {
               borderRadius={4}
               className="smooth-shadow"
             >
-              <h2 className="fs-1 fw-semibold color-secondary p-2">
+              <h2 className="display-6 fw-semibold color-secondary">
                 For Any Query{" "}
               </h2>
               <Grid container spacing={2} height={"100%"}>
@@ -366,6 +376,8 @@ function AdmissionInquiry() {
                           variant="contained"
                           color="success"
                           startIcon={<WhatsApp />}
+                          href="https://wa.me/7861805306"
+                          target="_blank"
                         >
                           <Box
                             display={{
@@ -373,7 +385,9 @@ function AdmissionInquiry() {
                               sm: "none",
                             }}
                           >
-                            WhatsApp 1
+                            <Typography variant="caption" fontSize={"inherit"}>
+                              WhatsApp 1
+                            </Typography>
                           </Box>
                           <Box
                             textTransform={"lowercase"}
@@ -391,6 +405,8 @@ function AdmissionInquiry() {
                           variant="contained"
                           color="success"
                           startIcon={<WhatsApp />}
+                          href="https://wa.me/7861805208"
+                          target="_blank"
                         >
                           <Box
                             display={{
@@ -398,7 +414,9 @@ function AdmissionInquiry() {
                               sm: "none",
                             }}
                           >
-                            WhatsApp 2
+                            <Typography variant="caption" fontSize={"inherit"}>
+                              WhatsApp 2
+                            </Typography>
                           </Box>
                           <Box
                             textTransform={"lowercase"}
@@ -408,7 +426,7 @@ function AdmissionInquiry() {
                             }}
                           >
                             <Typography variant="caption" fontSize={"inherit"}>
-                              7861805306
+                              7861805208
                             </Typography>
                           </Box>
                         </Button>
@@ -444,6 +462,8 @@ function AdmissionInquiry() {
                           variant="contained"
                           color="info"
                           startIcon={<LocalPhoneRounded />}
+                          href="tel:7861805306"
+                          target="_blank"
                         >
                           <Box
                             display={{
@@ -451,7 +471,9 @@ function AdmissionInquiry() {
                               sm: "none",
                             }}
                           >
-                            Phone 1
+                            <Typography variant="caption" fontSize={"inherit"}>
+                              Phone 1
+                            </Typography>
                           </Box>
                           <Box
                             textTransform={"lowercase"}
@@ -469,6 +491,8 @@ function AdmissionInquiry() {
                           variant="contained"
                           color="info"
                           startIcon={<LocalPhoneRounded />}
+                          href="tel:7861805208"
+                          target="_blank"
                         >
                           <Box
                             display={{
@@ -476,7 +500,9 @@ function AdmissionInquiry() {
                               sm: "none",
                             }}
                           >
-                            Phone 2
+                            <Typography variant="caption" fontSize={"inherit"}>
+                              Phone 2
+                            </Typography>
                           </Box>
                           <Box
                             textTransform={"lowercase"}
@@ -486,7 +512,7 @@ function AdmissionInquiry() {
                             }}
                           >
                             <Typography variant="caption" fontSize={"inherit"}>
-                              7861805306
+                              7861805208
                             </Typography>
                           </Box>
                         </Button>
@@ -507,6 +533,7 @@ function AdmissionInquiry() {
                     p={1}
                     className="smooth-shadow-card"
                     borderRadius={4}
+                    height={"100%"}
                   >
                     <Box>
                       <img
@@ -521,6 +548,8 @@ function AdmissionInquiry() {
                         variant="contained"
                         color="primary"
                         startIcon={<EmailRounded />}
+                        href="mailto:admission@kpgu.ac.in"
+                        target="_blank"
                       >
                         <Box
                           display={{
@@ -547,7 +576,15 @@ function AdmissionInquiry() {
             </Box>
           </Grid>
 
-          <Grid item xs={12} md={7}>
+          <Grid
+            item
+            xs={12}
+            md={7}
+            order={{
+              xs: 1,
+              md: 2,
+            }}
+          >
             <form onSubmit={handleSubmit(formSummit)}>
               <Box
                 p={"3%"}
@@ -555,7 +592,7 @@ function AdmissionInquiry() {
                 borderRadius={4}
                 className="smooth-shadow"
               >
-                <Grid container spacing={2.5}>
+                <Grid container spacing={2.2}>
                   <Grid item xs={12} sm={6}>
                     <Box>
                       <TextField

@@ -4,8 +4,10 @@ import {
 } from "@mui/icons-material";
 import { Box, Button, Grid, Typography, Stack } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ProgramCard({ title, link, duration, eligibility, fees }) {
+  const navigate = useNavigate();
   return (
     <Grid item xs={12} md={6}>
       <Box
@@ -40,16 +42,7 @@ function ProgramCard({ title, link, duration, eligibility, fees }) {
             {fees}
           </Typography>
         </h6>
-        <h6 className="text-secondary fw-semibold mb-0">
-          <span className="color-secondary fw-bold">Eligibility:</span>{" "}
-          <Typography
-            variant="caption"
-            fontSize={"16px"}
-            className="fw-semibold"
-          >
-            {eligibility}
-          </Typography>
-        </h6>
+       
 
         <br />
         <br />
@@ -75,6 +68,7 @@ function ProgramCard({ title, link, duration, eligibility, fees }) {
             // disableElevation
             endIcon={<KeyboardDoubleArrowRightRounded />}
             sx={{ px: "12px" }}
+            onClick={() => navigate("/admission-inquiry")}
           >
             Apply
           </Button>
