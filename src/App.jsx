@@ -67,6 +67,7 @@ import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships
 import InternationalStudents from "./components/Pages/Admission/InternationalStudents/InternationalStudents";
 import AdmissionInquiry from "./components/Pages/AdmissionInquiry/AdmissionInquiry";
 import Page404 from "./components/Pages/Page404/Page404";
+import StudentCorner from "./components/Pages/StudentCorner/StudentCorner";
 
 // ========================================== CAMPUS ==========================================
 
@@ -245,6 +246,7 @@ function App() {
               path="/admission-inquiry"
               element={<AdmissionInquiry />}
             ></Route>
+            <Route path="/student-corner" element={<StudentCorner />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
           {/* <Footer /> */}

@@ -91,6 +91,7 @@ function ContactNavbar() {
                 disableElevation
                 className="fw-semibold justify-content-start"
                 startIcon={<SchoolRounded />}
+                onClick={() => navigate("student-corner")}
               >
                 Student corner
               </Button>
