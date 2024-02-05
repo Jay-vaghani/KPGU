@@ -33,15 +33,10 @@ import InstituteOfPharmacy from "./components/Pages/About/pages/Approvals/Instit
 import AwardsAccolades from "./components/Pages/About/pages/AwardsAccolades";
 import UniversityOfficers from "./components/Pages/About/pages/UniversityOfficers";
 
-
-
 import Admission from "./components/Pages/Admission/Admission";
 import AdmissionProcedure from "./components/Pages/Admission/AdmissionProcedure/AdmissionProcedure";
 
-
-
 // ========================================== ACADEMIES ==========================================
-
 
 import Academic from "./components/Pages/Academic/Schools";
 import FacultyOfCommerceAndManagement from "./components/Pages/Academic/FacultiesNew/FacultyOfCommerceAndManagement/FacultyOfCommerceAndManagement";
@@ -71,10 +66,9 @@ import EducationLoan from "./components/Pages/Admission/EducationLoan/EducationL
 import Scholarships from "./components/Pages/Admission/Scholarships/Scholarships";
 import InternationalStudents from "./components/Pages/Admission/InternationalStudents/InternationalStudents";
 import AdmissionInquiry from "./components/Pages/AdmissionInquiry/AdmissionInquiry";
-
+import Page404 from "./components/Pages/Page404/Page404";
 
 // ========================================== CAMPUS ==========================================
-
 
 function App() {
   const theme = createTheme({
@@ -109,48 +103,123 @@ function App() {
               <Route path="achievements" element={<Achievements />} />
               <Route path="kpgu-vadodara" element={<KpguVadodara />} />
               <Route path="vision-mission" element={<VisionMission />} />
-              <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
-              <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk />} />
-              <Route path="message-from-the-provost" element={<MessageFromTheProvost />} />
-              <Route path="statutory-recognition" element={<StatutoryRecognition />} />
+              <Route
+                path="dr-kiran-c-patel-message"
+                element={<DrKiranCPatelMessage />}
+              />
+              <Route
+                path="message-from-the-presidents-desk"
+                element={<MessageFromThePresidentsDesk />}
+              />
+              <Route
+                path="message-from-the-provost"
+                element={<MessageFromTheProvost />}
+              />
+              <Route
+                path="statutory-recognition"
+                element={<StatutoryRecognition />}
+              />
               <Route path="awards-accolades" element={<AwardsAccolades />} />
-              <Route path="university-officers" element={<UniversityOfficers />} />
+              <Route
+                path="university-officers"
+                element={<UniversityOfficers />}
+              />
               <Route path="governance" element={<Governance />}>
                 <Route path="governing-body" element={<GoverningBody />} />
-                <Route path="board-of-management" element={<BoardOfManagement />} />
+                <Route
+                  path="board-of-management"
+                  element={<BoardOfManagement />}
+                />
                 <Route path="academic-council" element={<AcademicCouncil />} />
                 <Route path="board-of-studies" element={<BoardOfStudies />} />
-                <Route path="finance-committee" element={<FinanceCommittee />} />
+                <Route
+                  path="finance-committee"
+                  element={<FinanceCommittee />}
+                />
               </Route>
               <Route path="approvals" element={<Approvals />}>
-                <Route path="institute-of-technology" element={<InstituteOfTechnology />} />
-                <Route path="institute-of-pharmacy" element={<InstituteOfPharmacy />} />
+                <Route
+                  path="institute-of-technology"
+                  element={<InstituteOfTechnology />}
+                />
+                <Route
+                  path="institute-of-pharmacy"
+                  element={<InstituteOfPharmacy />}
+                />
                 <Route path="ugc-approval" element={<UgcApproval />} />
               </Route>
-
             </Route>
-
 
             <Route path="/academics" element={<Academic />}>
               {/* ======================== Faculty ======================== */}
-              <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />} />
-              <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />} />
-              <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />} />
-              <Route path="faculty-of-sciences" element={<FacultyOfSciences />} />
-              <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />} />
+              <Route
+                path="faculty-of-engineering-and-technology"
+                element={<FacultyOfEngineeringAndTechnology />}
+              />
+              <Route
+                path="faculty-of-medicine-and-healthcare"
+                element={<FacultyOfMedicineAndHealthcare />}
+              />
+              <Route
+                path="faculty-of-commerce-and-management"
+                element={<FacultyOfCommerceAndManagement />}
+              />
+              <Route
+                path="faculty-of-sciences"
+                element={<FacultyOfSciences />}
+              />
+              <Route
+                path="faculty-of-humanities-and-policy-studies"
+                element={<FacultyOfHumanitiesAndPolicyStudies />}
+              />
               {/* ======================== Schools ======================== */}
 
-              <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />} />
-              <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />} />
-              <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />} />
-              <Route path="krishna-school-of-sciences" element={<KrishnaSchoolOfSciences />} />
-              <Route path="krishna-school-of-physiotherapy-and-rehabilitation" element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />} />
-              <Route path="krishna-school-of-nursing" element={<KrishnaSchoolOfNursing />} />
-              <Route path="krishna-ayurved-medical-college" element={<KrishnaAyurvedMedicalCollege />} />
-              <Route path="krishna-school-of-pharmacy-and-research" element={<KrishnaSchoolOfPharmacyAndResearch />} />
-              <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
-              <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
-              <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
+              <Route
+                path="krishna-school-of-business-management"
+                element={<KrishnaSchoolOfBusinessManagement />}
+              />
+              <Route
+                path="krishna-school-of-commerce"
+                element={<KrishnaSchoolOfCommerce />}
+              />
+              <Route
+                path="krishna-school-of-arts-and-humanities"
+                element={<KrishnaSchoolOfArtsAndHumanities />}
+              />
+              <Route
+                path="krishna-school-of-sciences"
+                element={<KrishnaSchoolOfSciences />}
+              />
+              <Route
+                path="krishna-school-of-physiotherapy-and-rehabilitation"
+                element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />}
+              />
+              <Route
+                path="krishna-school-of-nursing"
+                element={<KrishnaSchoolOfNursing />}
+              />
+              <Route
+                path="krishna-ayurved-medical-college"
+                element={<KrishnaAyurvedMedicalCollege />}
+              />
+              <Route
+                path="krishna-school-of-pharmacy-and-research"
+                element={<KrishnaSchoolOfPharmacyAndResearch />}
+              />
+              <Route
+                path="krishna-school-of-technology"
+                element={<KrishnaSchoolOfTechnology />}
+              />
+              <Route
+                path="krishna-school-of-diploma-studies"
+                element={<KrishnaSchoolOfDiplomaStudies />}
+              />
+              <Route
+                path="krishna-school-of-emerging-technology-and-applied-research"
+                element={
+                  <KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />
+                }
+              />
             </Route>
 
             <Route path="/campus" element={<Campus />}>
@@ -161,12 +230,22 @@ function App() {
 
             <Route path="/admission" element={<Admission />}>
               <Route path="programs" element={<Programs />}></Route>
-              <Route path="admission-procedure" element={<AdmissionProcedure />}></Route>
+              <Route
+                path="admission-procedure"
+                element={<AdmissionProcedure />}
+              ></Route>
               <Route path="education-loan" element={<EducationLoan />}></Route>
-              <Route path="international-students" element={<InternationalStudents />}></Route>
+              <Route
+                path="international-students"
+                element={<InternationalStudents />}
+              ></Route>
               <Route path="scholarships" element={<Scholarships />}></Route>
             </Route>
-            <Route path="/admission-inquiry" element={<AdmissionInquiry />}></Route>
+            <Route
+              path="/admission-inquiry"
+              element={<AdmissionInquiry />}
+            ></Route>
+            <Route path="*" element={<Page404 />} />
           </Routes>
           {/* <Footer /> */}
         </Box>
@@ -176,11 +255,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-

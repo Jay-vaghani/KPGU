@@ -123,10 +123,10 @@ const DesktopNav = () => {
       title: "EDUCATION LOAN",
       link: "admission/education-loan",
     },
-    {
-      title: "INTERNATIONAL STUDENTS",
-      link: "admission/international-students",
-    },
+    // {
+    //   title: "INTERNATIONAL STUDENTS",
+    //   link: "admission/international-students",
+    // },
   ];
 
   const ResearchAndPublicationList = [
