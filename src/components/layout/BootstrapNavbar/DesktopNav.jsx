@@ -72,22 +72,18 @@ const DesktopNav = () => {
     {
       title: "Faculty Of Medicine & Healthcare",
       link: "academics/faculty-of-medicine-and-healthcare",
-
     },
     {
       title: "Faculty Of Science",
       link: "academics/faculty-of-sciences",
-
     },
     {
       title: "Faculty Of Commerce & Management",
       link: "academics/faculty-of-commerce-and-management",
-
     },
     {
       title: "Faculty Of Humanities & Policy Studies",
       link: "academics/faculty-of-humanities-and-policy-studies",
-
     },
   ];
 
@@ -286,6 +282,9 @@ const DesktopNav = () => {
         <NavigationMenu.Item onClick={() => navigate("/")}>
           <NavigationMenu.Link className="NavigationMenuLink">
             PLACEMENTS
+          </NavigationMenu.Link>
+          <NavigationMenu.Link className="NavigationMenuLink">
+            CENTERS & CELLS
           </NavigationMenu.Link>
         </NavigationMenu.Item>
         {/* ======================================== Navigation Indicator ======================================== */}

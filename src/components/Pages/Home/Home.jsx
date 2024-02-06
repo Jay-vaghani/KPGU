@@ -1,22 +1,21 @@
 import React from "react";
-import { Stack } from "react-bootstrap";
-import BannerSlide from "./BannerSlide";
-import JourneyAhead from "./JourneyAhead";
+import HeroPage from "./HeroPage";
 import Testimonials from "./Testimonials";
-import Events from "./Events";
-import News from "./News";
-
-// import required modules
+import AboutSection from "./AboutSection";
+import FacultyAndCollageSection from "./FacultyAndCollageSection";
+import EventsSection from "./EventsSection";
+import KpguMilestones from "./KpguMilestones";
 
 function Home() {
   return (
-    <Stack>
-      <BannerSlide />
-      <JourneyAhead />
+    <div>
+      <HeroPage />
+      <AboutSection />
+      <KpguMilestones />
+      <FacultyAndCollageSection />
+      <EventsSection />
       <Testimonials />
-      <Events />
-      <News />
-    </Stack>
+    </div>
   );
 }
 

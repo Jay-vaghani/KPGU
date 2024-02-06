@@ -7,13 +7,10 @@ import { AppContext } from '../../../../../contexts/AppContext';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
 
 // import required modules
 import { EffectFade, Pagination, Autoplay, } from 'swiper/modules';
 
-import FacilitiesSection from '../../../../Common/FacilitiesSection';
 import { ArrowBackIosNewRounded, ArrowForwardIosRounded } from '@mui/icons-material';
 
 function Facilities() {

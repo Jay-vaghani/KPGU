@@ -25,7 +25,7 @@ function StudentCorner() {
       name: "Student Login",
       imageLink:
         "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707116443/KPGU/StudentCorner/student-login.svg",
-      hrefLink: "",
+      hrefLink: "https://ums.kpgu.ac.in/Login.aspx",
     },
   ];
 
@@ -55,6 +55,7 @@ function StudentCorner() {
               href={hrefLink}
               disableElevation
               sx={{ mb: 1.5 }}
+              target="_blank"
             >
               See more
             </Button>
@@ -67,7 +68,7 @@ function StudentCorner() {
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
       <h1 className="mb-3 display-5 fw-medium ">Student corner</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         <Grid
           item
           xs={12}

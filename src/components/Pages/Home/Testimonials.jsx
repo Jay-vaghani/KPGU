@@ -10,8 +10,7 @@ import React, { useContext, useRef } from "react";
 import { AppContext } from "../../../contexts/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, FreeMode } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+
 import {
   ArrowBackIosNewRounded,
   ArrowForwardIosRounded,
@@ -54,18 +53,12 @@ function Testimonials() {
       className="smooth-shadow rounded-4"
       rowGap={innerWidth > 1200 ? 0 : 4}
       bgcolor={"#fff"}
-
     >
       <Grid item xs={12} lg={4}>
         <Box pr={3}>
-          <Typography
-            variant="h2"
-            className="journey-heading-2"
-            gutterBottom
-            fontWeight={600}
-          >
+          <h2 className="fs-1 text-uppercase fw-semibold ">
             Listen What Our Students Say
-          </Typography>
+          </h2>
           <Typography variant="h5" mb={2}>
             Hear real students' journeys, uncover their passions, and gain
             genuine insights and understanding of diverse paths taken by
@@ -82,23 +75,23 @@ function Testimonials() {
           startIcon={<CallRounded />}
           variant="contained"
           color="secondary"
-        ><Box
-        display={{
-          xs: "none",
-          sm: "block",
-        }}
-      >
-        8238046519
-      </Box>
-      <Box
-        display={{
-          xs: "block",
-          sm: "none",
-        }}
-      >
-        contact now 
-      </Box>
-          
+        >
+          <Box
+            display={{
+              xs: "none",
+              sm: "block",
+            }}
+          >
+            <Typography variant="caption" fontSize={"inherit"}>8238046519</Typography>
+          </Box>
+          <Box
+            display={{
+              xs: "block",
+              sm: "none",
+            }}
+          >
+            contact now
+          </Box>
         </Button>
       </Grid>
       <Grid item xs={12} lg={8} overflow={"clip"}>

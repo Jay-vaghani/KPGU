@@ -203,45 +203,41 @@ function ContactNavbar() {
               Time: 8:00AM-5:00PM
             </Typography>
 
-            {callButton ? (
-              <Button
-                variant="contained"
-                color="secondary"
-                startIcon={<CallRounded />}
-                className="mt-2"
-                href="tel:8238046519"
-              >
-                <Box display={{ xs: "none", sm: "block" }}>
-                  <Typography
-                    variant="body1"
-                    letterSpacing={1}
-                    fontWeight={"600"}
-                  >
-                    8238046519
-                  </Typography>
-                </Box>
-                <Box display={{ xs: "block", sm: "none" }}>
-                  <Typography
-                    variant="body1"
-                    letterSpacing={1}
-                    fontWeight={"600"}
-                  >
-                    call
-                  </Typography>
-                </Box>
-              </Button>
-            ) : (
-              <Alert
-                severity="warning"
-                sx={{ fontWeight: 800, letterSpacing: 0.5 }}
-                className="mt-3 text-capitalize"
-              >
-                The first and third Saturdays of the month are designated as off
-                days
-              </Alert>
-            )}
+            <Alert
+              severity="warning"
+              sx={{ fontWeight: 800, letterSpacing: 0.5 }}
+              className="mt-3 text-capitalize"
+            >
+              The first and third Saturdays of the month are designated as off
+              days
+            </Alert>
 
-            {/*  */}
+            <Button
+              variant="contained"
+              color="secondary"
+              startIcon={<CallRounded />}
+              className="mt-2"
+              href="tel:8238046519"
+            >
+              <Box display={{ xs: "none", sm: "block" }}>
+                <Typography
+                  variant="body1"
+                  letterSpacing={1}
+                  fontWeight={"600"}
+                >
+                  8238046519
+                </Typography>
+              </Box>
+              <Box display={{ xs: "block", sm: "none" }}>
+                <Typography
+                  variant="body1"
+                  letterSpacing={1}
+                  fontWeight={"600"}
+                >
+                  call
+                </Typography>
+              </Box>
+            </Button>
           </Box>
         </Box>
       </Modal>
