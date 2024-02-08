@@ -451,9 +451,7 @@ function AwardsAccolades() {
         overflow={"clip"}
         position={"relative"}
       >
-        <Box>
-          <img src={img} alt="award" className="img-fluid" />
-        </Box>
+        
         <Box p={2}>
           <Box>
             {/* <h1>{index}</h1> */}

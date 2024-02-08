@@ -14,31 +14,140 @@ function KrishnaAyurvedMedicalCollege() {
 
   const Faculties = [
     {
-      name: "Name",
-      designation: "Assistant Professor",
+      name: "Dr Malhari K Sirdeshpande",
+      designation: "Principal || Professor",
+      experience: 22,
+      imgNo: "6168",
+      imgFaculty:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "Dr Pravin R Firke",
+      designation: "Associate Professor || Reader",
+      experience: 8,
+      imgNo: "5930",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "Dr Vijitha Vijayan",
+      designation: "Assistant Professor || Lecturer",
+      experience: 3,
+      imgNo: "5925",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "Dr Khusboo Kumari Gupta",
+      designation: "Assistant Professor || Lecturer",
+      experience: 2,
+      imgNo: "5927",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "Dr Krishna Priya",
+      designation: "Assistant Professor || Lecturer",
+      experience: 1,
+      imgNo: "5923",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "Dr Mularam Rakewal Suthar",
+      designation: "Assistant Professor || Lecturer",
+      experience: 1,
+      imgNo: "5928",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "DR.PRAVIN N TAKLE",
+      designation: "Associate Professor || Reader",
+      experience: 3,
+      imgNo: "5929",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "DR.NISHA VEGDA",
+      designation: "Associate Professor || Reader",
+      experience: 1,
+      imgNo: "5913",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A || M.A || PhD",
+    },
+    {
+      name: "DR. DAKSHA RATHOD",
+      designation: "Associate Professor || Reader",
+      experience: 8,
+      imgNo: "5919",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "DR.JIGNESHAKUMARI T CHAREL",
+      designation: "Associate Professor || Reader",
+      experience: 3,
+      imgNo: "6172",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "DR. AMAL ABDUL HAMEED",
+      designation: "Associate Professor || Reader",
+      experience: 6,
+      imgNo: "5924",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "DR.MAYUR V BARVE",
+      designation: "Professor",
       experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      imgNo: "5931",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      name: "DR.SYAMA MANIYANKUTTY",
+      designation: "Associate Professor || Lecturer",
+      experience: 3,
+      imgNo: "5922",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      name: "DR. JIGISHA PRAJAPATI",
+      designation: "Associate Professor || Lecturer",
+      experience: 1,
+      imgNo: "5915",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 15,
-      cv: "",
+      name: "DR. HARDIK VARIYA",
+      designation: "Associate Professor || Lecturer",
+      experience: 6,
+      imgNo: "5920",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "DR. TREDHA VYAS",
+      designation: "Associate Professor || Lecturer",
+      experience: 1,
+      imgNo: "5921",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
+      qualification: "B.A.M.S || M.D || M.S",
+    },
+    {
+      name: "Dr.RABIYA SHAIKH",
+      designation: "Associate Professor || Lecturer",
+      experience: 4,
+      imgNo: "5918",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "P.H.D",
     },
   ];
@@ -119,10 +228,22 @@ function KrishnaAyurvedMedicalCollege() {
         </Box>
         <Grid container spacing={2}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                imgFaculty,
+              },
+              index
+            ) => (
               <FacultyStaff
+                imgFaculty={imgFaculty}
                 name={name}
-                cv={cv}
+                imgNo={imgNo}
+               
                 qualification={qualification}
                 designation={designation}
                 experience={experience}

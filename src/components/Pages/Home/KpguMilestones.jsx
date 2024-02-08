@@ -12,32 +12,37 @@ function KpguMilestones() {
       name: "Institutes",
       number: 10,
       image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707213435/KPGU/icon/faculty.svg",
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381503/KPGU/icon/institute.svg",
     },
     {
       name: "Acres Green Campus",
       number: 25,
       image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707213435/KPGU/icon/Map.svg",
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381873/KPGU/icon/green-campus.svg",
     },
     {
       name: "Faculty Staff",
       number: 300,
       image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707213435/KPGU/icon/staff.svg",
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381505/KPGU/icon/faculty.svg",
     },
     {
-      name: "Company Associate",
-      number: 750,
+      name: "Programs",
+      number: 50,
       image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707213435/KPGU/icon/company.svg",
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381505/KPGU/icon/programs.svg",
     },
   ];
 
   const KpguMilestonesComponents = ({ name, number, image }) => (
     <Grid item xs={12} sm={6} md={4} lg={3} textTransform={"uppercase"}>
-      <Box className="smooth-shadow-card" pb={3} pt={1.5} borderRadius={4}>
-        <Box px={"15%"} pt={3} pb={2}>
+      <Box
+        className="smooth-shadow-card"
+        pb={3}
+        borderRadius={4}
+        overflow={"hidden"}
+      >
+        <Box>
           <img src={image} alt="" className="w-100" />
         </Box>
         <Box>
@@ -47,7 +52,7 @@ function KpguMilestones() {
             justifyContent={"center"}
             display={"flex"}
             alignItems={"center"}
-            className="fw-medium "
+            className="fw-medium mt-3"
           >
             {number}
             <Add sx={{ ml: -0.5, fontSize: 40 }} />
@@ -72,9 +77,14 @@ function KpguMilestones() {
       <h2 className="fs-1 text-uppercase fw-semibold mb-4 text-uppercase">
         University achievements and milestones
       </h2>
-      <Grid container spacing={3}>
+      <Grid container spacing={4}>
         {KpguMilestonesStats.map(({ name, number, image }, index) => (
-          <KpguMilestonesComponents name={name} number={number} key={index} image={image}/>
+          <KpguMilestonesComponents
+            name={name}
+            number={number}
+            key={index}
+            image={image}
+          />
         ))}
       </Grid>
     </Box>

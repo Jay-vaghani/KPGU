@@ -28,7 +28,7 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 40%), url(https://res.cloudinary.com/dby2vbxv3/image/upload/v1707131934/KPGU/Banners/banner-1.webp) top / cover",
+            "linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 40%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707382740/KPGU/Banners/banner-1.webp') top / cover",
           height: "90vh",
         }}
       >
