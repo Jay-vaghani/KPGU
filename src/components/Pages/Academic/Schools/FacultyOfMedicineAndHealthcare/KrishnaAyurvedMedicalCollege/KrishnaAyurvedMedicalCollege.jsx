@@ -18,8 +18,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Principal || Professor",
       experience: 22,
       imgNo: "6168",
-      imgFaculty:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -27,7 +25,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Reader",
       experience: 8,
       imgNo: "5930",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -35,7 +32,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Assistant Professor || Lecturer",
       experience: 3,
       imgNo: "5925",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -43,7 +39,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Assistant Professor || Lecturer",
       experience: 2,
       imgNo: "5927",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -51,7 +46,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Assistant Professor || Lecturer",
       experience: 1,
       imgNo: "5923",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -59,7 +53,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Assistant Professor || Lecturer",
       experience: 1,
       imgNo: "5928",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -67,7 +60,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Reader",
       experience: 3,
       imgNo: "5929",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -75,7 +67,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Reader",
       experience: 1,
       imgNo: "5913",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A || M.A || PhD",
     },
     {
@@ -83,7 +74,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Reader",
       experience: 8,
       imgNo: "5919",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -91,7 +81,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Reader",
       experience: 3,
       imgNo: "6172",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -99,7 +88,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Reader",
       experience: 6,
       imgNo: "5924",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -107,7 +95,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Professor",
       experience: 12,
       imgNo: "5931",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -115,7 +102,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Lecturer",
       experience: 3,
       imgNo: "5922",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -123,7 +109,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Lecturer",
       experience: 1,
       imgNo: "5915",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -131,7 +116,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Lecturer",
       experience: 6,
       imgNo: "5920",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -139,7 +123,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Lecturer",
       experience: 1,
       imgNo: "5921",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "B.A.M.S || M.D || M.S",
     },
     {
@@ -147,7 +130,6 @@ function KrishnaAyurvedMedicalCollege() {
       designation: "Associate Professor || Lecturer",
       experience: 4,
       imgNo: "5918",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/KAMC/.jpg",
       qualification: "P.H.D",
     },
   ];
@@ -226,28 +208,23 @@ function KrishnaAyurvedMedicalCollege() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
             (
-              {
-                name,
-                designation,
-                experience,
-                qualification,
-                imgNo,
-                imgFaculty,
-              },
+              { name, designation, experience, qualification, imgNo },
               index
             ) => (
               <FacultyStaff
-                imgFaculty={imgFaculty}
                 name={name}
-                imgNo={imgNo}
-               
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KAMC"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/"
+                }
               />
             )
           )}

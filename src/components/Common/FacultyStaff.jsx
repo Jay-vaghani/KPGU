@@ -10,9 +10,11 @@ function FacultyStaff({
   name,
   designation,
   experience,
-  imgFaculty,
+  facultyName,
   imgNo,
   qualification,
+  MainLink,
+  customLink
 }) {
   return (
     <>
@@ -25,7 +27,15 @@ function FacultyStaff({
           position={"relative"}
         >
           <Box>
-            <img src={`https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/${"KAMC"}/${"5930"}.jpg`} alt="faculty" className="w-100" />
+            <img
+              src={
+                customLink
+                  ? customLink
+                  : `${MainLink}/${facultyName}/${imgNo}.webp`
+              }
+              alt="faculty"
+              className="w-100"
+            />
           </Box>
           <Box p={2}>
             <h4 className="fw-semibold color-secondary ">{name}</h4>

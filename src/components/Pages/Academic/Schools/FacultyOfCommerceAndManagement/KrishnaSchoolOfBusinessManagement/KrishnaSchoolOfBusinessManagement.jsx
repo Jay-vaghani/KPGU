@@ -14,32 +14,60 @@ function KrishnaSchoolOfBusinessManagement() {
 
   const Faculties = [
     {
-      name: "Name",
+      name: "Dr. Deepa Bhindora",
       designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 17,
+      imgNo: "6171",
+      qualification: "PhD || M.Phil || MBA",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Gulshan Gulam Hussain Khan",
       designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 4,
+      imgNo: "6837",
+      qualification: "MBA || BBA",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Ms. Priyanka Patel",
       designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 5,
+      imgNo: "6117",
+      qualification: "MBA",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Neethu Alex",
+      designation: "Assistant Professor",
+      experience: 2,
+      imgNo: "6170",
+      qualification: "MBA || MPhil",
+      customLink: "",
+    },
+    {
+      name: "Patel Nilesh Amarendra",
       designation: "Assistant Professor",
       experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      imgNo: "5992",
+      qualification: "PGDBA || ME || BE",
+      customLink: "",
+    },
+    {
+      name: "Dr. Pinakin Jaiswal",
+      designation: "Assistant Professor",
+      experience: 23,
+      imgNo: "6114",
+      qualification: "PhD || MBA || BE",
+      customLink: "",
+    },
+    {
+      name: "Moksha Vikeshkumar Shah",
+      designation: "Assistant Professor",
+      experience: 6171,
+      imgNo: "6803",
+      qualification: "MBA",
+      customLink: "",
     },
   ];
 
@@ -124,16 +152,31 @@ function KrishnaSchoolOfBusinessManagement() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                customLink,
+                imgNo,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSBM"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}

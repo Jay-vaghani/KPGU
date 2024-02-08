@@ -14,32 +14,36 @@ function KrishnaSchoolOfCommerce() {
 
   const Faculties = [
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr. Rashmi Vyas",
+      designation: "Director I/C",
+      experience: 25,
+      imgNo: "6113",
+      qualification: "P.hd || M.B.A. || M.Phil || M.Com || B.Com",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Mr. Kushal Sampat",
       designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 1,
+      imgNo: "6062",
+      qualification: "C.S., C.A.(finalist), B.Com",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Mr. Hement Prajapati",
       designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 1,
+      imgNo: "8397",
+      qualification: "B.Com || M.Com GSET || UGCNET",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Ms. Nirmala Suthar",
       designation: "Assistant Professor",
-      experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 1,
+      imgNo: "8396",
+      qualification: "B.Com || M.Com GSET || UGCNET",
+      customLink: "",
     },
   ];
 
@@ -114,16 +118,31 @@ function KrishnaSchoolOfCommerce() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSC"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}

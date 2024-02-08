@@ -14,32 +14,197 @@ function KrishnaSchoolOfDiplomaStudies() {
 
   const Faculties = [
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
-    },
-    {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
-    },
-    {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
-    },
-    {
-      name: "Name",
-      designation: "Assistant Professor",
+      name: "Dr. Dattesh Y. Joshi",
+      imgNo: "6070",
+      designation: "Director [KSDS] || HOD-Electrical [KSDS]",
       experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      qualification: "Ph.D || M.Tech",
+      customLink: "",
+    },
+    {
+      name: "Hardik Sumantrai Patel",
+      imgNo: "6072",
+      designation: "Lecturer",
+      experience: 7,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Chirag R. Sindhav",
+      imgNo: "6073",
+      designation: "Assistant Professor || HOD-Civil [KSDS]",
+      experience: 13,
+      qualification: "M.Tech",
+      customLink: "",
+    },
+    {
+      name: "Hiral U Purohit",
+      imgNo: "6074",
+      designation: "Assistant Professor",
+      experience: 16,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Dudhwala Rinkal Dineshchandra",
+      imgNo: "6076",
+      designation: "Lecturer",
+      experience: 3,
+      qualification: "M.Tech || B.E. || Diploma",
+      customLink: "",
+    },
+    {
+      name: "Jaynika R. Vasava",
+      imgNo: "6077",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Radha N Chauhan",
+      imgNo: "6075",
+      designation: "Assistant Professor, HOD-CSE",
+      experience: 17,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Vaibhavi Pandya",
+      imgNo: "6078",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Helly Patel",
+      imgNo: "6079",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E",
+      customLink: "",
+    },
+    {
+      name: "Komal Kushwaha",
+      imgNo: "6080",
+      designation: "HOD-IT, [KSD]",
+      experience: 9,
+      qualification: "B.E",
+      customLink: "",
+    },
+    {
+      name: "Anjani Tiwari",
+      imgNo: "6087",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "M.Tech",
+      customLink: "",
+    },
+    {
+      name: "Patel Pritesh Ratilal",
+      imgNo: "5997",
+      designation: "Assistant Professor, HOD-Mechanical",
+      experience: 12,
+      qualification: "M.E ||  B.E || D.M.E",
+      customLink: "",
+    },
+    {
+      name: "Oza Vikram Ganpatlal",
+      imgNo: "5994",
+      designation: "Lecturer",
+      experience: 15,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Sushant .S. Prajapati",
+      imgNo: "5993",
+      designation: "Lecturer",
+      experience: 7,
+      qualification: "M.E || B.E || D.M.E",
+      customLink: "",
+    },
+    {
+      name: "Bhagyashree .A. Mudaliar",
+      imgNo: "6083",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "MSc",
+      customLink: "",
+    },
+    {
+      name: "Kailas Patel",
+      imgNo: "6082",
+      designation: "Lecturer",
+      experience: 8,
+      qualification: "M.A",
+      customLink: "",
+    },
+    {
+      name: "Sona Bhattacharya",
+      imgNo: "6186",
+      designation: "Lecturer",
+      experience: 21,
+      qualification: "M.A",
+      customLink: "",
+    },
+    {
+      name: "Vibhuti R. Vashi",
+      imgNo: "6086",
+      designation: "Lecturer",
+      experience: 4,
+      qualification: "M.Phil",
+      customLink: "",
+    },
+    {
+      name: "Ruchi Bavda",
+      imgNo: "6069",
+      designation: "Lecturer ",
+      experience: 4,
+      qualification: "M.Sc || B.Ed",
+      customLink: "",
+    },
+    {
+      name: "Rutvi Patel",
+      imgNo: "7100",
+      designation: "Lecturer ",
+      experience: 6,
+      qualification: "M.Sc || B.Ed",
+      customLink:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707425534/KPGU/Faculty%20Images/KSDS/7100.jpg",
+    },
+    {
+      name: "Devansh Patel",
+      imgNo: "7101",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E || CSE",
+      customLink: "",
+    },
+    {
+      name: "Vatsh Shrma",
+      imgNo: "7102",
+      designation: "Lecturer ",
+      experience: 1,
+      qualification: "B.E || CSE",
+      customLink: "",
+    },
+    {
+      name: "Hetul Gandhi",
+      imgNo: "7103",
+      designation: "Lecturer ",
+      experience: 1,
+      qualification: "B.E || CSE",
+      customLink: "",
+    },
+    {
+      name: "Digvijaysinh rathod",
+      imgNo: "7104",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E || IT",
+      customLink: "",
     },
   ];
 
@@ -164,14 +329,29 @@ function KrishnaSchoolOfDiplomaStudies() {
         </Box>
         <Grid container spacing={2}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSDS"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707424419/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}
