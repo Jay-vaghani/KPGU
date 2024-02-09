@@ -14,7 +14,7 @@ function FacultyStaff({
   imgNo,
   qualification,
   MainLink,
-  customLink
+  customLink,
 }) {
   return (
     <>
@@ -38,7 +38,7 @@ function FacultyStaff({
             />
           </Box>
           <Box p={2}>
-            <h4 className="fw-semibold color-secondary ">{name}</h4>
+            <h4 className="fw-semibold color-secondary">{name.toUpperCase()}</h4>
             <h6 className="text-secondary fw-semibold mb-0">{designation}</h6>
             <h6 className="text-secondary fw-semibold mb-2">
               Experience: {experience} Years
@@ -53,7 +53,7 @@ function FacultyStaff({
               <h5 className="fw-bold mb-2">{qualification}</h5>
             </Stack>
             <br />
-            <Box position={"absolute"} bottom={0}>
+            <Box position={"absolute"} bottom={16}>
               <Button
                 variant="contained"
                 disableElevation

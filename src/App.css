@@ -102,8 +102,6 @@
   padding: 0.25rem 0.5rem !important;
 }
 
-
-
 .accordion-body {
   padding: 0.25rem 0.5rem !important;
   text-transform: uppercase !important;
@@ -202,4 +200,3 @@
   border-bottom: 5px solid #264796;
   transform: translateY(-10px);
 }
-

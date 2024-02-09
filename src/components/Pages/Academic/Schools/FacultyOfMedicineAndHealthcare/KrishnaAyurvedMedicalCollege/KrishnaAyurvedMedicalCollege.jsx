@@ -19,6 +19,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 22,
       imgNo: "6168",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "Dr Pravin R Firke",
@@ -26,6 +27,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 8,
       imgNo: "5930",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "Dr Vijitha Vijayan",
@@ -33,6 +35,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 3,
       imgNo: "5925",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "Dr Khusboo Kumari Gupta",
@@ -40,6 +43,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 2,
       imgNo: "5927",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "Dr Krishna Priya",
@@ -47,6 +51,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 1,
       imgNo: "5923",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "Dr Mularam Rakewal Suthar",
@@ -54,6 +59,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 1,
       imgNo: "5928",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR.PRAVIN N TAKLE",
@@ -61,6 +67,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 3,
       imgNo: "5929",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR.NISHA VEGDA",
@@ -68,6 +75,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 1,
       imgNo: "5913",
       qualification: "B.A || M.A || PhD",
+      customLink: "",
     },
     {
       name: "DR. DAKSHA RATHOD",
@@ -75,6 +83,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 8,
       imgNo: "5919",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR.JIGNESHAKUMARI T CHAREL",
@@ -82,6 +91,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 3,
       imgNo: "6172",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR. AMAL ABDUL HAMEED",
@@ -89,6 +99,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 6,
       imgNo: "5924",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR.MAYUR V BARVE",
@@ -96,6 +107,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 12,
       imgNo: "5931",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR.SYAMA MANIYANKUTTY",
@@ -103,6 +115,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 3,
       imgNo: "5922",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR. JIGISHA PRAJAPATI",
@@ -110,6 +123,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 1,
       imgNo: "5915",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR. HARDIK VARIYA",
@@ -117,6 +131,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 6,
       imgNo: "5920",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "DR. TREDHA VYAS",
@@ -124,6 +139,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 1,
       imgNo: "5921",
       qualification: "B.A.M.S || M.D || M.S",
+      customLink: "",
     },
     {
       name: "Dr.RABIYA SHAIKH",
@@ -131,6 +147,7 @@ function KrishnaAyurvedMedicalCollege() {
       experience: 4,
       imgNo: "5918",
       qualification: "P.H.D",
+      customLink: "",
     },
   ];
 
@@ -211,7 +228,14 @@ function KrishnaAyurvedMedicalCollege() {
         <Grid container spacing={4}>
           {Faculties.map(
             (
-              { name, designation, experience, qualification, imgNo },
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
               index
             ) => (
               <FacultyStaff
@@ -225,6 +249,7 @@ function KrishnaAyurvedMedicalCollege() {
                 MainLink={
                   "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/"
                 }
+                customLink={customLink}
               />
             )
           )}

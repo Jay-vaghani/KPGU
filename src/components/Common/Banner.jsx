@@ -12,7 +12,7 @@ function Banner({ banner }) {
       minHeight={"50vh"}
       alignItems={"end"}
       sx={{
-        background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%), url(${banner.img}) bottom / cover fixed`,
+        background: `linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%), url(${banner.img}) bottom / cover`,
       }}
     >
       <Grid container maxWidth={maxWidth} mx={"auto"} color={"#fff"} px={"3%"} justifyContent={"flex-start"}>

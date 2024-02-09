@@ -14,6 +14,14 @@ function KrishnaSchoolOfBusinessManagement() {
 
   const Faculties = [
     {
+      name: "Dr. Pinakin Jaiswal",
+      designation: "Assistant Professor || Director ",
+      experience: 23,
+      imgNo: "6114",
+      qualification: "PhD || MBA || BE",
+      customLink: "",
+    },
+    {
       name: "Dr. Deepa Bhindora",
       designation: "Assistant Professor",
       experience: 17,
@@ -51,14 +59,6 @@ function KrishnaSchoolOfBusinessManagement() {
       experience: 15,
       imgNo: "5992",
       qualification: "PGDBA || ME || BE",
-      customLink: "",
-    },
-    {
-      name: "Dr. Pinakin Jaiswal",
-      designation: "Assistant Professor",
-      experience: 23,
-      imgNo: "6114",
-      qualification: "PhD || MBA || BE",
       customLink: "",
     },
     {

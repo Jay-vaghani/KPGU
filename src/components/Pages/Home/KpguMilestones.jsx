@@ -22,7 +22,7 @@ function KpguMilestones() {
     },
     {
       name: "Faculty Staff",
-      number: 300,
+      number: 450,
       image:
         "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381505/KPGU/icon/faculty.svg",
     },
@@ -47,15 +47,15 @@ function KpguMilestones() {
         </Box>
         <Box>
           <Typography
-            variant="h3"
-            fontSize={"45px"}
+            variant="h4"
+            // fontSize={"45px"}
             justifyContent={"center"}
             display={"flex"}
             alignItems={"center"}
             className="fw-medium mt-3"
           >
             {number}
-            <Add sx={{ ml: -0.5, fontSize: 40 }} />
+            <Add sx={{ ml: -0.5, fontSize:"inherit" }} />
           </Typography>
           <h4 className="text-center fs-4 fw-bold ">{name}</h4>
         </Box>

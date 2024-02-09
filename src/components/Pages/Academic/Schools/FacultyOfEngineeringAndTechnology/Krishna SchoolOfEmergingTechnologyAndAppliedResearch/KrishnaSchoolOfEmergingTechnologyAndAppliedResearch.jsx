@@ -13,35 +13,471 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const { maxWidth } = useContext(AppContext);
 
   const Faculties = [
+    // ======================= CIVIL =======================
+
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr. Drashti Viral Kapadia",
+      imgNo: "6025",
+      designation: "HOD || Assistant Professor",
+      experience: 13,
+      qualification: "Ph.D. Civil Engineering",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Ms. Komal Ketan Dave",
+      imgNo: "6024",
       designation: "Assistant Professor",
       experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      qualification: "M.E Civil Engineering",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Mr. Ankit N Patel",
+      imgNo: "6110",
       designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 9,
+      qualification: "M.E in Civil Engineering",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Mr. Mithileshdatta Dharmadatta Pandya",
+      imgNo: "6052",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "M.E in Civil Engineering",
+      customLink: "",
+    },
+    {
+      name: "Mr. Ravi S. Patel",
+      imgNo: "6090",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M.E in Civil Engineering",
+      customLink: "",
+    },
+
+    // ======================= EE =======================
+
+    {
+      name: "Dr. Ravindrakumar Yadav",
+      imgNo: "6188",
+      designation: "Assistant Professor & Head",
+      experience: 21,
+      qualification: "Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Samir H. Patel",
+      imgNo: "6013",
+      designation: "Assistant Professor & Head",
+      experience: 12,
+      qualification: "Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Prof. Saifee K. Kanjetawala",
+      imgNo: "6014",
+      designation: "Assistant Professor",
+      experience: 11,
+      qualification: "M.E",
+      customLink: "",
+    },
+    {
+      name: "Prof. Vijay Bharat Desle",
+      imgNo: "6015",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M.Tech",
+      customLink: "",
+    },
+    {
+      name: "Prof. Ketulkumar Sureshbhai Kachhia",
+      imgNo: "6188",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "M.Tech",
+      customLink: "",
+    },
+
+    // ======================= IT =======================
+
+    {
+      name: "Dr. Nandini Chaudhari",
+      imgNo: "6056",
+      designation: "Professor and Head Of IT (KSET)",
+      experience: 31,
+      qualification: "Ph.D || M.E || C.S.E || B.E. Computers",
+      customLink: "",
+    },
+    {
+      name: "Monali V. Parikh",
+      imgNo: "6064",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.E in CSE || B.E in Computer Engineering",
+      customLink: "",
+    },
+    {
+      name: "Priyanka M. Patel",
+      imgNo: "6065",
+      designation: "Assistant Professor",
+      experience: 5,
+      qualification: "M.Tech || B.E Computer Engineering",
+      customLink: "",
+    },
+    {
+      name: "Manisha V. Vasava",
+      imgNo: "6063",
       designation: "Assistant Professor",
       experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      qualification: "M.E And B.E Engg. in Computer Engineering",
+      customLink: "",
+    },
+
+    // ======================= ME =======================
+
+    {
+      name: "Dr. Pallavi Agarwal",
+      imgNo: "6009",
+      designation: "Professor",
+      experience: 27,
+      qualification: "PhD",
+      customLink: "",
+    },
+    {
+      name: "Dr. Nirmal Kumar Kushwaha",
+      imgNo: "5989",
+      designation: "Assistant Professor and HOD",
+      experience: 11,
+      qualification: "PhD",
+      customLink: "",
+    },
+    {
+      name: "Mr. Mehul A. Shah",
+      imgNo: "6006",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M.E || PhD (Pursuing)",
+      customLink: "",
+    },
+    {
+      name: "Mr. Mandar M . Sumant",
+      imgNo: "5998",
+      designation: "Assistant Professor",
+      experience: 13,
+      qualification: "M.E || PhD (Pursuing)",
+      customLink: "",
+    },
+    {
+      name: "Mr Ankur P. Patel",
+      imgNo: "6002",
+      designation: "Assistant Professor",
+      experience: 12,
+      qualification: "M.E",
+      customLink: "",
+    },
+    {
+      name: "Mr. Pratikkumar R. Patel",
+      imgNo: "5995",
+      designation: "Assistant Professor",
+      experience: 11,
+      qualification: "M.E",
+      customLink: "",
+    },
+    {
+      name: "Mr. Nilesh A Patel",
+      imgNo: "5991",
+      designation: "Assistant Professor",
+      experience: 16,
+      qualification: "M.E",
+      customLink: "",
+    },
+
+    // ======================= ME =======================
+
+    {
+      name: "Dr. Nitesh Sureja",
+      imgNo: "6057",
+      designation: "Professor & Director",
+      experience: 28,
+      qualification: "PhD || BE || ME",
+      customLink: "",
+    },
+    {
+      name: "Dr. Avani Vasant",
+      imgNo: "6018",
+      designation: "Professor",
+      experience: 24,
+      qualification: "PhD || M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Priyanka A Patel",
+      imgNo: "6048",
+      designation: "Assistant Professor",
+      experience: 12,
+      qualification: "M.Tech || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Apoorva A Shah",
+      imgNo: "6010",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "PhD(Pursuing) || ME - CSE || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Sonia F Panesar",
+      imgNo: "6044",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "PhD(Pursuing) || M.E  || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Priya Patel",
+      imgNo: "6011",
+      designation: "Assistant Professor",
+      experience: 6,
+      qualification: "PhD(Pursuing) || M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms.Rohini Patel",
+      imgNo: "6020",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Ankita Kothari",
+      imgNo: "6021",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.Tech || B.E",
+      customLink: "",
+    },
+    {
+      name: "Mr. Tushar T Desai",
+      imgNo: "6038",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Jalpa Poojan Bhatt",
+      imgNo: "6049",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Mr. Darshan Parmar",
+      imgNo: "6036",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.Tech || BE",
+      customLink: "",
+    },
+    {
+      name: "Ramesh Karashanbhai Patoliya",
+      imgNo: "6033",
+      designation: "Assistant Professor",
+      experience: 14,
+      qualification: "Ph.D(Pursuing) || M.Phil || M.S",
+      customLink: "",
+    },
+    {
+      name: "Nirav Anilkumar Panchal",
+      imgNo: "6032",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "M.Sc",
+      customLink: "",
+    },
+    {
+      name: "Jyoti Golakia",
+      imgNo: "6023",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Dr. Gopal G. Bhatt",
+      imgNo: "6035",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "Ph.D || M.Sc || B.Sc",
+      customLink: "",
+    },
+    {
+      name: "MS. Mittal C. Joshi",
+      imgNo: "6043",
+      designation: "Assistant Professor",
+      experience: 6,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "MS. Rinkal D. Sarvaiya",
+      imgNo: "6012",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.C.A || B.C.A",
+      customLink: "",
+    },
+    {
+      name: "Ms. Safeya K. Dharmajwala",
+      imgNo: "6019",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Niyati Mevada",
+      imgNo: "6040",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.E || B.E || D.I.P",
+      customLink: "",
+    },
+    {
+      name: "Mr. Pratik N Patel",
+      imgNo: "6037",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Rashmika Baria",
+      imgNo: "6042",
+      designation: "Assistant Professor",
+      experience: 4,
+      qualification: "M.E || B.E",
+      customLink: "",
+    },
+    {
+      name: "Ms. Khushbu Shah",
+      imgNo: "6026",
+      designation: "Assistant Professor",
+      experience: 14,
+      qualification: "M.Sc",
+      customLink: "",
+    },
+    {
+      name: "Ms. Bhumika Patel",
+      imgNo: "6028",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "M.Sc",
+      customLink: "",
+    },
+    {
+      name: "Ms. Janki Gandhi",
+      imgNo: "6030",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.Sc || B.Ed",
+      customLink: "",
+    },
+    {
+      name: "Mr .Yagneshbhai Alkeshkumar vyas",
+      imgNo: "6041",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "PhD(Pursuing) || M.Sc",
+      customLink: "",
+    },
+    {
+      name: "Dr. Dharmendra Tawde",
+      imgNo: "6045",
+      designation: "Assistant Professor",
+      experience: 12,
+      qualification: "Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Disha Pandya",
+      imgNo: "6029",
+      designation: "Assistant Professor",
+      experience: 16,
+      qualification: "Ph.D || M.phil || B.ED || M.A || B.A",
+      customLink: "",
+    },
+    {
+      name: "Dr. Hina D. Dobariya",
+      imgNo: "6185",
+      designation: "Assistant professor",
+      experience: 10,
+      qualification: "Ph.D || M.phil || M.A || B.A",
+      customLink: "",
+    },
+    {
+      name: "Dr. Arti Kotak ",
+      imgNo: "6061",
+      designation: "Assistant Professor",
+      experience: 13,
+      qualification: "Ph.D || M. A",
+      customLink: "",
+    },
+    {
+      name: "Arohi Patel",
+      imgNo: "9866",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.E",
+      customLink: "",
+    },
+    {
+      name: "Priyanka Dubey",
+      imgNo: "9868",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M Tech",
+      customLink: "",
+    },
+    {
+      name: "Dr. Shivam Updhyay",
+      imgNo: "9867",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "PHD Computer Science",
+      customLink: "",
+    },
+    {
+      name: "Dr. Rocky Upadhyay",
+      imgNo: "9864",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "PHd computer Science",
+      customLink: "",
+    },
+    {
+      name: "Manisha Makwana",
+      imgNo: "9865",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M.E",
+      customLink: "",
+    },
+    {
+      name: "Dhara Parikh",
+      imgNo: "9870",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M.E Cyber Security",
+      customLink: "",
     },
   ];
+
+  console.log(Faculties);
 
   const UG = [
     {
@@ -198,14 +634,29 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         </Box>
         <Grid container spacing={2}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSET"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707473966/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}
