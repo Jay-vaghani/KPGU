@@ -14,32 +14,108 @@ function KrishnaSchoolOfNursing() {
 
   const Faculties = [
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Nimesh Chokshi ",
+      imgNo: "8777",
+      designation: "Professor || Director ",
+      experience: 37,
+      qualification: "Msc. Nursing ",
+      customLink: "",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Mrs.Priyanka Aritra Dey",
+      imgNo: "5873",
+      designation: "I/C Director || Assistant Professor",
+      experience: 8,
+      qualification: "Ph.D Pursuing || M.Sc Nursing",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Mrs. Chintal M Sukla",
+      imgNo: "6174",
       designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 8,
+      qualification: "Ph.D Pursuing || M.Sc Nursing",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Ms.Rojlin Tigga",
+      imgNo: "5874",
       designation: "Assistant Professor",
-      experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 11,
+      qualification: "M.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "Ms.Mitali Solanki ",
+      imgNo: "5881",
+      designation: "Assistant Professor",
+      experience: 5,
+      qualification: "M.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "Ms.Dharini Parmar",
+      imgNo: "5879",
+      designation: "Nursing Tutor",
+      experience: 3,
+      qualification: "M.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "Mrs.Krina Ravi Patel",
+      imgNo: "6173",
+      designation: "Nursing Tutor",
+      experience: 2,
+      qualification: "M.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "Ms.Zinkal Patel",
+      imgNo: "5875",
+      designation: "Nursing Tutor",
+      experience: 2,
+      qualification: "M.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "Ms.Sonal Christie",
+      imgNo: "5876",
+      designation: "Nursing Tutor",
+      experience: 7,
+      qualification: "P.B.B.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "MS.Roshni Zariwala",
+      imgNo: "5877",
+      designation: "Nursing Tutor",
+      experience: 3,
+      qualification: "B.Sc Nursing",
+      customLink: "",
+    },
+    {
+      name: "Rathva Netal Vinodchandra",
+      imgNo: "6747",
+      designation: "Nursing Tutor",
+      experience: 2,
+      qualification: "M.Sc Nursing ",
+      customLink: "",
+    },
+    {
+      name: "Iftekharahemed A. Kureshi",
+      imgNo: "6748",
+      designation: "Nursing Tutor",
+      experience: 1,
+      qualification: "PB.B.Sc Nursing ",
+      customLink: "",
+    },
+    {
+      name: "Jyotikaben Rameshbhai Bhoi",
+      imgNo: "6749",
+      designation: "Nursing Tutor",
+      experience: 5,
+      qualification: "B.Sc Nursing ",
+      customLink: "",
     },
   ];
 
@@ -124,14 +200,29 @@ function KrishnaSchoolOfNursing() {
         </Box>
         <Grid container spacing={2}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSN"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707798911/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}

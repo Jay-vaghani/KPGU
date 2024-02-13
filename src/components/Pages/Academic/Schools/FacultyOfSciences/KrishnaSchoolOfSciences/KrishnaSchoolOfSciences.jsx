@@ -14,32 +14,92 @@ function KrishnaSchoolOfSciences() {
 
   const Faculties = [
     {
-      name: "Name",
+      name: "Dr. Poonam Mishra",
+      imgNo: "6098",
       designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 5,
+      qualification: "Ph.D",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Dr. Asha Joshi",
+      imgNo: "6099",
       designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 7,
+      qualification: "M.Sc || Ph.D",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "MS. Foram Shah",
+      imgNo: "6100",
       designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 7,
+      qualification: "M.Sc || B.Ed",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Dr. Miral Vora",
+      imgNo: "6101",
       designation: "Assistant Professor",
-      experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 3,
+      qualification: "M.Sc || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Nikita Pate",
+      imgNo: "6104",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.Sc || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Parul Shrivastava",
+      imgNo: "6102",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.Sc || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Shilpi Thakur",
+      imgNo: "6103",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M.Sc || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Tejas Pandya",
+      imgNo: "6108",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M.Phil || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Priyanka Shinde ",
+      imgNo: "6221",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M.Sc || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Margi Patel",
+      imgNo: "6222",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.Phil || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Swati Patel ",
+      imgNo: "3413",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "Phd",
+      customLink: "",
     },
   ];
 
@@ -122,16 +182,31 @@ function KrishnaSchoolOfSciences() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSS"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707807610/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}

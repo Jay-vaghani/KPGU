@@ -14,32 +14,140 @@ function KrishnaSchoolOfPhysiotherapyAndRehabilitation() {
 
   const Faculties = [
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr. Paras Bhura",
+      imgNo: "6096",
+      designation: "Associate Professor || Director",
+      experience: 11,
+      qualification: "Ph.D || MPT",
+      customLink: "",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr. Camy Bhura,PT",
+      imgNo: "5852",
+      designation: "Associate Professor",
+      experience: 11,
+      qualification: "MPT || Ph.D",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Dr. Pragna Landge, PT",
+      imgNo: "5864",
       designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 9,
+      qualification: "MPT || Ph.D ",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Dr. Amitkumar Singh, PT",
+      imgNo: "5856",
       designation: "Assistant Professor",
-      experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      experience: 9,
+      qualification: "MPT",
+      customLink: "",
+    },
+    {
+      name: "Dr. Priyanka Solanki, PT",
+      imgNo: "5865",
+      designation: "Assistant Professor",
+      experience: 6,
+      qualification: "MPT || Ph.D ",
+      customLink: "",
+    },
+    {
+      name: "Dr. Aastha Bodade, PT",
+      imgNo: "5854",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "MPT",
+      customLink: "",
+    },
+    {
+      name: "Dr. Fatema Daruwala, PT",
+      imgNo: "5859",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "MPT",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707806085/KPGU/Faculty%20Images/KSPR/5959.webp",
+    },
+    {
+      name: "Dr. Ankita Shah, PT",
+      imgNo: "5861",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "MPY\T",
+      customLink: "",
+    },
+    {
+      name: "Dr. Nikita Sonaiya, PT",
+      imgNo: "5850",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "MPT",
+      customLink: "",
+    },
+    {
+      name: "Dr. Krupali Rajwadi, PT ",
+      imgNo: "5870",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "MSW",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707806591/KPGU/Faculty%20Images/KSPR/5870.webp",
+    },
+    {
+      name: "Krishna Trivedi",
+      imgNo: "9872",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M. Physiotherapy",
+      customLink: "",
+    },
+    {
+      name: "Harsha Ramrakhiyani",
+      imgNo: "9873",
+      designation: "Assistant Professor",
+      experience: 6,
+      qualification: "MPT",
+      customLink: "",
+    },
+    {
+      name: "Dr. Shreya Trivedi",
+      imgNo: "9874",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "MPT",
+      customLink: "",
+    },
+    {
+      name: "Dr. Kinjal S Patel",
+      imgNo: "9875",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "MPT || PHD Persuing",
+      customLink: "",
+    },
+    {
+      name: "Dr. Dharmesh Contractor, PT",
+      imgNo: "5849",
+      designation: "Clinical Physiotherapist",
+      experience: 16,
+      qualification: "BPT",
+      customLink: "",
+    },
+    {
+      name: "Dr. Pooja Bhavsar, PT",
+      imgNo: "5863",
+      designation: "Clinical Physiotherapist",
+      experience: 2,
+      qualification: "BPT",
+      customLink: "",
+    },
+    {
+      name: "Kamilmahdi Lafawala",
+      imgNo: "0006",
+      designation: "Clinical Physiotherapist",
+      experience: 2,
+      qualification: "BPT",
+      customLink: "",
     },
   ];
 
@@ -140,16 +248,31 @@ function KrishnaSchoolOfPhysiotherapyAndRehabilitation() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSPR"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707806084/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}

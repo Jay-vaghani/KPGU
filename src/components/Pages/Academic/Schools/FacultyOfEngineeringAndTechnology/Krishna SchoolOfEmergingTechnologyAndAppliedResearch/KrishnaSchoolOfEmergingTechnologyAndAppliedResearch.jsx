@@ -475,6 +475,46 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       qualification: "M.E Cyber Security",
       customLink: "",
     },
+    {
+      name: "Henil Suthar",
+      imgNo: "8897",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.Tech || Phd Pursue",
+      customLink: "",
+    },
+    {
+      name: "Krishna Jariwala",
+      imgNo: "8899",
+      designation: "Assistant Professor",
+      experience: 5,
+      qualification: "M.Tech",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
+    },
+    {
+      name: "Bharati Salimath",
+      imgNo: "8900",
+      designation: "Assistant Professor",
+      experience: 20,
+      qualification: "M.Tech in CSE",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
+    },
+    {
+      name: "Harika Thokala",
+      imgNo: "8901",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M.Tech in CS",
+      customLink: "",
+    },
+    {
+      name: "Dhara Parikh",
+      imgNo: "9870",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M.E Cyber Security",
+      customLink: "",
+    },
   ];
 
   console.log(Faculties);
@@ -632,7 +672,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
             (
               {

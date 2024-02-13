@@ -14,32 +14,188 @@ function KrishnaSchoolOfPharmacyAndResearch() {
 
   const Faculties = [
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr. Falgun A. Mehta",
+      imgNo: "5909",
+      designation: "Director || Professor",
+      experience: 21,
+      qualification: "M.Pharm || Ph.D",
+      customLink: "",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr.Vishnu A Patel",
+      imgNo: "5984",
+      designation: "professor",
+      experience: 38,
+      qualification: "M.Pharm || Ph.D",
+      customLink: "",
     },
     {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
+      name: "Dr.Prachi Pandey",
+      imgNo: "5987",
+      designation: "HOD || PROFESSOR",
+      experience: 17,
+      qualification: "M.Pharm || PhD || PGD ||  MBA",
+      customLink: "",
     },
     {
-      name: "Name",
+      name: "Dr. Shaileshkumar K. Koradia",
+      imgNo: "5900",
+      designation: "Professor || HOD",
+      experience: 16,
+      qualification: "M.Pharm || Ph.D",
+      customLink: "",
+    },
+    {
+      name: "Dr. Upasana Yadav",
+      imgNo: "5979",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.S || PhD || PGD || EDP",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707802369/KPGU/Faculty%20Images/KSP/5979.webp",
+    },
+    {
+      name: "Mr. Taufik Mulla",
+      imgNo: "5904",
+      designation: "Assistant Professor",
+      experience: 11,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Mr. Paul Rodriques ",
+      imgNo: "5905",
+      designation: "Assistant professor ",
+      experience: 5,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Ms. Rupa Singh",
+      imgNo: "6175",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Ms. Ummehani Kallawala",
+      imgNo: "5885",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Mr.Zalak Dave",
+      imgNo: "5908",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Ashwini Patel",
+      imgNo: "5896",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Mr. Imtiyaz Bagban",
+      imgNo: "5912",
+      designation: "Assistant Professor",
+      experience: 1,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Pooja Goswami",
+      imgNo: "5898",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M. Pharm",
+      customLink: "",
+    },
+    {
+      name: "Ms. Bansari Patel",
+      imgNo: "5888",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Mr. Bhavin D. Pandya",
+      imgNo: "5893",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.Pharm",
+      customLink: "",
+    },
+    {
+      name: "Esha Bhavin Shah",
+      imgNo: "5889",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification: "M. Pharm",
+      customLink: "",
+    },
+    {
+      name: "Shreyash Ashwinbhai Diwakar",
+      imgNo: "5891",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M. Pharm",
+      customLink: "",
+    },
+    {
+      name: "Dr. Vandana B. Patel",
+      imgNo: "5976",
+      designation: "Professor",
+      experience: 32,
+      qualification: "M.Pharm || PhD || MBA",
+      customLink: "",
+    },
+    {
+      name: "Ms. Mariyambibi Mandarawala",
+      imgNo: "5886",
+      designation: "Assistant Professor",
+      experience: 6,
+      qualification: "M.Pharm ",
+      customLink: "",
+    },
+    {
+      name: "Ms. Sanjogata Soni",
+      imgNo: "5883",
+      designation: "Assistant Professor",
+      experience: 7,
+      qualification: "M.Pharm ",
+      customLink: "",
+    },
+    {
+      name: "Mr. Salaj Khare",
+      imgNo: "5884",
       designation: "Assistant Professor",
       experience: 15,
-      cv: "",
-      qualification: "P.H.D",
+      qualification: "M. Pharma",
+      customLink: "",
+    },
+    {
+      name: "Ms.Dhairyashri kher",
+      imgNo: "5890",
+      designation: "Assistant professor",
+      experience: 1,
+      qualification: "M.pharm",
+      customLink: "",
+    },
+    {
+      name: "Mr. Meghraj Suryawansha",
+      imgNo: "6347",
+      designation: "Assistant professor",
+      experience: 3,
+      qualification: "M.Pharm || Ph.D",
+      customLink: "",
     },
   ];
 
@@ -148,16 +304,31 @@ function KrishnaSchoolOfPharmacyAndResearch() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
+            (
+              {
+                name,
+                designation,
+                experience,
+                qualification,
+                imgNo,
+                customLink,
+              },
+              index
+            ) => (
               <FacultyStaff
                 name={name}
-                cv={cv}
                 qualification={qualification}
                 designation={designation}
                 experience={experience}
                 key={index}
+                facultyName={"KSP"}
+                imgNo={imgNo}
+                MainLink={
+                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707801651/KPGU/Faculty%20Images/"
+                }
+                customLink={customLink}
               />
             )
           )}

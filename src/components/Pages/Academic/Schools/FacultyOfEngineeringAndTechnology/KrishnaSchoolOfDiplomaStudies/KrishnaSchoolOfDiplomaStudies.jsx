@@ -327,7 +327,7 @@ function KrishnaSchoolOfDiplomaStudies() {
         <Box mb={4}>
           <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           {Faculties.map(
             (
               {
