@@ -16,14 +16,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     // ======================= CIVIL =======================
 
     {
-      name: "Dr. Drashti Viral Kapadia",
-      imgNo: "6025",
-      designation: "HOD || Assistant Professor",
-      experience: 13,
-      qualification: "Ph.D. Civil Engineering",
-      customLink: "",
-    },
-    {
       name: "Ms. Komal Ketan Dave",
       imgNo: "6024",
       designation: "Assistant Professor",
@@ -75,14 +67,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       customLink: "",
     },
     {
-      name: "Prof. Saifee K. Kanjetawala",
-      imgNo: "6014",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "M.E",
-      customLink: "",
-    },
-    {
       name: "Prof. Vijay Bharat Desle",
       imgNo: "6015",
       designation: "Assistant Professor",
@@ -92,7 +76,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
     {
       name: "Prof. Ketulkumar Sureshbhai Kachhia",
-      imgNo: "6188",
+      imgNo: "6192",
       designation: "Assistant Professor",
       experience: 10,
       qualification: "M.Tech",
@@ -136,14 +120,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
 
     // ======================= ME =======================
 
-    {
-      name: "Dr. Pallavi Agarwal",
-      imgNo: "6009",
-      designation: "Professor",
-      experience: 27,
-      qualification: "PhD",
-      customLink: "",
-    },
     {
       name: "Dr. Nirmal Kumar Kushwaha",
       imgNo: "5989",
@@ -201,14 +177,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       designation: "Professor & Director",
       experience: 28,
       qualification: "PhD || BE || ME",
-      customLink: "",
-    },
-    {
-      name: "Dr. Avani Vasant",
-      imgNo: "6018",
-      designation: "Professor",
-      experience: 24,
-      qualification: "PhD || M.E || B.E",
       customLink: "",
     },
     {
@@ -276,14 +244,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       customLink: "",
     },
     {
-      name: "Mr. Darshan Parmar",
-      imgNo: "6036",
-      designation: "Assistant Professor",
-      experience: 7,
-      qualification: "M.Tech || BE",
-      customLink: "",
-    },
-    {
       name: "Ramesh Karashanbhai Patoliya",
       imgNo: "6033",
       designation: "Assistant Professor",
@@ -324,14 +284,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       customLink: "",
     },
     {
-      name: "MS. Rinkal D. Sarvaiya",
-      imgNo: "6012",
-      designation: "Assistant Professor",
-      experience: 2,
-      qualification: "M.C.A || B.C.A",
-      customLink: "",
-    },
-    {
       name: "Ms. Safeya K. Dharmajwala",
       imgNo: "6019",
       designation: "Assistant Professor",
@@ -345,14 +297,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       designation: "Assistant Professor",
       experience: 7,
       qualification: "M.E || B.E || D.I.P",
-      customLink: "",
-    },
-    {
-      name: "Mr. Pratik N Patel",
-      imgNo: "6037",
-      designation: "Assistant Professor",
-      experience: 9,
-      qualification: "M.E || B.E",
       customLink: "",
     },
     {
@@ -467,14 +411,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       qualification: "M.E",
       customLink: "",
     },
-    {
-      name: "Dhara Parikh",
-      imgNo: "9870",
-      designation: "Assistant Professor",
-      experience: 1,
-      qualification: "M.E Cyber Security",
-      customLink: "",
-    },
+    
     {
       name: "Henil Suthar",
       imgNo: "8897",
@@ -489,7 +426,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       designation: "Assistant Professor",
       experience: 5,
       qualification: "M.Tech",
-      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
+      customLink:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
     },
     {
       name: "Bharati Salimath",
@@ -497,7 +435,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       designation: "Assistant Professor",
       experience: 20,
       qualification: "M.Tech in CSE",
-      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
+      customLink:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
     },
     {
       name: "Harika Thokala",

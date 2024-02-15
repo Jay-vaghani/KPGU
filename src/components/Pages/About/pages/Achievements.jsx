@@ -10,35 +10,29 @@ function Achievements() {
 
   const Institutions = [
     {
-      title: "Babaria Institute of Technology",
-      des: "BITS Edu Campus established in the year 2004 with only one institute i.e. Babaria Institute of Technology with a mission to impart world class professional education in the field of Engineering and Technology.",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+      title: "Krishna School Of Emerging Technology And Applied Research",
+      link: "/academics/krishna-school-of-emerging-technology-and-applied-research",
     },
     {
-      title: "BITS Institute of Physiotherapy",
-      des: "BITS Institute of Physiotherapy is currently offering Bachelor of Physiotherapy (B.P.T) course since Academic Year 2014-15. Course duration Bachelor of Physiotherapy (B.P.T) course is full time 4 1/2 years (4years+6months compulsory rotatory Internship). Granted intake capacity is 75 seats.",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+      title: "Krishna School Of Physiotherapy And Rehabilitation",
+      link: "/academics/krishna-school-of-physiotherapy-and-rehabilitation",
     },
     {
-      title: "Babaria Institute of Pharmacy",
-      des: "Babaria Institute of Pharmacy since its inception in 2005 has always nurtured an ambition of shaping the globally competent pharmacy professional of future. It offers GTU affiliated UG and PG courses in Pharmacy.",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+      title: "Krishna School Of Pharmacy And Research",
+      link: "/academics/krishna-school-of-pharmacy-and-research",
     },
     {
       title:
         "Krishna Ayurved Medical College with attached Matrushri Davalba Ayurved Hospital",
-      des: "Krishna Ayurved Medical College, Vadodara (Krishna Ayurved Medical School) is currently offering Bachelor of Ayurvedic Medicine and Surgery (B.A.M.S) course since Academic Year 2019-20.",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+      link: "/academics/krishna-ayurved-medical-college",
     },
     {
       title: "Krishna Nursing College",
-      des: "No content",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+      link: "/academics/krishna-school-of-nursing",
     },
     {
       title: "Krishna Science College",
-      des: "No content",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703762061/KPGU/campus/krishna-school-of-physiotherapy.webp",
+      link: "/academics/krishna-school-of-sciences",
     },
   ];
 
@@ -67,9 +61,9 @@ function Achievements() {
         <li className="fs-5 mb-3 text-capital fw-semibold ">
           Established following Six Professional Institutions.
         </li>
-        <Grid container my={5} spacing={3}>
-          {Institutions.map(({ des, img, title }, index) => (
-            <EduCard name={title} des={des} img={img} key={index} />
+        <Grid container my={5} spacing={4}>
+          {Institutions.map(({ des, img, title, link }, index) => (
+            <EduCard name={title} des={des} img={img} key={index} link={link} />
           ))}
         </Grid>
         <li className="fs-5 mb-3 text-capital fw-semibold ">

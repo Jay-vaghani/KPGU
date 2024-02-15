@@ -42,6 +42,54 @@ function SKECT() {
     },
   ];
 
+  const MembersList = [
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Jagdishbhai_D_Patel.webp",
+      name: "Shree Jagdishbhai D. Patel",
+      designation: "Hon’ble Founder President & Managing Trustee",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Kamal_J_Patel.webp",
+      name: " Shrimati Kamal Ben J. Patel ",
+      designation: "Hon’ble Chairperson & Vice-managing Trustee",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Dhruvkumar_J_Patel.webp",
+      name: "Shri Dhruv Kumar J. Patel",
+      designation: "Lifetime Trustee",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Krishna_J_Patel.webp",
+      name: "Shree Krishna J. Patel",
+      designation: " Lifetime Trustee & Secretary",
+    },
+  ];
+
+  const MembersComponent = ({ img, name, designation }) => (
+    <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Box
+        className="smooth-shadow-card h-100"
+        bgcolor={"#fff"}
+        borderRadius={4}
+        overflow={"hidden"}
+      >
+        <Box>
+          <img src={img} alt="photo" className="img-fluid" />
+        </Box>
+        <Box p={2}>
+          <Box>
+            <h4 className="fw-bold ">
+              {name}
+            </h4>
+          </Box>
+          <Box>
+            <h6 className="color-secondary fw-bolder">{designation}</h6>
+          </Box>
+        </Box>
+      </Box>
+    </Grid>
+  );
+
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
       <h4 className=" fw-semibold color-secondary">KPGU'S SPONSORING</h4>
@@ -52,118 +100,14 @@ function SKECT() {
         <Paragraph content={para} key={index} />
       ))}
       <Grid container mt={10} spacing={3}>
-        <Grid item xs={12} sm={6} md={4} lg={3} >
-          <Box
-            className="smooth-shadow-card h-100"
-            bgcolor={"#fff"}
-            borderRadius={4}
-            overflow={"hidden"}
-          >
-            <Box>
-              <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Jagdishbhai_D_Patel.webp"
-                alt="photo"
-                className="img-fluid"
-              />
-            </Box>
-            <Box p={2}>
-              <Box>
-                <Typography variant="h5" fontWeight={600}>
-                  Shree Jagdishbhai D. Patel
-                </Typography>
-              </Box>
-              <Box>
-                <Typography variant="body1">
-                  Hon’ble Founder President & Managing Trustee
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} >
-          <Box
-            className="smooth-shadow-card h-100"
-            bgcolor={"#fff"}
-            borderRadius={4}
-            overflow={"hidden"}
-          >
-            <Box>
-              <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Kamal_J_Patel.webp"
-                alt="photo"
-                className="img-fluid"
-              />
-            </Box>
-            <Box p={2}>
-              <Box>
-                <Typography variant="h5" fontWeight={600}>
-                  Shrimati Kamal Ben J. Patel
-                </Typography>
-              </Box>
-              <Box>
-                <Typography variant="body1">
-                  Hon’ble Chairperson & Vice-managing Trustee
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} >
-          <Box
-            className="smooth-shadow-card h-100"
-            bgcolor={"#fff"}
-            borderRadius={4}
-            overflow={"hidden"}
-          >
-            <Box>
-              <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Dhruvkumar_J_Patel.webp"
-                alt="photo"
-                className="img-fluid"
-              />
-            </Box>
-            <Box p={2}>
-              <Box>
-                <Typography variant="h5" fontWeight={600}>
-                  Shri Dhruv Kumar J. Patel
-                </Typography>
-              </Box>
-              <Box>
-                <Typography variant="body1">
-                  Hon’ble Chairperson & Vice-managing Trustee
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} >
-          <Box
-            className="smooth-shadow-card h-100"
-            bgcolor={"#fff"}
-            borderRadius={4}
-            overflow={"hidden"}
-          >
-            <Box>
-              <img
-                src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Krishna_J_Patel.webp"
-                alt="photo"
-                className="img-fluid"
-              />
-            </Box>
-            <Box p={2}>
-              <Box>
-                <Typography variant="h5" fontWeight={600}>
-                  Shree Krishna J. Patel
-                </Typography>
-              </Box>
-              <Box>
-                <Typography variant="body1">
-                  Hon’ble Chairperson & Vice-managing Trustee
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Grid>
+        {MembersList.map(({ designation, img, name }, index) => (
+          <MembersComponent
+            designation={designation}
+            img={img}
+            name={name}
+            key={index}
+          />
+        ))}
       </Grid>
     </Box>
   );

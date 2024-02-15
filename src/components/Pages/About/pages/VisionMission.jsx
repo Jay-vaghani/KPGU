@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { AppContext } from "../../../../contexts/AppContext";
 import { Box, Grid, Typography, Stack } from "@mui/material";
 import { CheckCircleRounded } from "@mui/icons-material";
@@ -7,6 +7,17 @@ import Quote from "../../../Common/Quote";
 
 function VisionMission() {
   const { maxWidth, innerWidth } = useContext(AppContext);
+
+  const [changeHight, setChangeHight] = useState(null);
+
+  const hight = useRef(null);
+
+  useEffect(() => {
+    console.log(hight.current.offsetHeight);
+    setChangeHight(hight.current.offsetHeight);
+  });
+
+  console.log(hight);
 
   const Missions = [
     {
@@ -88,33 +99,25 @@ function VisionMission() {
           }}
           xs={12}
           md={6}
-          bgcolor={"red"}
-          color={"#000"}
-          zIndex={99}
-          overflow={"clip"}
-          borderRadius={"0px 50px 0px 50px"}
         >
-          <Box bgcolor={"primary.main"} p={"5%"} height={"100%"} display={"flex"} justifyContent={"center"} flexDirection={"column"} >
-            <Typography
-              variant="h2"
-              className="journey-heading-2 text-white"
-              fontWeight={500}
-            >
-              VISION
-            </Typography>
-
+          <Box
+            height={"100%"}
+            display={"flex"}
+            justifyContent={"center"}
+            flexDirection={"column"}
+            p={2}
+          >
             <Typography
               fontWeight={600}
               variant="body1"
               gutterBottom
-              className="fs-5 text-white"
+              className="fs-5 "
             >
               <Quote
                 quote={
                   "The Drs. Kiran & Pallavi Patel Global University seeks to be an Organization of Universal Eminence Serving the Cause of Higher Education, Health Care and Service to the Mankind, Ever in Pursuit of Newer Horizons, ingrained with Spirit of Continual Progress of Stakeholders."
                 }
                 right={true}
-                white={true}
               />
             </Typography>
           </Box>
@@ -127,33 +130,37 @@ function VisionMission() {
           }}
           xs={12}
           md={6}
-          position={"relative"}
-          zIndex={9}
-          height={400}
-          sx={{
-            transform: {
-              xs: "0%",
-              md: "translateX(-9.5%)",
-            },
-            overflowX: {
-              xs: "clip",
-              md: "visible",
-            },
-          }}
         >
-          <img
-            src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703227665/KPGU/Banners/vision-banner.webp"
-            alt="mission banner"
-            width={"109.5%"}
-            height={
-              innerWidth < 1025
-                ? innerWidth < 941
-                  ? "123.5%"
-                  : "117%"
-                : "110.5%"
-            }
-            className="object-fit-cover"
-          />
+          <Box
+            sx={{
+              background: "linear-gradient(90deg, #00d4ff85 0%, #005ffd  100%)",
+            }}
+            borderRadius={"14px 0px 14px 0px"}
+            height={innerWidth < 900 ? "270px" : changeHight}
+            display={"flex"}
+            alignItems={"end"}
+            justifyContent={"center"}
+            flexDirection={"column"}
+            p={"2%"}
+            color={"#fff"}
+          >
+            <Typography
+              variant="h1"
+              fontSize={"clamp(70px, 8vw, 90px)"}
+              letterSpacing={5}
+              fontWeight={600}
+            >
+              OUR
+            </Typography>
+            <Typography
+              variant="h1"
+              fontSize={"clamp(70px, 8vw, 90px)"}
+              letterSpacing={5}
+              fontWeight={600}
+            >
+              VISION
+            </Typography>
+          </Box>
         </Grid>
         <Grid
           item
@@ -163,20 +170,37 @@ function VisionMission() {
           }}
           xs={12}
           md={6}
-          position={"relative"}
-          zIndex={9}
         >
-          <img
-            src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703227665/KPGU/Banners/mission-banner.webp"
-            alt="mission banner"
-            className="object-fit-cover"
-            style={{
-              width: innerWidth < 901 ? "100%" : "109%",
-              height: innerWidth < 901 ? "132%" : "108.5%",
-              borderRadius: innerWidth < 901 ? "0" : "0 28% 0 0",
-              transform: "translateY(-8%)",
+          <Box
+            sx={{
+              background: "linear-gradient(90deg, #005ffd 0%, #00d4ff85  100%)",
             }}
-          />
+            borderRadius={"14px 0px 14px 0px"}
+            height={innerWidth < 900 ? "270px" : changeHight}
+            display={"flex"}
+            alignItems={"start"}
+            justifyContent={"center"}
+            flexDirection={"column"}
+            p={"2%"}
+            color={"#fff"}
+          >
+            <Typography
+              variant="h1"
+              fontSize={"clamp(70px, 8vw, 90px)"}
+              letterSpacing={5}
+              fontWeight={600}
+            >
+              OUR
+            </Typography>
+            <Typography
+              variant="h1"
+              fontSize={"clamp(60px, 8vw, 90px)"}
+              letterSpacing={5}
+              fontWeight={600}
+            >
+              MISSION
+            </Typography>
+          </Box>
         </Grid>
         <Grid
           item
@@ -186,26 +210,14 @@ function VisionMission() {
           }}
           xs={12}
           md={6}
-          bgcolor={"secondary.main"}
-          color={"#000"}
-          borderRadius={"0px 50px 0px 50px"}
-          zIndex={99}
         >
-          <Box p={"7%"}>
-            <Typography
-              variant="h2"
-              className="journey-heading-2 text-white"
-              fontWeight={500}
-              gutterBottom
-            >
-              MISSION
-            </Typography>
+          <Box p={2} ref={hight}>
             {Missions.map(({ des }, index) => (
               <Stack direction="row" alignItems={"start"} key={index}>
                 <Typography
                   variant="body1"
                   gutterBottom
-                  className="fs-4 me-1 text-white"
+                  className="fs-4 me-1 color-secondary"
                   fontWeight={600}
                 >
                   {index + 1}.
@@ -214,7 +226,7 @@ function VisionMission() {
                   fontWeight={600}
                   variant="body1"
                   gutterBottom
-                  className="fs-5 text-white"
+                  className="fs-5 color-secondary"
                 >
                   {des}
                 </Typography>
