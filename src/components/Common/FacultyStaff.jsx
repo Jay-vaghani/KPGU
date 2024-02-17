@@ -52,7 +52,7 @@ function FacultyStaff({
               mb={1.5}
             >
               <SchoolRounded />
-              <h5 className="fw-bold mb-2">{qualification}</h5>
+              <h6 className="fw-bold mb-2">{qualification}</h6>
             </Stack>
             <br />
             <Box position={"absolute"} bottom={16}>
