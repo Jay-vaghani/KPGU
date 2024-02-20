@@ -68,6 +68,8 @@ import InternationalStudents from "./components/Pages/Admission/InternationalStu
 import AdmissionInquiry from "./components/Pages/AdmissionInquiry/AdmissionInquiry";
 import Page404 from "./components/Pages/Page404/Page404";
 import StudentCorner from "./components/Pages/StudentCorner/StudentCorner";
+import ResearchPublications from "./components/Pages/ResearchPublications/ResearchPublications";
+import StartUps from "./components/Pages/ResearchPublications/StartUps/StartUps";
 
 // ========================================== CAMPUS ==========================================
 
@@ -229,6 +231,11 @@ function App() {
               <Route path="gallery" element={<Gallery />}></Route>
             </Route>
 
+            <Route path="/research-publications" element={<ResearchPublications />}>
+              <Route path="start-ups" element={<StartUps />}></Route>
+              
+            </Route>
+
             <Route path="/admission" element={<Admission />}>
               <Route path="programs" element={<Programs />}></Route>
               <Route
@@ -249,6 +256,7 @@ function App() {
             <Route path="/student-corner" element={<StudentCorner />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
+
           {/* <Footer /> */}
         </Box>
       </AppProvider>

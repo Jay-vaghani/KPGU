@@ -109,14 +109,14 @@ function KrishnaSchoolOfNursing() {
       qualification: "B.Sc [Nursing] ",
       customLink: "",
     },
-    // {
-    //   name: "Mrs. Chintal M Sukla",
-    //   imgNo: "6174",
-    //   designation: "Assistant Professor",
-    //   experience: 8,
-    //   qualification: "Ph.D Pursuing || M.Sc Nursing",
-    //   customLink: "",
-    // },
+    {
+      name: "Mrs.Chintal Purohit",
+      imgNo: "6174",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M.Sc Nursing",
+      customLink: "",
+    },
   ];
 
   const UG = [

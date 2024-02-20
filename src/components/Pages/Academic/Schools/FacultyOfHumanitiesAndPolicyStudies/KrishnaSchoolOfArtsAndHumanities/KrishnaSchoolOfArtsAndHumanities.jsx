@@ -85,9 +85,6 @@ function KrishnaSchoolOfArtsAndHumanities() {
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
       <SchoolWelcomeSection
         title={"Krishna School Of Arts And Humanities [KSAH]"}
-        des={
-          "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-        }
       />
       <DirectorsMessage
         dirImg={
@@ -98,9 +95,8 @@ function KrishnaSchoolOfArtsAndHumanities() {
         dirOf={"Krishna School Of Arts And Humanities"}
         dirOfShort={"[KSAH]"}
         dirMessage={[
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi.",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit!",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum distinctio adipisci ab molestiae a magni tenetur aspernatur est totam! Quasi eveniet molestiae repudiandae a omnis est, quas iusto officiis.",
+          "Krishna School of Arts & Humanities (KSAH) believes Knowing Arts and Humanities are like knowing the past, the way it is today and knowing how the world would become in future. One can learn from the mistakes that had already been done in the past as well as the great things that had been accomplished. Arts and humanities help us to gain the ability to read reason and communicate, and this ability is the key to a successful career development. A liberal education, provided by Arts and Humanities, does not emphasize subject matter; instead it focuses on the ability to write, reason, read and work with numerical information.",
+          "Krishna School of Arts & Humanities (KSAH) is a new expansion of Drs Kiran & Pallavi Global University, (KPGU). It is initiated from the academic year 2022. Krishna School of Arts and Humanities helps students to develop critical thinking, learn from others experience, understand how people from different culture lives and respect their own values. It broadens our perspective of life and society thus helps us to deal with everyday problem and bring us closer to one another. Arts and Humanities are essential to every one of us, the consequence of generation without Arts and Humanities means a generation without thoughts, experience and ability to deal with problem in life as well as dealing with people around us.",
         ]}
       />
 
@@ -139,7 +135,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
           quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
+            "To educate Social Sciences' students to the highest level of academic achievement in chosen field of discipline, in thirst to pursue new horizons by expanding their potential, and prepare them to become ethically responsible, productive and compassionate member of the society."
           }
           right={true}
         />

@@ -132,7 +132,7 @@ const DesktopNav = () => {
     },
     {
       title: "START-UPS",
-      link: "/",
+      link: "research-publications/start-ups",
     },
     {
       title: "PUBLICATIONS",

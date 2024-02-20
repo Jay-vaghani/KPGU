@@ -30,6 +30,14 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       customLink: "",
     },
     {
+      name: "Dr. Mihir Y. Parmar",
+      imgNo: "5882",
+      designation: "Professor || HOD[Dept. of Pharmacology]",
+      experience: 17,
+      qualification: "M.Pharm || Ph.D",
+      customLink: "",
+    },
+    {
       name: "Dr. Shaileshkumar K. Koradia",
       imgNo: "5900",
       designation: "Professor || HOD",
@@ -158,30 +166,30 @@ function KrishnaSchoolOfPharmacyAndResearch() {
     //   qualification: "M.Pharm",
     //   customLink: "",
     // },
-    // {
-    //   name: "Mr. Bhavin D. Pandya",
-    //   imgNo: "5893",
-    //   designation: "Assistant Professor",
-    //   experience: 3,
-    //   qualification: "M.Pharm",
-    //   customLink: "",
-    // },
+    {
+      name: "Mr. Bhavin D. Pandya",
+      imgNo: "5893",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "B.Pharm || M.Pharm",
+      customLink: "",
+    },
     // {
     //   name: "Esha Bhavin Shah",
     //   imgNo: "5889",
     //   designation: "Assistant Professor",
     //   experience: 10,
-    //   qualification: "M. Pharm",
+    //   : "M. Pharm",
     //   customLink: "",
     // },
-    // {
-    //   name: "Shreyash Ashwinbhai Diwakar",
-    //   imgNo: "5891",
-    //   designation: "Assistant Professor",
-    //   experience: 9,
-    //   qualification: "M. Pharm",
-    //   customLink: "",
-    // },
+    {
+      name: "Mr. Shreyash A. Diwakar",
+      imgNo: "5891",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "B.Pharm || M.Pharm",
+      customLink: "",
+    },
     // {
     //   name: "Dr. Vandana B. Patel",
     //   imgNo: "5976",
@@ -198,6 +206,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
     //   qualification: "M.Pharm || Ph.D",
     //   customLink: "",
     // },
+    
   ];
 
   const UG = [

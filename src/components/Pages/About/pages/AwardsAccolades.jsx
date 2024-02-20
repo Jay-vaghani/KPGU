@@ -451,7 +451,6 @@ function AwardsAccolades() {
         overflow={"clip"}
         position={"relative"}
       >
-        
         <Box p={2}>
           <Box>
             {/* <h1>{index}</h1> */}
@@ -476,7 +475,12 @@ function AwardsAccolades() {
     </Grid>
   );
 
-  const StudentAwardsComponentCard = ({ name, time, img, des, medal, index }) => (
+  const StudentAwardsComponentCard = ({
+    name,
+    time,
+    des,
+    medal,
+  }) => (
     <Grid item xs={12} sm={6} md={4}>
       <Box
         className="smooth-shadow-card h-100"
@@ -484,9 +488,6 @@ function AwardsAccolades() {
         overflow={"clip"}
         position={"relative"}
       >
-        <Box>
-          <img src={img} alt="award" className="img-fluid" />
-        </Box>
         <Box p={2}>
           <Box>
             {/* <h1>{index}</h1> */}
@@ -548,8 +549,9 @@ function AwardsAccolades() {
           <img
             src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703929293/KPGU/Images/Jagdishbhai_D_Patel_2.webp"
             alt="Jagdishbhai D Patel"
-            className={`w-100 ${innerWidth < 900 ? "" : "h-75"
-              } object-fit-cover`}
+            className={`w-100 ${
+              innerWidth < 900 ? "" : "h-75"
+            } object-fit-cover`}
           />
           <Box p={2} textAlign={"start"}>
             <h4 className="fw-semibold color-secondary">
@@ -662,12 +664,10 @@ function AwardsAccolades() {
             ({ des, img, time, name, medal }, index) => (
               <StudentAwardsComponentCard
                 des={des}
-                img={img}
                 time={time}
                 medal={medal}
                 name={name}
                 key={index}
-                index={index}
               />
             )
           )}

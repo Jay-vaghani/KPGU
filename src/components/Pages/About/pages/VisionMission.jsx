@@ -15,7 +15,7 @@ function VisionMission() {
   useEffect(() => {
     console.log(hight.current.offsetHeight);
     setChangeHight(hight.current.offsetHeight);
-  });
+  }, [changeHight]);
 
   console.log(hight);
 
@@ -136,12 +136,13 @@ function VisionMission() {
               background: "linear-gradient(90deg, #00d4ff85 0%, #005ffd  100%)",
             }}
             borderRadius={"14px 0px 14px 0px"}
-            height={innerWidth < 900 ? "270px" : changeHight}
+            height={changeHight}
+            maxHeight={innerWidth < 900 ? "270px" : changeHight}
             display={"flex"}
             alignItems={"end"}
             justifyContent={"center"}
             flexDirection={"column"}
-            p={"2%"}
+            p={innerWidth < 425 ? "5%" : "21%"}
             color={"#fff"}
           >
             <Typography
@@ -181,7 +182,7 @@ function VisionMission() {
             alignItems={"start"}
             justifyContent={"center"}
             flexDirection={"column"}
-            p={"2%"}
+            p={innerWidth < 425 ? "5%" : "21%"}
             color={"#fff"}
           >
             <Typography

@@ -71,18 +71,20 @@ function KrishnaSchoolOfDiplomaStudies() {
     },
     {
       name: "Komal Ketan Dave",
-      imgNo: "6080",
-      designation: "HOD-Civil Engineering Department [KSDS] || Assistant Professor",
+      imgNo: "6024",
+      designation:
+        "HOD-Civil Engineering Department [KSDS] || Assistant Professor",
       experience: 17,
       qualification: "M.E.[Geotechnical Engineering]",
-      customLink: "",
+      customLink:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707473959/KPGU/Faculty%20Images/KSET/6024.webp",
     },
     {
-      name: "Anjani Tiwari",
-      imgNo: "6087",
-      designation: "Assistant Professor",
-      experience: 2,
-      qualification: "M.Tech [Cyber Security]",
+      name: "Komal Kushwaha",
+      imgNo: "6080",
+      designation: "HOD[KSDS-IT]",
+      experience: 10,
+      qualification: "M.Tech-CSE [Pursuing]",
       customLink: "",
     },
     {
@@ -133,6 +135,14 @@ function KrishnaSchoolOfDiplomaStudies() {
       qualification: "M.Tech(CSE)[Pursuing]",
       customLink: "",
     },
+    {
+      name: "Oza Vikram Ganpatlal",
+      imgNo: "5994",
+      designation: "Lecturer",
+      experience: 20,
+      qualification: "M.E [CAD || CAM]",
+      customLink: "",
+    },
     // {
     //   name: "Bhagyashree .A. Mudaliar",
     //   imgNo: "6083",
@@ -155,14 +165,6 @@ function KrishnaSchoolOfDiplomaStudies() {
     //   designation: "Lecturer",
     //   experience: 4,
     //   qualification: "M.Phil",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Oza Vikram Ganpatlal",
-    //   imgNo: "5994",
-    //   designation: "Lecturer",
-    //   experience: 15,
-    //   qualification: "M.E || B.E",
     //   customLink: "",
     // },
   ];
