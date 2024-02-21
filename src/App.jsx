@@ -70,6 +70,12 @@ import Page404 from "./components/Pages/Page404/Page404";
 import StudentCorner from "./components/Pages/StudentCorner/StudentCorner";
 import ResearchPublications from "./components/Pages/ResearchPublications/ResearchPublications";
 import StartUps from "./components/Pages/ResearchPublications/StartUps/StartUps";
+import CivilEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/CivilEngineering";
+import MechanicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/MechanicalEngineering";
+import ElectricalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/ElectricalEngineering";
+import InformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/InformationTechnology";
+import ComputerScienceEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/ComputerScienceEngineering";
+import ScrollToTop from "./components/Common/ScrollToTop";
 
 // ========================================== CAMPUS ==========================================
 
@@ -223,6 +229,26 @@ function App() {
                   <KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />
                 }
               />
+
+              {/* ======================== Departments ======================== */}
+
+              <Route path="civil-engineering" element={<CivilEngineering />} />
+              <Route
+                path="mechanical-engineering"
+                element={<MechanicalEngineering />}
+              />
+              <Route
+                path="electrical-engineering"
+                element={<ElectricalEngineering />}
+              />
+              <Route
+                path="information-technology"
+                element={<InformationTechnology />}
+              />
+              <Route
+                path="computer-science-and-engineering"
+                element={<ComputerScienceEngineering />}
+              />
             </Route>
 
             <Route path="/campus" element={<Campus />}>
@@ -231,9 +257,11 @@ function App() {
               <Route path="gallery" element={<Gallery />}></Route>
             </Route>
 
-            <Route path="/research-publications" element={<ResearchPublications />}>
+            <Route
+              path="/research-publications"
+              element={<ResearchPublications />}
+            >
               <Route path="start-ups" element={<StartUps />}></Route>
-              
             </Route>
 
             <Route path="/admission" element={<Admission />}>
@@ -259,6 +287,7 @@ function App() {
 
           {/* <Footer /> */}
         </Box>
+        <ScrollToTop />
       </AppProvider>
     </ThemeProvider>
   );

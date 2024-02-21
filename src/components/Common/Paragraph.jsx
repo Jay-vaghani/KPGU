@@ -8,8 +8,7 @@ function Paragraph({ content }) {
     </div>
   );
 
-  return (
-    //
+  return content.map((content) => (
     <Typography
       variant="h6"
       position={"relative"}
@@ -17,15 +16,15 @@ function Paragraph({ content }) {
       mb={3.5}
       textAlign={{
         xs: "start",
-        sm: "justify"
+        sm: "justify",
       }}
-      pl={3}
+      pl={2}
       borderLeft={"3px solid #264796"}
     >
       <ParaDot />
       {content}
     </Typography>
-  );
+  ));
 }
 
 export default Paragraph;

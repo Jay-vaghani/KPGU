@@ -103,7 +103,7 @@ function OurLeadership() {
       </Grid>
       <Box mt={5}>
         {paragraphs1.map(({ des }, index) => (
-          <Paragraph content={des} key={index} />
+          <Paragraph content={[des]} key={index} />
         ))}
       </Box>
       {/* ============================================================================================================ */}
@@ -131,7 +131,8 @@ function OurLeadership() {
           </p>
           <p className={`fs-4 mb-2`}>
             <b>Chairman</b>,<br />
-            Dr Kiran C Patel Medical College & Research Institute [KMCRI] Bharuch
+            Dr Kiran C Patel Medical College & Research Institute [KMCRI]
+            Bharuch
           </p>
           <p className={`fs-4 mb-2`}>
             <b>Indian-American Philanthropist & Cardiologist</b> <br />
@@ -141,7 +142,7 @@ function OurLeadership() {
       </Grid>
       <Box mt={5}>
         {paragraphs2.map(({ des }, index) => (
-          <Paragraph content={des} key={index} />
+          <Paragraph content={[des]} key={index} />
         ))}
       </Box>
       {/* ============================================================================================================ */}
@@ -180,7 +181,7 @@ function OurLeadership() {
       </Grid>
       <Box mt={5}>
         {paragraphs2.map(({ des }, index) => (
-          <Paragraph content={des} key={index} />
+          <Paragraph content={[des]} key={index} />
         ))}
       </Box>
       {/* ============================================================================================================ */}
@@ -219,7 +220,7 @@ function OurLeadership() {
       </Grid>
       <Box mt={5}>
         {paragraphs3.map(({ des }, index) => (
-          <Paragraph content={des} key={index} />
+          <Paragraph content={[des]} key={index} />
         ))}
       </Box>
       {/* ============================================================================================================ */}
@@ -253,7 +254,7 @@ function OurLeadership() {
       </Grid>
       <Box mt={5}>
         {paragraphs4.map(({ des }, index) => (
-          <Paragraph content={des} key={index} />
+          <Paragraph content={[des]} key={index} />
         ))}
       </Box>
     </Box>

@@ -41,9 +41,9 @@ function Achievements() {
       <h4 className=" fw-semibold color-secondary">KPGU'S SPONSORING</h4>
       <h3 className="display-4 fw-semibold mb-4">SIGNIFICANT ACHIEVEMENTS</h3>
       <Paragraph
-        content={
-          "The Krishna Edu Campus, established by Shree Krishna Educational and Charitable Trust (SKECT), today, stands testimony as the significant hub for educational excellence, consistently in pursuit of newer horizon. Since, its inception during the year 2004, the institutions run by it have been providing equitable professional education offering programs, the most sought-after by meritorious students in Engineering, Pharmacy, Nursing, Physiotherapy, Ayurveda and Pure Science, both at UG & PG level in an environment conducive for academic and professional growth. The significant milestones include"
-        }
+        content={[
+          "The Krishna Edu Campus, established by Shree Krishna Educational and Charitable Trust (SKECT), today, stands testimony as the significant hub for educational excellence, consistently in pursuit of newer horizon. Since, its inception during the year 2004, the institutions run by it have been providing equitable professional education offering programs, the most sought-after by meritorious students in Engineering, Pharmacy, Nursing, Physiotherapy, Ayurveda and Pure Science, both at UG & PG level in an environment conducive for academic and professional growth. The significant milestones include",
+        ]}
       />
 
       <ol>

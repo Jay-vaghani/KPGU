@@ -9,15 +9,28 @@
 /* COSTUME CSS  */
 
 .dot {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
   background-color: #fff;
   border-radius: 50%;
   border: 2px solid var(--secondary-color);
   display: inline-block;
   position: absolute;
-  top: -11px;
-  left: -11.5px;
+  top: -5px;
+  left: -9px;
+}
+
+.department-card {
+  cursor: pointer;
+  transition: var(--tarnation);
+}
+
+.department-card:hover{
+  scale: 1.03;
+}
+
+.department-card:active{
+  scale: 1;
 }
 
 .dot2 {

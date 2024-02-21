@@ -7,7 +7,7 @@ import Paragraph from './Paragraph'
 function DirectorsMessage({ dirImg, dirName, dirEmail, dirMessage, dirOf, dirOfShort }) {
     return (
         <>
-            <Grid container borderRadius={4} overflow={"hidden"} className='smooth-shadow' mt={4}>
+            <Grid container borderRadius={4} overflow={"hidden"} className='smooth-shadow-card' mt={4}>
                 <Grid item xs={12} md={4}>
                     <Box overflow={"hidden"} height={"100%"}>
                         <img src={dirImg} alt="Directors Image" className='w-100 h-100 object-fit-cover' />
@@ -22,11 +22,11 @@ function DirectorsMessage({ dirImg, dirName, dirEmail, dirMessage, dirOf, dirOfS
                     </Box>
                 </Grid>
             </Grid>
-            <Box bgcolor={"#fff"} p={2} borderRadius={4} className="smooth-shadow" mt={4}>
+            <Box bgcolor={"#fff"} p={2} borderRadius={4}  mt={4}>
                 <h2 className='fw-bold color-secondary mb-1'>Message From Director </h2>
                 <h5 className='fw-bold color-secondary'>Welcome To KPGU</h5>
                 <Box mt={4}>
-                    {dirMessage.map((para, index) => <Paragraph content={para} key={index} />)}
+                    {dirMessage.map((para, index) => <Paragraph content={[para]} key={index} />)}
                 </Box>
 
 

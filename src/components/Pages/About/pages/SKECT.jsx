@@ -78,9 +78,7 @@ function SKECT() {
         </Box>
         <Box p={2}>
           <Box>
-            <h4 className="fw-bold ">
-              {name}
-            </h4>
+            <h4 className="fw-bold ">{name}</h4>
           </Box>
           <Box>
             <h6 className="color-secondary fw-bolder">{designation}</h6>
@@ -97,7 +95,7 @@ function SKECT() {
         Sponsoring Body: Shree Krishna Educational & Charitable Trust [SKECT]
       </h3>
       {paragraphs.map(({ para }, index) => (
-        <Paragraph content={para} key={index} />
+        <Paragraph content={[para]} key={index} />
       ))}
       <Grid container mt={10} spacing={3}>
         {MembersList.map(({ designation, img, name }, index) => (

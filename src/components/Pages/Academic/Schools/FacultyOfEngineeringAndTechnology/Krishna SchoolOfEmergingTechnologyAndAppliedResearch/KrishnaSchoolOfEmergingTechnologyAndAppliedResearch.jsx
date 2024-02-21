@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Tab, Typography } from "@mui/material";
+import { Box, Grid, Stack, Tab, Typography } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
 import FacultyStaff from "../../../../../Common/FacultyStaff";
@@ -8,21 +8,46 @@ import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+import { useNavigate } from "react-router-dom";
+import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
 
 function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const { maxWidth } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const DepartmentList = [
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/comuter-science.svg",
+      name: "COMPUTER SCIENCE AND ENGINEERING",
+      link: "/academics/computer-science-and-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/infromation-tech.svg",
+      name: "information technology",
+      link: "/academics/information-technology",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/electrical-engineering.svg",
+      name: "electrical engineering",
+      link: "/academics/electrical-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/mechanics.svg",
+      name: "mechanical engineering",
+      link: "/academics/mechanical-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/civil.svg",
+      name: "civil engineering",
+      link: "/academics/civil-engineering",
+    },
+  ];
+
+
 
   const Faculties = [
     // ======================= CIVIL =======================
 
-    {
-      name: "Ms. Komal Ketan Dave",
-      imgNo: "6024",
-      designation: "Assistant Professor",
-      experience: 13,
-      qualification: "M.E Civil Engineering",
-      customLink: "",
-    },
     {
       name: "Mr. Ankit N Patel",
       imgNo: "6110",
@@ -177,14 +202,14 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
 
     // ======================= ME =======================
 
-    // {
-    //   name: "Dr. Nitesh Sureja",
-    //   imgNo: "6057",
-    //   designation: "Professor & Director",
-    //   experience: 28,
-    //   qualification: "PhD || BE || ME",
-    //   customLink: "",
-    // },
+    {
+      name: "Dr. Nitesh Sureja",
+      imgNo: "6057",
+      designation: "Professor & Director",
+      experience: 28,
+      qualification: "PhD || BE || ME",
+      customLink: "",
+    },
     // {
     //   name: "Ms. Priyanka A Patel",
     //   imgNo: "6048",
@@ -462,8 +487,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
   ];
 
-  console.log(Faculties);
-
   const UG = [
     {
       title: "B. Tech in Computer Science & Engineering",
@@ -577,6 +600,44 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
   ];
 
+  // ============== Components ==============
+
+  const DepartmentListComponent = ({ name, img, link }) => (
+    <Grid item xs={12} sm={6} md={4}>
+      <Box
+        className="smooth-shadow-card department-card"
+        p={2}
+        borderRadius={4}
+        onClick={() => navigate(link)}
+      >
+        <Grid container spacing={2} alignItems={"center"}>
+          <Grid item xs={12} sm={12} md={3}>
+            <img
+              src={img}
+              alt=""
+              className="w-100 d-block mx-auto"
+              style={{ maxWidth: "120px" }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={9}
+            textTransform={"uppercase"}
+            textAlign={{
+              xs: "center",
+              md: "start",
+            }}
+          >
+            <h5 className="mb-0 fw-bold ">Department Of </h5>
+            <h5>{name}</h5>
+          </Grid>
+        </Grid>
+      </Box>
+    </Grid>
+  );
+
   const [value, setValue] = useState("1");
 
   const handleChange = (event, newValue) => {
@@ -584,105 +645,73 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   };
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <SchoolWelcomeSection
-        title={
-          "Krishna School Of Emerging Technology & Applied Research [KSET]"
-        }
-        des={
-          "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-        }
-      />
-      <DirectorsMessage
-        dirImg={
-          "https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper.png"
-        }
-        dirEmail={"directoremail@gmail.com"}
-        dirName={"Dr. Nitesh Sureja"}
-        dirOf={"Krishna School of Emerging Technology & Applied Research"}
-        dirOfShort={"[KSET]"}
-        dirMessage={[
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi.",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit!",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum distinctio adipisci ab molestiae a magni tenetur aspernatur est totam! Quasi eveniet molestiae repudiandae a omnis est, quas iusto officiis.",
-        ]}
-      />
+    <>
       <Box
-        mt={4}
+        maxWidth={maxWidth}
+        mx={"auto"}
+        p={"3%"}
         bgcolor={"#fff"}
+        mt={7}
         borderRadius={4}
         className="smooth-shadow"
-        p={2}
       >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
-        </Box>
+        <SchoolWelcomeSection
+          title={
+            "Krishna School Of Emerging Technology & Applied Research [KSET]"
+          }
+          des={
+            "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
+          }
+        />
+        <DirectorsMessage
+          dirImg={
+            "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
+          }
+          dirEmail={"directoremail@gmail.com"}
+          dirName={"Dr. Nitesh Sureja"}
+          dirOf={"Krishna School of Emerging Technology & Applied Research"}
+          dirOfShort={"[KSET]"}
+          dirMessage={[
+            "The Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara’s constituent institute Krishna School of Emerging Technology & Applied Research (KSET), formerly known as, Babaria Institute of Technology was founded in the year 2004 with the goal of providing leadership in education and research with a specific focus on science and technology. The learning experiences at KSET are rewarding, lasting, and fun. We are aware that only a supportive environment can foster creativity and propel individuals to greater heights of success in their endeavors. We have a dynamic environment that produces leading innovators, social scientists, professionals, businesspeople, academicians, and thinkers of the future. The team must remain focused on attaining this goal despite short-term vicissitudes since the stakeholders’ emotional connection, shared faith, and trust are so strong.",
+            "We firmly believe that the quality of research will determine how educational institutions will look in the future. For a campus to remain alive, alumni and industry connections must be encouraged and strengthened. With adequate options for academic, co-curricular, and extracurricular activities and a steadfast focus on fostering the individual, we encourage multidisciplinary orientation.",
+            "I firmly believe that operating in silos will prevent an organization from succeeding. It is the culmination of the diligent efforts of each and every one of its members. We will be able to carve out a niche in pursuit of our vision and contribute to the development of the area and our motherland as visualized in National Education Policy 2020 with the help and commitment of qualified and experienced faculty members, supportive administration, and vibrant students, I am sure and confident.",
+            
+
+          ]}
+        />
+      </Box>
+
+      
+      
+      <Box
+        maxWidth={maxWidth}
+        mx={"auto"}
+        p={"3%"}
+        bgcolor={"#fff"}
+        mt={7}
+        borderRadius={4}
+        className="smooth-shadow"
+      >
+        <h2 className="fw-bold color-secondary mb-4">Department</h2>
         <Grid container spacing={4}>
-          {Faculties.map(
-            (
-              {
-                name,
-                designation,
-                experience,
-                qualification,
-                imgNo,
-                customLink,
-              },
-              index
-            ) => (
-              <FacultyStaff
-                name={name}
-                qualification={qualification}
-                designation={designation}
-                experience={experience}
-                key={index}
-                facultyName={"KSET"}
-                imgNo={imgNo}
-                MainLink={
-                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707473966/KPGU/Faculty%20Images/"
-                }
-                customLink={customLink}
-              />
-            )
-          )}
+          {DepartmentList.map(({ img, name, link }, index) => (
+            <DepartmentListComponent
+              img={img}
+              name={name}
+              link={link}
+              key={index}
+            />
+          ))}
         </Grid>
       </Box>
       <Box
-        mt={4}
+        mt={7}
         bgcolor={"#fff"}
         borderRadius={4}
         className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Vision</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Mission</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
+        p={"3%"}
+        maxWidth={maxWidth}
+        mx={"auto"}
       >
         <TabContext value={value}>
           <TabList
@@ -767,29 +796,30 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
           </TabPanel>
         </TabContext>
       </Box>
+
       <Box
-        mt={4}
+        p={"3%"}
         bgcolor={"#fff"}
+        mt={7}
         borderRadius={4}
         className="smooth-shadow"
-        p={2}
+        maxWidth={maxWidth}
+        mx={"auto"}
       >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
-          <Grid container spacing={3} mt={1}>
-            {Announcements.map(({ date, des, img, title }, index) => (
-              <AnnouncementCard
-                date={date}
-                des={des}
-                img={img}
-                title={title}
-                key={index}
-              />
-            ))}
-          </Grid>
-        </Box>
+        <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
+        <Grid container spacing={3} mt={1}>
+          {Announcements.map(({ date, des, img, title }, index) => (
+            <AnnouncementCard
+              date={date}
+              des={des}
+              img={img}
+              title={title}
+              key={index}
+            />
+          ))}
+        </Grid>
       </Box>
-    </Box>
+    </>
   );
 }
 

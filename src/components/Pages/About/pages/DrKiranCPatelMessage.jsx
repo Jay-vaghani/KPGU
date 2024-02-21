@@ -68,7 +68,7 @@ function DrKiranCPatelMessage() {
       </Typography>
       <Box mt={4}>
         {paragraphs.map(({ des }, index) => (
-          <Paragraph content={des} key={index} />
+          <Paragraph content={[des]} key={index} />
         ))}
       </Box>
     </Box>
