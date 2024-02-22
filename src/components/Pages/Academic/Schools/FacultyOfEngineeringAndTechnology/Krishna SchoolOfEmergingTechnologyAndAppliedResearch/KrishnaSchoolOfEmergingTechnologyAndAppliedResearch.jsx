@@ -1,15 +1,12 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Stack, Tab, Typography } from "@mui/material";
+import { Box, Grid, Tab } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
-import FacultyStaff from "../../../../../Common/FacultyStaff";
-import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
 import { useNavigate } from "react-router-dom";
-import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
 
 function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const { maxWidth } = useContext(AppContext);
@@ -42,8 +39,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       link: "/academics/civil-engineering",
     },
   ];
-
-
 
   const Faculties = [
     // ======================= CIVIL =======================
@@ -218,22 +213,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M.Tech || B.E",
     //   customLink: "",
     // },
-    {
-      name: "Ms. Apoorva Shah ",
-      imgNo: "6010",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification: "Ph.D[Pursuing-CSE] || M.E[CSE] || B.E[CSE]",
-      customLink: "",
-    },
-    {
-      name: "Sonia Panesar",
-      imgNo: "6044",
-      designation: "Assistant Professor",
-      experience: 9,
-      qualification: "Phd[Pursuing-CSE] || M.Tech[CE] || B.Tech[CSE]",
-      customLink: "",
-    },
+
     // {
     //   name: "Ms. Priya Patel",
     //   imgNo: "6011",
@@ -242,38 +222,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "PhD(Pursuing) || M.E || B.E",
     //   customLink: "",
     // },
-    {
-      name: "Ms.Rohini Patel",
-      imgNo: "6020",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.E(IT) || B.E[IT]",
-      customLink: "",
-    },
-    {
-      name: "Ms. Ankita Kothari",
-      imgNo: "6021",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.Tech[CSE] || B.E[CSE]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Tushar Desai",
-      imgNo: "6038",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification: "M.E[CSE] || B.E",
-      customLink: "",
-    },
-    {
-      name: "Ms. Jalpa Bhatt",
-      imgNo: "6049",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.E[CSE] || B.E[CE]",
-      customLink: "",
-    },
+
     {
       name: "Mr. Ramesh Patoliya ",
       imgNo: "6033",
@@ -291,22 +240,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       qualification: "M.Sc in Applied Mathematics ",
       customLink: "",
     },
-    {
-      name: "Jyoti Golakia",
-      imgNo: "6023",
-      designation: "Assistant Professor",
-      experience: 4,
-      qualification: "M.E[CE] || BE[CE]",
-      customLink: "",
-    },
-    {
-      name: "Dr. Gopal Bhatt",
-      imgNo: "6035",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification: "PhD. [Applied Physics] || M.Sc[Physics] || B.Sc[Physics]",
-      customLink: "",
-    },
+
     // {
     //   name: "MS. Mittal C. Joshi",
     //   imgNo: "6043",
@@ -315,14 +249,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M.E || B.E",
     //   customLink: "",
     // },
-    {
-      name: "Ms. Safeya Dharmajwala ",
-      imgNo: "6019",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification: "M.E || B.E - COMPUTER ENGINEERING",
-      customLink: "",
-    },
+
     // {
     //   name: "Ms. Niyati Mevada",
     //   imgNo: "6040",
@@ -331,14 +258,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M.E || B.E || D.I.P",
     //   customLink: "",
     // },
-    {
-      name: "Ms. Rashmika Baria",
-      imgNo: "6042",
-      designation: "Assistant Professor",
-      experience: 5,
-      qualification: "M.E[CE] || B.E[CSE]",
-      customLink: "",
-    },
+
     {
       name: "Ms. Khushbu Shah",
       imgNo: "6026",
@@ -371,14 +291,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "PhD(Pursuing) || M.Sc",
     //   customLink: "",
     // },
-    {
-      name: "Dr. Dharmendra V.Tawde",
-      imgNo: "6045",
-      designation: "Assistant Professor",
-      experience: 12,
-      qualification: "Ph.D[Physics]",
-      customLink: "",
-    },
+
     {
       name: "Dr. Disha Pandya",
       imgNo: "6029",
@@ -403,14 +316,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
       qualification: "TEFL/TESOL || PhD || MA || BA",
       customLink: "",
     },
-    {
-      name: "Arohi Patel",
-      imgNo: "9866",
-      designation: "Assistant Professor",
-      experience: 3,
-      qualification: "M.E[CE] || BE[CE]",
-      customLink: "",
-    },
+
     // {
     //   name: "Priyanka Dubey",
     //   imgNo: "9868",
@@ -419,64 +325,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M Tech",
     //   customLink: "",
     // },
-    {
-      name: "Dr. Shivam Upadhyay ",
-      imgNo: "9867",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification: "PhD[CSE] || M.tech[CSE] || B.E[IT]",
-      customLink: "",
-    },
-    {
-      name: "Dr. Rocky Upadhyay",
-      imgNo: "9864",
-      designation: "Head & Associate Professor",
-      experience: 10,
-      qualification: "PhD[Image Processing] || M.Tech[CSE] || BE[CE]",
-      customLink: "",
-    },
-    {
-      name: "Ms.Manisha Makwana",
-      imgNo: "9865",
-      designation: "Assistant Professor",
-      experience: 3,
-      qualification: "M.E || B.E - COMPUTER ENGINEERING",
-      customLink: "",
-    },
-    {
-      name: "Henilkumar Suthar",
-      imgNo: "8897",
-      designation: "Assistant Professor",
-      experience: 3,
-      qualification: "PhD[Pursuing-IT] || M.Tech[IT] || B.E[IT]",
-      customLink: "",
-    },
-    {
-      name: "Jariwala Krishna B.",
-      imgNo: "8899",
-      designation: "Assistant Professor",
-      experience: 5,
-      qualification: "M.Tech[CSE] || B.E[CSE]",
-      customLink:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
-    },
-    {
-      name: "Bharati Salimath",
-      imgNo: "8900",
-      designation: "Assistant Professor",
-      experience: 20,
-      qualification: "M.Tech[CSE] || B.E[CSE]",
-      customLink:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
-    },
-    {
-      name: "Ms. Harika Thokala",
-      imgNo: "8901",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.Tech[CS] || B.Tech[CSE]",
-      customLink: "",
-    },
+
     {
       name: "Ms. Dhara Parikh",
       imgNo: "9870",
@@ -490,7 +339,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const UG = [
     {
       title: "B. Tech in Computer Science & Engineering",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
       fees: "1,00,000",
@@ -498,7 +346,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
     {
       title: "B. Tech in Information Technology",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
       fees: "1,00,000",
@@ -506,7 +353,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
     {
       title: "B. Tech in Mechanical Engineering",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
       fees: "1,00,000",
@@ -514,7 +360,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
     {
       title: "B. Tech in Electrical Engineering",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
       fees: "1,00,000",
@@ -522,7 +367,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
     {
       title: "B. Tech in Civil Engineering",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
       fees: "1,00,000",
@@ -533,49 +377,44 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const PG = [
     {
       title: "M. Tech in Advance Manufacturing System ",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "90,000 /Years",
+      duration: "2",
     },
     {
       title: "M. Tech in Data Science",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "90,000 /Years",
+      duration: "2",
     },
   ];
 
   const Diploma = [
     {
       title: "Computer Science & Engineering",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "49,000 / Year",
+      duration: "3",
     },
     {
       title: "Information Technology",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "49,000 / Year",
+      duration: "3",
     },
   ];
 
   const PGManagement = [
     {
       title: "MBA",
-      des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime ratione eveniet ipsa, deleniti dicta fugit. Aspernatur quam eligendi vero.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "65,000 / Year",
+      duration: "2",
     },
   ];
 
@@ -675,14 +514,10 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
             "The Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara’s constituent institute Krishna School of Emerging Technology & Applied Research (KSET), formerly known as, Babaria Institute of Technology was founded in the year 2004 with the goal of providing leadership in education and research with a specific focus on science and technology. The learning experiences at KSET are rewarding, lasting, and fun. We are aware that only a supportive environment can foster creativity and propel individuals to greater heights of success in their endeavors. We have a dynamic environment that produces leading innovators, social scientists, professionals, businesspeople, academicians, and thinkers of the future. The team must remain focused on attaining this goal despite short-term vicissitudes since the stakeholders’ emotional connection, shared faith, and trust are so strong.",
             "We firmly believe that the quality of research will determine how educational institutions will look in the future. For a campus to remain alive, alumni and industry connections must be encouraged and strengthened. With adequate options for academic, co-curricular, and extracurricular activities and a steadfast focus on fostering the individual, we encourage multidisciplinary orientation.",
             "I firmly believe that operating in silos will prevent an organization from succeeding. It is the culmination of the diligent efforts of each and every one of its members. We will be able to carve out a niche in pursuit of our vision and contribute to the development of the area and our motherland as visualized in National Education Policy 2020 with the help and commitment of qualified and experienced faculty members, supportive administration, and vibrant students, I am sure and confident.",
-            
-
           ]}
         />
       </Box>
 
-      
-      
       <Box
         maxWidth={maxWidth}
         mx={"auto"}

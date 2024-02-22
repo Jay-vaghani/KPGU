@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function CivilEngineering() {
-  return (
-    <div>CivilEngineering</div>
-  )
+  return <div>CivilEngineering</div>;
 }
 
-export default CivilEngineering
+export default CivilEngineering;

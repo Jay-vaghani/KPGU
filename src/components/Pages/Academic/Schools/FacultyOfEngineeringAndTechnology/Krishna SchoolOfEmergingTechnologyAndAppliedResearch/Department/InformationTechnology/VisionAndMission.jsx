@@ -1,9 +1,9 @@
 import { Box, Stack } from "@mui/material";
 import React from "react";
-import Quote from "../../../../../../Common/Quote";
 import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
+import Quote from "../../../../../../../Common/Quote";
 
-function ElectricalEngineering() {
+function VisionAndMission() {
   const MissionList = [
     "To produce computer professionals and technocrats through proficient mentors and researchers to satisfy global needs.",
     "To foster the state-of-art technologies and extend the platform to inculcate innovation and interdisciplinary research",
@@ -41,4 +41,4 @@ function ElectricalEngineering() {
   );
 }
 
-export default ElectricalEngineering;
+export default VisionAndMission;

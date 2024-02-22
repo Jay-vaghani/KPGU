@@ -19,7 +19,6 @@ function HODMessage({
         borderRadius={4}
         overflow={"hidden"}
         className="smooth-shadow-card"
-        mt={4}
       >
         <Grid item xs={12} md={4}>
           <Box overflow={"hidden"} height={"100%"}>
@@ -34,7 +33,7 @@ function HODMessage({
           <Box bgcolor={"#fff"} height={"100%"} p={2}>
             <h2 className="fs-1 fw-semibold">{hodName}</h2>
             <h5 className="text-secondary fw-semibold mb-0">
-              Head Of Department <br />
+              Head of Department <br />
             </h5>
             <h4 className="color-secondary fw-bold">
               {hodOf} <br />

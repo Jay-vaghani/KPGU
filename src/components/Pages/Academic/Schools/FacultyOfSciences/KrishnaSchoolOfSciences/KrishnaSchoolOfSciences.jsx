@@ -110,7 +110,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "3",
     },
     {
       title: "B.Sc [Honours]  in Chemistry, Biotechnology & Microbiology",
@@ -118,7 +118,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "3",
     },
   ];
 

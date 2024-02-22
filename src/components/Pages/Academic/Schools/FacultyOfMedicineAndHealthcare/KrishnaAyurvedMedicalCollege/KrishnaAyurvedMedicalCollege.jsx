@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Tab } from "@mui/material";
+import { Box, Button, Grid, Stack, Tab, Typography } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
 import FacultyStaff from "../../../../../Common/FacultyStaff";
@@ -8,6 +8,10 @@ import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+import {
+  DescriptionRounded,
+  KeyboardDoubleArrowRightRounded,
+} from "@mui/icons-material";
 
 function KrishnaAyurvedMedicalCollege() {
   const { maxWidth } = useContext(AppContext);
@@ -157,8 +161,26 @@ function KrishnaAyurvedMedicalCollege() {
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: [
+        {
+          quota: "Government Quota ",
+          fees: "2,25000",
+        },
+        {
+          quota: "Management Quota ",
+          fees: "3,40,000",
+        },
+      ],
+      duration: [
+        {
+          name: "Academic",
+          time: "4 Years 6 Months ",
+        },
+        {
+          name: "Internship",
+          time: "1 Years",
+        },
+      ],
     },
   ];
 
@@ -188,6 +210,65 @@ function KrishnaAyurvedMedicalCollege() {
   };
 
   const [value, setValue] = useState("1");
+
+  const CustomComponent = ({ title, link, duration, eligibility, fees }) => (
+    <Grid item xs={12} md={6}>
+      <Box
+        className="smooth-shadow-card h-100"
+        p={2}
+        borderRadius={4}
+        position={"relative"}
+      >
+        <h4 className="fw-semibold">{title}</h4>
+
+        <h5 className="color-secondary mb-0 fw-bold">Duration</h5>
+        {duration.map(({ name, time }) => (
+          <h6 className="fw-bold mb-0">
+            <span className="color-secondary">{name}</span>:{" "}
+            <span className="text-secondary fs-6">{time}</span>
+          </h6>
+        ))}
+
+        <h5 className="color-secondary mb-0 fw-bold mt-2 ">Fees As Per (FRC)</h5>
+        {fees.map(({ quota, fees }) => (
+          <h6 className="fw-bold mb-0">
+            <span className="color-secondary">{quota}</span>:{" "}
+            <span className="text-secondary fs-6">{fees}</span>
+          </h6>
+        ))}
+
+        <br />
+        <br />
+        <Stack
+          direction={"row"}
+          sx={{ position: "absolute", bottom: 16 }}
+          spacing={1}
+        >
+          <Button
+            href={link}
+            variant="contained"
+            color="secondary"
+            // disableElevation
+            endIcon={<DescriptionRounded />}
+            sx={{ px: "12px" }}
+          >
+            download
+          </Button>
+          <Button
+            href={link}
+            variant="contained"
+            color="secondary"
+            // disableElevation
+            endIcon={<KeyboardDoubleArrowRightRounded />}
+            sx={{ px: "12px" }}
+            onClick={() => navigate("/admission-inquiry")}
+          >
+            Apply
+          </Button>
+        </Stack>
+      </Box>
+    </Grid>
+  );
 
   return (
     <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
@@ -309,7 +390,7 @@ function KrishnaAyurvedMedicalCollege() {
             <Grid container spacing={2}>
               {UG.map(
                 ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
+                  <CustomComponent
                     des={des}
                     link={link}
                     pageLink={pageLink}

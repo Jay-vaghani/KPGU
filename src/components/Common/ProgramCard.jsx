@@ -21,15 +21,15 @@ function ProgramCard({ title, link, duration, eligibility, fees }) {
           {des}
         </Typography> */}
         <h6 className="text-secondary fw-semibold mb-0">
-          <span className="color-secondary fw-bold">Course Duration:</span>{" "}
+          <span className="color-secondary fw-bold">Duration:</span>{" "}
           <Typography
             variant="caption"
             fontSize={"16px"}
             className="fw-semibold"
           >
-            {duration}
+            {duration}{" "}
+            Years
           </Typography>{" "}
-          Years
         </h6>
 
         <h6 className="text-secondary fw-semibold mb-0">
@@ -42,7 +42,6 @@ function ProgramCard({ title, link, duration, eligibility, fees }) {
             {fees}
           </Typography>
         </h6>
-       
 
         <br />
         <br />

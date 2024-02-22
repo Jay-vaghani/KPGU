@@ -133,7 +133,7 @@ function KrishnaSchoolOfNursing() {
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      duration: "4",
+      duration: "3",
       fees: "1,00,000",
     },
   ];

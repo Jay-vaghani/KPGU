@@ -46,53 +46,47 @@ function KrishnaSchoolOfTechnology() {
   const UG = [
     {
       title: "B.Tech in Computer Engineering",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
+      fees: "95,000 / Year",
       duration: "4",
     },
     {
       title: "B.Tech in Food Technology",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
+      fees: "95,000 / Year",
       duration: "4",
     },
   ];
   const PG = [
     {
       title: "M.Tech in Computer Science & Engineering",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "90,000 / Year",
+      duration: "2",
     },
     {
       title: "M.Tech in Computer Engineering",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "90,000 / Year",
+      duration: "2",
     },
     {
       title: "M.Tech in Electrical Engineering",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "90,000 / Year",
+      duration: "2",
     },
     {
       title: "M.Tech in Information Technology",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus quo nostrum eaque facilis. Nostrum enim neque sint quibusdam beatae.",
       link: "",
       pageLink: "",
-      fees: "1,00,000",
-      duration: "4",
+      fees: "90,000 / Year",
+      duration: "2",
     },
   ];
 

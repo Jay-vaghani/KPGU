@@ -1,24 +1,32 @@
 import React, { useContext } from "react";
-import { Box, Stack } from "@mui/material";
-import { AppContext } from "../../../../../../../contexts/AppContext";
+import { Box, Grid, Stack, Tab } from "@mui/material";
 import Paragraph from "../../../../../../Common/Paragraph";
 import Quote from "../../../../../../Common/Quote";
 import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
 import HODMessage from "../../../../../../Common/HODMessage";
+import { AppContext } from "../../../../../../../contexts/AppContext";
+import { TabContext, TabList, TabPanel } from "@mui/lab";
+import MessageFromHod from "./ComputerScienceEngineering/MessageFromHod";
+import ElectricalEngineering from "./ElectricalEngineering";
+import AboutDepartment from "./ComputerScienceEngineering/AboutDepartment";
+import HonorsMinorsOfferedBroadly from "./ComputerScienceEngineering/HonorsMinorsOfferedBroadly";
+import ComputerLab from "./ComputerScienceEngineering/ComputerLab";
+import ResearchAreas from "./ComputerScienceEngineering/ResearchAreas";
+import FacultyStaffSection from "./ComputerScienceEngineering/FacultyStaffSection";
+import VisionAndMission from "./ComputerScienceEngineering/VisionAndMission";
 
 function ComputerScienceEngineering() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
 
-  const MissionList = [
-    "To produce computer professionals and technocrats through proficient mentors and researchers to satisfy global needs.",
-    "To foster the state-of-art technologies and extend the platform to inculcate innovation and interdisciplinary research",
-    "To imbibe moral and ethical values that creates responsible citizens with great human values & interpersonal skills",
-    "To strengthen the partnership with industries, research organizations, and educational institutions that will enable the young graduate to emerge as a leader in academics or in entrepreneurship",
-  ];
+  const [value, setValue] = React.useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <>
-      <Box
+      {/* <Box
         maxWidth={maxWidth}
         mx={"auto"}
         p={"3%"}
@@ -47,8 +55,8 @@ function ComputerScienceEngineering() {
             "With the idea that mentoring is a lifetime commitment, we motivate students to achieve academic excellence with valuable life lessons"
           }
         />
-      </Box>
-      <Box
+      </Box> */}
+      {/* <Box
         maxWidth={maxWidth}
         mx={"auto"}
         p={"3%"}
@@ -70,48 +78,9 @@ function ComputerScienceEngineering() {
             "It continues to be the top option among all applicants for admittance to KSET. The young talent that aspires to study, teach, or create in the field of computer science is warmly welcomed by our team. So join us by coming.",
           ]}
         />
-      </Box>
-      <Box
-        mt={7}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow-card"
-        maxWidth={maxWidth}
-        mx={"auto"}
-        p={"3%"}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Vision</h2>
-        <Quote
-          quote={
-            "To evolve as a center of excellence in Computer Science & Engineering and to prepare value driven, globally competent Computer Engineers by imparting quality education through innovation, research, collaboration and contribute in the development of society at large."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={7}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow-card"
-        maxWidth={maxWidth}
-        mx={"auto"}
-        p={"3%"}
-      >
-        <h2 className="fw-bold color-secondary fs-1 mb-4">Mission</h2>
-        <Box pl={2} color={"secondary.main"}>
-          {MissionList.map((des, index) => (
-            <Stack direction={"row"} key={index} mb={1}>
-              <Box>
-                <KeyboardDoubleArrowRightRounded sx={{ fontSize: "25px" }} />
-              </Box>
-              <Box>
-                <h4>{des}</h4>
-              </Box>
-            </Stack>
-          ))}
-        </Box>
-      </Box>
-      <Box
+      </Box> */}
+
+      {/* <Box
         mt={7}
         bgcolor={"#fff"}
         borderRadius={4}
@@ -123,7 +92,96 @@ function ComputerScienceEngineering() {
         <h2 className="fw-bold color-secondary fs-1 mb-4">
           Honors - Minors Offered Broadly
         </h2>
-      </Box>
+        <Grid container spacing={4}>
+          {HonorsMinorsList.map(({ title, img }, index) => (
+            <HonorsMinorsListComponent img={img} title={title} key={index} />
+          ))}
+        </Grid>
+      </Box> */}
+      <TabContext value={value}>
+        <Grid container maxWidth={maxWidth} mx={"auto"} mt={7}>
+          <Grid item xs={12} md={3} pb={4}>
+            <Box
+              className="smooth-shadow"
+              bgcolor={"#fff"}
+              p={2}
+              borderRadius={4}
+              position={"sticky"}
+              top={0}
+            >
+              <TabList
+                onChange={handleChange}
+                aria-label="lab API tabs example"
+                orientation={`${innerWidth < 900 ? "horizontal" : "vertical"}`}
+                textColor="secondary"
+                indicatorColor="secondary"
+                variant="scrollable"
+              >
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="Message From HOD"
+                  value="1"
+                />
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="About Department"
+                  value="2"
+                />
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="Vision And Mission"
+                  value="3"
+                />
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="Honors - Minors Offered Broadly"
+                  value="4"
+                />
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="Computer Labs"
+                  value="5"
+                />
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="Research Areas"
+                  value="6"
+                />
+                <Tab
+                  className="align-items-start fw-bold text-start "
+                  label="Faculty"
+                  value="7"
+                />
+              </TabList>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={9} pl={innerWidth < 900 ? "0" : 4}>
+            <Box className="smooth-shadow" bgcolor={"#fff"} borderRadius={4}>
+              <TabPanel value="1">
+                <MessageFromHod />
+              </TabPanel>
+              <TabPanel value="2">
+                <AboutDepartment />
+              </TabPanel>
+              <TabPanel value="3">
+                <VisionAndMission />
+              </TabPanel>
+              <TabPanel value="4">
+                <HonorsMinorsOfferedBroadly />
+              </TabPanel>
+              <TabPanel value="5">
+                <ComputerLab />
+              </TabPanel>
+              <TabPanel value="6">
+                <ResearchAreas />
+              </TabPanel>
+              <TabPanel value="7">
+                <FacultyStaffSection />
+              </TabPanel>
+            </Box>
+          </Grid>
+        </Grid>
+      </TabContext>
     </>
   );
 }

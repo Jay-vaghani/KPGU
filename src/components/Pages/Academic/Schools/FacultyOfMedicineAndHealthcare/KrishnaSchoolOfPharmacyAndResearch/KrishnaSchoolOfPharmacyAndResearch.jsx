@@ -226,7 +226,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
     {
       title: "M. Pharm in Pharmacology",
@@ -234,7 +234,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
     {
       title: "M. Pharm in Pharmaceutical Quality Assurance",
@@ -242,7 +242,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
     {
       title: "M. Pharm in Pharmaceutical Technology",
@@ -250,7 +250,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
   ];
 
