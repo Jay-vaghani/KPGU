@@ -5,19 +5,18 @@ import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
   const MissionList = [
-    "To create worldwide competent students having ability to design, develop smart systems with intelligence.",
-    "To impart continuous learning, comprehensive research in emerging  areas.",
-    "Exchanging expertise with research, industry and academic organizations.",
-    "To create an excellent environment for higher studies that leads to careers as smart  IT Professionals in the extensively diversified domains of industry, government and academia.",
-  ];
+    " By providing outstanding technical education, students will have strong technological industry-oriented knowledge, a skill-based foundation, and the ability to create.",
+    "As responsible citizens, develop qualified and employable diploma engineers.",
+    "To adapt changing technologies to meet social needs when solving electrical engineering problems.",
+    ];
 
   return (
     <>
-      <Box borderRadius={4} className="smooth-shadow-card p-3">
+      <Box borderRadius={4} className="smooth-shadow-card p-3"  textAlign={"justify"}>
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
           quote={
-            "To become a great contributor towards Digital India by developing quality IT engineers, entrepreneurs, researchers who can compete globally."
+            "To establish a department of global repute producing Electrical Engineering personals with excellent technical competence and professional skills."
           }
           right={true}
         />
@@ -26,7 +25,7 @@ function VisionAndMission() {
         <h2 className="fw-bold color-secondary fs-1 mb-4">Mission</h2>
         <Box pl={2} color={"secondary.main"}>
           {MissionList.map((des, index) => (
-            <Stack direction={"row"} key={index} mb={1}>
+            <Stack direction={"row"} key={index} mb={1} textAlign={"justify"}>
               <Box>
                 <KeyboardDoubleArrowRightRounded sx={{ fontSize: "25px" }} />
               </Box>

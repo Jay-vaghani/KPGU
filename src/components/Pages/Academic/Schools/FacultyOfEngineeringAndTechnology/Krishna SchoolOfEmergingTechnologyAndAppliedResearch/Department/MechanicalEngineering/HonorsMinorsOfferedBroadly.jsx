@@ -4,7 +4,7 @@ import React from "react";
 function HonorsMinorsOfferedBroadly() {
   const HonorsMinorsList = [
     {
-      title: "Artificial Intelligence & Machine Learning",
+      title: "MACHINE LEARNING",
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708579042/KPGU/Images/Institutions/KSET/machine-learning.png",
     },
     {
@@ -14,10 +14,6 @@ function HonorsMinorsOfferedBroadly() {
     {
       title: "SOFTWARE METHODOLOGIES AND TESTING",
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708580600/KPGU/Images/Institutions/KSET/methodologies-and-testing.webp",
-    },
-    {
-      title: "Full Stack Web Development",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708922926/KPGU/Images/Institutions/KSET/web-dev.webp",
     },
   ];
 

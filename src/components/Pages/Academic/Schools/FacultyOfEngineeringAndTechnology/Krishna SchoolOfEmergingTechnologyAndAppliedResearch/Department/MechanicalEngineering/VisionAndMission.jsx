@@ -5,10 +5,11 @@ import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
   const MissionList = [
-    "To create worldwide competent students having ability to design, develop smart systems with intelligence.",
-    "To impart continuous learning, comprehensive research in emerging  areas.",
-    "Exchanging expertise with research, industry and academic organizations.",
-    "To create an excellent environment for higher studies that leads to careers as smart  IT Professionals in the extensively diversified domains of industry, government and academia.",
+    "Globalization through creation, acquisition, preservation and exchange of knowledge.",
+    "To provide collaborative environment for exchange of ideas, virtues & values.",
+    "To develop good human being possessing scientific temper, compassion, empathy, courage and creative imagination.",
+    "To nurture innovative and socially cultured global citizen.",
+    "To foster multifaceted excellence in education and research outreach.",
   ];
 
   return (
@@ -17,7 +18,7 @@ function VisionAndMission() {
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
           quote={
-            "To become a great contributor towards Digital India by developing quality IT engineers, entrepreneurs, researchers who can compete globally."
+            "KPGU Aspires to be globally acclaimed a value-driven University, recognized for excellence in teaching, research and outreach; promoting access and inclusion; collaborative and innovative culture; and prepare socially responsible global citizens."
           }
           right={true}
         />

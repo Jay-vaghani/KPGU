@@ -151,49 +151,11 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         "PhD[Mechanical Engineering] || M.Tech[Mechanical Engineering] || B.Tech[Industrial and Production Engineering] || GATE-2010[Mechanical Engineering]",
       customLink: "",
     },
-    {
-      name: "Mr Mehul A. Shah",
-      imgNo: "6006",
-      designation: "Assistant Professor",
-      experience: 9,
-      qualification:
-        "PhD [Mechanical-Pursuing] || M.E[Thermal Engineering] || B.E[Mechanical Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Mr Mandar Sumant",
-      imgNo: "5998",
-      designation: "Assistant Professor",
-      experience: 18,
-      qualification:
-        "PhD[Mechanical-Pursuing] || M.E[Advance Mfg Systems -Mechanical] || B.E[Mechanical]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Ankur P. Patel",
-      imgNo: "6002",
-      designation: "Assistant Professor",
-      experience: 12,
-      qualification: "M.E[Machine Design] || B.E[Mechanical Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Pratikkumar Rameshbhai Patel",
-      imgNo: "5995",
-      designation: "Assistant Professor",
-      experience: 14,
-      qualification: "M.E[Thermal Engineering] || B.E[Mechanical Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Nilesh A. Patel",
-      imgNo: "5991",
-      designation: "Assistant Professor",
-      experience: 17,
-      qualification:
-        "M.E[Mechanical Engineering] || B.E[Production Engineering]",
-      customLink: "",
-    },
+    
+    
+   
+   
+    
 
     // ======================= ME =======================
 
@@ -556,7 +518,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
             onChange={handleChange}
             aria-label="lab API tabs example"
           >
-            <Tab className="fw-bold" label="deploma" value="1" />
+            <Tab className="fw-bold" label="diploma" value="1" />
             <Tab className="fw-bold" label="ug" value="2" />
             <Tab className="fw-bold" label="pg" value="3" />
             <Tab className="fw-bold" label="pg management" value="4" />
