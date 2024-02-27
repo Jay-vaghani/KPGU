@@ -15,13 +15,11 @@ function FacultyStaff({
   qualification,
   MainLink,
   customLink,
-  insideTab
+  insideTab,
 }) {
-
-
   return (
     <>
-      <Grid item xs={12} sm={6} lg={insideTab ? 4 : 3}>
+      <Grid item xs={12} sm={6} lg={insideTab ? 3 : 3}>
         <Box
           className="smooth-shadow-card"
           borderRadius={4}
@@ -41,7 +39,9 @@ function FacultyStaff({
             />
           </Box>
           <Box p={2}>
-            <h4 className="fw-semibold color-secondary">{name.toUpperCase()}</h4>
+            <h5 className="fw-semibold color-secondary">
+              {name.toUpperCase()}
+            </h5>
             <h6 className="text-secondary fw-semibold mb-0">{designation}</h6>
             <h6 className="text-secondary fw-semibold mb-2">
               Experience: {experience} Years

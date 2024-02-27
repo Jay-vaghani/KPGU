@@ -5,18 +5,19 @@ import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
   const MissionList = [
-    " By providing outstanding technical education, students will have strong technological industry-oriented knowledge, a skill-based foundation, and the ability to create.",
-    "As responsible citizens, develop qualified and employable engineers.",
-    "To adapt changing technologies to meet social needs when solving electrical engineering problems.",
-    ];
+    "Produce professionally brilliant and motivated Engineers in the field of Civil Engineering",
+    "Undertake developmental research, consultancy and technical interaction with industry",
+    "Meet the global need of competent and dedicated professionals through research & development, consultancy & extension activities which are relevant to the needs of mankind",
+    "Execute community driven, holistic programs with diverse and inclusive governance.",
+  ];
 
   return (
     <>
-      <Box borderRadius={4} className="smooth-shadow-card p-3"  textAlign={"justify"}>
+      <Box borderRadius={4} className="smooth-shadow-card p-3">
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
           quote={
-            "To establish a department of global repute producing Electrical Engineering personals with excellent technical competence and professional skills."
+            "To develop the department into a center of excellence in education, research, training and consultancy to the extent that it becomes a significant player in the technical and overall development of the country and with skill-based knowledge achieve new horizons."
           }
           right={true}
         />
@@ -25,7 +26,7 @@ function VisionAndMission() {
         <h2 className="fw-bold color-secondary fs-1 mb-4">Mission</h2>
         <Box pl={2} color={"secondary.main"}>
           {MissionList.map((des, index) => (
-            <Stack direction={"row"} key={index} mb={1} textAlign={"justify"}>
+            <Stack direction={"row"} key={index} mb={1}>
               <Box>
                 <KeyboardDoubleArrowRightRounded sx={{ fontSize: "25px" }} />
               </Box>

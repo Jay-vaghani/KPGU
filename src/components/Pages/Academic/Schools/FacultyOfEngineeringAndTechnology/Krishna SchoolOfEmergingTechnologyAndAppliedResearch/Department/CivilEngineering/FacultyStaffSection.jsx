@@ -8,21 +8,27 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
-      name: "Vijay Bharat Desle",
-      imgNo: "6015",
+      name: "Mr. Ankit N Patel",
+      imgNo: "6110",
       designation: "Assistant Professor",
-      experience: 10,
-      qualification:
-        "Ph.D[Pursuing] || M.Tech[Electrical Power Systems] || B.Tech[Electrical]",
+      experience: 13,
+      qualification: "M.Tech[CPM] || B.E[Civil]",
       customLink: "",
     },
     {
-      name: "Ketul Kachhia",
-      imgNo: "6192",
+      name: "Mithileshdatta Pandya",
+      imgNo: "6052",
       designation: "Assistant Professor",
       experience: 11,
-      qualification:
-        "PhD [Pursuing] || M.TECH[Power System] || MBA[MARKETING] || B.E[ELECTRICAL]",
+      qualification: "Ph.D[Pursuing-Civil] || M.E[CASAD] || B.E[Civil]",
+      customLink: "",
+    },
+    {
+      name: "Mr. Ravi S. Patel",
+      imgNo: "6090",
+      designation: "Assistant Professor",
+      experience: 9,
+      qualification: "M.E in Civil Engineering",
       customLink: "",
     },
   ];

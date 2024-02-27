@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Tab } from "@mui/material";
+import { Box, Button, Grid, Tab } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
@@ -9,8 +9,20 @@ import AnnouncementCard from "../../../../../Common/AnnouncementCard";
 import { useNavigate } from "react-router-dom";
 
 function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
   const navigate = useNavigate();
+
+  const [programValue, programValueSetValue] = useState("1");
+
+  const programHandleChange = (event, newValue) => {
+    programValueSetValue(newValue);
+  };
+
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   const DepartmentList = [
     {
@@ -42,34 +54,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
 
   const Faculties = [
     // ======================= CIVIL =======================
-
-    {
-      name: "Mr. Ankit N Patel",
-      imgNo: "6110",
-      designation: "Assistant Professor",
-      experience: 13,
-      qualification: "M.Tech[CPM] || B.E[Civil]",
-      customLink: "",
-    },
-    {
-      name: "Mithileshdatta Pandya",
-      imgNo: "6052",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "Ph.D[Pursuing-Civil] || M.E[CASAD] || B.E[Civil]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Ravi S. Patel",
-      imgNo: "6090",
-      designation: "Assistant Professor",
-      experience: 9,
-      qualification: "M.E in Civil Engineering",
-      customLink: "",
-    },
-
     // ======================= EE =======================
-
     // {
     //   name: "Dr. Ravindrakumar Yadav",
     //   imgNo: "6188",
@@ -78,95 +63,26 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "Ph.D",
     //   customLink: "",
     // },
-    {
-      name: "Dr. Samir H PAtel",
-      imgNo: "6013",
-      designation: "Assistant Professor & Head",
-      experience: 14,
-      qualification: "Ph.D || M.E[Power System] || B.E[Electrical]",
-      customLink: "",
-    },
-    {
-      name: "Vijay Bharat Desle",
-      imgNo: "6015",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification:
-        "Ph.D[Pursuing] || M.Tech[Electrical Power Systems] || B.Tech[Electrical]",
-      customLink: "",
-    },
-    {
-      name: "Ketul Kachhia",
-      imgNo: "6192",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification:
-        "PhD [Pursuing] || M.TECH[Power System] || MBA[MARKETING] || B.E[ELECTRICAL]",
-      customLink: "",
-    },
-
     // ======================= IT =======================
-
-    {
-      name: "Dr. Nandini Chaudhari",
-      imgNo: "6056",
-      designation: "Professor || HOD-IT [KSET]",
-      experience: 31,
-      qualification: "Ph.D || M.E || C.S.E || B.E. Computers",
-      customLink: "",
-    },
-    {
-      name: "Monali Parikh",
-      imgNo: "6064",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "M.Tech[CSE] || B.E[CE]",
-      customLink: "",
-    },
-    {
-      name: "Priyanka M. Patel",
-      imgNo: "6065",
-      designation: "Assistant Professor",
-      experience: 5,
-      qualification: "M.Tech || B.E in Computer Engineering",
-      customLink: "",
-    },
-    {
-      name: "Ms. Manisha Vasava",
-      imgNo: "6063",
-      designation: "Assistant Professor",
-      experience: 16,
-      qualification: "M.Tech || B.E in Computer Engineering",
-      customLink: "",
-    },
-
     // ======================= ME =======================
-
-    {
-      name: "Dr. Nirmal Kumar Kushwaha",
-      imgNo: "5989",
-      designation: "HOD || Assistant Professor",
-      experience: 12,
-      qualification:
-        "PhD[Mechanical Engineering] || M.Tech[Mechanical Engineering] || B.Tech[Industrial and Production Engineering] || GATE-2010[Mechanical Engineering]",
-      customLink: "",
-    },
-    
-    
-   
-   
-    
-
+    // {
+    //   name: "Dr. Nirmal Kumar Kushwaha",
+    //   imgNo: "5989",
+    //   designation: "HOD || Assistant Professor",
+    //   experience: 12,
+    //   qualification:
+    //     "PhD[Mechanical Engineering] || M.Tech[Mechanical Engineering] || B.Tech[Industrial and Production Engineering] || GATE-2010[Mechanical Engineering]",
+    //   customLink: "",
+    // },
     // ======================= ME =======================
-
-    {
-      name: "Dr. Nitesh Sureja",
-      imgNo: "6057",
-      designation: "Professor & Director",
-      experience: 28,
-      qualification: "PhD || BE || ME",
-      customLink: "",
-    },
+    // {
+    //   name: "Dr. Nitesh Sureja",
+    //   imgNo: "6057",
+    //   designation: "Professor & Director",
+    //   experience: 28,
+    //   qualification: "PhD || BE || ME",
+    //   customLink: "",
+    // },
     // {
     //   name: "Ms. Priyanka A Patel",
     //   imgNo: "6048",
@@ -175,7 +91,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M.Tech || B.E",
     //   customLink: "",
     // },
-
     // {
     //   name: "Ms. Priya Patel",
     //   imgNo: "6011",
@@ -184,25 +99,23 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "PhD(Pursuing) || M.E || B.E",
     //   customLink: "",
     // },
-
-    {
-      name: "Mr. Ramesh Patoliya ",
-      imgNo: "6033",
-      designation: "Assistant Professor",
-      experience: 15,
-      qualification:
-        "Ph.D.(Persuing) || M.Sc[Mathematics] || M.Phil[Mathematics]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Nirav Panchal",
-      imgNo: "6032",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "M.Sc in Applied Mathematics ",
-      customLink: "",
-    },
-
+    // {
+    //   name: "Mr. Ramesh Patoliya ",
+    //   imgNo: "6033",
+    //   designation: "Assistant Professor",
+    //   experience: 15,
+    //   qualification:
+    //     "Ph.D.(Persuing) || M.Sc[Mathematics] || M.Phil[Mathematics]",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Mr. Nirav Panchal",
+    //   imgNo: "6032",
+    //   designation: "Assistant Professor",
+    //   experience: 11,
+    //   qualification: "M.Sc in Applied Mathematics ",
+    //   customLink: "",
+    // },
     // {
     //   name: "MS. Mittal C. Joshi",
     //   imgNo: "6043",
@@ -211,7 +124,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M.E || B.E",
     //   customLink: "",
     // },
-
     // {
     //   name: "Ms. Niyati Mevada",
     //   imgNo: "6040",
@@ -220,31 +132,30 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M.E || B.E || D.I.P",
     //   customLink: "",
     // },
-
-    {
-      name: "Ms. Khushbu Shah",
-      imgNo: "6026",
-      designation: "Assistant Professor",
-      experience: 15,
-      qualification: "M.Sc in Applied Mathematics ",
-      customLink: "",
-    },
-    {
-      name: "Ms. Bhumika Patel",
-      imgNo: "6028",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "M.Sc in Applied Mathematics",
-      customLink: "",
-    },
-    {
-      name: "Ms. Janki Gandhi",
-      imgNo: "6030",
-      designation: "Assistant Professor",
-      experience: 2,
-      qualification: "M.Sc in Mathematics ",
-      customLink: "",
-    },
+    // {
+    //   name: "Ms. Khushbu Shah",
+    //   imgNo: "6026",
+    //   designation: "Assistant Professor",
+    //   experience: 15,
+    //   qualification: "M.Sc in Applied Mathematics ",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Bhumika Patel",
+    //   imgNo: "6028",
+    //   designation: "Assistant Professor",
+    //   experience: 11,
+    //   qualification: "M.Sc in Applied Mathematics",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Janki Gandhi",
+    //   imgNo: "6030",
+    //   designation: "Assistant Professor",
+    //   experience: 2,
+    //   qualification: "M.Sc in Mathematics ",
+    //   customLink: "",
+    // },
     // {
     //   name: "Mr .Yagneshbhai Alkeshkumar vyas",
     //   imgNo: "6041",
@@ -253,15 +164,14 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "PhD(Pursuing) || M.Sc",
     //   customLink: "",
     // },
-
-    {
-      name: "Dr. Disha Pandya",
-      imgNo: "6029",
-      designation: "Assistant Professor",
-      experience: 17,
-      qualification: "PhD in English",
-      customLink: "",
-    },
+    // {
+    //   name: "Dr. Disha Pandya",
+    //   imgNo: "6029",
+    //   designation: "Assistant Professor",
+    //   experience: 17,
+    //   qualification: "PhD in English",
+    //   customLink: "",
+    // },
     // {
     //   name: "Dr. Hina D. Dobariya",
     //   imgNo: "6185",
@@ -270,15 +180,14 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "Ph.D || M.phil || M.A || B.A",
     //   customLink: "",
     // },
-    {
-      name: "Dr. Arti Kotak ",
-      imgNo: "6061",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "TEFL/TESOL || PhD || MA || BA",
-      customLink: "",
-    },
-
+    // {
+    //   name: "Dr. Arti Kotak ",
+    //   imgNo: "6061",
+    //   designation: "Assistant Professor",
+    //   experience: 11,
+    //   qualification: "TEFL/TESOL || PhD || MA || BA",
+    //   customLink: "",
+    // },
     // {
     //   name: "Priyanka Dubey",
     //   imgNo: "9868",
@@ -287,15 +196,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     //   qualification: "M Tech",
     //   customLink: "",
     // },
-
-    {
-      name: "Ms. Dhara Parikh",
-      imgNo: "9870",
-      designation: "Assistant Professor",
-      experience: 2,
-      qualification: "M.E[Cyber Security] || B.E[I.T]",
-      customLink: "",
-    },
   ];
 
   const UG = [
@@ -439,183 +339,250 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     </Grid>
   );
 
-  const [value, setValue] = useState("1");
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
     <>
-      <Box
-        maxWidth={maxWidth}
-        mx={"auto"}
-        p={"3%"}
-        bgcolor={"#fff"}
-        mt={7}
-        borderRadius={4}
-        className="smooth-shadow"
-      >
-        <SchoolWelcomeSection
-          title={
-            "Krishna School Of Emerging Technology & Applied Research [KSET]"
-          }
-          des={
-            "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-          }
-        />
-        <DirectorsMessage
-          dirImg={
-            "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
-          }
-          dirEmail={"directoremail@gmail.com"}
-          dirName={"Dr. Nitesh Sureja"}
-          dirOf={"Krishna School of Emerging Technology & Applied Research"}
-          dirOfShort={"[KSET]"}
-          dirMessage={[
-            "The Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara’s constituent institute Krishna School of Emerging Technology & Applied Research (KSET), formerly known as, Babaria Institute of Technology was founded in the year 2004 with the goal of providing leadership in education and research with a specific focus on science and technology. The learning experiences at KSET are rewarding, lasting, and fun. We are aware that only a supportive environment can foster creativity and propel individuals to greater heights of success in their endeavors. We have a dynamic environment that produces leading innovators, social scientists, professionals, businesspeople, academicians, and thinkers of the future. The team must remain focused on attaining this goal despite short-term vicissitudes since the stakeholders’ emotional connection, shared faith, and trust are so strong.",
-            "We firmly believe that the quality of research will determine how educational institutions will look in the future. For a campus to remain alive, alumni and industry connections must be encouraged and strengthened. With adequate options for academic, co-curricular, and extracurricular activities and a steadfast focus on fostering the individual, we encourage multidisciplinary orientation.",
-            "I firmly believe that operating in silos will prevent an organization from succeeding. It is the culmination of the diligent efforts of each and every one of its members. We will be able to carve out a niche in pursuit of our vision and contribute to the development of the area and our motherland as visualized in National Education Policy 2020 with the help and commitment of qualified and experienced faculty members, supportive administration, and vibrant students, I am sure and confident.",
-          ]}
-        />
-      </Box>
-
-      <Box
-        maxWidth={maxWidth}
-        mx={"auto"}
-        p={"3%"}
-        bgcolor={"#fff"}
-        mt={7}
-        borderRadius={4}
-        className="smooth-shadow"
-      >
-        <h2 className="fw-bold color-secondary mb-4">Department</h2>
-        <Grid container spacing={4}>
-          {DepartmentList.map(({ img, name, link }, index) => (
-            <DepartmentListComponent
-              img={img}
-              name={name}
-              link={link}
-              key={index}
-            />
-          ))}
-        </Grid>
-      </Box>
-      <Box
-        mt={7}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={"3%"}
-        maxWidth={maxWidth}
-        mx={"auto"}
-      >
-        <TabContext value={value}>
+      <TabContext value={value}>
+        <Box
+          className="smooth-shadow"
+          bgcolor={"#fff"}
+          p={2}
+          borderRadius={4}
+          mt={7}
+          position={"sticky"}
+          top={0}
+          maxWidth={maxWidth}
+          mx={"auto"}
+          
+          zIndex={99999999}
+        >
           <TabList
+            onChange={handleChange}
+            aria-label="lab API tabs example"
+            orientation={`horizontal`}
             textColor="secondary"
             indicatorColor="secondary"
             variant="scrollable"
-            onChange={handleChange}
-            aria-label="lab API tabs example"
           >
-            <Tab className="fw-bold" label="diploma" value="1" />
-            <Tab className="fw-bold" label="ug" value="2" />
-            <Tab className="fw-bold" label="pg" value="3" />
-            <Tab className="fw-bold" label="pg management" value="4" />
-          </TabList>
-          <TabPanel value="1" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {Diploma.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-          <TabPanel value="2" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {UG.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-          <TabPanel value="3" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {PG.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-          <TabPanel value="4" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {PGManagement.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-        </TabContext>
-      </Box>
-
-      <Box
-        p={"3%"}
-        bgcolor={"#fff"}
-        mt={7}
-        borderRadius={4}
-        className="smooth-shadow"
-        maxWidth={maxWidth}
-        mx={"auto"}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
-        <Grid container spacing={3} mt={1}>
-          {Announcements.map(({ date, des, img, title }, index) => (
-            <AnnouncementCard
-              date={date}
-              des={des}
-              img={img}
-              title={title}
-              key={index}
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Message From Director"
+              value="1"
+              href="#director-message"
             />
-          ))}
-        </Grid>
-      </Box>
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Departments"
+              value="2"
+              href="#department"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Programs"
+              value="3"
+              href="#program"
+            />
+
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Announcements"
+              value="4"
+              href="#announcements"
+            />
+          </TabList>
+        </Box>
+        {/* <TabPanel value="1">
+          <h1>Tab 1</h1>
+        </TabPanel>
+        <TabPanel value="2">
+          <h1>Tab 2</h1>
+        </TabPanel>
+        <TabPanel value="3">
+          <h1>Tab 3</h1>
+        </TabPanel>
+        <TabPanel value="5">
+          <h1>Tab 5</h1>
+        </TabPanel>
+
+        <TabPanel value="7">
+          <h1>Tab 7</h1>
+        </TabPanel> */}
+      </TabContext>
+
+      <div style={{padding: "40px 0 0 0"}} id="director-message">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <SchoolWelcomeSection
+            title={
+              "Krishna School Of Emerging Technology & Applied Research [KSET]"
+            }
+          />
+          <DirectorsMessage
+            dirImg={
+              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
+            }
+            dirEmail={"directoremail@gmail.com"}
+            dirName={"Dr. Nitesh Sureja"}
+            dirOf={"Krishna School of Emerging Technology & Applied Research"}
+            dirOfShort={"[KSET]"}
+            dirMessage={[
+              "The Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara’s constituent institute Krishna School of Emerging Technology & Applied Research (KSET), formerly known as, Babaria Institute of Technology was founded in the year 2004 with the goal of providing leadership in education and research with a specific focus on science and technology. The learning experiences at KSET are rewarding, lasting, and fun. We are aware that only a supportive environment can foster creativity and propel individuals to greater heights of success in their endeavors. We have a dynamic environment that produces leading innovators, social scientists, professionals, businesspeople, academicians, and thinkers of the future. The team must remain focused on attaining this goal despite short-term vicissitudes since the stakeholders’ emotional connection, shared faith, and trust are so strong.",
+              "We firmly believe that the quality of research will determine how educational institutions will look in the future. For a campus to remain alive, alumni and industry connections must be encouraged and strengthened. With adequate options for academic, co-curricular, and extracurricular activities and a steadfast focus on fostering the individual, we encourage multidisciplinary orientation.",
+              "I firmly believe that operating in silos will prevent an organization from succeeding. It is the culmination of the diligent efforts of each and every one of its members. We will be able to carve out a niche in pursuit of our vision and contribute to the development of the area and our motherland as visualized in National Education Policy 2020 with the help and commitment of qualified and experienced faculty members, supportive administration, and vibrant students, I am sure and confident.",
+            ]}
+          />
+        </Box>
+      </div>
+
+      <div style={{padding: "40px 0 0 0"}} id="department">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <h2 className="fw-bold color-secondary mb-4">Department</h2>
+          <Grid container spacing={4}>
+            {DepartmentList.map(({ img, name, link }, index) => (
+              <DepartmentListComponent
+                img={img}
+                name={name}
+                link={link}
+                key={index}
+              />
+            ))}
+          </Grid>
+        </Box>
+      </div>
+
+      <div style={{padding: "40px 0 0 0"}} id="program">
+        <Box
+          
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <TabContext value={programValue}>
+            <TabList
+              textColor="secondary"
+              indicatorColor="secondary"
+              variant="scrollable"
+              onChange={programHandleChange}
+              aria-label="lab API tabs example"
+            >
+              <Tab className="fw-bold" label="diploma" value="1" />
+              <Tab className="fw-bold" label="ug" value="2" />
+              <Tab className="fw-bold" label="pg" value="3" />
+              <Tab className="fw-bold" label="pg management" value="4" />
+            </TabList>
+            <TabPanel value="1" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {Diploma.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+            <TabPanel value="2" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {UG.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+            <TabPanel value="3" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {PG.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+            <TabPanel value="4" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {PGManagement.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+          </TabContext>
+        </Box>
+      </div>
+
+      <div style={{padding: "40px 0 0 0"}} id="announcements">
+        <Box
+          p={"3%"}
+          bgcolor={"#fff"}
+          
+          borderRadius={4}
+          className="smooth-shadow"
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
+          <Grid container spacing={3} mt={1}>
+            {Announcements.map(({ date, des, img, title }, index) => (
+              <AnnouncementCard
+                date={date}
+                des={des}
+                img={img}
+                title={title}
+                key={index}
+              />
+            ))}
+          </Grid>
+        </Box>
+      </div>
     </>
   );
 }

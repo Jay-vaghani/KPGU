@@ -135,6 +135,12 @@ function Schools() {
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }
+    if (location === "mechanical-engineering") {
+      setBanner({
+        title: "Mechanical Engineering",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
   }, [location]);
 
   return (
