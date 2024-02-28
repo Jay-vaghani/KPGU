@@ -1,170 +1,204 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Tab, Typography } from "@mui/material";
+import { Box, Button, Grid, Tab } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
-import FacultyStaff from "../../../../../Common/FacultyStaff";
-import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+import { useNavigate } from "react-router-dom";
 
 function KrishnaSchoolOfDiplomaStudies() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const [programValue, programValueSetValue] = useState("1");
+
+  const programHandleChange = (event, newValue) => {
+    programValueSetValue(newValue);
+  };
+
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const DepartmentList = [
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/comuter-science.svg",
+      name: "COMPUTER SCIENCE AND ENGINEERING",
+      link: "/academics/ksds/computer-science-and-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/infromation-tech.svg",
+      name: "information technology",
+      link: "/academics/ksds/information-technology",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/electrical-engineering.svg",
+      name: "electrical engineering",
+      link: "/academics/ksds/electrical-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/mechanics.svg",
+      name: "mechanical engineering",
+      link: "/academics/ksds/mechanical-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/civil.svg",
+      name: "civil engineering",
+      link: "/academics/ksds/civil-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709111814/KPGU/icon/camical.svg",
+      name: "chemical engineering",
+      link: "/academics/ksds/chemical-engineering",
+    },
+  ];
 
   const Faculties = [
-    {
-      name: "Dr. Dattesh Y. Joshi",
-      imgNo: "6070",
-      designation: "Associate Professor || Director-KSDS || HOD-Electrical",
-      experience: 15,
-      qualification: "Ph.D || M.Tech",
-      customLink: "",
-    },
-    {
-      name: "Patel Hardik Sumantrai",
-      imgNo: "6072",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.E. [Automation & Control And Power System]",
-      customLink: "",
-    },
-    {
-      name: "Chirag R Shindhav",
-      imgNo: "6073",
-      designation: "Assistant Professor",
-      experience: 13,
-      qualification: "M.Tech [Structural  Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Hiral U Purohit",
-      imgNo: "6074",
-      designation: "Assistant Professor",
-      experience: 14,
-      qualification: "M.E.[Environmental Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Jaynika Vasava",
-      imgNo: "6077",
-      designation: "Lecturer",
-      experience: 4,
-      qualification: "B.E.Civil",
-      customLink: "",
-    },
-    {
-      name: "Vaibhaviben Harshadrai Pandya",
-      imgNo: "6078",
-      designation: "Lecturer",
-      experience: 1,
-      qualification: "B.E [COMPUTER SCIENCE & ENGINEERING]",
-      customLink: "",
-    },
-    {
-      name: "Helly Patel",
-      imgNo: "6079",
-      designation: "Lecturer",
-      experience: 2,
-      qualification: "M.Tech(CSE)[Pursuing]",
-      customLink: "",
-    },
-    {
-      name: "Komal Ketan Dave",
-      imgNo: "6024",
-      designation:
-        "HOD-Civil Engineering Department [KSDS] || Assistant Professor",
-      experience: 17,
-      qualification: "M.E.[Geotechnical Engineering]",
-      customLink:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707473959/KPGU/Faculty%20Images/KSET/6024.webp",
-    },
-    {
-      name: "Komal Kushwaha",
-      imgNo: "6080",
-      designation: "HOD[KSDS-IT]",
-      experience: 10,
-      qualification: "M.Tech-CSE [Pursuing]",
-      customLink: "",
-    },
-    {
-      name: "Pritesh Ratilal Patel",
-      imgNo: "5997",
-      designation: "Assistant Professor || HOD-Mechanical",
-      experience: 18,
-      qualification: "PhD [Pursuing] || M.E-Advance Manufacturing Systems",
-      customLink: "",
-    },
-    {
-      name: "Sushant Prajapati",
-      imgNo: "5993",
-      designation: "Lecturer",
-      experience: 8,
-      qualification: "M.E[THERMAL ENGINEERING]",
-      customLink: "",
-    },
-    {
-      name: "Kailas Patel",
-      imgNo: "6082",
-      designation: "Lecturer",
-      experience: 8,
-      qualification: "M.A[English]",
-      customLink: "",
-    },
-    {
-      name: "Ruchi Bavda",
-      imgNo: "6069",
-      designation: "Lecturer ",
-      experience: 6,
-      qualification: "M.sc[mathematics] || B.ed",
-      customLink: "",
-    },
-    {
-      name: "Vatsh Sharma",
-      imgNo: "7102",
-      designation: "Lecturer ",
-      experience: 1,
-      qualification: "M.Tech(CSE)[Pursuing",
-      customLink: "",
-    },
-    {
-      name: "Digvijaysinh rathod",
-      imgNo: "7104",
-      designation: "Lecturer",
-      experience: 1,
-      qualification: "M.Tech(CSE)[Pursuing]",
-      customLink: "",
-    },
-    {
-      name: "Oza Vikram Ganpatlal",
-      imgNo: "5994",
-      designation: "Lecturer",
-      experience: 20,
-      qualification: "M.E [CAD || CAM]",
-      customLink: "",
-    },
+    // ======================= CIVIL =======================
+    // ======================= EE =======================
     // {
-    //   name: "Bhagyashree .A. Mudaliar",
-    //   imgNo: "6083",
-    //   designation: "Lecturer",
-    //   experience: 1,
-    //   qualification: "MSc",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Sona Bhattacharya",
-    //   imgNo: "6186",
-    //   designation: "Lecturer",
+    //   name: "Dr. Ravindrakumar Yadav",
+    //   imgNo: "6188",
+    //   designation: "Assistant Professor & Head",
     //   experience: 21,
-    //   qualification: "M.A",
+    //   qualification: "Ph.D",
+    //   customLink: "",
+    // },
+    // ======================= IT =======================
+    // ======================= ME =======================
+    // {
+    //   name: "Dr. Nirmal Kumar Kushwaha",
+    //   imgNo: "5989",
+    //   designation: "HOD || Assistant Professor",
+    //   experience: 12,
+    //   qualification:
+    //     "PhD[Mechanical Engineering] || M.Tech[Mechanical Engineering] || B.Tech[Industrial and Production Engineering] || GATE-2010[Mechanical Engineering]",
+    //   customLink: "",
+    // },
+    // ======================= ME =======================
+    // {
+    //   name: "Dr. Nitesh Sureja",
+    //   imgNo: "6057",
+    //   designation: "Professor & Director",
+    //   experience: 28,
+    //   qualification: "PhD || BE || ME",
     //   customLink: "",
     // },
     // {
-    //   name: "Vibhuti R. Vashi",
-    //   imgNo: "6086",
-    //   designation: "Lecturer",
-    //   experience: 4,
-    //   qualification: "M.Phil",
+    //   name: "Ms. Priyanka A Patel",
+    //   imgNo: "6048",
+    //   designation: "Assistant Professor",
+    //   experience: 12,
+    //   qualification: "M.Tech || B.E",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Priya Patel",
+    //   imgNo: "6011",
+    //   designation: "Assistant Professor",
+    //   experience: 6,
+    //   qualification: "PhD(Pursuing) || M.E || B.E",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Mr. Ramesh Patoliya ",
+    //   imgNo: "6033",
+    //   designation: "Assistant Professor",
+    //   experience: 15,
+    //   qualification:
+    //     "Ph.D.(Persuing) || M.Sc[Mathematics] || M.Phil[Mathematics]",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Mr. Nirav Panchal",
+    //   imgNo: "6032",
+    //   designation: "Assistant Professor",
+    //   experience: 11,
+    //   qualification: "M.Sc in Applied Mathematics ",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "MS. Mittal C. Joshi",
+    //   imgNo: "6043",
+    //   designation: "Assistant Professor",
+    //   experience: 6,
+    //   qualification: "M.E || B.E",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Niyati Mevada",
+    //   imgNo: "6040",
+    //   designation: "Assistant Professor",
+    //   experience: 7,
+    //   qualification: "M.E || B.E || D.I.P",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Khushbu Shah",
+    //   imgNo: "6026",
+    //   designation: "Assistant Professor",
+    //   experience: 15,
+    //   qualification: "M.Sc in Applied Mathematics ",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Bhumika Patel",
+    //   imgNo: "6028",
+    //   designation: "Assistant Professor",
+    //   experience: 11,
+    //   qualification: "M.Sc in Applied Mathematics",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Janki Gandhi",
+    //   imgNo: "6030",
+    //   designation: "Assistant Professor",
+    //   experience: 2,
+    //   qualification: "M.Sc in Mathematics ",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Mr .Yagneshbhai Alkeshkumar vyas",
+    //   imgNo: "6041",
+    //   designation: "Assistant Professor",
+    //   experience: 9,
+    //   qualification: "PhD(Pursuing) || M.Sc",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Dr. Disha Pandya",
+    //   imgNo: "6029",
+    //   designation: "Assistant Professor",
+    //   experience: 17,
+    //   qualification: "PhD in English",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Dr. Hina D. Dobariya",
+    //   imgNo: "6185",
+    //   designation: "Assistant professor",
+    //   experience: 10,
+    //   qualification: "Ph.D || M.phil || M.A || B.A",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Dr. Arti Kotak ",
+    //   imgNo: "6061",
+    //   designation: "Assistant Professor",
+    //   experience: 11,
+    //   qualification: "TEFL/TESOL || PhD || MA || BA",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Priyanka Dubey",
+    //   imgNo: "9868",
+    //   designation: "Assistant Professor",
+    //   experience: 1,
+    //   qualification: "M Tech",
     //   customLink: "",
     // },
   ];
@@ -242,149 +276,193 @@ function KrishnaSchoolOfDiplomaStudies() {
     },
   ];
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // ============== Components ==============
 
-  const [value, setValue] = useState("1");
-
-  return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <SchoolWelcomeSection
-        title={"Krishna School Of Diploma Studies [KSDS]"}
-        des={
-          "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-        }
-      />
-      <DirectorsMessage
-        dirImg={
-          "https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper.png"
-        }
-        dirEmail={"directoremail@gmail.com"}
-        dirName={"Dr. Dattesh Joshi"}
-        dirOf={"Krishna School Of Diploma Studies"}
-        dirOfShort={"[KSDS]"}
-        dirMessage={[
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi.",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit!",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum distinctio adipisci ab molestiae a magni tenetur aspernatur est totam! Quasi eveniet molestiae repudiandae a omnis est, quas iusto officiis.",
-        ]}
-      />
-
+  const DepartmentListComponent = ({ name, img, link }) => (
+    <Grid item xs={12} sm={6} md={4}>
       <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
+        className="smooth-shadow-card department-card"
         p={2}
+        borderRadius={4}
+        onClick={() => navigate(link)}
       >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
-        </Box>
-        <Grid container spacing={4}>
-          {Faculties.map(
-            (
-              {
-                name,
-                designation,
-                experience,
-                qualification,
-                imgNo,
-                customLink,
-              },
-              index
-            ) => (
-              <FacultyStaff
-                name={name}
-                qualification={qualification}
-                designation={designation}
-                experience={experience}
-                key={index}
-                facultyName={"KSDS"}
-                imgNo={imgNo}
-                MainLink={
-                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707424419/KPGU/Faculty%20Images/"
-                }
-                customLink={customLink}
-              />
-            )
-          )}
+        <Grid container spacing={2} alignItems={"center"}>
+          <Grid item xs={12} sm={12} md={3}>
+            <img
+              src={img}
+              alt=""
+              className="w-100 d-block mx-auto"
+              style={{ maxWidth: "120px" }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={9}
+            textTransform={"uppercase"}
+            textAlign={{
+              xs: "center",
+              md: "start",
+            }}
+          >
+            <h5 className="mb-0 fw-bold ">Department Of </h5>
+            <h5>{name}</h5>
+          </Grid>
         </Grid>
       </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Vision</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Mission</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <TabContext value={value}>
+    </Grid>
+  );
+
+  return (
+    <>
+      <TabContext value={value}>
+        <Box
+          className="smooth-shadow"
+          bgcolor={"#fff"}
+          p={2}
+          borderRadius={4}
+          mt={7}
+          position={"sticky"}
+          top={0}
+          maxWidth={maxWidth}
+          mx={"auto"}
+          zIndex={99999999}
+        >
           <TabList
+            onChange={handleChange}
+            aria-label="lab API tabs example"
+            orientation={`horizontal`}
             textColor="secondary"
             indicatorColor="secondary"
             variant="scrollable"
-            onChange={handleChange}
-            aria-label="lab API tabs example"
           >
-            <Tab className="fw-bold" label="deploma" value="1" />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Message From Director"
+              value="1"
+              href="#director-message"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Departments"
+              value="2"
+              href="#department"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Programs"
+              value="3"
+              href="#program"
+            />
+
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Announcements"
+              value="4"
+              href="#announcements"
+            />
           </TabList>
-          <TabPanel value="1" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {Diploma.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-        </TabContext>
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
+        </Box>
+      </TabContext>
+
+      <div style={{ padding: "80px 0 0 0" }} id="director-message">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <SchoolWelcomeSection
+            title={"Krishna School Of Diploma Studies [KSDS]"}
+          />
+          <DirectorsMessage
+            dirImg={
+              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
+            }
+            dirEmail={"dir.ksds@kpgu.ac.in"}
+            dirName={"Dr. Dattesh Y. Joshi"}
+            dirOf={"Krishna School Of Diploma Studies"}
+            dirOfShort={"[KSDS]"}
+            dirMessage={["Welcome to the esteemed Krishna School of Diploma Studies (KSDS) at Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara. As the Director, I am honoured to lead our dedicated team in fostering academic excellence and innovation.", "Our holistic approach to learning imparts technical knowledge alongside critical thinking and problem-solving skills. Our experienced faculty ensures students are well-equipped for the dynamic engineering landscape.", "Through cutting-edge curricula, labs, and industry collaborations, we offer a transformative educational experience that prepares students for leadership roles.","Committed to values of integrity and inclusivity, we provide a diverse and respectful environment. Our website showcases programs, faculty, research, and campus life.","Whether you’re a student, parent, industry partner, or academician, we look forward to your engagement with us.","Thank you for considering Krishna School of Diploma Studies (KSDS), Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara as your educational destination. Join us on a journey of knowledge and excellence."]}
+          />
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="department">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <h2 className="fw-bold color-secondary mb-4">Department</h2>
+          <Grid container spacing={4}>
+            {DepartmentList.map(({ img, name, link }, index) => (
+              <DepartmentListComponent
+                img={img}
+                name={name}
+                link={link}
+                key={index}
+              />
+            ))}
+          </Grid>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="program">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <TabContext value={programValue}>
+            <TabList
+              textColor="secondary"
+              indicatorColor="secondary"
+              variant="scrollable"
+              onChange={programHandleChange}
+              aria-label="lab API tabs example"
+            >
+              <Tab className="fw-bold" label="diploma" value="1" />
+            </TabList>
+            <TabPanel value="1" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {Diploma.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+          </TabContext>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="announcements">
+        <Box
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
           <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
           <Grid container spacing={3} mt={1}>
             {Announcements.map(({ date, des, img, title }, index) => (
@@ -398,8 +476,8 @@ function KrishnaSchoolOfDiplomaStudies() {
             ))}
           </Grid>
         </Box>
-      </Box>
-    </Box>
+      </div>
+    </>
   );
 }
 

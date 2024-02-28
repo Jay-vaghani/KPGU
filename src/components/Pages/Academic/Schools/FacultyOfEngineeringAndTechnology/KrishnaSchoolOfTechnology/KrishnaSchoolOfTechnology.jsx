@@ -1,16 +1,42 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Tab } from "@mui/material";
+import { Box, Button, Grid, Tab } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
-import FacultyStaff from "../../../../../Common/FacultyStaff";
-import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+import { useNavigate } from "react-router-dom";
 
 function KrishnaSchoolOfTechnology() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const [programValue, programValueSetValue] = useState("1");
+
+  const programHandleChange = (event, newValue) => {
+    programValueSetValue(newValue);
+  };
+
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const DepartmentList = [
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/comuter-science.svg",
+      name: "COMPUTER ENGINEERING",
+      link: "/academics/ksds/computer-science-and-engineering",
+    },
+    {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709115277/KPGU/icon/food-tec.svg",
+      name: "food technology",
+      link: "/academics/ksds/information-technology",
+    },
+   
+  ];
 
   const Faculties = [
     {
@@ -111,155 +137,211 @@ function KrishnaSchoolOfTechnology() {
     },
   ];
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // ============== Components ==============
 
-  const [value, setValue] = useState("1");
-
-  return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <SchoolWelcomeSection
-        title={"Krishna School Of Technology [KST]"}
-        des={
-          "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-        }
-      />
-      <DirectorsMessage
-        dirImg={
-          "https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper.png"
-        }
-        dirEmail={"directoremail@gmail.com"}
-        dirName={"Dr. Nitesh Sureja"}
-        dirOf={"Krishna School Of Technology"}
-        dirOfShort={"[KST]"}
-        dirMessage={[
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi.",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit!",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum distinctio adipisci ab molestiae a magni tenetur aspernatur est totam! Quasi eveniet molestiae repudiandae a omnis est, quas iusto officiis.",
-        ]}
-      />
-
+  const DepartmentListComponent = ({ name, img, link }) => (
+    <Grid item xs={12} sm={6} md={4}>
       <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
+        className="smooth-shadow-card department-card"
         p={2}
+        borderRadius={4}
+        onClick={() => navigate(link)}
       >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
-        </Box>
-        <Grid container spacing={2}>
-          {Faculties.map(
-            ({ name, cv, designation, experience, qualification }, index) => (
-              <FacultyStaff
-                name={name}
-                cv={cv}
-                qualification={qualification}
-                designation={designation}
-                experience={experience}
-                key={index}
-              />
-            )
-          )}
+        <Grid container spacing={2} alignItems={"center"}>
+          <Grid item xs={12} sm={12} md={3}>
+            <img
+              src={img}
+              alt=""
+              className="w-100 d-block mx-auto"
+              style={{ maxWidth: "120px" }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={9}
+            textTransform={"uppercase"}
+            textAlign={{
+              xs: "center",
+              md: "start",
+            }}
+          >
+            <h5 className="mb-0 fw-bold ">Department Of </h5>
+            <h5>{name}</h5>
+          </Grid>
         </Grid>
       </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Vision</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Mission</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Programs </h2>
-        </Box>
-        <TabContext value={value}>
+    </Grid>
+  );
+
+  return (
+    <>
+      <TabContext value={value}>
+        <Box
+          className="smooth-shadow"
+          bgcolor={"#fff"}
+          p={2}
+          borderRadius={4}
+          mt={7}
+          position={"sticky"}
+          top={0}
+          maxWidth={maxWidth}
+          mx={"auto"}
+          zIndex={99999999}
+        >
           <TabList
+            onChange={handleChange}
+            aria-label="lab API tabs example"
+            orientation={`horizontal`}
             textColor="secondary"
             indicatorColor="secondary"
             variant="scrollable"
-            onChange={handleChange}
-            aria-label="lab API tabs example"
           >
-            <Tab className="fw-bold" label="ug" value="1" />
-            <Tab className="fw-bold" label="pg" value="2" />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Message From Director"
+              value="1"
+              href="#director-message"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Departments"
+              value="2"
+              href="#department"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Programs"
+              value="3"
+              href="#program"
+            />
+
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Announcements"
+              value="4"
+              href="#announcements"
+            />
           </TabList>
-          <TabPanel value="1" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {UG.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-          <TabPanel value="2" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {PG.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-        </TabContext>
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
+        </Box>
+      </TabContext>
+
+      <div style={{ padding: "80px 0 0 0" }} id="director-message">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <SchoolWelcomeSection
+            title={"Krishna School Of Diploma Studies [KSDS]"}
+          />
+          <DirectorsMessage
+            dirImg={
+              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
+            }
+            dirEmail={"dir.ksds@kpgu.ac.in"}
+            dirName={"Dr. Dattesh Y. Joshi"}
+            dirOf={"Krishna School Of Diploma Studies"}
+            dirOfShort={"[KSDS]"}
+            dirMessage={["Welcome to the esteemed Krishna School of Diploma Studies (KSDS) at Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara. As the Director, I am honoured to lead our dedicated team in fostering academic excellence and innovation.", "Our holistic approach to learning imparts technical knowledge alongside critical thinking and problem-solving skills. Our experienced faculty ensures students are well-equipped for the dynamic engineering landscape.", "Through cutting-edge curricula, labs, and industry collaborations, we offer a transformative educational experience that prepares students for leadership roles.", "Committed to values of integrity and inclusivity, we provide a diverse and respectful environment. Our website showcases programs, faculty, research, and campus life.", "Whether you’re a student, parent, industry partner, or academician, we look forward to your engagement with us.", "Thank you for considering Krishna School of Diploma Studies (KSDS), Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara as your educational destination. Join us on a journey of knowledge and excellence."]}
+          />
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="department">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <h2 className="fw-bold color-secondary mb-4">Department</h2>
+          <Grid container spacing={4}>
+            {DepartmentList.map(({ img, name, link }, index) => (
+              <DepartmentListComponent
+                img={img}
+                name={name}
+                link={link}
+                key={index}
+              />
+            ))}
+          </Grid>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="program">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <TabContext value={programValue}>
+            <TabList
+              textColor="secondary"
+              indicatorColor="secondary"
+              variant="scrollable"
+              onChange={programHandleChange}
+              aria-label="lab API tabs example"
+            >
+              <Tab className="fw-bold" label="ug" value="1" />
+              <Tab className="fw-bold" label="pg" value="2" />
+            </TabList>
+            <TabPanel value="1" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {UG.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+            <TabPanel value="2" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {PG.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+          </TabContext>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="announcements">
+        <Box
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
           <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
           <Grid container spacing={3} mt={1}>
             {Announcements.map(({ date, des, img, title }, index) => (
@@ -273,9 +355,12 @@ function KrishnaSchoolOfTechnology() {
             ))}
           </Grid>
         </Box>
-      </Box>
-    </Box>
+      </div>
+    </>
   );
 }
 
 export default KrishnaSchoolOfTechnology;
+
+
+

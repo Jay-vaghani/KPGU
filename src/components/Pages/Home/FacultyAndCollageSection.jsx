@@ -50,7 +50,7 @@ function FacultyAndCollageSection() {
             variant="contained"
             color="secondary"
             endIcon={<KeyboardDoubleArrowRightRounded />}
-            onClick={() => navigation({ link })}
+            onClick={() => navigation(link)}
           >
             See more
           </Button>

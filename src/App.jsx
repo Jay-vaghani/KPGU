@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { About, Home } from "./components/Pages/index";
 import { ThemeProvider } from "@emotion/react";
 import { AppProvider } from "./contexts/AppContext";
+import ScrollToTop from "./components/Common/ScrollToTop";
 import "./App.css";
 
 // ========================Mui Navbar========================
@@ -70,12 +71,31 @@ import Page404 from "./components/Pages/Page404/Page404";
 import StudentCorner from "./components/Pages/StudentCorner/StudentCorner";
 import ResearchPublications from "./components/Pages/ResearchPublications/ResearchPublications";
 import StartUps from "./components/Pages/ResearchPublications/StartUps/StartUps";
-import CivilEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/CivilEngineering";
-import MechanicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/MechanicalEngineering";
-import ElectricalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/ElectricalEngineering";
-import InformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/InformationTechnology";
-import ComputerScienceEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/ComputerScienceEngineering";
-import ScrollToTop from "./components/Common/ScrollToTop";
+
+{/* ======================== Departments ======================== */ }
+
+{/* ============ KSET ============ */ }
+import KsetCivilEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/CivilEngineering";
+import KsetMechanicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/MechanicalEngineering";
+import KsetElectricalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/ElectricalEngineering";
+import KsetInformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/InformationTechnology";
+import KsetComputerScienceEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/Krishna SchoolOfEmergingTechnologyAndAppliedResearch/Department/ComputerScienceEngineering";
+
+{/* ============ KSDS ============ */ }
+import KsdsCivilEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/CivilEngineering";
+import KsdsMechanicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/MechanicalEngineering";
+import KsdsElectricalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/ElectricalEngineering";
+import KsdsInformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/InformationTechnology";
+import KsdsComputerScienceEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/ComputerScienceEngineering";
+import KsdsChemicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/ChemicalEngineering";
+
+{/* ============ KST ============ */ }
+import KstCivilEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/CivilEngineering";
+import KstMechanicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/MechanicalEngineering";
+import KstElectricalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/ElectricalEngineering";
+import KstInformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/InformationTechnology";
+import KstComputerScienceEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/ComputerScienceEngineering";
+
 
 // ========================================== CAMPUS ==========================================
 
@@ -103,7 +123,6 @@ function App() {
         <Box>
           <ContactNavbar />
           <MainNavbar />
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />}>
@@ -112,143 +131,76 @@ function App() {
               <Route path="achievements" element={<Achievements />} />
               <Route path="kpgu-vadodara" element={<KpguVadodara />} />
               <Route path="vision-mission" element={<VisionMission />} />
-              <Route
-                path="dr-kiran-c-patel-message"
-                element={<DrKiranCPatelMessage />}
-              />
-              <Route
-                path="message-from-the-presidents-desk"
-                element={<MessageFromThePresidentsDesk />}
-              />
-              <Route
-                path="message-from-the-provost"
-                element={<MessageFromTheProvost />}
-              />
-              <Route
-                path="statutory-recognition"
-                element={<StatutoryRecognition />}
-              />
+              <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
+              <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk />} />
+              <Route path="message-from-the-provost" element={<MessageFromTheProvost />} />
+              <Route path="statutory-recognition" element={<StatutoryRecognition />} />
               <Route path="awards-accolades" element={<AwardsAccolades />} />
-              <Route
-                path="university-officers"
-                element={<UniversityOfficers />}
-              />
+              <Route path="university-officers" element={<UniversityOfficers />} />
+
               <Route path="governance" element={<Governance />}>
                 <Route path="governing-body" element={<GoverningBody />} />
-                <Route
-                  path="board-of-management"
-                  element={<BoardOfManagement />}
-                />
+                <Route path="board-of-management" element={<BoardOfManagement />} />
                 <Route path="academic-council" element={<AcademicCouncil />} />
                 <Route path="board-of-studies" element={<BoardOfStudies />} />
-                <Route
-                  path="finance-committee"
-                  element={<FinanceCommittee />}
-                />
+                <Route path="finance-committee" element={<FinanceCommittee />} />
               </Route>
+
               <Route path="approvals" element={<Approvals />}>
-                <Route
-                  path="institute-of-technology"
-                  element={<InstituteOfTechnology />}
-                />
-                <Route
-                  path="institute-of-pharmacy"
-                  element={<InstituteOfPharmacy />}
-                />
+                <Route path="institute-of-technology" element={<InstituteOfTechnology />} />
+                <Route path="institute-of-pharmacy" element={<InstituteOfPharmacy />} />
                 <Route path="ugc-approval" element={<UgcApproval />} />
               </Route>
+
             </Route>
 
             <Route path="/academics" element={<Academic />}>
+
               {/* ======================== Faculty ======================== */}
-              <Route
-                path="faculty-of-engineering-and-technology"
-                element={<FacultyOfEngineeringAndTechnology />}
-              />
-              <Route
-                path="faculty-of-medicine-and-healthcare"
-                element={<FacultyOfMedicineAndHealthcare />}
-              />
-              <Route
-                path="faculty-of-commerce-and-management"
-                element={<FacultyOfCommerceAndManagement />}
-              />
-              <Route
-                path="faculty-of-sciences"
-                element={<FacultyOfSciences />}
-              />
-              <Route
-                path="faculty-of-humanities-and-policy-studies"
-                element={<FacultyOfHumanitiesAndPolicyStudies />}
-              />
+
+              <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />} />
+              <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />} />
+              <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />} />
+              <Route path="faculty-of-sciences" element={<FacultyOfSciences />} />
+              <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />} />
+
               {/* ======================== Schools ======================== */}
 
-              <Route
-                path="krishna-school-of-business-management"
-                element={<KrishnaSchoolOfBusinessManagement />}
-              />
-              <Route
-                path="krishna-school-of-commerce"
-                element={<KrishnaSchoolOfCommerce />}
-              />
-              <Route
-                path="krishna-school-of-arts-and-humanities"
-                element={<KrishnaSchoolOfArtsAndHumanities />}
-              />
-              <Route
-                path="krishna-school-of-sciences"
-                element={<KrishnaSchoolOfSciences />}
-              />
-              <Route
-                path="krishna-school-of-physiotherapy-and-rehabilitation"
-                element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />}
-              />
-              <Route
-                path="krishna-school-of-nursing"
-                element={<KrishnaSchoolOfNursing />}
-              />
-              <Route
-                path="krishna-ayurved-medical-college"
-                element={<KrishnaAyurvedMedicalCollege />}
-              />
-              <Route
-                path="krishna-school-of-pharmacy-and-research"
-                element={<KrishnaSchoolOfPharmacyAndResearch />}
-              />
-              <Route
-                path="krishna-school-of-technology"
-                element={<KrishnaSchoolOfTechnology />}
-              />
-              <Route
-                path="krishna-school-of-diploma-studies"
-                element={<KrishnaSchoolOfDiplomaStudies />}
-              />
-              <Route
-                path="krishna-school-of-emerging-technology-and-applied-research"
-                element={
-                  <KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />
-                }
-              />
+              <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />} />
+              <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />} />
+              <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />} />
+              <Route path="krishna-school-of-sciences" element={<KrishnaSchoolOfSciences />} />
+              <Route path="krishna-school-of-physiotherapy-and-rehabilitation" element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />} />
+              <Route path="krishna-school-of-nursing" element={<KrishnaSchoolOfNursing />} />
+              <Route path="krishna-ayurved-medical-college" element={<KrishnaAyurvedMedicalCollege />} />
+              <Route path="krishna-school-of-pharmacy-and-research" element={<KrishnaSchoolOfPharmacyAndResearch />} />
+              <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
+              <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
+              <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
 
               {/* ======================== Departments ======================== */}
 
-              <Route path="civil-engineering" element={<CivilEngineering />} />
-              <Route
-                path="mechanical-engineering"
-                element={<MechanicalEngineering />}
-              />
-              <Route
-                path="electrical-engineering"
-                element={<ElectricalEngineering />}
-              />
-              <Route
-                path="information-technology"
-                element={<InformationTechnology />}
-              />
-              <Route
-                path="computer-science-and-engineering"
-                element={<ComputerScienceEngineering />}
-              />
+              {/* ============ KSET ============ */}
+              <Route path="kset/civil-engineering" element={<KsetCivilEngineering />} />
+              <Route path="kset/mechanical-engineering" element={<KsetMechanicalEngineering />} />
+              <Route path="kset/electrical-engineering" element={<KsetElectricalEngineering />} />
+              <Route path="kset/information-technology" element={<KsetInformationTechnology />} />
+              <Route path="kset/computer-science-and-engineering" element={<KsetComputerScienceEngineering />} />
+
+              {/* ============ KSDS ============ */}
+              <Route path="ksds/civil-engineering" element={<KsdsCivilEngineering />} />
+              <Route path="ksds/mechanical-engineering" element={<KsdsMechanicalEngineering />} />
+              <Route path="ksds/electrical-engineering" element={<KsdsElectricalEngineering />} />
+              <Route path="ksds/information-technology" element={<KsdsInformationTechnology />} />
+              <Route path="ksds/computer-science-and-engineering" element={<KsdsComputerScienceEngineering />} />
+              <Route path="ksds/chemical-engineering" element={<KsdsChemicalEngineering />} />
+
+              {/* ============ KST ============ */}
+              <Route path="kst/civil-engineering" element={<KstCivilEngineering />} />
+              <Route path="kst/mechanical-engineering" element={<KstMechanicalEngineering />} />
+              <Route path="kst/electrical-engineering" element={<KstElectricalEngineering />} />
+              <Route path="kst/information-technology" element={<KstInformationTechnology />} />
+              <Route path="kst/computer-science-and-engineering" element={<KstComputerScienceEngineering />} />
             </Route>
 
             <Route path="/campus" element={<Campus />}>
@@ -257,30 +209,18 @@ function App() {
               <Route path="gallery" element={<Gallery />}></Route>
             </Route>
 
-            <Route
-              path="/research-publications"
-              element={<ResearchPublications />}
-            >
+            <Route path="/research-publications" element={<ResearchPublications />}>
               <Route path="start-ups" element={<StartUps />}></Route>
             </Route>
 
             <Route path="/admission" element={<Admission />}>
               <Route path="programs" element={<Programs />}></Route>
-              <Route
-                path="admission-procedure"
-                element={<AdmissionProcedure />}
-              ></Route>
+              <Route path="admission-procedure" element={<AdmissionProcedure />} ></Route>
               <Route path="education-loan" element={<EducationLoan />}></Route>
-              <Route
-                path="international-students"
-                element={<InternationalStudents />}
-              ></Route>
+              <Route path="international-students" element={<InternationalStudents />} ></Route>
               <Route path="scholarships" element={<Scholarships />}></Route>
             </Route>
-            <Route
-              path="/admission-inquiry"
-              element={<AdmissionInquiry />}
-            ></Route>
+            <Route path="/admission-inquiry" element={<AdmissionInquiry />} ></Route>
             <Route path="/student-corner" element={<StudentCorner />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
@@ -289,7 +229,7 @@ function App() {
         </Box>
         <ScrollToTop />
       </AppProvider>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
 

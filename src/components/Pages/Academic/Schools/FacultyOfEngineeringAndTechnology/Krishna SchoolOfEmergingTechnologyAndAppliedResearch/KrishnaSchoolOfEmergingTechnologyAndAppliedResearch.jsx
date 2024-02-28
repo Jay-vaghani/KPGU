@@ -28,27 +28,27 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/comuter-science.svg",
       name: "COMPUTER SCIENCE AND ENGINEERING",
-      link: "/academics/computer-science-and-engineering",
+      link: "/academics/kset/computer-science-and-engineering",
     },
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/infromation-tech.svg",
       name: "information technology",
-      link: "/academics/information-technology",
+      link: "/academics/kset/information-technology",
     },
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/electrical-engineering.svg",
       name: "electrical engineering",
-      link: "/academics/electrical-engineering",
+      link: "/academics/kset/electrical-engineering",
     },
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/mechanics.svg",
       name: "mechanical engineering",
-      link: "/academics/mechanical-engineering",
+      link: "/academics/kset/mechanical-engineering",
     },
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/civil.svg",
       name: "civil engineering",
-      link: "/academics/civil-engineering",
+      link: "/academics/kset/civil-engineering",
     },
   ];
 
@@ -352,7 +352,6 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
           top={0}
           maxWidth={maxWidth}
           mx={"auto"}
-          
           zIndex={99999999}
         >
           <TabList
@@ -390,31 +389,14 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
             />
           </TabList>
         </Box>
-        {/* <TabPanel value="1">
-          <h1>Tab 1</h1>
-        </TabPanel>
-        <TabPanel value="2">
-          <h1>Tab 2</h1>
-        </TabPanel>
-        <TabPanel value="3">
-          <h1>Tab 3</h1>
-        </TabPanel>
-        <TabPanel value="5">
-          <h1>Tab 5</h1>
-        </TabPanel>
-
-        <TabPanel value="7">
-          <h1>Tab 7</h1>
-        </TabPanel> */}
       </TabContext>
 
-      <div style={{padding: "40px 0 0 0"}} id="director-message">
+      <div style={{ padding: "80px 0 0 0" }} id="director-message">
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
           p={"3%"}
           bgcolor={"#fff"}
-          
           borderRadius={4}
           className="smooth-shadow"
         >
@@ -427,7 +409,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
             dirImg={
               "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
             }
-            dirEmail={"directoremail@gmail.com"}
+            dirEmail={"dir.kset@kpgu.ac.in"}
             dirName={"Dr. Nitesh Sureja"}
             dirOf={"Krishna School of Emerging Technology & Applied Research"}
             dirOfShort={"[KSET]"}
@@ -440,13 +422,12 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         </Box>
       </div>
 
-      <div style={{padding: "40px 0 0 0"}} id="department">
+      <div style={{ padding: "80px 0 0 0" }} id="department">
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
           p={"3%"}
           bgcolor={"#fff"}
-          
           borderRadius={4}
           className="smooth-shadow"
         >
@@ -464,9 +445,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         </Box>
       </div>
 
-      <div style={{padding: "40px 0 0 0"}} id="program">
+      <div style={{ padding: "80px 0 0 0" }} id="program">
         <Box
-          
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -559,11 +539,10 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         </Box>
       </div>
 
-      <div style={{padding: "40px 0 0 0"}} id="announcements">
+      <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
           p={"3%"}
           bgcolor={"#fff"}
-          
           borderRadius={4}
           className="smooth-shadow"
           maxWidth={maxWidth}
