@@ -48,7 +48,7 @@ function MessageFromTheProvost() {
           </Box>
         </Grid>
         <Grid item xs={12} md={8} p={2}>
-          <h3 className="display-5 fw-semibold">A.B. Chaudhary</h3>
+          <h3 className="display-5 fw-semibold">A.B. Chaudhari</h3>
           <p className={`fs-4 mb-2`}>
             <b>Hon. Provost</b>,<br />
             Drs. Kiran & Pallavi Patel Global University [KPGU, Vadodara]

@@ -92,10 +92,10 @@ const DesktopNav = () => {
       title: "Facilities",
       link: "campus/facilities",
     },
-    {
-      title: "Campus Life",
-      link: "campus/campus-life",
-    },
+    // {
+    //   title: "Campus Life",
+    //   link: "campus/campus-life",
+    // },
     {
       title: "Gallery",
       link: "campus/gallery",

@@ -23,7 +23,7 @@ import {
   YouTube,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import { StudentIcon } from "../../../Utils/Icons/CustomIcon";
+import { InstagramIcon, StudentIcon } from "../../../Utils/Icons/CustomIcon";
 import {} from "bootstrap";
 
 function ContactNavbar() {
@@ -134,12 +134,12 @@ function ContactNavbar() {
                   href="https://www.instagram.com/kpgu_official"
                   sx={{ bgcolor: "#fff", color: "secondary.main", m: 0.5 }}
                 >
-                  <Instagram color="inherit" sx={{ fontSize: "28px" }} />
+                  <InstagramIcon color="inherit" sx={{ fontSize: "28px" }} />
                 </IconButton>
                 <IconButton
                   target="_blank"
                   href="https://www.facebook.com/KPGU.Vadodara"
-                  sx={{ bgcolor: "#fff", color: "secondary.main", m: 0.5 }}
+                  sx={{ bgcolor: "#fff", color: "#316FF6", m: 0.5 }}
                 >
                   <FacebookRounded color="inherit" sx={{ fontSize: "28px" }} />
                 </IconButton>
@@ -148,14 +148,14 @@ function ContactNavbar() {
                 <IconButton
                   target="_blank"
                   href="https://www.youtube.com/@kpguvadodara6247"
-                  sx={{ bgcolor: "#fff", color: "secondary.main", m: 0.5 }}
+                  sx={{ bgcolor: "#fff", color: "#CD201F", m: 0.5 }}
                 >
                   <YouTube color="inherit" sx={{ fontSize: "28px" }} />
                 </IconButton>
                 <IconButton
                   target="_blank"
                   href="https://www.linkedin.com/company/kpgu-vadodara"
-                  sx={{ bgcolor: "#fff", color: "secondary.main", m: 0.5 }}
+                  sx={{ bgcolor: "#fff", color: "#0077b5", m: 0.5 }}
                 >
                   <LinkedIn color="inherit" sx={{ fontSize: "28px" }} />
                 </IconButton>

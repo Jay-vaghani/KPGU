@@ -3,12 +3,12 @@ import { Box, Grid, Stack, Tab } from "@mui/material";
 import { AppContext } from "../../../../../../../contexts/AppContext";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 
-import MessageFromHod from "./MechanicalEngineering/MessageFromHod";
-import AboutDepartment from "./MechanicalEngineering/AboutDepartment";
-import Laboratories from "./MechanicalEngineering/laboratories ";
-import ResearchAreas from "./MechanicalEngineering/ResearchAreas";
-import FacultyStaffSection from "./MechanicalEngineering/FacultyStaffSection";
-import VisionAndMission from "./MechanicalEngineering/VisionAndMission";
+import MessageFromHod from "./ComputerEngineering/MessageFromHod";
+import AboutDepartment from "./ComputerEngineering/AboutDepartment";
+import ComputerLab from "./ComputerEngineering/ComputerLab";
+import ResearchAreas from "./ComputerEngineering/ResearchAreas";
+import FacultyStaffSection from "./ComputerEngineering/FacultyStaffSection";
+import VisionAndMission from "./ComputerEngineering/VisionAndMission";
 
 function MechanicalEngineering() {
   const { maxWidth, innerWidth } = useContext(AppContext);
@@ -129,7 +129,7 @@ function MechanicalEngineering() {
                 />
                 <Tab
                   className="align-items-start fw-bold text-start "
-                  label="Laboratories"
+                  label="ComputerLab"
                   value="5"
                 />
 
@@ -153,7 +153,7 @@ function MechanicalEngineering() {
                 <VisionAndMission />
               </TabPanel>
               <TabPanel value="5">
-                <Laboratories />
+                <ComputerLab />
               </TabPanel>
               <TabPanel value="6">
                 <ResearchAreas />

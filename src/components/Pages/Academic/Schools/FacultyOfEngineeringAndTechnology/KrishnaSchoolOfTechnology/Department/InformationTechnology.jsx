@@ -3,13 +3,13 @@ import { Box, Grid, Stack, Tab } from "@mui/material";
 import { AppContext } from "../../../../../../../contexts/AppContext";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 
-import MessageFromHod from "./InformationTechnology/MessageFromHod";
-import AboutDepartment from "./InformationTechnology/AboutDepartment";
-import HonorsMinorsOfferedBroadly from "./InformationTechnology/HonorsMinorsOfferedBroadly";
-import ComputerLab from "./InformationTechnology/ComputerLab";
-import ResearchAreas from "./InformationTechnology/ResearchAreas";
-import FacultyStaffSection from "./InformationTechnology/FacultyStaffSection";
-import VisionAndMission from "./InformationTechnology/VisionAndMission";
+import MessageFromHod from "./FoodTechnology/MessageFromHod";
+import AboutDepartment from "./FoodTechnology/AboutDepartment";
+import HonorsMinorsOfferedBroadly from "./FoodTechnology/HonorsMinorsOfferedBroadly";
+import ComputerLab from "./FoodTechnology/ComputerLab";
+import ResearchAreas from "./FoodTechnology/ResearchAreas";
+import FacultyStaffSection from "./FoodTechnology/FacultyStaffSection";
+import VisionAndMission from "./FoodTechnology/VisionAndMission";
 
 function InformationTechnology() {
   const { maxWidth, innerWidth } = useContext(AppContext);

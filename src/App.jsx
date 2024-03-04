@@ -90,11 +90,9 @@ import KsdsComputerScienceEngineering from "./components/Pages/Academic/Schools/
 import KsdsChemicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfDiplomaStudies/Department/ChemicalEngineering";
 
 {/* ============ KST ============ */ }
-import KstCivilEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/CivilEngineering";
-import KstMechanicalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/MechanicalEngineering";
-import KstElectricalEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/ElectricalEngineering";
+
 import KstInformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/InformationTechnology";
-import KstComputerScienceEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/ComputerScienceEngineering";
+import KstComputerEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/ComputerEngineering";
 
 
 // ========================================== CAMPUS ==========================================
@@ -196,11 +194,8 @@ function App() {
               <Route path="ksds/chemical-engineering" element={<KsdsChemicalEngineering />} />
 
               {/* ============ KST ============ */}
-              <Route path="kst/civil-engineering" element={<KstCivilEngineering />} />
-              <Route path="kst/mechanical-engineering" element={<KstMechanicalEngineering />} />
-              <Route path="kst/electrical-engineering" element={<KstElectricalEngineering />} />
-              <Route path="kst/information-technology" element={<KstInformationTechnology />} />
-              <Route path="kst/computer-science-and-engineering" element={<KstComputerScienceEngineering />} />
+              <Route path="kst/food-technology" element={<KstInformationTechnology />} />
+              <Route path="kst/computer-engineering" element={<KstComputerEngineering />} />
             </Route>
 
             <Route path="/campus" element={<Campus />}>

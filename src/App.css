@@ -25,11 +25,11 @@
   transition: var(--tarnation);
 }
 
-.department-card:hover{
+.department-card:hover {
   scale: 1.03;
 }
 
-.department-card:active{
+.department-card:active {
   scale: 1;
 }
 
@@ -81,6 +81,11 @@
 }
 .smooth-shadow-card {
   box-shadow: -3px 3px 10px rgb(245 245 245) !important;
+  transition: var(--tarnation);
+}
+
+.smooth-shadow-card:hover {
+  transform: scale(1.02);
 }
 
 /* Bootstrap Css Edit */

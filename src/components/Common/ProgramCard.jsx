@@ -58,7 +58,7 @@ function ProgramCard({ title, link, duration, eligibility, fees }) {
             endIcon={<DescriptionRounded />}
             sx={{ px: "12px" }}
           >
-            download
+            read more
           </Button>
           <Button
             href={link}

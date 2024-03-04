@@ -7,7 +7,7 @@ function AnnouncementCard({ title, des, date, img }) {
         <Grid item xs={12} sm={6} md={4}>
             <Box bgcolor={"#fff"} borderRadius={4} overflow={"hidden"} className={"smooth-shadow-card"}>
                 <Box>
-                    <img src={img} alt="Announcements Poster" className='w-100' />
+                    <img src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1709536576/KPGU/Event%20Announcement/gibv9gx758gzpc33w47l.webp" alt="Announcements Poster" className='w-100' />
                 </Box>
                 <Box p={2}>
                     <h4 className='color-secondary fw-semibold'>{title}</h4>
