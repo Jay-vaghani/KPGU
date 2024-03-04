@@ -8,7 +8,7 @@ function FacultyOfHumanitiesAndPolicyStudies() {
   const Schools = [
     {
       name: "Krishna School Of Arts And Humanities",
-      des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum eum recusandae ducimus voluptate inventore corporis aut sapiente nemo alias esse?",
+      des: "Krishna School of Arts & Humanities (KSAH) believes in the transformative power of understanding history, present, and future through the lens of arts and humanities. By learning from past mistakes and achievements, students develop critical thinking, communication skills, and cultural understanding. KSAH, a new expansion of KPGU since 2022, fosters a broad perspective essential for navigating life's challenges and fostering meaningful connections in society.",
       link: "/academics/krishna-school-of-arts-and-humanities",
       img: ""
     },

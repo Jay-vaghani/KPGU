@@ -9,13 +9,13 @@ function FacultyOfCommerceAndManagement() {
   const Schools = [
     {
       name: "Krishna School Of Commerce",
-      des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum eum recusandae ducimus voluptate inventore corporis aut sapiente nemo alias esse?",
+      des: "Krishna School of Commerce champions excellence in business education, offering a diverse curriculum and hands-on learning opportunities. With a focus on practical skills and industry relevance, we prepare students to thrive in dynamic business environments. Our goal is to cultivate future leaders equipped to drive economic growth and innovation.",
       link: "/academics/krishna-school-of-commerce",
       img: ""
     },
     {
       name: "Krishna School Of Business Management",
-      des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum eum recusandae ducimus voluptate inventore corporis aut sapiente nemo alias esse?",
+      des: "Krishna School of Business Management is dedicated to shaping the next generation of business leaders. Through a comprehensive curriculum and experiential learning, we empower students with the skills and knowledge needed to excel in today's competitive business landscape. Our focus is on fostering innovation, leadership, and ethical decision-making",
       link: "/academics/krishna-school-of-business-management",
       img: ""
     },

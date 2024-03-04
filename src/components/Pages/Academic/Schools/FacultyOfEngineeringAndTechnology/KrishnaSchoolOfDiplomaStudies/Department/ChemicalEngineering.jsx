@@ -3,11 +3,11 @@ import { Box, Grid, Stack, Tab } from "@mui/material";
 import { AppContext } from "../../../../../../../contexts/AppContext";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 
-import MessageFromHod from "./CivilEngineering/MessageFromHod";
-import AboutDepartment from "./CivilEngineering/AboutDepartment";
-import Laboratories from "./CivilEngineering/laboratories ";
-import FacultyStaffSection from "./CivilEngineering/FacultyStaffSection";
-import VisionAndMission from "./CivilEngineering/VisionAndMission";
+import MessageFromHod from "./ChemicalEngineering/MessageFromHod";
+import AboutDepartment from "./ChemicalEngineering/AboutDepartment";
+import Laboratories from "./ChemicalEngineering/laboratories ";
+import FacultyStaffSection from "./ChemicalEngineering/FacultyStaffSection";
+import VisionAndMission from "./ChemicalEngineering/VisionAndMission";
 
 function ChemicalEngineering() {
   const { maxWidth, innerWidth } = useContext(AppContext);

@@ -13,9 +13,9 @@ function MessageFromHod() {
           "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708513775/KPGU/Faculty%20Images/KSET/hod-cse.webp"
         }
         hodEmail={"hod.me.kset@kpgu.ac.in"}
-        hodName={"Dr. Khushbu Bhatt"}
-        hodOf={"Civil Engineering"}
-        hodOfShort={"[KSET]"}
+        hodName={"Mr. Jimit Kansara"}
+        hodOf={"Chemical Engineering"}
+        hodOfShort={"[KSDS]"}
         hodMessage={[
           "",
         ]}

@@ -28,14 +28,14 @@ function KrishnaSchoolOfTechnology() {
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708498523/KPGU/icon/comuter-science.svg",
       name: "COMPUTER ENGINEERING",
-      link: "/academics/ksds/computer-science-and-engineering",
+      link: "/academics/kst/computer-engineering",
     },
     {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709115277/KPGU/icon/food-tec.svg",
       name: "food technology",
-      link: "/academics/ksds/information-technology",
+      link: "/academics/kst/food-technology",
     },
-   
+
   ];
 
   const Faculties = [
@@ -237,17 +237,21 @@ function KrishnaSchoolOfTechnology() {
           className="smooth-shadow"
         >
           <SchoolWelcomeSection
-            title={"Krishna School Of Diploma Studies [KSDS]"}
+            title={"Krishna School Of Technology [KST]"}
           />
           <DirectorsMessage
             dirImg={
               "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
             }
             dirEmail={"dir.ksds@kpgu.ac.in"}
-            dirName={"Dr. Dattesh Y. Joshi"}
-            dirOf={"Krishna School Of Diploma Studies"}
+            dirName={"Dr. Nitesh Sureja"}
+            dirOf={"Krishna School Of Technology"}
             dirOfShort={"[KSDS]"}
-            dirMessage={["Welcome to the esteemed Krishna School of Diploma Studies (KSDS) at Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara. As the Director, I am honoured to lead our dedicated team in fostering academic excellence and innovation.", "Our holistic approach to learning imparts technical knowledge alongside critical thinking and problem-solving skills. Our experienced faculty ensures students are well-equipped for the dynamic engineering landscape.", "Through cutting-edge curricula, labs, and industry collaborations, we offer a transformative educational experience that prepares students for leadership roles.", "Committed to values of integrity and inclusivity, we provide a diverse and respectful environment. Our website showcases programs, faculty, research, and campus life.", "Whether you’re a student, parent, industry partner, or academician, we look forward to your engagement with us.", "Thank you for considering Krishna School of Diploma Studies (KSDS), Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara as your educational destination. Join us on a journey of knowledge and excellence."]}
+            dirMessage={[
+              "The Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara’s constituent institute Krishna School Of Technology (KST) providing leadership in education and research with a specific focus on science and technology. The learning experiences at KST are rewarding, lasting, and fun. We are aware that only a supportive environment can foster creativity and propel individuals to greater heights of success in their endeavors. We have a dynamic environment that produces leading innovators, social scientists, professionals, business people, academicians, and thinkers of the future. The team must remain focused on attaining this goal despite short-term vicissitudes since the stakeholders’ emotional connection, shared faith, and trust are so strong.",
+              "We firmly believe that the quality of research will determine how educational institutions will look in the future. For a campus to remain alive, alumni and industry connections must be encouraged and strengthened. With adequate options for academic, co-curricular, and extracurricular activities and a steadfast focus on fostering the individual, we encourage multidisciplinary orientation.",
+              "I firmly believe that operating in silos will prevent an organization from succeeding. It is the culmination of the diligent efforts of each and every one of its members. We will be able to carve out a niche in pursuit of our vision and contribute to the development of the area and our motherland as visualized in National Education Policy 2020 with the help and commitment of qualified and experienced faculty members, supportive administration, and vibrant students, I am sure and confident.",
+            ]}
           />
         </Box>
       </div>

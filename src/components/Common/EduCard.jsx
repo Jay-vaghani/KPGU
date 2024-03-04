@@ -27,7 +27,7 @@ function EduCard({ name, des, img, link }) {
           <Typography variant="h6" fontWeight={600} mb={1} color={"secondary.main"}>
             {name}
           </Typography>
-          <Typography variant="body1" fontWeight={600} color={"#535353"} mb={3}>
+          <Typography variant="body1" fontWeight={600} color={"#535353"} mb={3} textAlign={"justify"}>
             {des}
           </Typography>
           <br />

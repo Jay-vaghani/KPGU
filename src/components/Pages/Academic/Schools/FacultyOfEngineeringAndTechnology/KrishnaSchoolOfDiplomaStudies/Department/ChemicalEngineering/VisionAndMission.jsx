@@ -5,10 +5,7 @@ import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
   const MissionList = [
-    "Produce professionally brilliant and motivated Engineers in the field of Civil Engineering",
-    "Undertake developmental research, consultancy and technical interaction with industry",
-    "Meet the global need of competent and dedicated professionals through research & development, consultancy & extension activities which are relevant to the needs of mankind",
-    "Execute community driven, holistic programs with diverse and inclusive governance.",
+    "",
   ];
 
   return (
@@ -17,7 +14,7 @@ function VisionAndMission() {
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
           quote={
-            "To develop the department into a center of excellence in education, research, training and consultancy to the extent that it becomes a significant player in the technical and overall development of the country and with skill-based knowledge achieve new horizons."
+            ""
           }
           right={true}
         />

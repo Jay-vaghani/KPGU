@@ -22,11 +22,7 @@ function MessageFromHod() {
           "Our faculties and students are constantly motivated to excel and to advance the state of the art in Computer Science and Engineering. The outstanding infrastructure, teaching faculty of the best kind of the Department ensuring quality education such as interaction among students, parents and staff, along with a Training and Placement Cell ensures a bright future to its students. I wish all the students and faculties a good academic career.",
         ]}
       />
-      <Quote
-        quote={
-          "With the idea that mentoring is a lifetime commitment, we motivate students to achieve academic excellence with valuable life lessons"
-        }
-      />
+     
     </>
   );
 }

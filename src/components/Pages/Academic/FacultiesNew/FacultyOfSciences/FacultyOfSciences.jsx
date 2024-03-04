@@ -9,7 +9,7 @@ function FacultyOfSciences() {
   const Schools = [
     {
       name: "Krishna School Of Sciences",
-      des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum eum recusandae ducimus voluptate inventore corporis aut sapiente nemo alias esse?",
+      des: "Krishna School of Science empowers students to make a global impact. With expert faculty in Physics, Chemistry, Mathematics, Biotechnology, and Microbiology, we provide excellent facilities and individualized support. Our mission is to cultivate an exceptional academic experience, nurturing each student's potential to change the world.",
       link: "/academics/krishna-school-of-sciences",
       img: ""
     },

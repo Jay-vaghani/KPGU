@@ -5,9 +5,7 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 
 import MessageFromHod from "./InformationTechnology/MessageFromHod";
 import AboutDepartment from "./InformationTechnology/AboutDepartment";
-import HonorsMinorsOfferedBroadly from "./InformationTechnology/HonorsMinorsOfferedBroadly";
 import ComputerLab from "./InformationTechnology/ComputerLab";
-import ResearchAreas from "./InformationTechnology/ResearchAreas";
 import FacultyStaffSection from "./InformationTechnology/FacultyStaffSection";
 import VisionAndMission from "./InformationTechnology/VisionAndMission";
 
@@ -128,21 +126,13 @@ function InformationTechnology() {
                   label="Vision And Mission"
                   value="3"
                 />
-                <Tab
-                  className="align-items-start fw-bold text-start "
-                  label="Honors - Minors Offered Broadly"
-                  value="4"
-                />
+
                 <Tab
                   className="align-items-start fw-bold text-start "
                   label="Computer Labs"
                   value="5"
                 />
-                <Tab
-                  className="align-items-start fw-bold text-start "
-                  label="Research Areas"
-                  value="6"
-                />
+
                 <Tab
                   className="align-items-start fw-bold text-start "
                   label="Faculty"
@@ -162,15 +152,11 @@ function InformationTechnology() {
               <TabPanel value="3">
                 <VisionAndMission />
               </TabPanel>
-              <TabPanel value="4">
-                <HonorsMinorsOfferedBroadly />
-              </TabPanel>
+
               <TabPanel value="5">
                 <ComputerLab />
               </TabPanel>
-              <TabPanel value="6">
-                <ResearchAreas />
-              </TabPanel>
+
               <TabPanel value="7">
                 <FacultyStaffSection />
               </TabPanel>

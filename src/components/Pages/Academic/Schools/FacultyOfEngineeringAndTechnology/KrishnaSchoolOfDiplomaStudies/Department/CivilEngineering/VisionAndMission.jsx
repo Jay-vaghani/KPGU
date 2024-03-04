@@ -5,10 +5,10 @@ import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
   const MissionList = [
-    "Produce professionally brilliant and motivated Engineers in the field of Civil Engineering",
-    "Undertake developmental research, consultancy and technical interaction with industry",
-    "Meet the global need of competent and dedicated professionals through research & development, consultancy & extension activities which are relevant to the needs of mankind",
-    "Execute community driven, holistic programs with diverse and inclusive governance.",
+    "To inculcate collaborative and innovative culture in students by offering best quality education.",
+    "To excel them in engineering and technology domain by excellent teaching learning process.",
+    "To provide innovative environment to learn, innovate and create new ideas for the betterment of oneself and global society.",
+    "To develop good responsible citizen through ethics and eco-friendly culture.",
   ];
 
   return (
@@ -17,7 +17,7 @@ function VisionAndMission() {
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
           quote={
-            "To develop the department into a center of excellence in education, research, training and consultancy to the extent that it becomes a significant player in the technical and overall development of the country and with skill-based knowledge achieve new horizons."
+            "To develop the department into a center of excellence in education, research, training and consultancy to the extent that it becomes a significant entity in the technical and overall development of the country, offering value driven skill development programs and consistent high degree of professional development of students leading to responsible global citizens."
           }
           right={true}
         />

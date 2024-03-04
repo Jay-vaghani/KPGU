@@ -111,7 +111,7 @@ function ContactNavbar() {
                 variant="contained"
                 color="secondary"
                 disableElevation
-                className="fw-semibold justify-content-start"
+                className="fw-semibold justify-content-start admission-button"
                 startIcon={<FeedRounded />}
                 onClick={() => navigate("/admission-inquiry")}
               >
