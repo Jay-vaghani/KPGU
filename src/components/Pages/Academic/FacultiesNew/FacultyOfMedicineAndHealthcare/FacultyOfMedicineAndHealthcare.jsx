@@ -10,6 +10,7 @@ function FacultyOfMedicineAndHealthcare() {
     {
       name: "Krishna School Of Pharmacy And Research",
       des: "Krishna School of Pharmacy & Research (KSP), part of Drs. Kiran & Pallavi Patel Global University, is approved by Pharmacy Council of India and AICTE. It offers Bachelor and Master of Pharmacy, and PhD programs in four disciplines. Our B. Pharm. Program is NBA re-accredited till 30.06.2025. KSP emphasizes strong foundations, research, and industry connections.",
+      link: "/academics/krishna-school-of-pharmacy-and-research",
       img: ""
     },
     {

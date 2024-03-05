@@ -1,16 +1,32 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Grid, Tab } from "@mui/material";
+import { Box, Button, Grid, Tab } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
-import FacultyStaff from "../../../../../Common/FacultyStaff";
-import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+import { useNavigate } from "react-router-dom";
+import FacultyStaff from "../../../../../Common/FacultyStaff";
+import Quote from "../../../../../Common/Quote";
 
 function KrishnaSchoolOfCommerce() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const [programValue, programValueSetValue] = useState("1");
+
+  const programHandleChange = (event, newValue) => {
+    programValueSetValue(newValue);
+  };
+
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+
 
   const Faculties = [
     {
@@ -58,6 +74,8 @@ function KrishnaSchoolOfCommerce() {
     },
   ];
 
+
+
   const Announcements = [
     {
       title: "Announcement 1",
@@ -79,152 +97,234 @@ function KrishnaSchoolOfCommerce() {
     },
   ];
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // ============== Components ==============
 
-  const [value, setValue] = useState("1");
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <SchoolWelcomeSection
-        title={"Krishna School Of Commerce [KSC]"}
-        des={
-          "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-        }
-      />
-      <DirectorsMessage
-        dirImg={
-          "https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper.png"
-        }
-        dirEmail={"directoremail@gmail.com"}
-        dirName={"Dr. Paras Bhura"}
-        dirOf={"Krishna School Of Commerce"}
-        dirOfShort={"[KSC]"}
-        dirMessage={[
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi.",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit!",
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus iure quidem cumque officia repellat sed ratione itaque, libero suscipit perspiciatis natus distinctio aspernatur vero, tenetur ipsum culpa corporis? Temporibus quae quod et quas numquam voluptas debitis cum maiores voluptatem porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero veritatis aspernatur officiis repellat dicta illo dolorum consequuntur! Sapiente, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas facere eligendi ex blanditiis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum distinctio adipisci ab molestiae a magni tenetur aspernatur est totam! Quasi eveniet molestiae repudiandae a omnis est, quas iusto officiis.",
-        ]}
-      />
-
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
-        </Box>
-        <Grid container spacing={4}>
-          {Faculties.map(
-            (
-              {
-                name,
-                designation,
-                experience,
-                qualification,
-                imgNo,
-                customLink,
-              },
-              index
-            ) => (
-              <FacultyStaff
-                name={name}
-                qualification={qualification}
-                designation={designation}
-                experience={experience}
-                key={index}
-                facultyName={"KSC"}
-                imgNo={imgNo}
-                MainLink={
-                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/"
-                }
-                customLink={customLink}
-              />
-            )
-          )}
-        </Grid>
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Vision</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Mission</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Programs </h2>
-        </Box>
-        <TabContext value={value}>
+    <>
+      <TabContext value={value}>
+        <Box
+          className="smooth-shadow"
+          bgcolor={"#fff"}
+          p={2}
+          borderRadius={4}
+          mt={7}
+          position={"sticky"}
+          top={0}
+          maxWidth={maxWidth}
+          mx={"auto"}
+          zIndex={99999999}
+        >
           <TabList
+            onChange={handleChange}
+            aria-label="lab API tabs example"
+            orientation={`horizontal`}
             textColor="secondary"
             indicatorColor="secondary"
             variant="scrollable"
-            onChange={handleChange}
-            aria-label="lab API tabs example"
           >
-            <Tab className="fw-bold" label="ug" value="1" />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Message From Director"
+              value="1"
+              href="#director-message"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="vision"
+              value="2"
+              href="#vision"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="mission"
+              value="3"
+              href="#mission"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Faculty"
+              value="4"
+              href="#faculty"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Programs"
+              value="5"
+              href="#program"
+            />
+
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Announcements"
+              value="6"
+              href="#announcements"
+            />
           </TabList>
-          <TabPanel value="1" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {UG.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <ProgramCard
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-        </TabContext>
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
+        </Box>
+      </TabContext>
+
+      <div style={{ padding: "80px 0 0 0" }} id="director-message">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <SchoolWelcomeSection
+            title={"Krishna School Of Commerce [KSC]"}
+          />
+          <DirectorsMessage
+            dirImg={
+              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709632669/KPGU/Faculty%20Images/KSC/dir-img.webp"
+            }
+            dirEmail={"directoremail@gmail.com"}
+            dirName={"DR. RASHMI VYAS"}
+            dirOf={"Krishna School Of Commerce"}
+            dirOfShort={"[KSC]"}
+            dirMessage={[
+              "Dear Students, First of all, I would like to thank you for considering the Drs. Kiran & Pallavi Patel Global University.As you go through this Website it will indeed help you to choose your course at our institution.",
+              "B.Com the under graduate program is focused on bridging the gap between graduate expectations and employment reality. With a blend of curricular, co-curricular and value added activities, every student is encouraged to explore and reach his dreams. The dream begins with a teacher who believes in you, who tugs and pushes and leads you to the next plateau, a teacher who gives you something to take home to think about, besides homework. Life as a student here at KPGU is one which I know you will enjoy and also one which I’m sure will give you the stepping stone required whether your goal is to find employment or progress for higher education.",
+              "At, KPGU we believe in a very personalized approach to education. Every student’s professional, academic and leadership development will be monitored and reviewed individually. KPGU provides a large campus with right tools – spacious class rooms, healthy teacher-students ratio, high-tech computer lab, rich library, centralized e-library, beautiful auditorium, and frequent industry interactions. In life you get out of it what you put in, and College life is no different. Dare to dream, put in the effort, enjoy the ride and reap the rewards! The institution provides you the space to ignite your imagination and inspire you to love learning.I welcome you to join our institution at this stage of your life",
+              "I wish you all the best!"
+            ]}
+          />
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="vision">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <h2 className="fw-bold color-secondary fs-1">Vision</h2>
+          <Quote
+            quote={
+              "No Vision"
+            }
+            right={true}
+          />
+
+        </Box>
+      </div>
+      <div style={{ padding: "80px 0 0 0" }} id="mission">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <h2 className="fw-bold color-secondary fs-1">Mission</h2>
+          <Quote
+            quote={
+              "No Mission"
+            }
+            right={true}
+          />
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="faculty">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <Box mb={4}>
+            <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
+          </Box>
+          <Grid container spacing={4}>
+            {Faculties.map(
+              (
+                {
+                  name,
+                  designation,
+                  experience,
+                  qualification,
+                  imgNo,
+                  customLink,
+                },
+                index
+              ) => (
+                <FacultyStaff
+                  name={name}
+                  qualification={qualification}
+                  designation={designation}
+                  experience={experience}
+                  key={index}
+                  facultyName={"KSC"}
+                  imgNo={imgNo}
+                  MainLink={
+                    "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707807610/KPGU/Faculty%20Images/"
+                  }
+                  customLink={customLink}
+                />
+              )
+            )}
+          </Grid>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="program">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <TabContext value={programValue}>
+            <TabList
+              textColor="secondary"
+              indicatorColor="secondary"
+              variant="scrollable"
+              onChange={programHandleChange}
+              aria-label="lab API tabs example"
+            >
+              <Tab className="fw-bold" label="ug" value="1" />
+            </TabList>
+            <TabPanel value="1" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {UG.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <ProgramCard
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+          </TabContext>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="announcements">
+        <Box
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
           <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
           <Grid container spacing={3} mt={1}>
             {Announcements.map(({ date, des, img, title }, index) => (
@@ -238,9 +338,16 @@ function KrishnaSchoolOfCommerce() {
             ))}
           </Grid>
         </Box>
-      </Box>
-    </Box>
+      </div>
+    </>
   );
 }
 
 export default KrishnaSchoolOfCommerce;
+
+
+
+
+
+
+

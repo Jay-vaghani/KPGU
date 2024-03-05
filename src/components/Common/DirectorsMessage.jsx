@@ -10,11 +10,11 @@ function DirectorsMessage({ dirImg, dirName, dirEmail, dirMessage, dirOf, dirOfS
             <Grid container borderRadius={4} overflow={"hidden"} className='smooth-shadow-card' mt={4}>
                 <Grid item xs={12} md={4}>
                     <Box overflow={"hidden"} height={"100%"}>
-                        <img src={dirImg} alt="Directors Image" className='w-100 h-100 object-fit-cover' />
+                        <img src={dirImg} alt="Directors Image" className='w-100 h-100 object-fit-cover rounded-4 ' />
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={8}>
-                    <Box bgcolor={"#fff"} height={"100%"} p={2}>
+                    <Box bgcolor={"#fff"} height={"100%"} p={2} pl={3}>
                         <h2 className='fs-1 fw-semibold'>{dirName}</h2>
                         <h5 className='text-secondary fw-semibold mb-0'>Director <br /></h5>
                         <h4 className='color-secondary fw-bold'>{dirOf} <br />{dirOfShort}</h4>

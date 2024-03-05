@@ -89,7 +89,7 @@
 }
 
 .admission-button {
-  animation: blink-shadow 1.5s infinite;
+  animation: blink-shadow 1s infinite;
 }
 
 @keyframes blink-shadow {

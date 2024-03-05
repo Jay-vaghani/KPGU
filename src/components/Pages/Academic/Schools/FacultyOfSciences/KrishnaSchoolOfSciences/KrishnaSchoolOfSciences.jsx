@@ -159,10 +159,10 @@ function KrishnaSchoolOfSciences() {
       />
       <DirectorsMessage
         dirImg={
-          "https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper.png"
+          "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709632995/KPGU/Faculty%20Images/KSS/dir-img.webp"
         }
         dirEmail={"directoremail@gmail.com"}
-        dirName={"Dr. Paras Bhura"}
+        dirName={"A.B. Chaudhari"}
         dirOf={"Krishna School Of Science"}
         dirOfShort={"[KSS]"}
         dirMessage={[

@@ -1,20 +1,33 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Button, Grid, Stack, Tab, Typography } from "@mui/material";
+import { Box, Button, Grid, Tab, Stack } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
-import FacultyStaff from "../../../../../Common/FacultyStaff";
-import Quote from "../../../../../Common/Quote";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import ProgramCard from "../../../../../Common/ProgramCard";
 import AnnouncementCard from "../../../../../Common/AnnouncementCard";
-import {
-  DescriptionRounded,
-  KeyboardDoubleArrowRightRounded,
-} from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
+import FacultyStaff from "../../../../../Common/FacultyStaff";
+import Quote from "../../../../../Common/Quote";
+import { DescriptionRounded, KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
 
 function KrishnaAyurvedMedicalCollege() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const [programValue, programValueSetValue] = useState("1");
+
+  const programHandleChange = (event, newValue) => {
+    programValueSetValue(newValue);
+  };
+
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+
 
   const Faculties = [
     {
@@ -155,6 +168,7 @@ function KrishnaAyurvedMedicalCollege() {
     },
   ];
 
+
   const UG = [
     {
       title: "BAMS",
@@ -184,6 +198,9 @@ function KrishnaAyurvedMedicalCollege() {
     },
   ];
 
+
+
+
   const Announcements = [
     {
       title: "Announcement 1",
@@ -205,12 +222,7 @@ function KrishnaAyurvedMedicalCollege() {
     },
   ];
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  const [value, setValue] = useState("1");
-
+  // ============== Components ==============
   const CustomComponent = ({ title, link, duration, eligibility, fees }) => (
     <Grid item xs={12} md={6}>
       <Box
@@ -270,149 +282,231 @@ function KrishnaAyurvedMedicalCollege() {
     </Grid>
   );
 
-  return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
-      <SchoolWelcomeSection
-        title={"Krishna Ayurved Medical College [KAMC]"}
-        des={
-          "The Faculty of Engineering and Emerging Technology is in the forefront of higher technological education and basic & applied research. It has established itself as a premier center for research and industrial consultancy in the country. There are 6 academic departments equipped with 58 educational and research laboratories performing diverse functions learning in harmony. The presence of internationally recognized faculty backed by exemplary technical & supporting staff and an effective administration have all contributed to the achievements of alumni successfully established all over the world."
-        }
-      />
-      <DirectorsMessage
-        dirImg={
-          "https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper.png"
-        }
-        dirEmail={"directoremail@gmail.com"}
-        dirName={"Vaidya Malhari Sirdeshpande"}
-        dirOf={"Krishna Ayurved Medical College"}
-        dirOfShort={"[KAMC]"}
-        dirMessage={[
-          "Krishna Ayurved Medical College established in the year of 2019, is a world class educational institute developed for top quality teaching and training in the field of Ayurved with the vision of the founder President Hon. Jagdishbhai Patel.",
-          "This institute is one of the renouned colleges, managed by Shree Krishna educational and charitable trust, Vadodara.",
-          "Krishna Ayurved Medical College & Davalba Ayurved Medical Hospital are well equipped with all teaching and training facilities for students. Academic excellence is our Moto and to achieve this, highly qualified teaching staff is working hard to carve out the future of the students.",
-          "Apart from the academic activities, sports facilities, developed campus, world class infra structure in a nature friendly environment provide all opportunities of complete personality developments of students. Library having more than 8000 books, medicinal plant garden, Teaching Pharmacy, Teaching aids such as projectors, E- Library are some of the tools for high quality teaching and learning process.",
-          "The clinical exposure is equally important for medical students. Davalba Ayurved Medical Hospital is an ideal example of social service with academic facility for students. We render completely free of cost treatment for patients helping particularly the less privileged section from rural area of Varnama and other villages in vicinity.  Students can easily get the practical clinical experiences from the well developed OPDS having up to 300 patients per day & 60 beded IPD of Matoshri  Davalba Ayurved Medical Hospital.  Full flagged Panchakarma unit, fully functional Operation Theater, Physiotherapy section, Advanced Pathology lab, X-ray unit and quality medicines make the hospital a unique Ayurved Treatment center with all modern facilities.",
-          "We are well prepared to welcome our third academic batch in coming days. Over & above the norms of CCIM & Gujarat Ayurved University, the KAMC team is committed for shaping & polishing of our students nurturing them into the shining diamonds to offer the best medical services to the society, using the ancient treasure of Ayurved with modern scientific outlook.",
-        ]}
-      />
 
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
-        </Box>
-        <Grid container spacing={4}>
-          {Faculties.map(
-            (
-              {
-                name,
-                designation,
-                experience,
-                qualification,
-                imgNo,
-                customLink,
-              },
-              index
-            ) => (
-              <FacultyStaff
-                name={name}
-                qualification={qualification}
-                designation={designation}
-                experience={experience}
-                key={index}
-                facultyName={"KAMC"}
-                imgNo={imgNo}
-                MainLink={
-                  "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707393163/KPGU/Faculty%20Images/"
-                }
-                customLink={customLink}
-              />
-            )
-          )}
-        </Grid>
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Vision</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <h2 className="fw-bold color-secondary fs-1">Mission</h2>
-        <Quote
-          quote={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quidem molestiae ea earum iste. Explicabo asperiores dignissimos veritatis quae inventore."
-          }
-          right={true}
-        />
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
-          <h2 className="fw-bold color-secondary fs-1">Programs </h2>
-        </Box>
-        <TabContext value={value}>
+  return (
+    <>
+      <TabContext value={value}>
+        <Box
+          className="smooth-shadow"
+          bgcolor={"#fff"}
+          p={2}
+          borderRadius={4}
+          mt={7}
+          position={"sticky"}
+          top={0}
+          maxWidth={maxWidth}
+          mx={"auto"}
+          zIndex={99999999}
+        >
           <TabList
+            onChange={handleChange}
+            aria-label="lab API tabs example"
+            orientation={`horizontal`}
             textColor="secondary"
             indicatorColor="secondary"
             variant="scrollable"
-            onChange={handleChange}
-            aria-label="lab API tabs example"
           >
-            <Tab className="fw-bold" label="ug" value="1" />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Message From Director"
+              value="1"
+              href="#director-message"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="vision"
+              value="2"
+              href="#vision"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="mission"
+              value="3"
+              href="#mission"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Faculty"
+              value="4"
+              href="#faculty"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Programs"
+              value="5"
+              href="#program"
+            />
+            <Tab
+              className="align-items-start fw-bold text-start "
+              label="Announcements"
+              value="6"
+              href="#announcements"
+            />
           </TabList>
-          <TabPanel value="1" sx={{ px: "0 !important" }}>
-            <Grid container spacing={2}>
-              {UG.map(
-                ({ des, link, pageLink, title, duration, fees }, index) => (
-                  <CustomComponent
-                    des={des}
-                    link={link}
-                    pageLink={pageLink}
-                    title={title}
-                    key={index}
-                    duration={duration}
-                    fees={fees}
-                  />
-                )
-              )}
-            </Grid>
-          </TabPanel>
-        </TabContext>
-      </Box>
-      <Box
-        mt={4}
-        bgcolor={"#fff"}
-        borderRadius={4}
-        className="smooth-shadow"
-        p={2}
-      >
-        <Box mb={4}>
+        </Box>
+      </TabContext>
+
+      <div style={{ padding: "80px 0 0 0" }} id="director-message">
+        <Box
+          maxWidth={maxWidth}
+          mx={"auto"}
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+        >
+          <SchoolWelcomeSection
+            title={"Krishna Ayurved Medical College [KAMC]"}
+          />
+          <DirectorsMessage
+            dirImg={
+              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709631583/KPGU/Faculty%20Images/KAMC/dir-img.webp"
+            }
+            dirEmail={"directoremail@gmail.com"}
+            dirName={"Dr. Malhari K. Sirdeshpande"}
+            dirOf={"Krishna Ayurved Medical College"}
+            dirOfShort={"[KAMC]"}
+            dirMessage={[
+              "Krishna Ayurved Medical College established in the year of 2019, is a world class educational institute developed for top quality teaching and training in the field of Ayurved with the vision of the founder President Hon. Jagdishbhai Patel.",
+              "This institute is one of the renouned colleges, managed by Shree Krishna educational and charitable trust, Vadodara.Krishna Ayurved Medical College & Davalba Ayurved Medical Hospital are well equipped with all teaching and training facilities for students. Academic excellence is our Moto and to achieve this, highly qualified teaching staff is working hard to carve out the future of the students.",
+              "Apart from the academic activities, sports facilities, developed campus, world class infra structure in a nature friendly environment provide all opportunities of complete personality developments of students. Library having more than 8000 books, medicinal plant garden, Teaching Pharmacy, Teaching aids such as projectors, E- Library are some of the tools for high quality teaching and learning process.",
+              "The clinical exposure is equally important for medical students. Davalba Ayurved Medical Hospital is an ideal example of social service with academic facility for students. We render completely free of cost treatment for patients helping particularly the less privileged section from rural area of Varnama and other villages in vicinity.  Students can easily get the practical clinical experiences from the well developed OPDS having up to 300 patients per day & 60 beded IPD of Matoshri  Davalba Ayurved Medical Hospital.  Full flagged Panchakarma unit, fully functional Operation Theater, Physiotherapy section, Advanced Pathology lab, X-ray unit and quality medicines make the hospital a unique Ayurved Treatment center with all modern facilities.",
+              "We are well prepared to welcome our third academic batch in coming days. Over & above the norms of CCIM & Gujarat Ayurved University, the KAMC team is committed for shaping & polishing of our students nurturing them into the shining diamonds to offer the best medical services to the society, using the ancient treasure of Ayurved with modern scientific outlook."
+            ]}
+          />
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="vision">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <h2 className="fw-bold color-secondary fs-1">Vision</h2>
+          <Quote
+            quote={
+              "To be a Globallyrecognized Centre forexcellence in Ayurvedandto statuette competent& efficient physicianin the society and excelin theHealthcare sector."
+            }
+            right={true}
+          />
+        </Box>
+      </div>
+      <div style={{ padding: "80px 0 0 0" }} id="mission">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <h2 className="fw-bold color-secondary fs-1">Mission</h2>
+          <Quote
+            quote={
+              "To make a commitment to encouraging efficiency and high professional standards in teaching, healthcare, and research development, while also extending quality healthcare to nearby and needy society areas to achieve complete holistic development."
+            }
+            right={true}
+          />
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="faculty">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <Box mb={4}>
+            <h2 className="fw-bold color-secondary fs-1">Faculty Members</h2>
+          </Box>
+          <Grid container spacing={4}>
+            {Faculties.map(
+              (
+                {
+                  name,
+                  designation,
+                  experience,
+                  qualification,
+                  imgNo,
+                  customLink,
+                },
+                index
+              ) => (
+                <FacultyStaff
+                  name={name}
+                  qualification={qualification}
+                  designation={designation}
+                  experience={experience}
+                  key={index}
+                  facultyName={"KAMC"}
+                  imgNo={imgNo}
+                  MainLink={
+                    "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707807610/KPGU/Faculty%20Images/"
+                  }
+                  customLink={customLink}
+                />
+              )
+            )}
+          </Grid>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="program">
+        <Box
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          p={"3%"}
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
+          <TabContext value={programValue}>
+            <TabList
+              textColor="secondary"
+              indicatorColor="secondary"
+              variant="scrollable"
+              onChange={programHandleChange}
+              aria-label="lab API tabs example"
+            >
+              <Tab className="fw-bold" label="ug" value="1" />
+            </TabList>
+            <TabPanel value="1" sx={{ px: "0 !important" }}>
+              <Grid container spacing={2}>
+                {UG.map(
+                  ({ des, link, pageLink, title, duration, fees }, index) => (
+                    <CustomComponent
+                      des={des}
+                      link={link}
+                      pageLink={pageLink}
+                      title={title}
+                      key={index}
+                      duration={duration}
+                      fees={fees}
+                    />
+                  )
+                )}
+              </Grid>
+            </TabPanel>
+          </TabContext>
+        </Box>
+      </div>
+
+      <div style={{ padding: "80px 0 0 0" }} id="announcements">
+        <Box
+          p={"3%"}
+          bgcolor={"#fff"}
+          borderRadius={4}
+          className="smooth-shadow"
+          maxWidth={maxWidth}
+          mx={"auto"}
+        >
           <h2 className="fw-bold color-secondary fs-1">Announcements</h2>
           <Grid container spacing={3} mt={1}>
             {Announcements.map(({ date, des, img, title }, index) => (
@@ -426,9 +520,29 @@ function KrishnaAyurvedMedicalCollege() {
             ))}
           </Grid>
         </Box>
-      </Box>
-    </Box>
+      </div>
+    </>
   );
 }
 
 export default KrishnaAyurvedMedicalCollege;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

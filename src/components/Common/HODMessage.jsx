@@ -25,12 +25,12 @@ function HODMessage({
             <img
               src={hodImg}
               alt="hodectors Image"
-              className="w-100 h-100 object-fit-cover"
+              className="w-100 h-100 object-fit-cover rounded-4"
             />
           </Box>
         </Grid>
         <Grid item xs={12} md={8}>
-          <Box bgcolor={"#fff"} height={"100%"} p={2}>
+          <Box bgcolor={"#fff"} height={"100%"} p={2} pl={3}>
             <h2 className="fs-1 fw-semibold">{hodName}</h2>
             <h5 className="text-secondary fw-semibold mb-0">
               Head of Department <br />

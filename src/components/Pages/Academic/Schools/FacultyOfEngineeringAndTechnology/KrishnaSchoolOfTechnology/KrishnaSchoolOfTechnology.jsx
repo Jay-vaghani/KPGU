@@ -38,36 +38,6 @@ function KrishnaSchoolOfTechnology() {
 
   ];
 
-  const Faculties = [
-    {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 12,
-      cv: "",
-      qualification: "P.H.D",
-    },
-    {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 13,
-      cv: "",
-      qualification: "P.H.D",
-    },
-    {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 14,
-      cv: "",
-      qualification: "P.H.D",
-    },
-    {
-      name: "Name",
-      designation: "Assistant Professor",
-      experience: 15,
-      cv: "",
-      qualification: "P.H.D",
-    },
-  ];
 
   const UG = [
     {

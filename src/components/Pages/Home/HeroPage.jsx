@@ -28,7 +28,7 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 40%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707382740/KPGU/Banners/banner-1.webp') top / cover",
+            "linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 40%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707382740/KPGU/Banners/banner-1.webp') top / cover",
           height: "87vh",
         }}
       >
@@ -63,7 +63,7 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 40%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707455732/KPGU/Banners/banner-3.jpg') bottom / cover",
+            "linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 40%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707455732/KPGU/Banners/banner-3.jpg') bottom / cover",
           height: "87vh",
         }}
       >
@@ -98,7 +98,7 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1703843541/KPGU/campus/KPGU-Gate.webp') 0px 100% / cover",
+            "linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 50%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1703843541/KPGU/campus/KPGU-Gate.webp') 0px 100% / cover",
           height: "87vh",
         }}
       >
@@ -133,7 +133,7 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 60%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707456589/KPGU/Banners/banner-4.jpg') center / cover",
+            "linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 60%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707456589/KPGU/Banners/banner-4.jpg') center / cover",
           height: "87vh",
         }}
       >

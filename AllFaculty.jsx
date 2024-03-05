@@ -1,13 +1,4 @@
-import React, { useContext } from "react";
-import { Box, Button, Grid, Stack, Typography } from "@mui/material";
-import { AppContext } from "../../../contexts/AppContext";
-import { useNavigate } from "react-router-dom";
-
-function AboutSection() {
-  const { maxWidth } = useContext(AppContext);
-
-  const navigation = useNavigate();
-  const faculty = [
+const faculty = [
     {
         name: "Mr. Pratikkumar Rameshbhai Patel",
         imgNo: "5995",
@@ -173,6 +164,7 @@ function AboutSection() {
         qualification: "M.E[CE] || BE[CE]",
         customLink: "",
     },
+
     {
         name: "Ms. Rohini K. Patel",
         imgNo: "6020",
@@ -222,6 +214,7 @@ function AboutSection() {
         customLink:
             "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
     },
+
     {
         name: "Ms. Bharati Salimath",
         imgNo: "8900",
@@ -279,6 +272,250 @@ function AboutSection() {
         qualification: "M.E in Civil Engineering",
         customLink: "",
     },
+    {
+        name: "Mr. Ankit N Patel",
+        imgNo: "6110",
+        designation: "Assistant Professor",
+        experience: 13,
+        qualification: "M.Tech[CPM] || B.E[Civil]",
+        customLink: "",
+    },
+    {
+        name: "Mithileshdatta Pandya",
+        imgNo: "6052",
+        designation: "Assistant Professor",
+        experience: 11,
+        qualification: "Ph.D[Pursuing-Civil] || M.E[CASAD] || B.E[Civil]",
+        customLink: "",
+    },
+    {
+        name: "Mr. Ravi S. Patel",
+        imgNo: "6090",
+        designation: "Assistant Professor",
+        experience: 9,
+        qualification: "M.E in Civil Engineering",
+        customLink: "",
+    },
+    {
+        name: "Mr. Ankit N Patel",
+        imgNo: "6110",
+        designation: "Assistant Professor",
+        experience: 13,
+        qualification: "M.Tech[CPM] || B.E[Civil]",
+        customLink: "",
+    },
+    {
+        name: "Mithileshdatta Pandya",
+        imgNo: "6052",
+        designation: "Assistant Professor",
+        experience: 11,
+        qualification: "Ph.D[Pursuing-Civil] || M.E[CASAD] || B.E[Civil]",
+        customLink: "",
+    },
+    {
+        name: "Mr. Ravi S. Patel",
+        imgNo: "6090",
+        designation: "Assistant Professor",
+        experience: 9,
+        qualification: "M.E in Civil Engineering",
+        customLink: "",
+    },
+   
+    {
+        name: "Ms. Jyoti Golakia",
+        imgNo: "6023",
+        designation: "Assistant Professor",
+        experience: 4,
+        qualification: "M.E[CE] || BE[CE]",
+        customLink: "",
+    },
+
+    {
+        name: "Ms. Rohini K. Patel",
+        imgNo: "6020",
+        designation: "Assistant Professor",
+        experience: 8,
+        qualification: "M.E(IT) || B.E[IT]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Safeya Dharmajwala ",
+        imgNo: "6019",
+        designation: "Assistant Professor",
+        experience: 10,
+        qualification: "M.E || B.E - COMPUTER ENGINEERING",
+        customLink: "",
+    },
+    {
+        name: "Ms. Rashmika Baria",
+        imgNo: "6042",
+        designation: "Assistant Professor",
+        experience: 5,
+        qualification: "M.E[CE] || B.E[CSE]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Arohi Patel",
+        imgNo: "9866",
+        designation: "Assistant Professor",
+        experience: 3,
+        qualification: "M.E[CE] || BE[CE]",
+        customLink: "",
+    },
+    {
+        name: "Ms.Manisha Makwana",
+        imgNo: "9865",
+        designation: "Assistant Professor",
+        experience: 3,
+        qualification: "M.E || B.E - COMPUTER ENGINEERING",
+        customLink: "",
+    },
+    {
+        name: "Ms. Jariwala Krishna",
+        imgNo: "8899",
+        designation: "Assistant Professor",
+        experience: 5,
+        qualification: "M.Tech[CSE] || B.E[CSE]",
+        customLink:
+            "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
+    },
+
+    {
+        name: "Ms. Bharati Salimath",
+        imgNo: "8900",
+        designation: "Assistant Professor",
+        experience: 20,
+        qualification: "M.Tech[CSE] || B.E[CSE]",
+        customLink:
+            "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
+    },
+    {
+        name: "Henilkumar Suthar",
+        imgNo: "8897",
+        designation: "Assistant Professor",
+        experience: 3,
+        qualification: "PhD[Pursuing-IT] || M.Tech[IT] || B.E[IT]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Harika Thokala",
+        imgNo: "8901",
+        designation: "Assistant Professor",
+        experience: 8,
+        qualification: "M.Tech[CS] || B.Tech[CSE]",
+        customLink: "",
+    },
+
+    {
+        name: "Ms. Vruti Parikh",
+        imgNo: "0881",
+        designation: "Assistant Professor",
+        experience: 7,
+        qualification: "M.E || B.E - COMPUTER ENGINEERING",
+        customLink: "",
+    },
+   
+    {
+        name: "Dr. Dharmendra V.Tawde",
+        imgNo: "6045",
+        designation: "Assistant Professor",
+        experience: 12,
+        qualification: "Ph.D[Physics]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Jyoti Golakia",
+        imgNo: "6023",
+        designation: "Assistant Professor",
+        experience: 4,
+        qualification: "M.E[CE] || BE[CE]",
+        customLink: "",
+    },
+
+    {
+        name: "Ms. Rohini K. Patel",
+        imgNo: "6020",
+        designation: "Assistant Professor",
+        experience: 8,
+        qualification: "M.E(IT) || B.E[IT]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Safeya Dharmajwala ",
+        imgNo: "6019",
+        designation: "Assistant Professor",
+        experience: 10,
+        qualification: "M.E || B.E - COMPUTER ENGINEERING",
+        customLink: "",
+    },
+    {
+        name: "Ms. Rashmika Baria",
+        imgNo: "6042",
+        designation: "Assistant Professor",
+        experience: 5,
+        qualification: "M.E[CE] || B.E[CSE]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Arohi Patel",
+        imgNo: "9866",
+        designation: "Assistant Professor",
+        experience: 3,
+        qualification: "M.E[CE] || BE[CE]",
+        customLink: "",
+    },
+    {
+        name: "Ms.Manisha Makwana",
+        imgNo: "9865",
+        designation: "Assistant Professor",
+        experience: 3,
+        qualification: "M.E || B.E - COMPUTER ENGINEERING",
+        customLink: "",
+    },
+    {
+        name: "Ms. Jariwala Krishna",
+        imgNo: "8899",
+        designation: "Assistant Professor",
+        experience: 5,
+        qualification: "M.Tech[CSE] || B.E[CSE]",
+        customLink:
+            "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707808598/KPGU/Faculty%20Images/KSET/8899.webp",
+    },
+
+    {
+        name: "Ms. Bharati Salimath",
+        imgNo: "8900",
+        designation: "Assistant Professor",
+        experience: 20,
+        qualification: "M.Tech[CSE] || B.E[CSE]",
+        customLink:
+            "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
+    },
+    {
+        name: "Henilkumar Suthar",
+        imgNo: "8897",
+        designation: "Assistant Professor",
+        experience: 3,
+        qualification: "PhD[Pursuing-IT] || M.Tech[IT] || B.E[IT]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Harika Thokala",
+        imgNo: "8901",
+        designation: "Assistant Professor",
+        experience: 8,
+        qualification: "M.Tech[CS] || B.Tech[CSE]",
+        customLink: "",
+    },
+    {
+        name: "Ms. Vruti Parikh",
+        imgNo: "0881",
+        designation: "Assistant Professor",
+        experience: 7,
+        qualification: "M.E || B.E - COMPUTER ENGINEERING",
+        customLink: "",
+    },
+  
     {
         name: "Dr Malhari K Sirdeshpande",
         designation: "Principal || Professor",
@@ -648,6 +885,30 @@ function AboutSection() {
         qualification: "M.Pharm || MBA || PDCR || Ph.D.",
         customLink: "",
     },
+    // {
+    //   name: "Mr. Imtiyaz Bagban",
+    //   imgNo: "5912",
+    //   designation: "Assistant Professor",
+    //   experience: 1,
+    //   qualification: "M.Pharm",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Pooja Goswami",
+    //   imgNo: "5898",
+    //   designation: "Assistant Professor",
+    //   experience: 8,
+    //   qualification: "M. Pharm",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Ms. Bansari Patel",
+    //   imgNo: "5888",
+    //   designation: "Assistant Professor",
+    //   experience: 2,
+    //   qualification: "M.Pharm",
+    //   customLink: "",
+    // },
     {
         name: "Mr. Bhavin D. Pandya",
         imgNo: "5893",
@@ -656,6 +917,14 @@ function AboutSection() {
         qualification: "B.Pharm || M.Pharm",
         customLink: "",
     },
+    // {
+    //   name: "Esha Bhavin Shah",
+    //   imgNo: "5889",
+    //   designation: "Assistant Professor",
+    //   experience: 10,
+    //   : "M. Pharm",
+    //   customLink: "",
+    // },
     {
         name: "Mr. Shreyash A. Diwakar",
         imgNo: "5891",
@@ -664,6 +933,22 @@ function AboutSection() {
         qualification: "B.Pharm || M.Pharm",
         customLink: "",
     },
+    // {
+    //   name: "Dr. Vandana B. Patel",
+    //   imgNo: "5976",
+    //   designation: "Professor",
+    //   experience: 32,
+    //   qualification: "M.Pharm || PhD || MBA",
+    //   customLink: "",
+    // },
+    // {
+    //   name: "Dr.Vishnu A Patel",
+    //   imgNo: "5984",
+    //   designation: "professor",
+    //   experience: 38,
+    //   qualification: "M.Pharm || Ph.D",
+    //   customLink: "",
+    // },
     {
         name: "Dr. Paras Bhura",
         imgNo: "6096",
@@ -673,7 +958,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Camy Bhura",
+        name: "Dr. Camy Bhura,PT",
         imgNo: "5852",
         designation: "Associate Professor",
         experience: 11,
@@ -681,7 +966,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Pragna Landge",
+        name: "Dr. Pragna Landge, PT",
         imgNo: "5864",
         designation: "Assistant Professor",
         experience: 9,
@@ -689,7 +974,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Amitkumar Singh",
+        name: "Dr. Amitkumar Singh, PT",
         imgNo: "5856",
         designation: "Assistant Professor",
         experience: 9,
@@ -697,7 +982,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Priyanka Solanki",
+        name: "Dr. Priyanka Solanki, PT",
         imgNo: "5865",
         designation: "Assistant Professor",
         experience: 6,
@@ -705,7 +990,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Aastha Bodade",
+        name: "Dr. Aastha Bodade, PT",
         imgNo: "5854",
         designation: "Assistant Professor",
         experience: 2,
@@ -713,7 +998,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Fatema Daruwala",
+        name: "Dr. Fatema Daruwala, PT",
         imgNo: "5859",
         designation: "Assistant Professor",
         experience: 2,
@@ -721,7 +1006,7 @@ function AboutSection() {
         customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707806085/KPGU/Faculty%20Images/KSPR/5959.webp",
     },
     {
-        name: "Dr. Ankita Shah",
+        name: "Dr. Ankita Shah, PT",
         imgNo: "5861",
         designation: "Assistant Professor",
         experience: 8,
@@ -729,7 +1014,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Nikita Sonaiya",
+        name: "Dr. Nikita Sonaiya, PT",
         imgNo: "5850",
         designation: "Assistant Professor",
         experience: 1,
@@ -737,7 +1022,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Krupali Rajwadi ",
+        name: "Dr. Krupali Rajwadi, PT ",
         imgNo: "5870",
         designation: "Assistant Professor",
         experience: 10,
@@ -777,7 +1062,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Dharmesh Contractor",
+        name: "Dr. Dharmesh Contractor, PT",
         imgNo: "5849",
         designation: "Clinical Physiotherapist",
         experience: 16,
@@ -785,7 +1070,7 @@ function AboutSection() {
         customLink: "",
     },
     {
-        name: "Dr. Pooja Bhavsar",
+        name: "Dr. Pooja Bhavsar, PT",
         imgNo: "5863",
         designation: "Clinical Physiotherapist",
         experience: 2,
@@ -864,192 +1149,4 @@ function AboutSection() {
         qualification: "MBA Marketing",
         customLink: "",
     },
-    // {
-    //   name: "Mr. Imtiyaz Bagban",
-    //   imgNo: "5912",
-    //   designation: "Assistant Professor",
-    //   experience: 1,
-    //   qualification: "M.Pharm",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Pooja Goswami",
-    //   imgNo: "5898",
-    //   designation: "Assistant Professor",
-    //   experience: 8,
-    //   qualification: "M. Pharm",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Ms. Bansari Patel",
-    //   imgNo: "5888",
-    //   designation: "Assistant Professor",
-    //   experience: 2,
-    //   qualification: "M.Pharm",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Esha Bhavin Shah",
-    //   imgNo: "5889",
-    //   designation: "Assistant Professor",
-    //   experience: 10,
-    //   : "M. Pharm",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Dr. Vandana B. Patel",
-    //   imgNo: "5976",
-    //   designation: "Professor",
-    //   experience: 32,
-    //   qualification: "M.Pharm || PhD || MBA",
-    //   customLink: "",
-    // },
-    // {
-    //   name: "Dr.Vishnu A Patel",
-    //   imgNo: "5984",
-    //   designation: "professor",
-    //   experience: 38,
-    //   qualification: "M.Pharm || Ph.D",
-    //   customLink: "",
-    // },
 ];
-
-console.log(faculty);
-
-  return (
-    <Box
-      maxWidth={maxWidth}
-      mx={"auto"}
-      mt={7}
-      p={"3%"}
-      bgcolor={"#fff"}
-      className="smooth-shadow"
-      borderRadius={4}
-    >
-      <Grid container spacing={4}>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          order={{
-            xs: 2,
-            md: 1,
-          }}
-        >
-          <h2 className="fs-1 text-uppercase fw-semibold mb-0 ">
-            kpgu university
-          </h2>
-          <h3
-            className="text-uppercase fw-semibold"
-            style={{ fontFamily: "Nunito sans" }}
-          >
-            [Formerly known as BITS Edu Campus]
-          </h3>
-          <Typography
-            variant="h5"
-            mb={2}
-            textAlign={{
-              xs: "start",
-              md: "justify",
-            }}
-          >
-            Drs. Kiran and Pallavi Patel Global University (KPGU), Vadodara was
-            established in 2021 and is approved by
-            <Grid container spacing={1} mb={2} mt={1}>
-              <Grid item xs={12} sm={6}>
-                <Button
-                  variant="contained"
-                  disableElevation
-                  color="info"
-                  fullWidth
-                  onClick={() => navigation("/about/statutory-recognition")}
-                >
-                  UGC
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <Button
-                  variant="contained"
-                  disableElevation
-                  color="info"
-                  fullWidth
-                  onClick={() => navigation("/about/statutory-recognition")}
-                >
-                  AICTE
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <Button
-                  variant="contained"
-                  disableElevation
-                  color="info"
-                  fullWidth
-                  onClick={() => navigation("/about/statutory-recognition")}
-                >
-                  PCI
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <Button
-                  variant="contained"
-                  disableElevation
-                  color="info"
-                  fullWidth
-                  onClick={() => navigation("/about/statutory-recognition")}
-                >
-                  GSCPT
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <Button
-                  variant="contained"
-                  disableElevation
-                  color="info"
-                  fullWidth
-                  onClick={() => navigation("/about/statutory-recognition")}
-                >
-                  GNC
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <Button
-                  variant="contained"
-                  disableElevation
-                  color="info"
-                  fullWidth
-                  onClick={() => navigation("/about/statutory-recognition")}
-                >
-                  AYUSH
-                </Button>
-              </Grid>
-            </Grid>
-            We Have various undergraduate, postgraduate and diploma courses in
-            the disciplines of Engineering & Technology, Management, Science,
-            Pharmacy, Nursing, and Ayurvedic Medicine
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          order={{
-            xs: 1,
-            md: 2,
-          }}
-        >
-          <Box height={"100%"}>
-            <img
-              src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1703843541/KPGU/campus/KPGU-Gate.webp"
-              alt="Kpgu photo"
-              className="w-100 h-100 object-fit-cover rounded-4 "
-            />
-          </Box>
-        </Grid>
-      </Grid>
-    </Box>
-  );
-}
-
-export default AboutSection;
-
-

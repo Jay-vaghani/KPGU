@@ -380,7 +380,7 @@ function KrishnaSchoolOfDiplomaStudies() {
           />
           <DirectorsMessage
             dirImg={
-              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708500691/KPGU/Faculty%20Images/KSET/Director.webp"
+              "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709633320/KPGU/Faculty%20Images/KSDS/dir-img.webp"
             }
             dirEmail={"dir.ksds@kpgu.ac.in"}
             dirName={"Dr. Dattesh Y. Joshi"}
