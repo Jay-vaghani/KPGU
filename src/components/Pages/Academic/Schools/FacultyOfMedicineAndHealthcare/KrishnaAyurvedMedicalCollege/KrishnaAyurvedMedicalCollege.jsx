@@ -166,6 +166,7 @@ function KrishnaAyurvedMedicalCollege() {
       qualification: "P.H.D",
       customLink: "",
     },
+    
   ];
 
 

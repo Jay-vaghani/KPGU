@@ -8,6 +8,14 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
+      name: "Dr. Nandini Chaudhari",
+      imgNo: "6056",
+      designation: "Professor and Head || Dy. Director KCCACT",
+      experience: 30,
+      qualification: "Ph.D. || M.Tech CSE || B.E. Computer",
+      customLink: "",
+    },
+    {
       name: "Ms. Manisha Vasava",
       imgNo: "6063",
       designation: "Assistant Professor",

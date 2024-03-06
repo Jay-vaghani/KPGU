@@ -21,6 +21,11 @@ function UniversityOfficers() {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1704343686/KPGU/Images/a-b-Chaudhary_2.webp",
       designation: "Hon. Provost",
     },
+    {
+      name: "Dr. Chirag Nagda",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709724751/KPGU/Images/dr-chirag-nagda.webp",
+      designation: "I/C Registrar",
+    },
     // {
     //   name: "Dr. Manoj M. Sattigeri",
     //   img: "",

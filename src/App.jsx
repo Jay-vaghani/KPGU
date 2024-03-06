@@ -94,6 +94,14 @@ import KsdsChemicalEngineering from "./components/Pages/Academic/Schools/Faculty
 import KstInformationTechnology from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/InformationTechnology";
 import KstComputerEngineering from "./components/Pages/Academic/Schools/FacultyOfEngineeringAndTechnology/KrishnaSchoolOfTechnology/Department/ComputerEngineering";
 
+{/* ============ KSS ============ */ }
+
+import KssBiotechnology from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Biotechnology";
+import KssChemistry from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Chemistry";
+import KssMathematics from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Mathematics";
+import KssMicrobiology from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Microbiology";
+import KssPhysics from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Physics";
+
 
 // ========================================== CAMPUS ==========================================
 
@@ -196,6 +204,13 @@ function App() {
               {/* ============ KST ============ */}
               <Route path="kst/food-technology" element={<KstInformationTechnology />} />
               <Route path="kst/computer-engineering" element={<KstComputerEngineering />} />
+
+              {/* ============ KSS ============ */}
+              <Route path="kss/biotechnology" element={<KssBiotechnology />} />
+              <Route path="kss/chemistry" element={<KssChemistry />} />
+              <Route path="kss/mathematics" element={<KssMathematics />} />
+              <Route path="kss/microbiology" element={<KssMicrobiology />} />
+              <Route path="kss/physics" element={<KssPhysics />} />
             </Route>
 
             <Route path="/campus" element={<Campus />}>

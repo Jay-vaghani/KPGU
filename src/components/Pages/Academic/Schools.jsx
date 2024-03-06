@@ -147,6 +147,37 @@ function Schools() {
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }
+    
+    if (location === "biotechnology") {
+      setBanner({
+        title: "Biotechnology",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "chemistry") {
+      setBanner({
+        title: "Chemistry",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "mathematics") {
+      setBanner({
+        title: "Mathematics",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "microbiology") {
+      setBanner({
+        title: "Microbiology",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "physics") {
+      setBanner({
+        title: "Physics",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
   }, [location]);
 
   return (
