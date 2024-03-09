@@ -44,7 +44,7 @@ function HeroPage() {
           justifyContent={"space-between"}
         >
           <Grid item xs={12} md={6}>
-            <h1 className="display-1 fw-medium text-white ">KPGU secures the top spot in the esteemed global higher education rankings for 2024.</h1>
+            <h1 className="display-4 fw-medium text-white ">Empowering Tomorrow's Pioneers: Join KPGU's Pathway to Global Academic Excellence!</h1>
           </Grid>
         </Grid>
       </SwiperSlide>

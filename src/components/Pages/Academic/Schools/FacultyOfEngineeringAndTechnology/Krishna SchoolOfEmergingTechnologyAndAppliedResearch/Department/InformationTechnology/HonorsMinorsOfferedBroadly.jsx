@@ -8,7 +8,7 @@ function HonorsMinorsOfferedBroadly() {
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708579042/KPGU/Images/Institutions/KSET/machine-learning.png",
     },
     {
-      title: "CYBER SECURITY",
+      title: "Cyber Security",
       img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708579016/KPGU/Images/Institutions/KSET/cyber-security.webp",
     },
     {

@@ -24,20 +24,24 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
-      name: "Mr. Ankur P. Patel",
-      imgNo: "6002",
-      designation: "Assistant Professor",
-      experience: 12,
-      qualification: "M.E[Machine Design] || B.E[Mechanical Engineering]",
-      customLink: "",
-    },
-    {
       name: "Mr Mandar Sumant",
       imgNo: "5998",
       designation: "Assistant Professor",
       experience: 18,
       qualification:
         "PhD[Mechanical-Pursuing] || M.E[Advance Mfg Systems -Mechanical] || B.E[Mechanical]",
+      customLink: "",
+    },
+
+
+
+    {
+      name: "Mr. Nilesh A. Patel",
+      imgNo: "5991",
+      designation: "Assistant Professor",
+      experience: 17,
+      qualification:
+        "M.E[Mechanical Engineering] || B.E[Production Engineering]",
       customLink: "",
     },
     {
@@ -50,12 +54,11 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
-      name: "Mr. Nilesh A. Patel",
-      imgNo: "5991",
+      name: "Mr. Ankur P. Patel",
+      imgNo: "6002",
       designation: "Assistant Professor",
-      experience: 17,
-      qualification:
-        "M.E[Mechanical Engineering] || B.E[Production Engineering]",
+      experience: 12,
+      qualification: "M.E[Machine Design] || B.E[Mechanical Engineering]",
       customLink: "",
     },
   ];
