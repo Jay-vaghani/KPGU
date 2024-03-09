@@ -1,30 +1,26 @@
-import { Box } from "@mui/material";
-import React, { useContext } from "react";
-import { AppContext } from "../../../../../../../../contexts/AppContext";
-import Quote from "../../../../../../../Common/Quote";
+// ============== Custom Components Imports ==============
+
 import HODMessage from "../../../../../../../Common/HODMessage";
 
 function MessageFromHod() {
-  const { maxWidth } = useContext(AppContext);
   return (
     <>
       <HODMessage
         hodImg={
-          "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708513775/KPGU/Faculty%20Images/KSET/hod-cse.webp"
+          "https://banner2.cleanpng.com/20180315/bvw/kisspng-computer-icons-clip-art-man-icon-5aab18532f4b00.7479404715211623231937.jpg"
         }
         hodEmail={"hod.me.kset@kpgu.ac.in"}
         hodName={"Dr. Khushbu Bhatt"}
         hodOf={"Civil Engineering"}
         hodOfShort={"[KSET]"}
         hodMessage={[
-          "",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta maxime nisi rerum aliquam inventore commodi minima temporibus quidem sequi a nam aspernatur itaque saepe magni placeat omnis, dolore aperiam!",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta maxime nisi rerum aliquam inventore commodi minima temporibus quidem sequi a nam aspernatur itaque saepe magni placeat omnis, dolore aperiam!",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta maxime nisi rerum aliquam inventore commodi minima temporibus quidem sequi a nam aspernatur itaque saepe magni placeat omnis, dolore aperiam!",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda soluta maxime nisi rerum aliquam inventore commodi minima temporibus quidem sequi a nam aspernatur itaque saepe magni placeat omnis, dolore aperiam!",
         ]}
       />
-      {/* <Quote
-        quote={
-          "With the idea that mentoring is a lifetime commitment, we motivate students to achieve academic excellence with valuable life lessons"
-        }
-      /> */}
+      
     </>
   );
 }

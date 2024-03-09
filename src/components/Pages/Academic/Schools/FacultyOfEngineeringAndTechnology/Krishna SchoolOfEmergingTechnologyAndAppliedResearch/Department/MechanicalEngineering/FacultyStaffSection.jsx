@@ -8,6 +8,14 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
+      name: "Dr. Nirmal Kumar Kushwaha",
+      imgNo: "5989",
+      designation: "Assistant Professor || HOD",
+      experience: 12,
+      qualification: "PhD[Mechanical Engineering] || M.Tech[Mechanical Engineering] || B.Tech[Industrial and Production Engineering] || GATE-2010[Mechanical Engineering]",
+      customLink: "",
+    },
+    {
       name: "Mr. Pratikkumar Rameshbhai Patel",
       imgNo: "5995",
       designation: "Assistant Professor",

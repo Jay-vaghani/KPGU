@@ -1,12 +1,30 @@
+// ============== React Imports ==============
+
 import React, { useContext } from "react";
 import { AppContext } from "../../../../../../../../contexts/AppContext";
+
+// ============== MUI Imports ==============
+
 import { Box, Grid } from "@mui/material";
+
+// ============== Custom Components Imports ==============
+
 import FacultyStaff from "../../../../../../../Common/FacultyStaff";
 
 function FacultyStaffSection() {
   const { maxWidth } = useContext(AppContext);
 
+  // ============== Faculties ==============
+
   const Faculties = [
+    {
+      name: "Dr. Khushbu Bhatt",
+      imgNo: "",
+      designation: "Head & Assistant Professor ",
+      experience: 9,
+      qualification: "Ph.D[Transportation Engineering] ||  M.Tech || B.E[Civil] || [GATE Qualified 2013]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
     {
       name: "Mr. Ankit N Patel",
       imgNo: "6110",
@@ -28,8 +46,16 @@ function FacultyStaffSection() {
       imgNo: "6090",
       designation: "Assistant Professor",
       experience: 9,
-      qualification: "M.E in Civil Engineering",
+      qualification: "M.E in Civil Engineering || Ph.D[Pursuing-Civil]",
       customLink: "",
+    },
+    {
+      name: "Komal Vaidhya",
+      imgNo: "",
+      designation: "Assistant Professor",
+      experience: 14,
+      qualification: "M.E[Structure] || B.E[Civil]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
   ];
 

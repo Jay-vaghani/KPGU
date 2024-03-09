@@ -1,5 +1,13 @@
-import { Box } from "@mui/material";
+// ============== React Imports ==============
+
 import React from "react";
+
+// ============== MUI Imports ==============
+
+import { Box } from "@mui/material";
+
+// ============== Custom Components Imports ==============
+
 import Paragraph from "../../../../../../../Common/Paragraph";
 
 function AboutDepartment() {

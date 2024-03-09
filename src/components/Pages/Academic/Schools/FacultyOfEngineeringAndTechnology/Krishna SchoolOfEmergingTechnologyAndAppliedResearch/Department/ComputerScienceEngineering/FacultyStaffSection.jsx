@@ -163,7 +163,7 @@ function FacultyStaffSection() {
       designation: "Assistant Professor",
       experience: 7,
       qualification: "M.E || B.E - COMPUTER ENGINEERING",
-      customLink: "",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
   ];
 

@@ -5,7 +5,7 @@ const AppContext = createContext();
 function AppProvider({ children }) {
   const [someValue, setSomeValue] = useState([]);
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
-  const maxWidth = { maxWidth: "1440px", mx: "auto" };
+  const maxWidth = { maxWidth: "1540px", mx: "auto" };
 
   useEffect(() => {
     window.onresize = () => {

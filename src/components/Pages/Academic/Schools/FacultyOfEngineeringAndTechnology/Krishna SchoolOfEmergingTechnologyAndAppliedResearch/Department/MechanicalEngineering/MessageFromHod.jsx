@@ -23,11 +23,6 @@ function MessageFromHod() {
           "If you have further questions after browsing this website, please do not hesitate to contact us. You may also correspond with individual faculty members, or contact them by email, using the addresses shown on the faculty page. Our department looks forward to contribute in solving the technological challenges of society with active participation from all sections of the society. I wish to take the opportunity to assure you that I will try my best to maximize student’s participation in the department and will keep the admin transparent.",
         ]}
       />
-      {/* <Quote
-        quote={
-          "With the idea that mentoring is a lifetime commitment, we motivate students to achieve academic excellence with valuable life lessons"
-        }
-      /> */}
     </>
   );
 }

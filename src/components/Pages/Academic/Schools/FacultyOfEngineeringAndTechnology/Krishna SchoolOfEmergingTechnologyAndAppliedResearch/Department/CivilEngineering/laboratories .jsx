@@ -1,15 +1,8 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Box,
-  Grid,
-  Stack,
-} from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Grid, Stack } from "@mui/material";
 import { ExpandLessRounded } from "@mui/icons-material";
 
-function ComputerLab() {
+function Laboratories() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -34,6 +27,7 @@ function ComputerLab() {
     "Models of different types of staircases",
     "Models of road culvert with single arch and box types, railway culvert, cloverleaf junction, cross section of national highway, subsurface drainage, foundation, pneumatic caisson etc.",
   ];
+
   const MaterialTestingLab = [
     "Universal force table",
     "Various lifting machines",
@@ -804,4 +798,4 @@ function ComputerLab() {
   );
 }
 
-export default ComputerLab;
+export default Laboratories;

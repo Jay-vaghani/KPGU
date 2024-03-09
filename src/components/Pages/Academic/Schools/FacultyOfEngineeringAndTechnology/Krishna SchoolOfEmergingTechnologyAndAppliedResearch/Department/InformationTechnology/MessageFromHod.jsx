@@ -23,11 +23,6 @@ function MessageFromHod() {
           "It will be our responsibility to provide you with excellent education, we expect from you to work hard and run that extra mile to achieve grand academic and personal success.",
         ]}
       />
-      {/* <Quote
-        quote={
-          "With the idea that mentoring is a lifetime commitment, we motivate students to achieve academic excellence with valuable life lessons"
-        }
-      /> */}
     </>
   );
 }

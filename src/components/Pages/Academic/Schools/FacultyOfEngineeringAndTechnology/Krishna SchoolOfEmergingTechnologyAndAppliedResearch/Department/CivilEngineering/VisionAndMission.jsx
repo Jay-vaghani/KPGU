@@ -1,9 +1,19 @@
-import { Box, Stack } from "@mui/material";
+// ============== React Imports ==============
+
 import React from "react";
+
+// ============== MUI Imports ==============
+
+import { Box, Stack } from "@mui/material";
 import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
+
+// ============== Custom Components Imports ==============
+
 import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
+
+
   const MissionList = [
     "Produce professionally brilliant and motivated Engineers in the field of Civil Engineering",
     "Undertake developmental research, consultancy and technical interaction with industry",
@@ -13,6 +23,8 @@ function VisionAndMission() {
 
   return (
     <>
+      {/* ================================ Vision Section ================================ */}
+
       <Box borderRadius={4} className="smooth-shadow-card p-3">
         <h2 className="fw-bold color-secondary fs-1">Vision</h2>
         <Quote
@@ -22,6 +34,9 @@ function VisionAndMission() {
           right={true}
         />
       </Box>
+
+      {/* ================================ Mission Section ================================ */}
+
       <Box mt={7} borderRadius={4} className="smooth-shadow-card p-3">
         <h2 className="fw-bold color-secondary fs-1 mb-4">Mission</h2>
         <Box pl={2} color={"secondary.main"}>

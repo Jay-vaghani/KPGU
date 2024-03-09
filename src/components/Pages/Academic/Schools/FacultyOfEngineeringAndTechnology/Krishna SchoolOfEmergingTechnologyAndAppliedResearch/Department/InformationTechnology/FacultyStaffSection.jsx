@@ -47,6 +47,14 @@ function FacultyStaffSection() {
       qualification: "M.E[Cyber Security] || B.E[I.T]",
       customLink: "",
     },
+    {
+      name: "Ms. Jayshree Ranoliya",
+      imgNo: "=",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.E[I.T] || B.E[I.T]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
   ];
 
   return (

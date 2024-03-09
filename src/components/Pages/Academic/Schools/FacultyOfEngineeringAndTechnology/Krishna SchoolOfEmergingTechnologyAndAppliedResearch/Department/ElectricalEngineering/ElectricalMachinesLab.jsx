@@ -1,4 +1,9 @@
+// ============== React Imports ==============
+
 import React from "react";
+
+// ============== MUI Imports ==============
+
 import { Box, Grid } from "@mui/material";
 
 function ElectricalMachinesLab() {
@@ -9,6 +14,15 @@ function ElectricalMachinesLab() {
         "To enable students, understand the operation of semiconductor devices and power electronics converters, the laboratory is equipped with experimental set-ups where students are exposed to design-based experiments. The laboratory also enables students to carry out UG projects effectively.",
         "Thyristor converters, DC chopper modules, power devices such as Thyristors, Power MOSFETs, IGBTs of various voltage and current ratings, Opto-Isolators, Pulse transformers and other related commutating components are there in the laboratory.",
         "A Number of modules of AC-DC converters, voltage controllers – single phase as well as three phase, DC chopper units and inverters using Power MOSFETs and IGBTs, solid state soft start units for three phase induction motors have been built in the last five years as project works of UG students.",
+      ],
+      img: "",
+    },
+    {
+      title: "ELECTRICAL MEASUREMENT AND INSTRUMENTATION LABORATORY",
+      des: [
+        "This is the lab which is very important for the basic knowledge about the various instruments with facilities for the group of 20 students to carry out experiments independently.",
+        "The lab is equipped with latest technologies in electrical measurement and instrumentation such as Kelvin Bridges, Wheatstone’s bridges, energy meters, digital multi meters, etc. It ensures that the students become experts in practical knowledge related to electrical measurement process under the guidance of faculty members from the Department of Electrical Engineering. The lab is well equipped and enables students to understand the fundamentals of various measuring instruments.",
+        "Major Equipment in Measurement and instrumentation Lab areLVDT(Linear Variable differential transformer), Thermocouple, pressure gauge, Resistance strain gauge etc.",
       ],
       img: "",
     },
@@ -28,11 +42,9 @@ function ElectricalMachinesLab() {
       img: "",
     },
     {
-      title: "ELECTRICAL MEASUREMENT AND INSTRUMENTATION LABORATORY",
+      title: "ELECTRICAL WORKSHOP LAB",
       des: [
-        "This is the lab which is very important for the basic knowledge about the various instruments with facilities for the group of 20 students to carry out experiments independently.",
-        "The lab is equipped with latest technologies in electrical measurement and instrumentation such as Kelvin Bridges, Wheatstone’s bridges, energy meters, digital multi meters, etc. It ensures that the students become experts in practical knowledge related to electrical measurement process under the guidance of faculty members from the Department of Electrical Engineering. The lab is well equipped and enables students to understand the fundamentals of various measuring instruments.",
-        "Major Equipment in Measurement and instrumentation Lab areLVDT(Linear Variable differential transformer), Thermocouple, pressure gauge, Resistance strain gauge etc.",
+        "The workshop is used for course introduction to electrical engineering. Here the students are given hands on training in electrical wirings. They are given a basic idea about the operation and power consumption of certain electrical appliances such are mixtures, iron box, pumps, fan etc. Students are familiarized with supply arrangements and their limitations, knowledge of standard voltages and their tolerances, safety aspects of electrical systems and importance of protective measures in wiring systems, knowledge about the types of wires, cables and other accessories used in wiring. Students are able to wire simple lighting circuits for domestic buildings and distinguish between light and power circuits and to measure electrical circuit parameters and current, voltage and power in a circuit.",
       ],
       img: "",
     },
@@ -43,13 +55,7 @@ function ElectricalMachinesLab() {
       ],
       img: "",
     },
-    {
-      title: "ELECTRICAL WORKSHOP LAB",
-      des: [
-        "The workshop is used for course introduction to electrical engineering. Here the students are given hands on training in electrical wirings. They are given a basic idea about the operation and power consumption of certain electrical appliances such are mixtures, iron box, pumps, fan etc. Students are familiarized with supply arrangements and their limitations, knowledge of standard voltages and their tolerances, safety aspects of electrical systems and importance of protective measures in wiring systems, knowledge about the types of wires, cables and other accessories used in wiring. Students are able to wire simple lighting circuits for domestic buildings and distinguish between light and power circuits and to measure electrical circuit parameters and current, voltage and power in a circuit.",
-      ],
-      img: "",
-    },
+
   ];
 
   const LabListComponent = ({ title, img, des }) => (
@@ -74,7 +80,7 @@ function ElectricalMachinesLab() {
   return (
     <>
       <Box borderRadius={4}>
-        <h2 className="fw-bold color-secondary fs-1 mb-4">Software Labs</h2>
+        <h2 className="fw-bold color-secondary fs-1 mb-4">Electrical Machines  Labs</h2>
         <Grid container spacing={2}>
           {LabList.map(({ title, des, img }, index) => (
             <LabListComponent title={title} des={des} img={img} key={index} />

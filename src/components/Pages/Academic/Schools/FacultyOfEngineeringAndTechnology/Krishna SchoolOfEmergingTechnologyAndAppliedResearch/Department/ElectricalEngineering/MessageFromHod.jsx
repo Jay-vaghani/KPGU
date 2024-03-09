@@ -1,7 +1,5 @@
-import { Box } from "@mui/material";
 import React, { useContext } from "react";
 import { AppContext } from "../../../../../../../../contexts/AppContext";
-import Quote from "../../../../../../../Common/Quote";
 import HODMessage from "../../../../../../../Common/HODMessage";
 
 function MessageFromHod() {
@@ -21,11 +19,6 @@ function MessageFromHod() {
           "An Electrical Engineer is an all-rounder required in all the industries, PSUs, Urban or Rural administrative agencies. The branch is one of the most popular for those seeking the government jobs. The latest trends in EV, Battery technologies, Solar, Wind, Industrial Automation, Robotics are offering excellent opportunities to an Electrical Engineer in addition to old and ever popular career options. This has resulted in the department boasting highly proficient electrical engineers among its alumni who are contributing towards building a brighter future for our society and nation.",
         ]}
       />
-      {/* <Quote
-        quote={
-          "With the idea that mentoring is a lifetime commitment, we motivate students to achieve academic excellence with valuable life lessons"
-        }
-      /> */}
     </>
   );
 }

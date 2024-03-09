@@ -1,12 +1,29 @@
+// ============== React Imports ==============
+
 import React, { useContext } from "react";
 import { AppContext } from "../../../../../../../../contexts/AppContext";
+
+// ============== MUI Imports ==============
+
 import { Box, Grid } from "@mui/material";
+
+// ============== Custom Components Imports ==============
+
 import FacultyStaff from "../../../../../../../Common/FacultyStaff";
 
 function FacultyStaffSection() {
   const { maxWidth } = useContext(AppContext);
 
+  // ============== Faculties ==============
   const Faculties = [
+    {
+      name: "Dr. Samir H. Patel",
+      imgNo: "6013",
+      designation: "Associate Professor || Head",
+      experience: 14,
+      qualification: "Ph.D || M.E[Power System] || B.E[Electrical]",
+      customLink: "",
+    },
     {
       name: "Vijay Bharat Desle",
       imgNo: "6015",
@@ -24,6 +41,14 @@ function FacultyStaffSection() {
       qualification:
         "PhD [Pursuing] || M.TECH[Power System] || MBA[MARKETING] || B.E[ELECTRICAL]",
       customLink: "",
+    },
+    {
+      name: "Divyesh Vasava",
+      imgNo: "",
+      designation: "Assistant Professor",
+      experience: 3,
+      qualification: "M.TECH[Power System]  B.E[ELECTRICAL]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
   ];
 

@@ -1,15 +1,26 @@
+// ============== React Imports ==============
+
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Button, Grid, Tab } from "@mui/material";
-import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
-import DirectorsMessage from "../../../../../Common/DirectorsMessage";
+
+// ============== MUI Imports ==============
+
+import { Box, Grid, Tab } from "@mui/material";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
-import ProgramCard from "../../../../../Common/ProgramCard";
-import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+
+// ============== React Router Imports ==============
+
 import { useNavigate } from "react-router-dom";
 
+// ============== Custom Components Imports ==============
+
+import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
+import DirectorsMessage from "../../../../../Common/DirectorsMessage";
+import ProgramCard from "../../../../../Common/ProgramCard";
+import AnnouncementCard from "../../../../../Common/AnnouncementCard";
+
 function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
-  const { maxWidth, innerWidth } = useContext(AppContext);
+  const { maxWidth } = useContext(AppContext);
   const navigate = useNavigate();
 
   const [programValue, programValueSetValue] = useState("1");
@@ -23,6 +34,9 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  // ============== Department List ==============
+
 
   const DepartmentList = [
     {
@@ -52,6 +66,7 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
     },
   ];
 
+  // ============== Programs ==============
 
   const UG = [
     {
@@ -196,6 +211,9 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
 
   return (
     <>
+
+      {/* ================================ Nav Bar Section ================================ */}
+
       <TabContext value={value}>
         <Box
           className="smooth-shadow"
@@ -246,6 +264,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         </Box>
       </TabContext>
 
+      {/* ================================ Director Message Section ================================ */}
+
       <div style={{ padding: "80px 0 0 0" }} id="director-message">
         <Box
           maxWidth={maxWidth}
@@ -277,6 +297,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
         </Box>
       </div>
 
+      {/* ================================ Department Section ================================ */}
+
       <div style={{ padding: "80px 0 0 0" }} id="department">
         <Box
           maxWidth={maxWidth}
@@ -299,6 +321,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
           </Grid>
         </Box>
       </div>
+
+      {/* ================================ Program Section ================================ */}
 
       <div style={{ padding: "80px 0 0 0" }} id="program">
         <Box
@@ -393,6 +417,8 @@ function KrishnaSchoolOfEmergingTechnologyAndAppliedResearch() {
           </TabContext>
         </Box>
       </div>
+
+      {/* ================================ Announcements Section ================================ */}
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box

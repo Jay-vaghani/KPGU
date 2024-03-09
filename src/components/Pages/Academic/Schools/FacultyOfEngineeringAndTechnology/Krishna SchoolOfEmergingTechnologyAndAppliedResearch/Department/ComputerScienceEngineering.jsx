@@ -1,14 +1,22 @@
+// ============== React Imports ==============
+
 import React, { useContext } from "react";
-import { Box, Grid, Stack, Tab } from "@mui/material";
 import { AppContext } from "../../../../../../../contexts/AppContext";
+
+// ============== MUI Imports ==============
+
+import { Box, Grid, Tab } from "@mui/material";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
+
+// ============== Custom Components Imports ==============
+
 import MessageFromHod from "./ComputerScienceEngineering/MessageFromHod";
 import AboutDepartment from "./ComputerScienceEngineering/AboutDepartment";
+import VisionAndMission from "./ComputerScienceEngineering/VisionAndMission";
 import HonorsMinorsOfferedBroadly from "./ComputerScienceEngineering/HonorsMinorsOfferedBroadly";
 import ComputerLab from "./ComputerScienceEngineering/ComputerLab";
 import ResearchAreas from "./ComputerScienceEngineering/ResearchAreas";
 import FacultyStaffSection from "./ComputerScienceEngineering/FacultyStaffSection";
-import VisionAndMission from "./ComputerScienceEngineering/VisionAndMission";
 
 function ComputerScienceEngineering() {
   const { maxWidth, innerWidth } = useContext(AppContext);
@@ -21,7 +29,6 @@ function ComputerScienceEngineering() {
 
   return (
     <>
-      
       <TabContext value={value}>
         <Grid container maxWidth={maxWidth} mx={"auto"} mt={7}>
           <Grid item xs={12} md={3} pb={4}>

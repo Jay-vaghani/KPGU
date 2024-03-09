@@ -1,11 +1,13 @@
-import { Box } from "@mui/material";
-import React, { useContext } from "react";
-import { AppContext } from "../../../../../../../../contexts/AppContext";
+// ============== React Imports ==============
+
+import React from "react";
+
+// ============== Custom Components Imports ==============
+
 import Quote from "../../../../../../../Common/Quote";
 import HODMessage from "../../../../../../../Common/HODMessage";
 
 function MessageFromHod() {
-  const { maxWidth } = useContext(AppContext);
   return (
     <>
       <HODMessage

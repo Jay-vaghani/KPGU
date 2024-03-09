@@ -1,6 +1,14 @@
-import { Box, Stack } from "@mui/material";
+// ============== React Imports ==============
+
 import React from "react";
+
+// ============== MUI Imports ==============
+
+import { Box, Stack } from "@mui/material";
 import { KeyboardDoubleArrowRightRounded } from "@mui/icons-material";
+
+// ============== Custom Components Imports ==============
+
 import Quote from "../../../../../../../Common/Quote";
 
 function VisionAndMission() {
