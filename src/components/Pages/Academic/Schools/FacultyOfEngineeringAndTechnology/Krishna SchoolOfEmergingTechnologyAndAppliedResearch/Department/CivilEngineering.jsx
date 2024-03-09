@@ -87,7 +87,7 @@ function CivilEngineering() {
                 <VisionAndMission />
               </TabPanel>
               <TabPanel value="4">
-                <Laboratories />
+                <CivilLaboratories />
               </TabPanel>
               <TabPanel value="5">
                 <FacultyStaffSection />
