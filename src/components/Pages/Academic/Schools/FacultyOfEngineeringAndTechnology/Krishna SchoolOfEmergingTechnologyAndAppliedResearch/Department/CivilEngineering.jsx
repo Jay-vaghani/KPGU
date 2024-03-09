@@ -13,7 +13,7 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import MessageFromHod from "./CivilEngineering/MessageFromHod";
 import AboutDepartment from "./CivilEngineering/AboutDepartment";
 import VisionAndMission from "./CivilEngineering/VisionAndMission";
-import Laboratories from "./CivilEngineering/Laboratories ";
+import CivilLaboratories from "./CivilEngineering/CivilLaboratoriesLaboratories ";
 import FacultyStaffSection from "./CivilEngineering/FacultyStaffSection";
 
 function CivilEngineering() {
