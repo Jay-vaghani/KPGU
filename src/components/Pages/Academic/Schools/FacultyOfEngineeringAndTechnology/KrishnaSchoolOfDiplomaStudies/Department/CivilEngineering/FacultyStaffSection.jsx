@@ -8,29 +8,55 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
-      name: "Mr. Ankit N Patel",
-      imgNo: "6110",
-      designation: "Assistant Professor",
-      experience: 13,
-      qualification: "M.Tech[CPM] || B.E[Civil]",
+      name: "Komal Ketan Dave",
+      imgNo: "",
+      designation: "HOD[Civil Engineering] || Assistant Professor",
+      experience: 17,
+      qualification: "",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707473959/KPGU/Faculty%20Images/KSET/6024.webp",
+    },
+    {
+      name: "Jaynika Vasava",
+      imgNo: "6077",
+      designation: "Lecturer",
+      experience: 4,
+      qualification: "",
       customLink: "",
     },
     {
-      name: "Mithileshdatta Pandya",
-      imgNo: "6052",
+      name: "Hiral U Purohit",
+      imgNo: "6074",
       designation: "Assistant Professor",
-      experience: 11,
-      qualification: "Ph.D[Pursuing-Civil] || M.E[CASAD] || B.E[Civil]",
+      experience: 14,
+      qualification: "",
       customLink: "",
     },
     {
-      name: "Mr. Ravi S. Patel",
-      imgNo: "6090",
+      name: "Chirag R Shindhav",
+      imgNo: "6073",
+      designation: "Assistant Professor",
+      experience: 15,
+      qualification: "",
+      customLink: "",
+    },
+    {
+      name: "Ekta Mishra",
+      imgNo: "",
       designation: "Assistant Professor",
       experience: 9,
-      qualification: "M.E in Civil Engineering",
-      customLink: "",
+      qualification: "M.Tech[Structural Design]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
+    {
+      name: "Snehal M Bhoi",
+      imgNo: "",
+      designation: "Assistant Professor",
+      experience: 2,
+      qualification: "M.Tech[Transportation  Engineering]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+
+
   ];
 
   return (
@@ -47,7 +73,7 @@ function FacultyStaffSection() {
               designation={designation}
               experience={experience}
               key={index}
-              facultyName={"KSET"}
+              facultyName={"KSDS"}
               imgNo={imgNo}
               MainLink={
                 "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707801651/KPGU/Faculty%20Images/"

@@ -40,47 +40,7 @@ function GoverningBody() {
               with State Government
             </h6>
           </Box>
-          <Stack
-            direction={innerWidth < 345 ? "column" : "row"}
-            p={2}
-            pt={1}
-            spacing={1}
-            width={"100%"}
-          >
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<MarkEmailReadTwoTone />}
-              href="mailto:pstopresident@kpgu.edu.in"
-            >
-              mail
-            </Button>
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<PhoneTwoTone />}
-              href="tel:7861805193"
-            >
-              <Box
-                display={{
-                  xs: "none",
-                  sm: "block",
-                }}
-              >
-                <Typography variant="body2">7861805193</Typography>
-              </Box>
-              <Box
-                display={{
-                  xs: "block",
-                  sm: "none",
-                }}
-              >
-                call button
-              </Box>
-            </Button>
-          </Stack>
+          
         </Box>
       </Grid>
       {/* ======================================================== Shrimati Kamalben J. Patel ======================================================== */}
@@ -115,47 +75,7 @@ function GoverningBody() {
             <h5 className="fw-semibold mb-0 mt-3">Constituency</h5>
             <h6>Member Nominated by the Sponsoring Body</h6>
           </Box>
-          <Stack
-            direction={innerWidth < 345 ? "column" : "row"}
-            p={2}
-            pt={1}
-            spacing={1}
-            width={"100%"}
-          >
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<MarkEmailReadTwoTone />}
-              href="mailto:patovp@kpgu.edu.in"
-            >
-              mail
-            </Button>
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<PhoneTwoTone />}
-              href="tel:7861805193"
-            >
-              <Box
-                display={{
-                  xs: "none",
-                  sm: "block",
-                }}
-              >
-                <Typography variant="body2">7861805193</Typography>
-              </Box>
-              <Box
-                display={{
-                  xs: "block",
-                  sm: "none",
-                }}
-              >
-                call button
-              </Box>
-            </Button>
-          </Stack>
+          
         </Box>
       </Grid>
       {/* ======================================================== Shri Dhruvkumar J. Patel ======================================================== */}
@@ -190,47 +110,7 @@ function GoverningBody() {
             <h5 className="fw-semibold mb-0 mt-3">Constituency</h5>
             <h6>Member Nominated by the Sponsoring Body</h6>
           </Box>
-          <Stack
-            direction={innerWidth < 345 ? "column" : "row"}
-            p={2}
-            pt={1}
-            spacing={1}
-            width={"100%"}
-          >
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<MarkEmailReadTwoTone />}
-              href="mailto:gbm4@kpgu.edu.in"
-            >
-              mail
-            </Button>
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<PhoneTwoTone />}
-              href="tel:7861805195"
-            >
-              <Box
-                display={{
-                  xs: "none",
-                  sm: "block",
-                }}
-              >
-                <Typography variant="body2">7861805195</Typography>
-              </Box>
-              <Box
-                display={{
-                  xs: "block",
-                  sm: "none",
-                }}
-              >
-                call button
-              </Box>
-            </Button>
-          </Stack>
+          
         </Box>
       </Grid>
       {/* ======================================================== Shri Krishna J. Patel ======================================================== */}
@@ -265,47 +145,7 @@ function GoverningBody() {
               Eminent Educationists [Member Nominated by the Sponsoring Body]
             </h6>
           </Box>
-          <Stack
-            direction={innerWidth < 345 ? "column" : "row"}
-            p={2}
-            pt={1}
-            spacing={1}
-            width={"100%"}
-          >
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<MarkEmailReadTwoTone />}
-              href="mailto:gbm1@kpgu.edu.in"
-            >
-              mail
-            </Button>
-            <Button
-              variant="contained"
-              disableElevation
-              color="secondary"
-              startIcon={<PhoneTwoTone />}
-              href="tel:7861805195"
-            >
-              <Box
-                display={{
-                  xs: "none",
-                  sm: "block",
-                }}
-              >
-                <Typography variant="body2">7861805195</Typography>
-              </Box>
-              <Box
-                display={{
-                  xs: "block",
-                  sm: "none",
-                }}
-              >
-                call button
-              </Box>
-            </Button>
-          </Stack>
+          
         </Box>
       </Grid>
     </Grid>

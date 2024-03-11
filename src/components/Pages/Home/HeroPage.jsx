@@ -5,7 +5,7 @@ import { Box, Grid, Stack } from "@mui/material";
 import { AppContext } from "../../../contexts/AppContext";
 
 function HeroPage() {
-  const { maxWidth } = useContext(AppContext);
+  const { maxWidth, innerWidth } = useContext(AppContext);
   return (
     <Swiper
       spaceBetween={30}
@@ -28,8 +28,8 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 30%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1709961948/KPGU/Banners/banner-1.webp') top / cover",
-          height: "87vh",
+            "linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1709961948/KPGU/Banners/banner-1.webp') center / cover",
+          height: innerWidth < 768 ? "60vh" : "87vh",
         }}
       >
         <Grid
@@ -39,12 +39,12 @@ function HeroPage() {
           direction={"row"}
           p={"3%"}
           height={"100%"}
-          alignItems={"end"}
           alignContent={"center"}
           justifyContent={"space-between"}
         >
-          <Grid item xs={12} md={6}>
-            <h1 className="display-4 fw-medium text-white ">Empowering Tomorrow's Pioneers: Join KPGU's Pathway to Global Academic Excellence!</h1>
+          <Grid item xs={12} md={7}>
+            <h1 className="display-6 text-white" style={{ fontWeight: 900 }}>Empowering Tomorrow's Pioneers </h1>
+            <h1 className="display-4  text-white " style={{ fontWeight: 700 }}>Join KPGU's Pathway to Global Academic Excellence!</h1>
           </Grid>
         </Grid>
       </SwiperSlide>

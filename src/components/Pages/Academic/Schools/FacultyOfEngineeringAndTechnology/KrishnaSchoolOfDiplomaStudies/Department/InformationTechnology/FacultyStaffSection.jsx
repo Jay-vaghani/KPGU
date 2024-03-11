@@ -23,7 +23,39 @@ function FacultyStaffSection() {
       qualification: "B.tech || M.Tech[CSE-Pursuing]",
       customLink: "",
     },
-   
+    {
+      name: "Rahulkumar Shiyani",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[CSE]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Yash Ramesh Donga",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[CSE]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Akash Vir",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.Tech || M.Tech[CSE-Pursuing]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Bhumi Vaja",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[CE]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+
   ];
 
   return (

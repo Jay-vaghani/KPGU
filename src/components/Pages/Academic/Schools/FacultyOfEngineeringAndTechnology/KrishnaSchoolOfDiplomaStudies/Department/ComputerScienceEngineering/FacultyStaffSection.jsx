@@ -8,6 +8,14 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
+      name: "Pratik N Patel",
+      imgNo: "",
+      designation: "Assistant Professor || HOD[CSE-IT-AIML-CCBD]",
+      experience: 9,
+      qualification: "B.Tech || M.Tech",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707473964/KPGU/Faculty%20Images/KSET/6037.webp",
+    },
+    {
       name: "Helly Patel",
       imgNo: "6079",
       designation: "Lecturer",
@@ -23,6 +31,71 @@ function FacultyStaffSection() {
       qualification: "B.Tech || M.Tech[CSE-Pursuing]",
       customLink: "",
     },
+    {
+      name: "Kachhiya Janvi",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.Tech",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Yachana Patel",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[COMPUTER SCIENCE & ENGINEERING]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Dhrupa Patel",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[COMPUTER SCIENCE & ENGINEERING]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Jay Prajapati",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[CSE]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Rutvij Upadhyay",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.Tech || M.Tech[CSE-Pursuing]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Nisha Parmar",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.Tech || M.Tech[CSE-Pursuing]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Vanshika Patel",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[CSE]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    {
+      name: "Dharna Patel",
+      imgNo: "",
+      designation: "Lecturer",
+      experience: 1,
+      qualification: "B.E[CSE]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+    
   ];
 
   return (

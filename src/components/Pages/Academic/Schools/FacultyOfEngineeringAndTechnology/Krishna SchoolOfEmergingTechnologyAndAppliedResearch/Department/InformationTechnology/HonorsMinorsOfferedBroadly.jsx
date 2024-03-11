@@ -13,7 +13,7 @@ function HonorsMinorsOfferedBroadly() {
     },
     {
       title: "Data Science",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1708580600/KPGU/Images/Institutions/KSET/methodologies-and-testing.webp",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710150095/KPGU/Images/Institutions/KSET/data-science.jpg",
     },
   ];
 

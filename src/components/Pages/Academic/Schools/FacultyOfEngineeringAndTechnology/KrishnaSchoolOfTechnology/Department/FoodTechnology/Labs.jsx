@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
 
-function ComputerLab() {
+function Labs() {
   const LabList = [
     {
       title: "Data Structure and Algorithms Lab",
@@ -90,4 +90,4 @@ function ComputerLab() {
   );
 }
 
-export default ComputerLab;
+export default Labs;

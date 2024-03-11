@@ -51,7 +51,14 @@ function ElectricalMachinesLab() {
     {
       title: "MICROPROCESSOR LABORATORY",
       des: [
-        "This laboratory will introduce students to get familiar with the architecture and basic operations of microcontroller and microprocessor. It provides in-depth knowledge of Software and hardware experiments with a microprocessor and controller system. It also deals with assembly language programming, simple input/output interfacing, and interrupt processing in microprocessor and micro controller systems.",
+        "This laboratory will introduce students to get familiar with the architecture and basic operations of micro controller and microprocessor. It provides in-depth knowledge of Software and hardware experiments with a microprocessor and controller system. It also deals with assembly language programming, simple input/output interfacing, and interrupt processing in microprocessor and micro controller systems.",
+      ],
+      img: "",
+    },
+    {
+      title: "Machines Lab",
+      des: [
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, accusantium? Aliquid placeat, tempora atque ullam ex totam sit officia est illum molestias mollitia ratione a corporis alias blanditiis saepe et?",
       ],
       img: "",
     },
@@ -60,6 +67,7 @@ function ElectricalMachinesLab() {
 
   const LabListComponent = ({ title, img, des }) => (
     <Grid item xs={12} sm={6} >
+      
       <Box
         className="smooth-shadow-card h-100"
         borderRadius={4}

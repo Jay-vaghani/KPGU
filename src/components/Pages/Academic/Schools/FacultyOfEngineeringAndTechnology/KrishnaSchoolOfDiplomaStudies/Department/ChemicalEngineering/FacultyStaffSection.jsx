@@ -8,29 +8,22 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
-      name: "Mr. Ankit N Patel",
-      imgNo: "6110",
-      designation: "Assistant Professor",
-      experience: 13,
-      qualification: "M.Tech[CPM] || B.E[Civil]",
-      customLink: "",
-    },
-    {
-      name: "Mithileshdatta Pandya",
-      imgNo: "6052",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "Ph.D[Pursuing-Civil] || M.E[CASAD] || B.E[Civil]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Ravi S. Patel",
-      imgNo: "6090",
-      designation: "Assistant Professor",
+      name: "Jimit H. Kansara",
+      imgNo: "",
+      designation: "HOD-Chemical || Lecturer",
       experience: 9,
-      qualification: "M.E in Civil Engineering",
-      customLink: "",
+      qualification: "B.E[Chemical]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
+    {
+      name: "YagneshKumar Alkeshbhai Vyas",
+      imgNo: "",
+      designation: "Assistant professor ",
+      experience: 9,
+      qualification: "PhD[Pursuing] || M.sc[Chemistry]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+
   ];
 
   return (

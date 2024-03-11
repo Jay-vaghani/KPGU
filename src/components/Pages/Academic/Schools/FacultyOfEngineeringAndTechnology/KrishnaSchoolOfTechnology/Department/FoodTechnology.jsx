@@ -5,13 +5,11 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 
 import MessageFromHod from "./FoodTechnology/MessageFromHod";
 import AboutDepartment from "./FoodTechnology/AboutDepartment";
-import HonorsMinorsOfferedBroadly from "./FoodTechnology/HonorsMinorsOfferedBroadly";
-import ComputerLab from "./FoodTechnology/ComputerLab";
-import ResearchAreas from "./FoodTechnology/ResearchAreas";
+import ComputerLab from "./FoodTechnology/Labs";
 import FacultyStaffSection from "./FoodTechnology/FacultyStaffSection";
 import VisionAndMission from "./FoodTechnology/VisionAndMission";
 
-function InformationTechnology() {
+function FoodTechnology() {
   const { maxWidth, innerWidth } = useContext(AppContext);
 
   const [value, setValue] = React.useState("1");
@@ -128,21 +126,13 @@ function InformationTechnology() {
                   label="Vision And Mission"
                   value="3"
                 />
-                <Tab
-                  className="align-items-start fw-bold text-start "
-                  label="Honors - Minors Offered Broadly"
-                  value="4"
-                />
+               
                 <Tab
                   className="align-items-start fw-bold text-start "
                   label="Computer Labs"
                   value="5"
                 />
-                <Tab
-                  className="align-items-start fw-bold text-start "
-                  label="Research Areas"
-                  value="6"
-                />
+              
                 <Tab
                   className="align-items-start fw-bold text-start "
                   label="Faculty"
@@ -162,15 +152,11 @@ function InformationTechnology() {
               <TabPanel value="3">
                 <VisionAndMission />
               </TabPanel>
-              <TabPanel value="4">
-                <HonorsMinorsOfferedBroadly />
-              </TabPanel>
+             
               <TabPanel value="5">
                 <ComputerLab />
               </TabPanel>
-              <TabPanel value="6">
-                <ResearchAreas />
-              </TabPanel>
+             
               <TabPanel value="7">
                 <FacultyStaffSection />
               </TabPanel>
@@ -182,4 +168,4 @@ function InformationTechnology() {
   );
 }
 
-export default InformationTechnology;
+export default FoodTechnology;

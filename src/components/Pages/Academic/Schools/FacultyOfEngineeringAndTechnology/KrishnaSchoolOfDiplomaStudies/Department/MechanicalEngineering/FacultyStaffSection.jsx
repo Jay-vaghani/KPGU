@@ -8,48 +8,40 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
-      name: "Mr. Pratikkumar Rameshbhai Patel",
-      imgNo: "5995",
-      designation: "Assistant Professor",
-      experience: 14,
-      qualification: "M.E[Thermal Engineering] || B.E[Mechanical Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Mr. Ankur P. Patel",
-      imgNo: "6002",
-      designation: "Assistant Professor",
-      experience: 12,
-      qualification: "M.E[Machine Design] || B.E[Mechanical Engineering]",
-      customLink: "",
-    },
-    {
-      name: "Mr Mandar Sumant",
-      imgNo: "5998",
-      designation: "Assistant Professor",
+      name: "Pritesh Ratilal Patel",
+      imgNo: "5997",
+      designation: "Assistant Professor || HOD- Mechanical",
       experience: 18,
-      qualification:
-        "PhD[Mechanical-Pursuing] || M.E[Advance Mfg Systems -Mechanical] || B.E[Mechanical]",
+      qualification: "PhD [Pursuing] || M.E[Advance Manufacturing Systems]",
       customLink: "",
     },
+
+
     {
-      name: "Mr Mehul A. Shah",
-      imgNo: "6006",
-      designation: "Assistant Professor",
+      name: "SUSHANT PRAJAPATI",
+      imgNo: "5993",
+      designation: "LECTURER",
       experience: 9,
-      qualification:
-        "PhD [Mechanical-Pursuing] || M.E[Thermal Engineering] || B.E[Mechanical Engineering]",
+      qualification: "M.E[THERMAL ENGINEERING]",
       customLink: "",
     },
     {
-      name: "Mr. Nilesh A. Patel",
-      imgNo: "5991",
-      designation: "Assistant Professor",
-      experience: 17,
-      qualification:
-        "M.E[Mechanical Engineering] || B.E[Production Engineering]",
+      name: "OZA VIKRAM GANPATLAL",
+      imgNo: "5994",
+      designation: "Lecturer",
+      experience: 20,
+      qualification: "M.E[CAD-CAM]",
       customLink: "",
     },
+    {
+      name: "Hemantkumar Benjamin Rathod",
+      imgNo: "",
+      designation: "Assistant Professor",
+      experience: 13,
+      qualification: "B.E[Mechanical] || M.E[Production Engg]",
+      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+    },
+
   ];
 
   return (
@@ -66,7 +58,7 @@ function FacultyStaffSection() {
               designation={designation}
               experience={experience}
               key={index}
-              facultyName={"KSET"}
+              facultyName={"KSDS"}
               imgNo={imgNo}
               MainLink={
                 "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707801651/KPGU/Faculty%20Images/"
