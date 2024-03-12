@@ -29,6 +29,7 @@ function KrishnaSchoolOfPhysiotherapyAndRehabilitation() {
 
 
   const Faculties = [
+
     {
       name: "Dr. Paras Bhura",
       imgNo: "6096",
@@ -59,14 +60,6 @@ function KrishnaSchoolOfPhysiotherapyAndRehabilitation() {
       designation: "Assistant Professor",
       experience: 9,
       qualification: "MPT",
-      customLink: "",
-    },
-    {
-      name: "Dr. Priyanka Solanki, PT",
-      imgNo: "5865",
-      designation: "Assistant Professor",
-      experience: 6,
-      qualification: "MPT || Ph.D ",
       customLink: "",
     },
     {

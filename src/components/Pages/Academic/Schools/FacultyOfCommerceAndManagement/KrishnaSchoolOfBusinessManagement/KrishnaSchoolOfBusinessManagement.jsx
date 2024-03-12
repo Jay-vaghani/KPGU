@@ -31,10 +31,26 @@ function KrishnaSchoolOfBusinessManagement() {
   const Faculties = [
     {
       name: "Dr. Pinakin Jaiswal",
-      designation: "Assistant Professor || Director ",
+      designation: "Associate Professor || I/C Director ",
       experience: 24,
       imgNo: "6114",
       qualification: "PhD || MBA || BE",
+      customLink: "",
+    },
+    {
+      name: "Dr.Ritesh Amarsela",
+      designation: "Associate Professor-HOD",
+      experience: 22,
+      imgNo: "",
+      qualification: " PhD[Marketing] || MBA[Marketing] || M.com[Finance]",
+      customLink: "",
+    },
+    {
+      name: "Dr.Ritesh Amarsela",
+      designation: "Associate Professor || HOD ",
+      experience: 22,
+      imgNo: "",
+      qualification: " Ph.d Marketing || MBA Marketing || M.Com Finance ",
       customLink: "",
     },
     {
@@ -50,7 +66,7 @@ function KrishnaSchoolOfBusinessManagement() {
       designation: "Assistant Professor",
       experience: 8,
       imgNo: "6117",
-      qualification: "MBA",
+      qualification: "MBA HR",
       customLink: "",
     },
     {
@@ -61,6 +77,23 @@ function KrishnaSchoolOfBusinessManagement() {
       qualification: "MBA Marketing",
       customLink: "",
     },
+    {
+      name: "Ms. Bhakti Vyas",
+      designation: "Assistant Professor",
+      experience: 10,
+      imgNo: "",
+      qualification: "MBA HR",
+      customLink: "",
+    },
+    {
+      name: "Bhakti Vyas ",
+      designation: "Assistant Professor ",
+      experience: 10,
+      imgNo: "",
+      qualification: "MBA HR",
+      customLink: "",
+    },
+
   ];
 
   const UG = [

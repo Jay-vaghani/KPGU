@@ -27,7 +27,14 @@ function KrishnaSchoolOfSciences() {
 
   const Faculties = [
 
-
+    {
+      name: "Dr. Rita Mahapatra",
+      imgNo: "6220",
+      designation: "Assistant Professor[Senior grade] || HOD[Biotechnology]",
+      experience: 11,
+      qualification: "Ph.D || MPT",
+      customLink: "",
+    },
     {
       name: "Dr. Asha Joshi",
       imgNo: "6099",
@@ -78,15 +85,6 @@ function KrishnaSchoolOfSciences() {
       qualification: "Ph.D Microbiology",
       customLink: "",
     },
-
-    // {
-    //   name: "Dr. Priyanka Shinde ",
-    //   imgNo: "6221",
-    //   designation: "Assistant Professor",
-    //   experience: 8,
-    //   qualification: "M.Sc || Ph.D",
-    //   customLink: "",
-    // },
     {
       name: "Dr. Margi Patel",
       imgNo: "6222",

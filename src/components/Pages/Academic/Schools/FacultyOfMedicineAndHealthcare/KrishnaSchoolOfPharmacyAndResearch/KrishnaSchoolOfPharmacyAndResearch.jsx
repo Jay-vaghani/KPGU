@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../../../../../contexts/AppContext";
-import { Box, Button, Grid, Tab } from "@mui/material";
+import { Box, Button, Grid, Stack, Tab } from "@mui/material";
 import SchoolWelcomeSection from "../../../../../Common/SchoolWelcomeSection";
 import DirectorsMessage from "../../../../../Common/DirectorsMessage";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
@@ -9,6 +9,7 @@ import AnnouncementCard from "../../../../../Common/AnnouncementCard";
 import { useNavigate } from "react-router-dom";
 import FacultyStaff from "../../../../../Common/FacultyStaff";
 import Quote from "../../../../../Common/Quote";
+import { CalendarMonth } from "@mui/icons-material";
 
 function KrishnaSchoolOfPharmacyAndResearch() {
   const { maxWidth, innerWidth } = useContext(AppContext);
@@ -180,7 +181,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       designation: "Assistant Professor",
       experience: 10,
       qualification: "B.Pharm || M.Pharm",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710242754/KPGU/Faculty%20Images/KSP/mhicnr16mrn6bb1jy36f.webp",
     },
     {
       name: "Mrs.Parul Vasava",
@@ -188,7 +189,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       designation: "Assistant Professor",
       experience: 9,
       qualification: "Ph.D.|| M.Pharm || B.Pharm",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710242754/KPGU/Faculty%20Images/KSP/ewwjnwrukxfainqc0hce.webp",
     },
     {
       name: "Mr. Kuldeep Vinchurkar",
@@ -196,7 +197,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       designation: "Assistant Professor",
       experience: 11,
       qualification: "B.Pharm || M.Pharm",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710242754/KPGU/Faculty%20Images/KSP/uryrxvylzsqhphdbutot.webp",
     },
     {
       name: "Mr. Kaish Pathan",
@@ -204,7 +205,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       designation: "Assistant Professor",
       experience: 1,
       qualification: "B.Pharm || M.Pharm",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710242754/KPGU/Faculty%20Images/KSP/rpopgion1kwn5mpvat80.webp",
     },
 
 
@@ -361,16 +362,29 @@ function KrishnaSchoolOfPharmacyAndResearch() {
             dirImg={
               "https://res.cloudinary.com/dby2vbxv3/image/upload/v1709630941/KPGU/Faculty%20Images/KSP/dir-img.webp"
             }
-            dirEmail={"dir.ksds@kpgu.ac.in"}
+            dirEmail={"dir.ksp@kpgu.ac.in"}
             dirName={"Dr. Falgun A. Mehta"}
             dirOf={"Krishna School Of Pharmacy & Research"}
             dirOfShort={"[KSP]"}
             dirMessage={[
-              "The Drs. Kiran & Pallavi Patel Global University (KPGU), Vadodara’s constituent institute Krishna School Of Technology (KST) providing leadership in education and research with a specific focus on science and technology. The learning experiences at KST are rewarding, lasting, and fun. We are aware that only a supportive environment can foster creativity and propel individuals to greater heights of success in their endeavors. We have a dynamic environment that produces leading innovators, social scientists, professionals, business people, academicians, and thinkers of the future. The team must remain focused on attaining this goal despite short-term vicissitudes since the stakeholders’ emotional connection, shared faith, and trust are so strong.",
-              "We firmly believe that the quality of research will determine how educational institutions will look in the future. For a campus to remain alive, alumni and industry connections must be encouraged and strengthened. With adequate options for academic, co-curricular, and extracurricular activities and a steadfast focus on fostering the individual, we encourage multidisciplinary orientation.",
-              "I firmly believe that operating in silos will prevent an organization from succeeding. It is the culmination of the diligent efforts of each and every one of its members. We will be able to carve out a niche in pursuit of our vision and contribute to the development of the area and our motherland as visualized in National Education Policy 2020 with the help and commitment of qualified and experienced faculty members, supportive administration, and vibrant students, I am sure and confident.",
+              "The Pharmacist is a vital link in the entire healthcare chain. Pharmaceutical Science is a field of study and research which is very dynamic and leads to several avenues of work. The job and business opportunities for Pharma graduates are growing by leaps and bounds due to the remarkable growth and advancement in science and technology. COVID-19 has served to enforce the role of Pharma graduates and their research in management of this pandemic. Pharma graduates are in demand in India and in foreign countries.",
+              "KSP embarked on its journey in the field of pharmacy education in 2005 as Babaria Institute of Pharmacy which was affiliated to Gujarat University and then to Gujarat Technological University. We are now a constituent school of Drs. Kiran & Pallavi Patel Global University, Vadodara under its Faculty of Medicine and Healthcare (FM&H). We are approved u/s 12 by the Pharmacy Council of India. KSP offers Bachelor of Pharmacy course that is re-accredited by National Board of Accreditation (NBA) June 2025. Additionally, KSP offers Masters in Pharmacy in Pharmaceutical Quality Assurance, Pharmaceutics, Pharmaceutical Technology and Pharmacology. A Doctor of Philosophy (Ph. D) program is also offered in Pharmaceutical Sciences by the university.",
+              "The college has well-equipped laboratories and excellent infrastructure to assist  the students gain knowledge and learn the skills that would help them to face the global competition. Our classrooms are well equipped with Multimedia projector systems and a CPU with internet connectivity so that our faculty members can make use of the latest audio-visual mode of teaching. The modern state-of-art laboratories, instrumentation facilities, and central library facility in this organization are part of our school. Our medicinal garden has numerous genera of medicinal plants.",
+              "In addition to academic activity, our school and university has a culture to celebrate the festivals of India with zeal and fervor. Guest lectures, seminars, refresher courses, FDP’s, industrial trips are all part of the routine semester working. The NSS cell of KSP, KPGU are dedicated to the service of the nation and conduct numerous events throughout the year. The school has an active SSIP cell and offers grant to students for research, ideation and up to patent application and start up stages.",
+              "Faculty members of the School are all either Masters or PhD holders in their respective subjects. The staff members are dedicated to their duty as teachers and strive to ensure that they equip the students with the requisite knowledge, skill and inspiration so that the students excel in their jobs or businesses.",
+              "This school has carved a reputation for itself by the co-ordinated efforts and commitment of the Management and the staff. The passed out students stand testimony to the quality of teaching and learning process of the school.   As a Director of the School I, along with my staff members, one and all to visit our campus and Krishna School of Pharmacy & Research (KSP) and experience the energy and vibrancy first hand."
             ]}
           />
+          <Stack direction={"row"} className="smooth-shadow-card" borderRadius={3}>
+            <Box width={"300px"}>
+              <img src="https://res.cloudinary.com/dby2vbxv3/image/upload/v1710239250/KPGU/Images/Institutions/KSP/nba.png" className="w-100" alt="" />
+            </Box>
+            <Box p={3.5} color={"info.main"}>
+              <h3 className="fw-bold">NATIONAL BOARD OF ACCREDITATION</h3>
+              <h5 className="mb-0 text-secondary ">B. Pharm. Program of KSP has been Re-accredited by National Board of Accreditations (NBA), </h5>
+              <h5 className="mb-0 text-secondary ">New Delhi for next 3 years <Button color="secondary" size="large" className="fw-bold" startIcon={<CalendarMonth />} variant="text">30-06-2025</Button></h5>
+            </Box>
+          </Stack>
         </Box>
       </div>
 
