@@ -370,7 +370,7 @@ function KrishnaSchoolOfDiplomaStudies() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -395,7 +395,7 @@ function KrishnaSchoolOfDiplomaStudies() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -419,7 +419,7 @@ function KrishnaSchoolOfDiplomaStudies() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -456,7 +456,7 @@ function KrishnaSchoolOfDiplomaStudies() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

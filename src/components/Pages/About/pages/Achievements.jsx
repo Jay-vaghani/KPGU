@@ -37,7 +37,7 @@ function Achievements() {
   ];
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <h4 className=" fw-semibold color-secondary">KPGU'S SPONSORING</h4>
       <h3 className="display-4 fw-semibold mb-4">SIGNIFICANT ACHIEVEMENTS</h3>
       <Paragraph

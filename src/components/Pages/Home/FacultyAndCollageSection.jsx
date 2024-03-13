@@ -63,7 +63,7 @@ function FacultyAndCollageSection() {
     <Box
       maxWidth={maxWidth}
       mx={"auto"}
-      p={"3%"}
+      p={"5%"}
       bgcolor={"#fff"}
       mt={7}
       borderRadius={4}

@@ -38,7 +38,7 @@ function VisionMission() {
 
   return (
     <>
-      <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+      <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
         <h4 className="fw-semibold color-secondary">VISION & MISSION OF</h4>
         <h3 className="display-4 fw-semibold mb-4">
           Drs. Kiran & Pallavi Patel Global University
@@ -86,7 +86,7 @@ function VisionMission() {
         container
         width={maxWidth}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         className="smooth-shadow rounded-4"
         bgcolor={"#fff"}
       >

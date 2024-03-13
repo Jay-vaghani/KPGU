@@ -32,9 +32,6 @@ function FacultyStaffSection() {
         "PhD[Mechanical-Pursuing] || M.E[Advance Mfg Systems -Mechanical] || B.E[Mechanical]",
       customLink: "",
     },
-
-
-
     {
       name: "Mr. Nilesh A. Patel",
       imgNo: "5991",

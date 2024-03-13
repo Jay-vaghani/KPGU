@@ -31,7 +31,7 @@ function KrishnaAyurvedMedicalCollege() {
 
   const Faculties = [
     {
-      name: "Dr Malhari Kamlakar Sirdeshpande",
+      name: "Dr. Malhari Kamlakar Sirdeshpande",
       designation: "Director/Principal & Professor in Dravyaguna",
       experience: 23,
       imgNo: "6168",
@@ -39,7 +39,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "",
     },
     {
-      name: "Dr Syama Maniyankutty",
+      name: "Dr. Syama Maniyankutty",
       designation: "Assistant Professor",
       experience: 3,
       imgNo: "5922",
@@ -47,7 +47,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "",
     },
     {
-      name: "Dr Jignesha charel",
+      name: "Dr. Jignesha charel",
       designation: "Assistant Professor",
       experience: 4,
       imgNo: "6172",
@@ -79,7 +79,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "",
     },
     {
-      name: "Dr Daksha Kanaksinh Rathod",
+      name: "Dr. Daksha Kanaksinh Rathod",
       designation: "Associate Professor ",
       experience: 8,
       imgNo: "5919",
@@ -87,7 +87,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "",
     },
     {
-      name: "Dr Tredha Hitesh Vyas",
+      name: "Dr. Tredha Hitesh Vyas",
       designation: "Assistant Professor ",
       experience: 3,
       imgNo: "5921",
@@ -95,7 +95,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "",
     },
     {
-      name: "Dr Rabiya Shaikh",
+      name: "Dr. Rabiya Shaikh",
       designation: "Assistant Professor ",
       experience: 5,
       imgNo: "5918",
@@ -135,7 +135,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "",
     },
     {
-      name: "Dr Geethu Arumughan ",
+      name: "Dr. Geethu Arumughan ",
       designation: "Assistant professor ",
       experience: 3,
       imgNo: "",
@@ -143,7 +143,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "DR HITESH MIYANI ",
+      name: "Dr. Hitesh Miyani ",
       designation: "Assistant professor ",
       experience: 5,
       imgNo: "",
@@ -159,7 +159,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Nibin Sajan",
+      name: "Dr. Nibin Sajan",
       designation: "Assistant professor ",
       experience: 3,
       imgNo: "",
@@ -167,7 +167,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Anagha Narayanan",
+      name: "Dr. Anagha Narayanan",
       designation: "Assistant Professor",
       experience: 2,
       imgNo: "",
@@ -175,7 +175,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Pawan Morya",
+      name: "Dr. Pawan Morya",
       designation: "Assistant professor in Kayachikitsa",
       experience: 2,
       imgNo: "",
@@ -215,7 +215,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Mithun C K ",
+      name: "Dr. Mithun C K ",
       designation: "Associate professor ",
       experience: 6,
       imgNo: "",
@@ -223,7 +223,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Jivesh Kumar Mehta",
+      name: "Dr. Jivesh Kumar Mehta",
       designation: "Assistant professor",
       experience: 3,
       imgNo: "",
@@ -231,7 +231,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Shaheen Faruk Pinjari",
+      name: "Dr. Shaheen Faruk Pinjari",
       designation: "Assistant professor",
       experience: 3,
       imgNo: "",
@@ -247,7 +247,7 @@ function KrishnaAyurvedMedicalCollege() {
       customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
     },
     {
-      name: "Dr Mahesh Jadhavbhai Patel",
+      name: "Dr. Mahesh Jadhavbhai Patel",
       designation: "Assistant professor ",
       experience: 5,
       imgNo: "",
@@ -496,7 +496,7 @@ function KrishnaAyurvedMedicalCollege() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -532,7 +532,7 @@ function KrishnaAyurvedMedicalCollege() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -550,7 +550,7 @@ function KrishnaAyurvedMedicalCollege() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -569,7 +569,7 @@ function KrishnaAyurvedMedicalCollege() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -613,7 +613,7 @@ function KrishnaAyurvedMedicalCollege() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -650,7 +650,7 @@ function KrishnaAyurvedMedicalCollege() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

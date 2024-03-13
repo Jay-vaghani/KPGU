@@ -32,7 +32,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6220",
       designation: "Assistant Professor[Senior grade] || HOD[Biotechnology]",
       experience: 11,
-      qualification: "Ph.D || MPT",
+      qualification: "Ph.D[Biotechnology]",
       customLink: "",
     },
     {
@@ -40,7 +40,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6099",
       designation: "Assistant Professor || HOD Chemistry",
       experience: 7,
-      qualification: "Ph.D. Chemistry",
+      qualification: "Ph.D[Chemistry]",
       customLink: "",
     },
     {
@@ -48,7 +48,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6102",
       designation: "Assistant Professor || HoD Microbiology",
       experience: 5,
-      qualification: "Ph.D. Microbiology",
+      qualification: "Ph.D[Microbiology]",
       customLink: "",
     },
     {
@@ -56,7 +56,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6098",
       designation: "Assistant Professor",
       experience: 5,
-      qualification: "Ph.D Biotechnology",
+        qualification: "Ph.D[Biotechnology]",
       customLink: "",
     },
 
@@ -65,7 +65,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6101",
       designation: "Assistant Professor",
       experience: 3,
-      qualification: "Ph.D Chemistry",
+      qualification: "Ph.D[Chemistry]",
       customLink: "",
     },
     {
@@ -73,7 +73,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6104",
       designation: "Assistant Professor",
       experience: 3,
-      qualification: "Ph.D. Chemistry",
+      qualification: "Ph.D[Chemistry]",
       customLink: "",
     },
 
@@ -82,7 +82,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6103",
       designation: "Assistant Professor",
       experience: 2,
-      qualification: "Ph.D Microbiology",
+      qualification: "Ph.D[Microbiology]",
       customLink: "",
     },
     {
@@ -90,7 +90,7 @@ function KrishnaSchoolOfSciences() {
       imgNo: "6222",
       designation: "Assistant Professor",
       experience: 3,
-      qualification: "Ph.D Microbiology",
+      qualification: "Ph.D[Microbiology]",
       customLink: "",
     },
     {
@@ -98,15 +98,15 @@ function KrishnaSchoolOfSciences() {
       imgNo: "3413",
       designation: "Assistant Professor",
       experience: 1,
-      qualification: "Ph.D Biotechnology",
+      qualification: "Ph.D[Biotechnology]",
       customLink: "",
     },
     {
-      name: "Tejas Pandya",
+      name: "Mr. Tejas Pandya",
       imgNo: "6108",
       designation: "Assistant Professor",
       experience: 9,
-      qualification: "M.Sc || M.Phil Physics || Ph.D[Pursuing]",
+      qualification: " Ph.D[Pursuing] || M.Sc || M.Phil Physics",
       customLink: "",
     },
     {
@@ -360,7 +360,7 @@ function KrishnaSchoolOfSciences() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -395,7 +395,7 @@ function KrishnaSchoolOfSciences() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -417,7 +417,7 @@ function KrishnaSchoolOfSciences() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -462,7 +462,7 @@ function KrishnaSchoolOfSciences() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -535,7 +535,7 @@ function KrishnaSchoolOfSciences() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

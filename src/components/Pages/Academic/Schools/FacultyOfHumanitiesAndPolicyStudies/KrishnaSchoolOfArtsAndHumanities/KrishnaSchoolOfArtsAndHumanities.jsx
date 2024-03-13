@@ -143,7 +143,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -172,7 +172,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -191,7 +191,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -210,7 +210,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -254,7 +254,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -291,7 +291,7 @@ function KrishnaSchoolOfArtsAndHumanities() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

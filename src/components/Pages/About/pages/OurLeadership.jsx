@@ -67,7 +67,7 @@ function OurLeadership() {
   ];
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <h4 className=" fw-semibold color-secondary mb-4">KPGU'S LEADERSHIP</h4>
       <Grid
         container

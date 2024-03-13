@@ -156,7 +156,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       imgNo: "6347",
       designation: "Assistant professor",
       experience: 5,
-      qualification: "M.Pharm || MBA || PDCR || Ph.D.",
+      qualification: " Ph.D || M.Pharm || MBA || PDCR",
       customLink: "",
     },
     {
@@ -184,7 +184,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
       customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710242754/KPGU/Faculty%20Images/KSP/mhicnr16mrn6bb1jy36f.webp",
     },
     {
-      name: "Mrs.Parul Vasava",
+      name: "Ms.Parul Vasava",
       imgNo: "0",
       designation: "Assistant Professor",
       experience: 9,
@@ -350,7 +350,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -393,7 +393,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -411,7 +411,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -430,7 +430,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -474,7 +474,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -529,7 +529,7 @@ function KrishnaSchoolOfPharmacyAndResearch() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

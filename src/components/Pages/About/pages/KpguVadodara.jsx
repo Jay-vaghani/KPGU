@@ -171,13 +171,13 @@ function KpguVadodara() {
   );
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <Grid
         container
         width={maxWidth}
         mx={"auto"}
         mb={5}
-        p={"3%"}
+        p={"5%"}
         py={5}
         className="smooth-shadow rounded-4"
         bgcolor={"#fff"}
@@ -229,7 +229,7 @@ function KpguVadodara() {
         width={maxWidth}
         mx={"auto"}
         mb={5}
-        p={"3%"}
+        p={"5%"}
         className="smooth-shadow rounded-4"
         bgcolor={"#fff"}
       >

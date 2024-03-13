@@ -46,14 +46,6 @@ function KrishnaSchoolOfBusinessManagement() {
       customLink: "",
     },
     {
-      name: "Dr.Ritesh Amarsela",
-      designation: "Associate Professor || HOD ",
-      experience: 22,
-      imgNo: "",
-      qualification: " Ph.d Marketing || MBA Marketing || M.Com Finance ",
-      customLink: "",
-    },
-    {
       name: "Dr.Deepa Bhindora ",
       designation: "Assistant Professor",
       experience: 15,
@@ -85,15 +77,6 @@ function KrishnaSchoolOfBusinessManagement() {
       qualification: "MBA HR",
       customLink: "",
     },
-    {
-      name: "Bhakti Vyas ",
-      designation: "Assistant Professor ",
-      experience: 10,
-      imgNo: "",
-      qualification: "MBA HR",
-      customLink: "",
-    },
-
   ];
 
   const UG = [
@@ -211,7 +194,7 @@ function KrishnaSchoolOfBusinessManagement() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -244,7 +227,7 @@ function KrishnaSchoolOfBusinessManagement() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -263,7 +246,7 @@ function KrishnaSchoolOfBusinessManagement() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -282,7 +265,7 @@ function KrishnaSchoolOfBusinessManagement() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -326,7 +309,7 @@ function KrishnaSchoolOfBusinessManagement() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -381,7 +364,7 @@ function KrishnaSchoolOfBusinessManagement() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

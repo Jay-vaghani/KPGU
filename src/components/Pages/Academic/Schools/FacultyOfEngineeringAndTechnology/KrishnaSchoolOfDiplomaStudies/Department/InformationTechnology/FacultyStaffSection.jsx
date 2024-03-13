@@ -29,7 +29,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[CSE]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305342/KPGU/Faculty%20Images/KSDS/0878.webp",
     },
     {
       name: "Yash Ramesh Donga",
@@ -37,7 +37,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[CSE]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305420/KPGU/Faculty%20Images/KSDS/0860.jpg",
     },
     {
       name: "Akash Vir",
@@ -45,7 +45,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.Tech || M.Tech[CSE-Pursuing]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710310325/KPGU/Faculty%20Images/KSDS/Akash-Vir.webp",
     },
     {
       name: "Bhumi Vaja",
@@ -53,7 +53,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[CE]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305554/KPGU/Faculty%20Images/KSDS/0861.webp",
     },
 
   ];

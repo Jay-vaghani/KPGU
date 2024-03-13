@@ -10,7 +10,7 @@ function MessageFromHod() {
     <>
       <HODMessage
         hodImg={
-          "https://banner2.cleanpng.com/20180315/bvw/kisspng-computer-icons-clip-art-man-icon-5aab18532f4b00.7479404715211623231937.jpg"
+          "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710304920/KPGU/Faculty%20Images/KSDS/hod-chemical.webp"
         }
         hodEmail={"hod.me.kset@kpgu.ac.in"}
         hodName={"Mr. Jimit Kansara"}

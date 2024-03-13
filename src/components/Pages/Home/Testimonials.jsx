@@ -48,7 +48,7 @@ function Testimonials() {
       width={maxWidth}
       mx={"auto"}
       mt={7}
-      p={"3%"}
+      p={"5%"}
       py={5}
       className="smooth-shadow rounded-4"
       rowGap={innerWidth > 1200 ? 0 : 4}

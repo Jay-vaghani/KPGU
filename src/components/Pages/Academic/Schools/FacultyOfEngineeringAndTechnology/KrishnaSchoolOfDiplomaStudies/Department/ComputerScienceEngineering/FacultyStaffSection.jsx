@@ -37,7 +37,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.Tech",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710304081/KPGU/Faculty%20Images/KSDS/0858.webp",
     },
     {
       name: "Yachana Patel",
@@ -45,7 +45,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[COMPUTER SCIENCE & ENGINEERING]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710304157/KPGU/Faculty%20Images/KSDS/0856.webp",
     },
     {
       name: "Dhrupa Patel",
@@ -53,7 +53,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[COMPUTER SCIENCE & ENGINEERING]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710304247/KPGU/Faculty%20Images/KSDS/0859.webp",
     },
     {
       name: "Jay Prajapati",
@@ -61,7 +61,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[CSE]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305647/KPGU/Faculty%20Images/KSDS/0863.webp",
     },
     {
       name: "Rutvij Upadhyay",
@@ -69,7 +69,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.Tech || M.Tech[CSE-Pursuing]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305749/KPGU/Faculty%20Images/KSDS/0866.webp",
     },
     {
       name: "Nisha Parmar",
@@ -77,15 +77,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.Tech || M.Tech[CSE-Pursuing]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
-    },
-    {
-      name: "Vanshika Patel",
-      imgNo: "",
-      designation: "Lecturer",
-      experience: 1,
-      qualification: "B.E[CSE]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305801/KPGU/Faculty%20Images/KSDS/0864.jpg",
     },
     {
       name: "Dharna Patel",
@@ -93,7 +85,7 @@ function FacultyStaffSection() {
       designation: "Lecturer",
       experience: 1,
       qualification: "B.E[CSE]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710310492/KPGU/Faculty%20Images/KSDS/Dharna-Patel.webp",
     },
     
   ];

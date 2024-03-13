@@ -23,7 +23,7 @@ function FacultyStaffSection() {
       designation: "Head & Assistant Professor ",
       experience: 9,
       qualification: "Ph.D[Transportation Engineering] ||  M.Tech || B.E[Civil] || [GATE Qualified 2013]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710302485/KPGU/Faculty%20Images/KSET/0873.webp",
     },
     {
       name: "Mr. Ankit N Patel",
@@ -34,7 +34,7 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
-      name: "Mithileshdatta Pandya",
+      name: "Mr. Mithileshdatta Pandya",
       imgNo: "6052",
       designation: "Assistant Professor",
       experience: 11,
@@ -50,12 +50,12 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
-      name: "Komal Vaidhya",
+      name: "Ms. Komal Vaidhya",
       imgNo: "",
       designation: "Assistant Professor",
       experience: 14,
       qualification: "M.E[Structure] || B.E[Civil]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710302836/KPGU/Faculty%20Images/KSET/1885.webp",
     },
   ];
 

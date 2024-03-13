@@ -308,7 +308,7 @@ function AdmissionInquiry() {
       <Box
         maxWidth={maxWidth}
         mx={"auto"}
-        px={"3%"}
+        px={"5%"}
         py={"2%"}
         bgcolor={"#fff"}
         borderRadius={4}
@@ -340,7 +340,7 @@ function AdmissionInquiry() {
             <Box
               bgcolor={"#fff"}
               height={`auto`}
-              p={"3%"}
+              p={"5%"}
               borderRadius={4}
               className="smooth-shadow"
             >
@@ -587,7 +587,7 @@ function AdmissionInquiry() {
           >
             <form onSubmit={handleSubmit(formSummit)}>
               <Box
-                p={"3%"}
+                p={"5%"}
                 bgcolor={"#fff"}
                 borderRadius={4}
                 className="smooth-shadow"
@@ -842,7 +842,7 @@ function AdmissionInquiry() {
       <Box
         maxWidth={maxWidth}
         mx={"auto"}
-        px={"3%"}
+        px={"5%"}
         py={"2%"}
         bgcolor={"#fff"}
         borderRadius={4}

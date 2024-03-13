@@ -26,7 +26,7 @@ function DrKiranCPatelMessage() {
   ];
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <Grid
         container
         className="smooth-shadow"

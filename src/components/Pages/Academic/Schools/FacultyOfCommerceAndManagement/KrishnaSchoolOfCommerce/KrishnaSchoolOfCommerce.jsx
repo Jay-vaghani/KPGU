@@ -38,7 +38,7 @@ function KrishnaSchoolOfCommerce() {
       customLink: "",
     },
     {
-      name: "Kushal Jayesh Sampat",
+      name: "Mr. Kushal Jayesh Sampat",
       designation: "Assistant Professor",
       experience: 9,
       imgNo: "6062",
@@ -46,7 +46,7 @@ function KrishnaSchoolOfCommerce() {
       customLink: "",
     },
     {
-      name: "Prajapati Hemant Trilokiprasad",
+      name: "Mr. Prajapati Hemant Trilokiprasad",
       designation: "Assistant Professor",
       experience: 3,
       imgNo: "8397",
@@ -54,11 +54,11 @@ function KrishnaSchoolOfCommerce() {
       customLink: "",
     },
     {
-      name: "Nirmala Revatram Suthar",
+      name: "Ms. Nirmala Revatram Suthar",
       designation: "Assistant Professor",
       experience: 1,
       imgNo: "8396",
-      qualification: "B.Com || M.Com  NET/GSET",
+      qualification: "B.Com || M.Com || NET/GSET",
       customLink: "",
     },
   ];
@@ -168,7 +168,7 @@ function KrishnaSchoolOfCommerce() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -199,7 +199,7 @@ function KrishnaSchoolOfCommerce() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -218,7 +218,7 @@ function KrishnaSchoolOfCommerce() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -237,7 +237,7 @@ function KrishnaSchoolOfCommerce() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -281,7 +281,7 @@ function KrishnaSchoolOfCommerce() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -318,7 +318,7 @@ function KrishnaSchoolOfCommerce() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

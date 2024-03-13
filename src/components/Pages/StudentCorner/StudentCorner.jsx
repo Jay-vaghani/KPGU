@@ -66,7 +66,7 @@ function StudentCorner() {
   };
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <h1 className="mb-3 display-5 fw-medium ">Student corner</h1>
       <Grid container spacing={3}>
         <Grid

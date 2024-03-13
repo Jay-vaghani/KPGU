@@ -20,7 +20,7 @@ function Governance() {
   const navigate = useNavigate();
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <Grid container spacing={2} position={"relative"}>
         <Grid item xs={12} lg={4}>
           <Box

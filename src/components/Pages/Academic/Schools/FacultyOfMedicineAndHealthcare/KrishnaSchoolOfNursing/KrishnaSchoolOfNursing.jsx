@@ -37,7 +37,7 @@ function KrishnaSchoolOfNursing() {
       customLink: "",
     },
     {
-      name: "Mrs. Yaiphakonbi Contractor",
+      name: "Ms. Yaiphakonbi Contractor",
       imgNo: "0891",
       designation: "Associate Professor",
       experience: 13,
@@ -45,7 +45,7 @@ function KrishnaSchoolOfNursing() {
       customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710235056/KPGU/Faculty%20Images/KSN/0891.webp",
     },
     {
-      name: "Mrs. Priyanka Aritra Dey",
+      name: "Ms. Priyanka Aritra Dey",
       imgNo: "5873",
       designation: "Assistant Professor",
       experience: 9,
@@ -53,7 +53,7 @@ function KrishnaSchoolOfNursing() {
       customLink: "",
     },
     {
-      name: "Mrs. Chintal Purohit",
+      name: "Ms. Chintal Purohit",
       imgNo: "6174",
       designation: "Assistant Professor",
       experience: 9,
@@ -61,7 +61,7 @@ function KrishnaSchoolOfNursing() {
       customLink: "",
     },
     {
-      name: "Mrs. Rojlin Tigga",
+      name: "Ms. Rojlin Tigga",
       imgNo: "5874",
       designation: "Assistant Professor",
       experience: 11,
@@ -319,7 +319,7 @@ function KrishnaSchoolOfNursing() {
         <Box
           maxWidth={maxWidth}
           mx={"auto"}
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
@@ -354,7 +354,7 @@ function KrishnaSchoolOfNursing() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -372,7 +372,7 @@ function KrishnaSchoolOfNursing() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -391,7 +391,7 @@ function KrishnaSchoolOfNursing() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -435,7 +435,7 @@ function KrishnaSchoolOfNursing() {
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"
-          p={"3%"}
+          p={"5%"}
           maxWidth={maxWidth}
           mx={"auto"}
         >
@@ -472,7 +472,7 @@ function KrishnaSchoolOfNursing() {
 
       <div style={{ padding: "80px 0 0 0" }} id="announcements">
         <Box
-          p={"3%"}
+          p={"5%"}
           bgcolor={"#fff"}
           borderRadius={4}
           className="smooth-shadow"

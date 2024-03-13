@@ -45,7 +45,7 @@ function FacultyStaffSection() {
       designation: "Assistant Professor",
       experience: 9,
       qualification: "M.Tech[Structural Design]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710303738/KPGU/Faculty%20Images/KSDS/0810.jpg",
     },
     {
       name: "Snehal M Bhoi",
@@ -53,7 +53,7 @@ function FacultyStaffSection() {
       designation: "Assistant Professor",
       experience: 2,
       qualification: "M.Tech[Transportation  Engineering]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710303862/KPGU/Faculty%20Images/KSDS/0882.webp",
     },
 
 

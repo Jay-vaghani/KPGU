@@ -60,7 +60,7 @@ function UniversityOfficers() {
   );
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
       <h4 className=" fw-semibold color-secondary">Officers of the University</h4>
       <Grid container mt={5} spacing={2}>
         {UniversityOfficers.map(({ designation, img, name }, index) => (

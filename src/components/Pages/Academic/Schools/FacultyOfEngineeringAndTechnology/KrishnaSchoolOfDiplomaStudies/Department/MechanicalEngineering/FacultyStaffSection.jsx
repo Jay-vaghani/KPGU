@@ -39,7 +39,7 @@ function FacultyStaffSection() {
       designation: "Assistant Professor",
       experience: 13,
       qualification: "B.E[Mechanical] || M.E[Production Engg]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710305213/KPGU/Faculty%20Images/KSDS/0875.webp",
     },
 
   ];

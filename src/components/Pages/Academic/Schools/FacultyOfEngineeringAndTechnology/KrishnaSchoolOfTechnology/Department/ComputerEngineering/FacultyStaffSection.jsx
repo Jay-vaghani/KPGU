@@ -163,9 +163,10 @@ function FacultyStaffSection() {
       designation: "Assistant Professor",
       experience: 7,
       qualification: "M.E || B.E - COMPUTER ENGINEERING",
-      customLink: "",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710303061/KPGU/Faculty%20Images/KSET/0868.webp",
     },
   ];
+
 
   return (
     <Box maxWidth={maxWidth} mx={"auto"} bgcolor={"#fff"} borderRadius={4}>

@@ -13,7 +13,7 @@ function FacultyStaffSection() {
       designation: "HOD-Chemical || Lecturer",
       experience: 9,
       qualification: "B.E[Chemical]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710304615/KPGU/Faculty%20Images/KSDS/0881.webp",
     },
     {
       name: "YagneshKumar Alkeshbhai Vyas",
@@ -21,7 +21,7 @@ function FacultyStaffSection() {
       designation: "Assistant professor ",
       experience: 9,
       qualification: "PhD[Pursuing] || M.sc[Chemistry]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710310594/KPGU/Faculty%20Images/KSDS/YagneshKumar-Alkeshbhai-Vyas.webp",
     },
 
   ];

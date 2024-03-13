@@ -477,7 +477,7 @@ function Programs() {
     );
 
     return (
-        <Box maxWidth={maxWidth} mx={"auto"} p={"3%"}>
+        <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
             <h4 className="color-secondary mb-4 fw-bold">FIND YOUR PROGRAMMES</h4>
             <TabContext value={category}>
                 <Grid container spacing={2} position={"relative"}>

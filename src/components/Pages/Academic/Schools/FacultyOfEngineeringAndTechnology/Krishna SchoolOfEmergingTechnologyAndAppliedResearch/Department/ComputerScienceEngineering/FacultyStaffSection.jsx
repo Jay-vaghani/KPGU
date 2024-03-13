@@ -8,6 +8,14 @@ function FacultyStaffSection() {
 
   const Faculties = [
     {
+      name: "Dr. Rocky Upadhyay",
+      imgNo: "9864",
+      designation: "Head & Associate Professor",
+      experience: 10,
+      qualification: "Ph.D[CSE] || M.E[CSE] || B.E[CE]",
+      customLink: "",
+    },
+    {
       name: "Ms. Apoorva Shah ",
       imgNo: "6010",
       designation: "Assistant Professor",
@@ -40,6 +48,14 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
+      name: "Ms. Jalpa Bhatt",
+      imgNo: "6049",
+      designation: "Assistant Professor",
+      experience: 8,
+      qualification: "M.E[CSE] || B.E[CE]",
+      customLink: "",
+    },
+    {
       name: "Ms. Ankita Kothari",
       imgNo: "6021",
       designation: "Assistant Professor",
@@ -48,14 +64,7 @@ function FacultyStaffSection() {
       customLink: "",
     },
 
-    {
-      name: "Ms. Jalpa Bhatt",
-      imgNo: "6049",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.E[CSE] || B.E[CE]",
-      customLink: "",
-    },
+    
     {
       name: "Dr. Gopal Bhatt",
       imgNo: "6035",
@@ -77,16 +86,7 @@ function FacultyStaffSection() {
       imgNo: "6023",
       designation: "Assistant Professor",
       experience: 4,
-      qualification: "M.E[CE] || BE[CE]",
-      customLink: "",
-    },
-
-    {
-      name: "Ms. Rohini K. Patel",
-      imgNo: "6020",
-      designation: "Assistant Professor",
-      experience: 8,
-      qualification: "M.E(IT) || B.E[IT]",
+      qualification: "M.E[CE] || B.E[CE]",
       customLink: "",
     },
     {
@@ -94,7 +94,7 @@ function FacultyStaffSection() {
       imgNo: "6019",
       designation: "Assistant Professor",
       experience: 10,
-      qualification: "M.E || B.E - COMPUTER ENGINEERING",
+      qualification: "M.E || B.E[CE]",
       customLink: "",
     },
     {
@@ -141,7 +141,7 @@ function FacultyStaffSection() {
         "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707809046/KPGU/Faculty%20Images/KSET/8900.webp",
     },
     {
-      name: "Henilkumar Suthar",
+      name: "Mr. Henilkumar Suthar",
       imgNo: "8897",
       designation: "Assistant Professor",
       experience: 3,
@@ -163,7 +163,7 @@ function FacultyStaffSection() {
       designation: "Assistant Professor",
       experience: 7,
       qualification: "M.E || B.E - COMPUTER ENGINEERING",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710303061/KPGU/Faculty%20Images/KSET/0868.webp",
     },
   ];
 

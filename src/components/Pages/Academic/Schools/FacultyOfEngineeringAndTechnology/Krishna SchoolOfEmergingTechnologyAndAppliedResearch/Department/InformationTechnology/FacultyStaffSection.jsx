@@ -20,7 +20,15 @@ function FacultyStaffSection() {
       imgNo: "6063",
       designation: "Assistant Professor",
       experience: 16,
-      qualification: "M.Tech || B.E in Computer Engineering",
+      qualification: "M.Tech || B.E[CE]",
+      customLink: "",
+    },
+    {
+      name: "Ms. Monali Parikh",
+      imgNo: "6064",
+      designation: "Assistant Professor",
+      experience: 11,
+      qualification: "M.Tech[CSE] || B.E[CE]",
       customLink: "",
     },
     {
@@ -28,17 +36,10 @@ function FacultyStaffSection() {
       imgNo: "6065",
       designation: "Assistant Professor",
       experience: 5,
-      qualification: "M.Tech || B.E in Computer Engineering",
+      qualification: "M.Tech || B.E[CE]",
       customLink: "",
     },
-    {
-      name: "Monali Parikh",
-      imgNo: "6064",
-      designation: "Assistant Professor",
-      experience: 11,
-      qualification: "M.Tech[CSE] || B.E[CE]",
-      customLink: "",
-    },
+    
     {
       name: "Ms. Dhara Parikh",
       imgNo: "9870",

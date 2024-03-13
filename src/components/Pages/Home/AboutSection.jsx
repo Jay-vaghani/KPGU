@@ -921,7 +921,7 @@ console.log(faculty);
       maxWidth={maxWidth}
       mx={"auto"}
       mt={7}
-      p={"3%"}
+      p={"5%"}
       bgcolor={"#fff"}
       className="smooth-shadow"
       borderRadius={4}

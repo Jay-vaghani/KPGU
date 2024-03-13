@@ -534,7 +534,7 @@ function AwardsAccolades() {
   );
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"3%"} borderRadius={4}>
+    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"} borderRadius={4}>
       <h4 className=" fw-semibold color-secondary my-5">
         AWARDS AND ACHIEVEMENTS
       </h4>

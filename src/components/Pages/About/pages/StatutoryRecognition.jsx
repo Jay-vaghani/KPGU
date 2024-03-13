@@ -12,7 +12,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -73,7 +73,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -105,7 +105,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -159,7 +159,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -195,7 +195,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -230,7 +230,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -262,7 +262,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}
@@ -293,7 +293,7 @@ function StatutoryRecognition() {
         maxWidth={maxWidth}
         className={"smooth-shadow"}
         mx={"auto"}
-        p={"3%"}
+        p={"5%"}
         bgcolor={"#fff"}
         mt={5}
         borderRadius={4}

@@ -25,16 +25,7 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
-      name: "Vijay Bharat Desle",
-      imgNo: "6015",
-      designation: "Assistant Professor",
-      experience: 10,
-      qualification:
-        "Ph.D[Pursuing] || M.Tech[Electrical Power Systems] || B.Tech[Electrical]",
-      customLink: "",
-    },
-    {
-      name: "Ketul Kachhia",
+      name: "Mr. Ketul Kachhia",
       imgNo: "6192",
       designation: "Assistant Professor",
       experience: 11,
@@ -43,12 +34,22 @@ function FacultyStaffSection() {
       customLink: "",
     },
     {
-      name: "Divyesh Vasava",
+      name: "Mr. Vijay Bharat Desle",
+      imgNo: "6015",
+      designation: "Assistant Professor",
+      experience: 10,
+      qualification:
+        "Ph.D[Pursuing] || M.Tech[Electrical Power Systems] || B.Tech[Electrical]",
+      customLink: "",
+    },
+    
+    {
+      name: "Mr. Divyesh Vasava",
       imgNo: "",
       designation: "Assistant Professor",
       experience: 3,
       qualification: "M.TECH[Power System]  B.E[ELECTRICAL]",
-      customLink: "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png",
+      customLink: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710303212/KPGU/Faculty%20Images/KSET/0880.webp",
     },
   ];
 
