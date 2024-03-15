@@ -480,7 +480,7 @@ function Programs() {
         <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
             <h4 className="color-secondary mb-4 fw-bold">FIND YOUR PROGRAMMES</h4>
             <TabContext value={category}>
-                <Grid container spacing={2} position={"relative"}>
+                <Grid container spacing={2} >
                     <Grid item xs={12} lg={12}>
                         <Box
                             position={"sticky"}
@@ -495,6 +495,7 @@ function Programs() {
                                 indicatorColor="secondary"
                                 aria-label="lab API tabs example"
                                 textColor="secondary"
+                                
                                 variant={`${innerWidth < 890 ? "scrollable" : "fullWidth"}`}
                             >
                                 <Tab label="diploma" value="diploma" sx={{ fontWeight: 600 }} />

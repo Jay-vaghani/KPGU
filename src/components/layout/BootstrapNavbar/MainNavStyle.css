@@ -32,7 +32,7 @@ p {
   user-select: none;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--violet-11);
   text-decoration: none;
   cursor: pointer;
@@ -129,10 +129,10 @@ p {
   padding: 22px;
 }
   .List.one {
-    width: 1077px;
+    width: 1304px;
   }
   .List.two {
-    width: 1077px;
+    width: 1304px;
   }
 
 .ListItemLink {

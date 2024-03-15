@@ -70,7 +70,7 @@ import AdmissionInquiry from "./components/Pages/AdmissionInquiry/AdmissionInqui
 import Page404 from "./components/Pages/Page404/Page404";
 import StudentCorner from "./components/Pages/StudentCorner/StudentCorner";
 import ResearchPublications from "./components/Pages/ResearchPublications/ResearchPublications";
-import StartUps from "./components/Pages/ResearchPublications/StartUps/StartUps";
+import StartUps from "./components/Pages/CentersCells/StartUps/StartUps";
 
 {/* ======================== Departments ======================== */ }
 
@@ -101,6 +101,16 @@ import KssChemistry from "./components/Pages/Academic/Schools/FacultyOfSciences/
 import KssMathematics from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Mathematics";
 import KssMicrobiology from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Microbiology";
 import KssPhysics from "./components/Pages/Academic/Schools/FacultyOfSciences/KrishnaSchoolOfSciences/Department/Physics";
+import CentersCells from "./components/Pages/CentersCells/CentersCells";
+import Fdps from "./components/Pages/ResearchPublications/FDPS/Fdps";
+import InnovationResearch from "./components/Pages/ResearchPublications/InnovationResearch/InnovationResearch";
+import KpguJournals from "./components/Pages/ResearchPublications/KpguJournals/KpguJournals";
+import Publications from "./components/Pages/ResearchPublications/Publications/Publications";
+import Ipr from "./components/Pages/ResearchPublications/IPR/Ipr";
+import AntiRagging from "./components/Pages/CentersCells/AntiRagging/AntiRagging";
+import InternalComplaintCommittee from "./components/Pages/CentersCells/InternalComplaintCommittee/InternalComplaintCommittee";
+import GrievanceRedressalCommittee from "./components/Pages/CentersCells/GrievanceRedressalCommittee/GrievanceRedressalCommittee";
+import EqualOpportunityCell from "./components/Pages/CentersCells/EqualOpportunityCell/EqualOpportunityCell";
 
 
 // ========================================== CAMPUS ==========================================
@@ -130,7 +140,9 @@ function App() {
           <ContactNavbar />
           <MainNavbar />
           <Routes>
+            {/* ============================================================== Home ============================================================== */}
             <Route path="/" element={<Home />} />
+            {/* ============================================================== About ============================================================== */}
             <Route path="/about" element={<About />}>
               <Route path="skect" element={<SKECT />} />
               <Route path="our-leadership" element={<OurLeadership />} />
@@ -143,7 +155,7 @@ function App() {
               <Route path="statutory-recognition" element={<StatutoryRecognition />} />
               <Route path="awards-accolades" element={<AwardsAccolades />} />
               <Route path="university-officers" element={<UniversityOfficers />} />
-
+              {/* =============================== Governance =============================== */}
               <Route path="governance" element={<Governance />}>
                 <Route path="governing-body" element={<GoverningBody />} />
                 <Route path="board-of-management" element={<BoardOfManagement />} />
@@ -151,7 +163,7 @@ function App() {
                 <Route path="board-of-studies" element={<BoardOfStudies />} />
                 <Route path="finance-committee" element={<FinanceCommittee />} />
               </Route>
-
+              {/* =============================== Approvals =============================== */}
               <Route path="approvals" element={<Approvals />}>
                 <Route path="institute-of-technology" element={<InstituteOfTechnology />} />
                 <Route path="institute-of-pharmacy" element={<InstituteOfPharmacy />} />
@@ -159,19 +171,15 @@ function App() {
               </Route>
 
             </Route>
-
+            {/* ============================================================== Academic ============================================================== */}
             <Route path="/academics" element={<Academic />}>
-
-              {/* ======================== Faculty ======================== */}
-
+              {/* =============================== Faculty =============================== */}
               <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />} />
               <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />} />
               <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />} />
               <Route path="faculty-of-sciences" element={<FacultyOfSciences />} />
               <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />} />
-
-              {/* ======================== Schools ======================== */}
-
+              {/* =============================== Schools =============================== */}
               <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />} />
               <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />} />
               <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />} />
@@ -183,52 +191,59 @@ function App() {
               <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
               <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
               <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
-
-              {/* ======================== Departments ======================== */}
-
-              {/* ============ KSET ============ */}
+              {/* =============================== Departments =============================== */}
+              {/* ================ KSET ================ */}
               <Route path="kset/civil-engineering" element={<KsetCivilEngineering />} />
               <Route path="kset/mechanical-engineering" element={<KsetMechanicalEngineering />} />
               <Route path="kset/electrical-engineering" element={<KsetElectricalEngineering />} />
               <Route path="kset/information-technology" element={<KsetInformationTechnology />} />
               <Route path="kset/computer-science-and-engineering" element={<KsetComputerScienceEngineering />} />
-
-              {/* ============ KSDS ============ */}
+              {/* ================ KSDS ================ */}
               <Route path="ksds/civil-engineering" element={<KsdsCivilEngineering />} />
               <Route path="ksds/mechanical-engineering" element={<KsdsMechanicalEngineering />} />
               <Route path="ksds/electrical-engineering" element={<KsdsElectricalEngineering />} />
               <Route path="ksds/information-technology" element={<KsdsInformationTechnology />} />
               <Route path="ksds/computer-science-and-engineering" element={<KsdsComputerScienceEngineering />} />
               <Route path="ksds/chemical-engineering" element={<KsdsChemicalEngineering />} />
-
-              {/* ============ KST ============ */}
+              {/* ================ KST ================ */}
               <Route path="kst/food-technology" element={<KstFoodTechnology />} />
               <Route path="kst/computer-engineering" element={<KstComputerEngineering />} />
-
-              {/* ============ KSS ============ */}
+              {/* ================ KSS ================ */}
               <Route path="kss/biotechnology" element={<KssBiotechnology />} />
               <Route path="kss/chemistry" element={<KssChemistry />} />
               <Route path="kss/mathematics" element={<KssMathematics />} />
               <Route path="kss/microbiology" element={<KssMicrobiology />} />
               <Route path="kss/physics" element={<KssPhysics />} />
             </Route>
-
+            {/* ============================================================== Campus ============================================================== */}
             <Route path="/campus" element={<Campus />}>
-              <Route path="campus-life" element={<CampusLife />}></Route>
-              <Route path="facilities" element={<Facilities />}></Route>
-              <Route path="gallery" element={<Gallery />}></Route>
+              <Route path="campus-life" element={<CampusLife />} />
+              <Route path="facilities" element={<Facilities />} />
+              <Route path="gallery" element={<Gallery />} />
             </Route>
-
+            {/* ============================================================== Research And Publications ============================================================== */}
             <Route path="/research-publications" element={<ResearchPublications />}>
-              <Route path="start-ups" element={<StartUps />}></Route>
+              <Route path="innovation-research" element={<InnovationResearch />} />
+              <Route path="fdps" element={<Fdps />} />
+              <Route path="kpgu-journals" element={<KpguJournals />} />
+              <Route path="publications" element={<Publications />} />
+              <Route path="ipr" element={<Ipr />} />
             </Route>
-
+            {/* ============================================================== Centers And Cells ============================================================== */}
+            <Route path="/centers-cells" element={<CentersCells />}>
+              <Route path="start-ups" element={<StartUps />} />
+              <Route path="internal-complaint-committee" element={<InternalComplaintCommittee />} />
+              <Route path="grievance-redressal-committee" element={<GrievanceRedressalCommittee />} />
+              <Route path="equal-opportunity-cell" element={<EqualOpportunityCell />} />
+              <Route path="anti-ragging" element={<AntiRagging />} />
+            </Route>
+            {/* ============================================================== Admission ============================================================== */}
             <Route path="/admission" element={<Admission />}>
-              <Route path="programs" element={<Programs />}></Route>
-              <Route path="admission-procedure" element={<AdmissionProcedure />} ></Route>
-              <Route path="education-loan" element={<EducationLoan />}></Route>
-              <Route path="international-students" element={<InternationalStudents />} ></Route>
-              <Route path="scholarships" element={<Scholarships />}></Route>
+              <Route path="programs" element={<Programs />} />
+              <Route path="admission-procedure" element={<AdmissionProcedure />} />
+              <Route path="education-loan" element={<EducationLoan />} />
+              <Route path="international-students" element={<InternationalStudents />} />
+              <Route path="scholarships" element={<Scholarships />} />
             </Route>
             <Route path="/admission-inquiry" element={<AdmissionInquiry />} ></Route>
             <Route path="/student-corner" element={<StudentCorner />} />
@@ -244,3 +259,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

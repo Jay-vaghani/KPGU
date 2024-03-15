@@ -11,9 +11,33 @@ function ResearchPublications() {
     ];
 
   useEffect(() => {
-    if (location === "start-ups") {
+    if (location === "innovation-research") {
       setBanner({
-        title: "START-UPS",
+        title: "Research & Innovation",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "fdps") {
+      setBanner({
+        title: "Fdps",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "kpgu-journals") {
+      setBanner({
+        title: "Kpgu Journals",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "publications") {
+      setBanner({
+        title: "Publications",
+        img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+      });
+    }
+    if (location === "ipr") {
+      setBanner({
+        title: "Ipr",
         img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
       });
     }

@@ -28,7 +28,7 @@ function HeroPage() {
       <SwiperSlide
         style={{
           background:
-            "linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1709961948/KPGU/Banners/banner-1.webp') center / cover",
+            "linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/dby2vbxv3/image/upload/v1707455732/KPGU/Banners/banner-3.jpg') bottom / cover",
           height: innerWidth < 768 ? "60vh" : "87vh",
         }}
       >
@@ -39,12 +39,12 @@ function HeroPage() {
           direction={"row"}
           p={"5%"}
           height={"100%"}
-          alignContent={"center"}
+          alignContent={"end"}
           justifyContent={"space-between"}
         >
           <Grid item xs={12} md={7}>
-            <h1 className="display-6 text-white" style={{ fontWeight: 900 }}>Empowering Tomorrow's Pioneers </h1>
-            <h1 className="display-4  text-white " style={{ fontWeight: 700 }}>Join KPGU's Pathway to Global Academic Excellence!</h1>
+            <h3 className=" text-white text-uppercase " style={{ fontWeight: 900, fontFamily: "serif" }}>Empowering Tomorrow's Pioneers </h3>
+            <h1 className="display-3  text-white " style={{ fontWeight: 700, fontFamily: "serif" }}>Join KPGU's Pathway to Global Academic Excellence</h1>
           </Grid>
         </Grid>
       </SwiperSlide>

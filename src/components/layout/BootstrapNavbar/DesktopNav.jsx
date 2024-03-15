@@ -126,31 +126,57 @@ const DesktopNav = () => {
   ];
 
   const ResearchAndPublicationList = [
+
     {
       title: "RESEARCH & INNOVATION",
-      link: "/",
-    },
-    {
-      title: "START-UPS",
-      link: "research-publications/start-ups",
+      link: "/research-publications/innovation-research",
     },
     {
       title: "PUBLICATIONS",
-      link: "/",
+      link: "/research-publications/publications",
     },
     {
       title: "IPR",
-      link: "/",
+      link: "/research-publications/ipr",
     },
     {
       title: "FDPS",
-      link: "/",
+      link: "/research-publications/fdps",
     },
     {
       title: "KPGU JOURNAL",
-      link: "/",
+      link: "/research-publications/kpgu-journals",
     },
   ];
+
+  const CentersCellsList = [
+    {
+      title: "START-UPS Cell",
+      link: "centers-cells/start-ups",
+    },
+    {
+      title: "Grievance Redressal Committee",
+      link: "centers-cells/grievance-redressal-committee",
+    },
+    {
+      title: "Anti-Ragging cell",
+      link: "centers-cells/anti-ragging",
+    },
+    {
+      title: "Internal Complaint Committee",
+      link: "centers-cells/internal-complaint-committee",
+    },
+    {
+      title: "Equal Opportunity Cell",
+      link: "centers-cells/equal-opportunity-cell",
+    },
+  ];
+
+
+
+
+
+
 
   const MenuItem = ({ title, link }) => (
     <Grid item xs={5} display={"flex"} justifyContent={"start"}>
@@ -278,14 +304,32 @@ const DesktopNav = () => {
             </Grid>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
+        {/* ======================================== CENTERS & CELLS ======================================== */}
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            CENTERS & CELLS
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {CentersCellsList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
         {/* ======================================== PLACEMENTS ======================================== */}
         <NavigationMenu.Item onClick={() => navigate("/")}>
           <NavigationMenu.Link className="NavigationMenuLink">
             PLACEMENTS
           </NavigationMenu.Link>
-          <NavigationMenu.Link className="NavigationMenuLink">
-            CENTERS & CELLS
-          </NavigationMenu.Link>
+
+
         </NavigationMenu.Item>
         {/* ======================================== Navigation Indicator ======================================== */}
         <NavigationMenu.Indicator className="NavigationMenuIndicator">

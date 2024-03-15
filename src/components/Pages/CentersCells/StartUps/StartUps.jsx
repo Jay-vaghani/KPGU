@@ -172,206 +172,30 @@ function StartUps() {
     },
   ];
 
-  // const StudentStartUps = [
-  //   {
-  //     company: "Berry Nature Care Private Limited",
-  //     logo: "",
-  //     founder: "Tagore Berry",
-  //     des: "Stained teeth have become an epidemic and a socialembarrassment. Product lead to white stain freeteeth at home without visiting a Dentist or usingharsh chemicals or expensive procedures",
-  //     websiteLink: "https://berrynaturecare.com",
-  //   },
-  //   {
-  //     company: "Cubesat Aerospace LLP",
-  //     logo: "",
-  //     founder: "Ms. Bansi Attara",
-  //     des: "Our CubeSats are made to be affordable,customizable, and portable so that they are availableto a wider range of consumers. They are ideal for avariety of uses, including scientific research, earthobservation, remote sensing, and more.",
-  //     websiteLink: "https://cubesataero.com",
-  //   },
-  //   {
-  //     company: "Microbeam Laser System",
-  //     logo: "",
-  //     founder: "Jatinkumar Manharlal Panchal",
-  //     des: "Microbeam laser systems designs and manufacturesnanosecond solid-state laser systems for ultra-hardmaterials such as PCD, CVD, Natural Diamond, andSemiconductor material, among others. MICROBEAMLASER SYSTEM is the industry leader in theproduction of laser systems for a variety ofindustries.",
-  //     websiteLink: "http://microbeamlasersystem.com",
-  //   },
-  //   {
-  //     company: "Sankul Capital Services Private Limited",
-  //     logo: "",
-  //     founder: "Prashant Kumar",
-  //     des: "SankulCapital builds a foundation for financialindependence. It is implementing a proven modelwith the support of largest not for profitMicrofinance institutes",
-  //     websiteLink: "https://sankulcapitalservices.co.in",
-  //   },
-  //   {
-  //     company: "Groskill Learning Private Limited",
-  //     logo: "",
-  //     founder: "Mugdha Galundia",
-  //     des: "Hunar attempts to provide a platform to help thelearner choose their profession as well as developbetter job and life-skills which will lead to theirpersonal and professional growth",
-  //     websiteLink: "https://www.groskill.com",
-  //   },
-  //   {
-  //     company: "Cosmo Kundli Private Limited",
-  //     logo: "",
-  //     founder: "Maulik Bhatt",
-  //     des: "In order to create the precise exercise of theastrology we are under process of making a softwarewhich will have the technology advancement of AL.This software will be able to predict future for theprecise prediction for the better planning assuggested in vedas.",
-  //     websiteLink: "https://cosmokundli.com",
-  //   },
-  //   {
-  //     company: "Ravens Defence System Private Limited",
-  //     logo: "",
-  //     founder: "Sameer Ravindra Kulkarni",
-  //     des: "The Ravens Defense System company's first productis IS&WS. It has a multifunctional, easy HumanMachine Interface (HMI) embedded system thatoutperforms the global market with innovativedesign.",
-  //     websiteLink: "https://www.ravendefense.com",
-  //   },
-  //   {
-  //     company: "Tatved Herbal",
-  //     logo: "",
-  //     founder: "Samiksha Dixit",
-  //     des: "Providing safe skin care and hair care formulationswhich are result oriented and value added.Affordable range of the products.",
-  //     websiteLink: "https://tatvedherbal.com",
-  //   },
-  //   {
-  //     company: "Truewholesale LLP",
-  //     logo: "",
-  //     founder: "Madhup Bansal",
-  //     des: "The Ravens Defense System company's first productis IS&WS. It has a multifunctional, easy HumanMachine Interface (HMI) embedded system thatoutperforms the global market with innovativedesign.",
-  //     websiteLink: "https://truewholesale.in",
-  //   },
-  //   {
-  //     company: "Excelsus Global Private Limited",
-  //     logo: "",
-  //     founder: "Chintan Chaudhary",
-  //     des: "Acquires left over wheat stubble waste form thefarmers & turn them into useful products such asEco-friendly 'drinking straws' & 'stirrers'. With thisinitiative we are not only preventing the air pollutionbut are also promoting the reduction in the use ofplastics.",
-  //     websiteLink: "https://www.excelsus-global.com",
-  //   },
-  //   {
-  //     company: "Gyanme EduTech Pvt Ltd",
-  //     logo: "",
-  //     founder: "Mr. Raghvendra Singh Chauhan",
-  //     des: "GyanMe is an EdTech setup that offers students infact entire educational community, real-time doubtsolving, and practical learning by means of the virtualplatform.",
-  //     websiteLink: "https://gyanme.in",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     company: "",
-  //     logo: "",
-  //     founder: "",
-  //     des: "",
-  //     websiteLink: "",
-  //   },
-  // ];
-
-  // Components
-
   const StudentStartUps = [
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411690/KPGU/Startups/allapyhirs1fnvdzhdwd.png",
       founderName: "Mr. Tagore Berry",
       companyName: "BERRY NATURE CARE PRIVATE LIMITED",
       companyDes: "Berry Nature Care prioritizes sustainability, offering eco-friendly products infused with Ayurveda and modern research. Their patented materials combat pollution, support farmers, and reduce plastic waste. Purchases contribute to environmental protection and future savings for children.",
       websiteLink: "https://berrynaturecare.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411691/KPGU/Startups/fc1mfcqi87vjvbdk2fyj.png",
       founderName: "Ms. Bansi Attara",
       companyName: "CUBESAT AEROSPACE LLP",
       companyDes: "Cubesat Aerospace pioneers innovative technology, including Small Satellites, UAVs, and Robots, aiming to revolutionize various fields. Driven by exploration and excellence, they envision technology's positive impact on the world.",
       websiteLink: "https://cubesataero.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411688/KPGU/Startups/fh8ubt6pj1qfhzamexsz.svg",
       founderName: "Mr. Jatinkumar Manharlal Panchal",
       companyName: "MICROBEAM LASER SYSTEM",
       companyDes: "Microbeam Laser System, led by entrepreneur Jatin Panchal, adapts to laser technology advancements driven by diamond industries. Offering repair services for various DPSS laser systems, specializing in Nd:YAG and Fiber lasers across different wavelengths and configurations, ensuring comprehensive optical assembly handling.",
       websiteLink: "http://microbeamlasersystem.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411687/KPGU/Startups/inav96eljgpen2nti5rg.svg",
       founderName: "Mr. Prashant Kumar",
       companyName: "SANKUL CAPITAL SERVICES PRIVATE LIMITED",
       companyDes: "Sankul Capital Services Private Limited aims to offer financial services to underprivileged communities in remote villages, where traditional credit avenues are scarce. With a team of experienced development professionals, they focus on holistic poverty eradication through community empowerment and sustainable practices.",
@@ -379,126 +203,150 @@ function StartUps() {
     },
 
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411690/KPGU/Startups/vitiizx0akmzwwmnlict.svg",
       founderName: "Ms. Mugdha Galundia",
       companyName: "GROSKILL LEARNING PRIVATE LIMITED",
       companyDes: "GROSKILL LEARNING PRIVATE LIMITED strives to empower learners with job and life skills, enhancing personal growth and professional development. By providing certifications, promoting job safety, and facilitating job placements, it contributes to India's workforce development and #AATMANIRBHAR initiative.",
       websiteLink: "https://www.hunarindia.co.in",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411690/KPGU/Startups/uet8vvskiplg24jjj88k.svg",
       founderName: "Mr. Maulik Bhatt",
       companyName: "COSMO KUNDLI PRIVATE LIMITED",
       companyDes: "Cosmo Kundli pioneers technological advancements in astrology, aiming to revolutionize the field by merging Vedic knowledge with scientific approaches. With over 100 connected astrologers, their software seeks to bring precision and clarity to the market.",
       websiteLink: "https://cosmokundli.com/",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/nz3rdidckypkxjtglkev.svg",
       founderName: " Mr. Sameer Ravindra Kulkarni",
       companyName: "RAVENS DEFENCE SYSTEM PRIVATE LIMITED",
       companyDes: "Raven Defense, based in Albuquerque, NM, delivers top-tier engineering services, program consultation, and specialized technical equipment for satellite communications, ground stations, sensors, and R&D systems. With a focus on agility and responsiveness, they ensure mission success for government clients.",
       websiteLink: "https://www.ravendefense.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411689/KPGU/Startups/spnjynr7enzeetmrgnnh.webp",
       founderName: "Ms. Samiksha Sanjay Dixit",
       companyName: "SMARTIK HERBS (OPC) PRIVATE LIMITED",
       companyDes: "Tatved Herbal is not just a personal care brand, but a labour so love and dedication that started from scratch. The founder, Ms. Samiksha Dixit, with background of Pharmacy and genuine passion for research is not only the driving force behind our products but also the formulator.",
       websiteLink: "http://tatvedherbal.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411688/KPGU/Startups/kp30jnek7po8pngez9sh.svg",
       founderName: "Mr. Madhup Bansal",
       companyName: "TRUEWHOLESALE LLP",
       companyDes: "TrueWholesale is at the forefront of India's wholesale market, offering a comprehensive online platform tailored for shop owners and businesses to efficiently source a diverse range of products including stationery, sports equipment, and general inventory.",
       websiteLink: "https://truewholesale.in",
     },
     {
+      img: "",
       founderName: "Mr. Chintan Chaudhary",
       companyName: "EXCELSUS GLOBAL PRIVATE LIMITED",
       companyDes: "Excelsus Global Private Limited excels in exporting high-quality agricultural and industrial products globally, offering competitive rates. With a commitment to tailored and seamless transactions, we prioritize understanding clients' needs to deliver superior market offerings consistently, particularly in the Indian market.",
       websiteLink: "https://www.excelsus-global.com",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411692/KPGU/Startups/sedvpodi4yshmgvt3fhw.png"
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411691/KPGU/Startups/onvgflacspbjcae6uaq1.svg",
       founderName: "Mr. Fredrick Thomson Bula",
       companyName: "VARTECH WEIGHING SYSTEMS PRIVATE LIMITED",
       companyDes: "Vartech proudly collaborates with Dos Santos, USA, to deliver cutting-edge solutions, including high-angle sandwich conveyors, catering specifically to the unique demands of the Indian mining industry.",
       websiteLink: "https://vartechweighing.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411688/KPGU/Startups/w7o6ixpaxf4atkfehkcn.webp",
       founderName: "Ms. Riddhi Bhatt ",
       companyName: "SOUL MANTRA ORGANICS LLP",
       companyDes: "Soul Mantra Organics, inspired by Ayurveda, crafts skin and hair care products rooted in ancient Santana Scriptures. Founder Riddhi Bhatt preserves tradition while innovating to offer effective, natural solutions. Committed to excellence, they prioritize customer satisfaction, blending tradition with innovation for premium organic beauty products.",
       websiteLink: "https://soulmantraorganics.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411691/KPGU/Startups/ofpeswid6og3hmwl3uvk.svg",
       founderName: "Dr.Avani Desai ,Mr.Karan Shah, Mr.Ankit Desai",
       companyName: "AVAN MEDITECH PVT LTD",
       companyDes: "Avan Meditech pioneers product innovation, customer service, and quality manufacturing in the medical industry. Our team, comprising skilled engineers, innovators, and doctors, blends youth and experience to produce high-standard medical equipment at competitive prices.",
       websiteLink: "http://avanmeditech.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411692/KPGU/Startups/ztwf4hvnfp02ijupkc8s.png",
       founderName: "Ms.Amrit Chhabra",
       companyName: "ANANDASHRAM AYURVED PVT LTD",
       companyDes: "Wellness Mantra, a subsidiary of Anand Ashram Ayurved Private Limited, operates on the principles of Social Entrepreneurship. Committed to serving humanity, we offer authentic Ayurvedic medications and healthcare products, targeting lifestyle-induced ailments with efficacy and authenticity.",
       websiteLink: "https://wellnessmantra.co.in",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411691/KPGU/Startups/yyx1smr19ldz2hwtjbmd.svg",
       founderName: "Mr. Raghvendra Singh Chauhan",
       companyName: "GYANME EDUTECH PVT LTD",
       companyDes: "GyanMe, an EdTech platform, provides real-time doubt solving and practical learning for students and the wider educational community through virtual means. Embracing change, we prioritize user feedback, continuous improvement, and the synergy of technology, content, and intent to empower the bright minds of the future.",
       websiteLink: "https://gyanme.in",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411689/KPGU/Startups/pfq2hbigtpoce1srvph1.svg",
       founderName: "Mr Aliasgar Poonawalla",
       companyName: "CURATY PRIVATE LIMITED",
       companyDes: "curaty is your dedicated partner in transforming the talent landscape of the film and creative industry. Elevate your talent discovery process, harness cutting-edge machine learning and artificial intelligence, and make informed decisions that shape the future of your projects.",
       websiteLink: "https://curaty.in",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/uczixvuvknuwtkjmzfiq.jpg",
       founderName: "Mr. Varun Saikia",
       companyName: "OCEAN CLEANERZ TECHNOLOGIES PVT LTD",
       companyDes: "Oceancleanerz, spearheaded by 15-year-old Varun Saikia, pioneers AI-enhanced devices like Flipper and Makara to clean the Ganga River and Indian Ocean Gyre. Joining forces with volunteers across Asia, they collaborate with governments for cleaner waterbodies.",
       websiteLink: "https://oceancleanerz.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411689/KPGU/Startups/iuynvm23i04foravhuuz.svg",
       founderName: "Mr. Yash Deshmukh",
       companyName: "AUTOVOLTZ ROBOTICS PRIVATE LIMITED",
       companyDes: "Autovoltz Robotics Pvt Ltd reimagines firefighting with a focus on swift and efficient response. Embracing a human-centric approach, we engineer intelligent fire safety devices to enhance interaction and combat fire emergencies effectively.",
       websiteLink: "https://www.autovoltz.com/",
+      bgcolor: "#000"
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411688/KPGU/Startups/isfqsa4vi0izaxqkm7it.svg",
       founderName: "Mr. Karmit Goswami",
       companyName: "COMPUCARE INDIA PVT LTD",
       companyDes: "Compucare is a leading IT services firm headquartered in India. Specializing in biometric and card-based time attendance solutions, we offer cutting-edge IT solutions in software, hardware, and office automation. With a commitment to quality, service, and reliability, we excel in providing value-driven technology solutions worldwide.",
       websiteLink: "https://compucareindia.com/",
+      bgcolor: "#181a25"
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/fldvt2qii6osiers2tt8.png",
       founderName: "Mr. Rishil Gaur",
       companyName: "TELIDOX SYSTEMS",
       companyDes: "Telidox provides comprehensive healthcare solutions through its clinically-researched online platform. Users can access qualified doctors, book appointments, view test results, and utilize pharmacy, laboratory, and diagnostic center services conveniently, anytime and from anywhere.",
       websiteLink: "https://telidox.com/",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/qqnvx8zttguliuqxcxzb.svg",
       founderName: "Ms. Ruchira Saikia",
       companyName: "RTEFACTS EREATIL PVT LTD",
       companyDes: "Rtefacts.com, pronounced Artefacts, fosters indigenous artistry, showcasing heirlooms crafted by master artisans. We aim to revive traditional Indian arts, offering a platform for artists nationwide and empowering artisan communities with each purchase.",
       websiteLink: "https://rtefacts.com/",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/lnspbo9hiioad4c6he2u.jpg",
       founderName: "Mr. Gurpreet Singh Batra",
       companyName: "JKB FITNESS PRIVATE LIMITED",
       companyDes: "GSBPathy, India's pioneer in non-drug gut disorder treatment, led by Mr. Gurpreet Singh Batra and industry experts, offers holistic solutions for various health conditions like PCOS, Psoriasis, and Diabetes, with modern painless technology and full confidentiality.",
       websiteLink: "https://www.gsbfit.com",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411687/KPGU/Startups/uzate1h9iq6jo8c27bss.svg",
       founderName: "Mr. Rachhadiya Jaydeep",
       companyName: "EXAMEN FORMA PRIVATE LIMITED",
       companyDes: "Examen Forma Private Limited specializes in CNC and VMC job work services, dedicated to delivering precision and innovation to industries, particularly automotive manufacturing. With cutting-edge technology and a skilled team, we ensure superior workmanship, consistently exceeding industry standards.",
       websiteLink: "https://examen.in",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/neihxhhvt2wazb1yeq9g.svg",
       founderName: "Dr Krunal Ramteke",
       companyName: "GOOD4HEALTH LIFECARE TECHNOLOGY PRIVATE LIMITED",
       companyDes: "DQcare strives to empower individuals by providing a comprehensive platform for managing health and fitness data, utilizing technology to enhance healthcare delivery. Our vision is to revolutionize health management, ensuring access to reliable information and tools for informed well-being decisions.",
       websiteLink: "https://dqcare.in",
     },
     {
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710411686/KPGU/Startups/noasgbsdhsimbjra7aih.png",
       founderName: "Mr. Swapneel Patel",
       companyName: "JUPISOL POWER INDIA PRIVATE LIMITED",
       companyDes: "Jupisol Power India Private Limited leads the shift towards sustainable, reliable, and affordable energy systems. Through innovative technologies, we aim to energize society and drive positive change in the energy landscape.",
@@ -510,12 +358,7 @@ function StartUps() {
     //   companyDes: "",
     //   websiteLink: "https://ficusfoods.com",
     // },
-    // {
-    //   founderName: "Mr. Maneesh Adari",
-    //   companyName: "ADTIP (OPC) PRIVATE LIMITED",
-    //   companyDes: "",
-    //   websiteLink: "https://adtip.in",
-    // },
+
     // {
     //   founderName: "Mr. Vecham Sathyanarayana Supradesh",
     //   companyName: "GAVIGAN TECHNOLOGY PRIVATE LIMITED",
@@ -640,12 +483,12 @@ function StartUps() {
     </h5>
   );
 
-  const StudentStartUpsComponents = ({ founderName, companyName, companyDes, websiteLink }) => (
+  const StudentStartUpsComponents = ({ founderName, companyName, companyDes, websiteLink, img, bgcolor }) => (
     <Grid item xs={12} sm={6} md={4} >
-      <Box className="smooth-shadow-card h-100" position={"relative"} borderRadius={4}>
-        {/* <Box>
-          <img src="" alt="" />
-        </Box> */}
+      <Box className="smooth-shadow-card h-100" position={"relative"} borderRadius={4} >
+        <Box height={"200px"} bgcolor={bgcolor ? bgcolor : "transparent"}>
+          <img src={img} className="w-100 h-100 object-fit-contain  p-3" alt="" />
+        </Box>
         <Box p={2} mb={5}>
           <h3 className="mb-0 fw-semibold ">{founderName}</h3>
           <h6 className="fw-bold ">Founder of <span className="color-secondary">{companyName}</span></h6>
@@ -670,11 +513,11 @@ function StartUps() {
         position={"relative"}
         borderRadius={4}
       >
-        <Box>
+        <Box height={"250px"}>
           <img
             src={img}
             alt="Industries Commissionerate Government of Gujarat"
-            className="w-100"
+            className="w-100 h-100 object-fit-contain "
           />
         </Box>
         <Box p={2}>
@@ -814,11 +657,11 @@ function StartUps() {
         className="smooth-shadow"
       >
         <h2 className="fw-semibold color-secondary mb-4">
-          Startups From KPGU
+          Startups From Krishna Centre of Startup & Entrepreneurship
         </h2>
         <Grid container spacing={4}>
           {
-            StudentStartUps.map(({ companyDes, companyName, founderName, websiteLink }, index) => <StudentStartUpsComponents companyDes={companyDes} companyName={companyName} founderName={founderName} websiteLink={websiteLink} key={index} />)
+            StudentStartUps.map(({ companyDes, companyName, founderName, websiteLink, img, bgcolor }, index) => <StudentStartUpsComponents companyDes={companyDes} companyName={companyName} founderName={founderName} websiteLink={websiteLink} key={index} img={img} bgcolor={bgcolor} />)
           }
         </Grid>
       </Box>
