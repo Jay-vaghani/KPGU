@@ -41,6 +41,12 @@ function CentersCells() {
                 img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
             });
         }
+        if (location === "centers-of-excellence") {
+            setBanner({
+                title: "Centers Of Excellence",
+                img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1702100388/KPGU/Banners/banner-2.jpg",
+            });
+        }
     }, [location]);
 
     return (

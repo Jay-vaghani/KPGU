@@ -552,13 +552,7 @@ function Programs() {
                                 ))}
                             </TabPanel>
                             <TabPanel value="doctoral program">
-                                {DoctoralProgram.map(({ faculty, programs }, index) => (
-                                    <ProgramComponents
-                                        faculty={faculty}
-                                        programs={programs}
-                                        key={index}
-                                    />
-                                ))}
+                                
                             </TabPanel>
                         </Box>
                     </Grid>

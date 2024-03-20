@@ -3,62 +3,56 @@ import { AppContext } from "../../../contexts/AppContext";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { Add, AddRounded } from "@mui/icons-material";
+import { Institutes, Achievements, AvailablePrograms, GraduatedStudents } from "../../../Utils/Icons/CustomIcon"
 
 function KpguMilestones() {
   const { maxWidth } = useContext(AppContext);
 
   const KpguMilestonesStats = [
     {
-      name: "Institutes",
+      name: "educational institutes ",
       number: 10,
-      image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381503/KPGU/icon/institute.svg",
+      icon: <Institutes />,
     },
     {
-      name: "Acres Green Campus",
-      number: 25,
-      image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381873/KPGU/icon/green-campus.svg",
-    },
-    {
-      name: "Faculty Staff",
-      number: 450,
-      image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381505/KPGU/icon/faculty.svg",
-    },
-    {
-      name: "Programs",
+      name: "PROGRAMS AVAILABLE ",
       number: 50,
-      image:
-        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707381505/KPGU/icon/programs.svg",
+      icon: <AvailablePrograms />,
+    },
+    {
+      name: "YEARS OF GLORIOUS HISTORY",
+      number: new Date().getFullYear() - 2004,
+      icon: <Achievements />,
+    },
+
+    {
+      name: "Total Students Graduated",
+      number: "16000",
+      icon: <GraduatedStudents />,
     },
   ];
 
-  const KpguMilestonesComponents = ({ name, number, image }) => (
+  console.log();
+
+  const KpguMilestonesComponents = ({ name, number, icon }) => (
     <Grid item xs={12} sm={6} md={4} lg={3} textTransform={"uppercase"}>
-      <Box
-        className="smooth-shadow-card"
-        pb={3}
-        borderRadius={4}
-        overflow={"hidden"}
-      >
-        <Box>
-          <img src={image} alt="" className="w-100" />
+      <Box className=" h-100" borderRadius={4} p={1}>
+        <Box
+          className=" d-flex align-items-center "
+          pb={1}
+          borderRadius={4}
+          overflow={"hidden"}
+        >
+          <Box mr={"10px"}>
+            {icon}
+          </Box>
+          <Box className="d-flex align-items-center ">
+            <h1 className="mb-0 fs-1 fw-bolder">
+              {number}<Add sx={{ ml: 0, fontSize: "35px", fontWeight: 900, mb: "7px" }} />
+            </h1>
+          </Box>
         </Box>
-        <Box>
-          <Typography
-            variant="h4"
-            // fontSize={"45px"}
-            justifyContent={"center"}
-            display={"flex"}
-            alignItems={"center"}
-            className="fw-medium mt-3"
-          >
-            {number}
-            <Add sx={{ ml: -0.5, fontSize:"inherit" }} />
-          </Typography>
-          <h4 className="text-center fs-4 fw-bold ">{name}</h4>
-        </Box>
+        <h6 className="fw-bold px-2" style={{ letterSpacing: "1px", color: "#525271", wordSpacing: "2px" }}>{name}</h6>
       </Box>
     </Grid>
   );
@@ -78,12 +72,12 @@ function KpguMilestones() {
         University achievements and milestones
       </h2>
       <Grid container spacing={4}>
-        {KpguMilestonesStats.map(({ name, number, image }, index) => (
+        {KpguMilestonesStats.map(({ name, number, icon }, index) => (
           <KpguMilestonesComponents
             name={name}
             number={number}
             key={index}
-            image={image}
+            icon={icon}
           />
         ))}
       </Grid>

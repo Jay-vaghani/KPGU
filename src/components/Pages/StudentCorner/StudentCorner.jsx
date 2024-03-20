@@ -27,6 +27,12 @@ function StudentCorner() {
         "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707116443/KPGU/StudentCorner/student-login.svg",
       hrefLink: "https://ums.kpgu.ac.in/Login.aspx",
     },
+    {
+      name: "Anti Ragging Committee",
+      imageLink:
+        "https://res.cloudinary.com/dby2vbxv3/image/upload/v1710746342/KPGU/StudentCorner/anti-ragging.svg",
+      hrefLink: "https://ums.kpgu.ac.in/Login.aspx",
+    },
   ];
 
   const StudentCornerCardComponent = ({
@@ -57,7 +63,7 @@ function StudentCorner() {
               sx={{ mb: 1.5 }}
               target="_blank"
             >
-              See more
+              visit
             </Button>
           </Box>
         </Stack>

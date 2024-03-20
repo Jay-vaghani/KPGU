@@ -113,7 +113,7 @@ const DesktopNav = () => {
     },
     {
       title: "ADMISSION PROCEDURE",
-      link: "admission/admission-procedure",
+      link: "admission-inquiry",
     },
     {
       title: "EDUCATION LOAN",
@@ -170,6 +170,10 @@ const DesktopNav = () => {
       title: "Equal Opportunity Cell",
       link: "centers-cells/equal-opportunity-cell",
     },
+    {
+      title: "Centers Of Excellence",
+      link: "centers-cells/centers-of-excellence",
+    }
   ];
 
 
@@ -324,12 +328,23 @@ const DesktopNav = () => {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
         {/* ======================================== PLACEMENTS ======================================== */}
-        <NavigationMenu.Item onClick={() => navigate("/")}>
-          <NavigationMenu.Link className="NavigationMenuLink">
-            PLACEMENTS
-          </NavigationMenu.Link>
-
-
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+            IR-TRAINING & PLACEMENT
+            <KeyboardArrowDownRounded className="CaretDown" aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <Grid
+              container
+              justifyContent={"space-between"}
+              spacing={2}
+              className="List one"
+            >
+              {CentersCellsList.map(({ link, title }, index) => (
+                <MenuItem title={title} link={link} key={index} />
+              ))}
+            </Grid>
+          </NavigationMenu.Content>
         </NavigationMenu.Item>
         {/* ======================================== Navigation Indicator ======================================== */}
         <NavigationMenu.Indicator className="NavigationMenuIndicator">

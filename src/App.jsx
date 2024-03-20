@@ -111,6 +111,13 @@ import AntiRagging from "./components/Pages/CentersCells/AntiRagging/AntiRagging
 import InternalComplaintCommittee from "./components/Pages/CentersCells/InternalComplaintCommittee/InternalComplaintCommittee";
 import GrievanceRedressalCommittee from "./components/Pages/CentersCells/GrievanceRedressalCommittee/GrievanceRedressalCommittee";
 import EqualOpportunityCell from "./components/Pages/CentersCells/EqualOpportunityCell/EqualOpportunityCell";
+import CentersOfExcellence from "./components/Pages/CentersCells/CentersOfExcellence/CentersOfExcellence";
+import KrishnaCenterOfCareerAdvancementCorporate from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfCareerAdvancementCorporate";
+import KrishnaCenterOfInstitutionSocialResponsibility from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfInstitutionSocialResponsibility";
+import KrishnaCenterOfInternationalAffairs from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfInternationalAffairs";
+import KrishnaCenterOfStartupsAndEntrepreneurship from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfStartupsAndEntrepreneurship";
+import KrishnaCenterOfTrainingInDisasterManagement from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfTrainingInDisasterManagement";
+import KrishnaCentreOfInnovationResearch from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCentreOfInnovationResearch";
 
 
 // ========================================== CAMPUS ==========================================
@@ -192,23 +199,23 @@ function App() {
               <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
               <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
               {/* =============================== Departments =============================== */}
-              {/* ================ KSET ================ */}
+              {/* =============================== KSET =============================== */}
               <Route path="kset/civil-engineering" element={<KsetCivilEngineering />} />
               <Route path="kset/mechanical-engineering" element={<KsetMechanicalEngineering />} />
               <Route path="kset/electrical-engineering" element={<KsetElectricalEngineering />} />
               <Route path="kset/information-technology" element={<KsetInformationTechnology />} />
               <Route path="kset/computer-science-and-engineering" element={<KsetComputerScienceEngineering />} />
-              {/* ================ KSDS ================ */}
+              {/* =============================== KSDS =============================== */}
               <Route path="ksds/civil-engineering" element={<KsdsCivilEngineering />} />
               <Route path="ksds/mechanical-engineering" element={<KsdsMechanicalEngineering />} />
               <Route path="ksds/electrical-engineering" element={<KsdsElectricalEngineering />} />
               <Route path="ksds/information-technology" element={<KsdsInformationTechnology />} />
               <Route path="ksds/computer-science-and-engineering" element={<KsdsComputerScienceEngineering />} />
               <Route path="ksds/chemical-engineering" element={<KsdsChemicalEngineering />} />
-              {/* ================ KST ================ */}
+              {/* =============================== KST =============================== */}
               <Route path="kst/food-technology" element={<KstFoodTechnology />} />
               <Route path="kst/computer-engineering" element={<KstComputerEngineering />} />
-              {/* ================ KSS ================ */}
+              {/* =============================== KSS =============================== */}
               <Route path="kss/biotechnology" element={<KssBiotechnology />} />
               <Route path="kss/chemistry" element={<KssChemistry />} />
               <Route path="kss/mathematics" element={<KssMathematics />} />
@@ -236,6 +243,21 @@ function App() {
               <Route path="grievance-redressal-committee" element={<GrievanceRedressalCommittee />} />
               <Route path="equal-opportunity-cell" element={<EqualOpportunityCell />} />
               <Route path="anti-ragging" element={<AntiRagging />} />
+              <Route path="centers-of-excellence" element={<CentersOfExcellence />} />
+              
+              {/* =============================== Krishna Center Of Career Advancement Corporate =============================== */}
+              <Route path="krishna-center-of-career-advancement-corporate" element={<KrishnaCenterOfCareerAdvancementCorporate />} />
+              {/* =============================== Krishna Center Of Institution Social Responsibility =============================== */}
+              <Route path="krishna-center-of-institution-social-responsibility" element={<KrishnaCenterOfInstitutionSocialResponsibility />} />
+              {/* =============================== Krishna Center Of International Affairs =============================== */}
+              <Route path="krishna-center-of-international-affairs" element={<KrishnaCenterOfInternationalAffairs />} />
+              {/* =============================== Krishna Center Of Startups And Entrepreneurship =============================== */}
+              <Route path="krishna-center-of-startups-and-entrepreneurship" element={<KrishnaCenterOfStartupsAndEntrepreneurship />} />
+              {/* =============================== Krishna Center Of Training In Disaster Management =============================== */}
+              <Route path="krishna-center-of-training-in-disaster-management" element={<KrishnaCenterOfTrainingInDisasterManagement />} />
+              {/* =============================== Krishna Centre Of Innovation Research =============================== */}
+              <Route path="krishna-centre-of-innovation-research" element={<KrishnaCentreOfInnovationResearch />} />
+
             </Route>
             {/* ============================================================== Admission ============================================================== */}
             <Route path="/admission" element={<Admission />}>

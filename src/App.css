@@ -9,7 +9,6 @@
 /* COSTUME CSS  */
 
 
-
 .dot {
   height: 17px;
   width: 17px;
@@ -34,6 +33,7 @@
 .department-card:active {
   scale: 1;
 }
+
 
 .dot2 {
   height: 50%;
