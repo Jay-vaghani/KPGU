@@ -177,6 +177,34 @@ const DesktopNav = () => {
   ];
 
 
+  const IR_Training_Placement = [
+    {
+      title: "Page 1",
+      link: "",
+    },
+    {
+      title: "Page 2",
+      link: "",
+    },
+    {
+      title: "Page 3",
+      link: "",
+    },
+    {
+      title: "Page 4",
+      link: "",
+    },
+    {
+      title: "Page 5",
+      link: "",
+    },
+    {
+      title: "Page 6",
+      link: "",
+    }
+  ];
+
+
 
 
 
@@ -340,7 +368,7 @@ const DesktopNav = () => {
               spacing={2}
               className="List one"
             >
-              {CentersCellsList.map(({ link, title }, index) => (
+              {IR_Training_Placement.map(({ link, title }, index) => (
                 <MenuItem title={title} link={link} key={index} />
               ))}
             </Grid>

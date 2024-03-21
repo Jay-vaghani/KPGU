@@ -70,7 +70,7 @@ function KrishnaSchoolOfCommerce() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "3",
     },
   ];
 

@@ -86,9 +86,10 @@ function KrishnaSchoolOfBusinessManagement() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "3",
     },
   ];
+  
   const PG = [
     {
       title: "Master of Business Administration [M.B.A]",
@@ -96,7 +97,7 @@ function KrishnaSchoolOfBusinessManagement() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
   ];
 

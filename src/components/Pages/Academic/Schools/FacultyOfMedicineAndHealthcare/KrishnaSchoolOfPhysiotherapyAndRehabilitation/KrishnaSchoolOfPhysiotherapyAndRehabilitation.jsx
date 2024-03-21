@@ -161,7 +161,7 @@ function KrishnaSchoolOfPhysiotherapyAndRehabilitation() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
     {
       title: "M.P.T in Neurological & Psychosomatic disorders ",
@@ -169,7 +169,7 @@ function KrishnaSchoolOfPhysiotherapyAndRehabilitation() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "4",
+      duration: "2",
     },
     {
       title: "M.P.T in Cardio - Respiratory & Intensive Care  ",

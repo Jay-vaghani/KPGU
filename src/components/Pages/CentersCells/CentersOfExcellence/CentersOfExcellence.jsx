@@ -27,7 +27,7 @@ function CentersOfExcellence() {
         {
             center: "Krishna Center of Career Advancement Corporate Training",
             des: "Krishna Center of Career Advancement & Corporate Training (KCCACT) aids students in exploring career options and provides counseling and training to align their skills with industry needs, fostering career growth and professional development.",
-            link: "/centers-cells/",
+            link: "/centers-cells/krishna-center-of-career-advancement-corporate",
         },
         {
             center: "Krishna Center of Startups and Entrepreneurship",

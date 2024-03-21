@@ -156,7 +156,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "3",
+      duration: "4",
     },
     {
       title: "B.Sc [Honours]  in Chemistry, Biotechnology & Microbiology",
@@ -164,7 +164,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "3",
+      duration: "4",
     },
   ];
 
@@ -175,7 +175,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "3",
+      duration: "2",
     },
     {
       title: "Microbiology",
@@ -183,7 +183,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "3",
+      duration: "2",
     },
     {
       title: "Biotechnology",
@@ -191,7 +191,7 @@ function KrishnaSchoolOfSciences() {
       link: "",
       pageLink: "",
       fees: "1,00,000",
-      duration: "3",
+      duration: "2",
     },
   ];
 
