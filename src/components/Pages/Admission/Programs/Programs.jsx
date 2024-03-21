@@ -20,7 +20,7 @@ function Programs() {
                 {
                     title: "Computer Science & Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -28,7 +28,7 @@ function Programs() {
                 {
                     title: "Mechanical Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -36,7 +36,7 @@ function Programs() {
                 {
                     title: "Civil Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -44,7 +44,7 @@ function Programs() {
                 {
                     title: "Chemical Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -52,7 +52,7 @@ function Programs() {
                 {
                     title: "Information Technology",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -60,7 +60,7 @@ function Programs() {
                 {
                     title: "Electrical Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -68,7 +68,7 @@ function Programs() {
                 {
                     title: "Computer Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -187,7 +187,7 @@ function Programs() {
                 {
                     title: "BAMS",
                     link: "",
-                    duration: "4",
+                    duration: "5.5",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -195,7 +195,7 @@ function Programs() {
                 {
                     title: "B.Sc. (Nursing)",
                     link: "",
-                    duration: "4",
+                    duration: "3",
                     eligibility:
                         "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
@@ -246,42 +246,42 @@ function Programs() {
                 {
                     title: "M. Tech in Advance Manufacturing System",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Tech in Data Science",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Tech in Computer Science & Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Tech in Computer Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Tech in Electrical Engineering",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Tech in Information Technology",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
@@ -293,49 +293,49 @@ function Programs() {
                 {
                     title: "M. Pharm in Pharmaceutics",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Pharm in Pharmacology",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Pharm in Pharmaceutical Quality Assurance",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Pharm in Pharmaceutical Technology",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M.P.T in Musculoskeletal & Sports",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M.P.T in Neurological & Psychosomatic disorders",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M.P.T in Cardio - Respiratory & Intensive Care",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
@@ -347,7 +347,7 @@ function Programs() {
                 {
                     title: "Master of Business Administration [M.B.A]",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
@@ -407,49 +407,49 @@ function Programs() {
                 {
                     title: "M. Pharm in Pharmaceutics",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Pharm in Pharmacology",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Pharm in Pharmaceutical Quality Assurance",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M. Pharm in Pharmaceutical Technology",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M.P.T in Musculoskeletal & Sports",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M.P.T in Neurological & Psychosomatic disorders",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },
                 {
                     title: "M.P.T in Cardio - Respiratory & Intensive Care",
                     link: "",
-                    duration: "4",
+                    duration: "2",
                     eligibility: "Minimum Aggregate 45% in Physics, Chemistry & Mathematics, Theory exam in H.S.C. of any boards.",
                     fees: "1,00,000",
                 },

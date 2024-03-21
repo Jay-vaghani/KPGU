@@ -17,12 +17,12 @@ function FacultyAndCollageSection() {
     },
     {
       title: "ENGINEERING & TECHNOLOGY",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707388265/KPGU/Banners/Faculty/twhzqv6u4hlxjkvh6j3i.webp",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1711007219/KPGU/Banners/iemhy1n7mbqdcs1ntars.webp",
       link: "/academics/faculty-of-engineering-and-technology",
     },
     {
       title: "SCIENCE",
-      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1707388265/KPGU/Banners/Faculty/skffkqfmbtyrmkjhetiw.webp",
+      img: "https://res.cloudinary.com/dby2vbxv3/image/upload/v1703145249/KPGU/Banners/research-banner.webp",
       link: "/academics/faculty-of-sciences",
     },
     {
