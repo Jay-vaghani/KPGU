@@ -31,13 +31,13 @@ p {
   outline: none;
   user-select: none;
   font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
   color: var(--violet-11);
   text-decoration: none;
   cursor: pointer;
 
-  padding: 14px 7px;
+  padding: 14px 4px;
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {

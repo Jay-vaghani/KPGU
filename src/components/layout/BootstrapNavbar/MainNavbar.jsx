@@ -9,7 +9,7 @@ function MainNavbar() {
 
   return (
     <Box bgcolor={"#fff"}>
-      {innerWidth > 1130 ? <DesktopNav /> : <MobileNavBar />}
+      {innerWidth > 1226 ? <DesktopNav /> : <MobileNavBar />}
     </Box>
   );
 }

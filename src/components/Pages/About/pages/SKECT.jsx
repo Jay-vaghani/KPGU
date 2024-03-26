@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import React, { useContext } from "react";
 import { AppContext } from "../../../../contexts/AppContext";
 import Paragraph from "../../../Common/Paragraph";
+import { Helmet } from "react-helmet";
 
 function SKECT() {
   const { maxWidth } = useContext(AppContext);
@@ -89,25 +90,32 @@ function SKECT() {
   );
 
   return (
-    <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
-      <h4 className=" fw-semibold color-secondary">KPGU'S SPONSORING</h4>
-      <h3 className="display-5 fw-semibold mb-4">
-        Sponsoring Body: Shree Krishna Educational & Charitable Trust [SKECT]
-      </h3>
-      {paragraphs.map(({ para }, index) => (
-        <Paragraph content={[para]} key={index} />
-      ))}
-      <Grid container mt={10} spacing={3}>
-        {MembersList.map(({ designation, img, name }, index) => (
-          <MembersComponent
-            designation={designation}
-            img={img}
-            name={name}
-            key={index}
-          />
+    <>
+      <Helmet>
+        <title>Shree Krishna Educational & Charitable Trust (SKECT)</title>
+        <meta name="description" content="Welcome to the Shree Krishna Educational & Charitable Trust (SKECT). Discover our commitment to educational excellence and our journey towards becoming a hub for academic and professional development." />
+      </Helmet>
+
+      <Box maxWidth={maxWidth} mx={"auto"} p={"5%"}>
+        <h4 className=" fw-semibold color-secondary">KPGU'S SPONSORING</h4>
+        <h3 className="display-5 fw-semibold mb-4">
+          Sponsoring Body: Shree Krishna Educational & Charitable Trust [SKECT]
+        </h3>
+        {paragraphs.map(({ para }, index) => (
+          <Paragraph content={[para]} key={index} />
         ))}
-      </Grid>
-    </Box>
+        <Grid container mt={10} spacing={3}>
+          {MembersList.map(({ designation, img, name }, index) => (
+            <MembersComponent
+              designation={designation}
+              img={img}
+              name={name}
+              key={index}
+            />
+          ))}
+        </Grid>
+      </Box>
+    </>
   );
 }
 

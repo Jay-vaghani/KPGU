@@ -118,6 +118,7 @@ import KrishnaCenterOfInternationalAffairs from "./components/Pages/CentersCells
 import KrishnaCenterOfStartupsAndEntrepreneurship from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfStartupsAndEntrepreneurship";
 import KrishnaCenterOfTrainingInDisasterManagement from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCenterOfTrainingInDisasterManagement";
 import KrishnaCentreOfInnovationResearch from "./components/Pages/CentersCells/CentersOfExcellence/Centers/KrishnaCentreOfInnovationResearch";
+import { Helmet } from "react-helmet";
 
 
 // ========================================== CAMPUS ==========================================
@@ -141,142 +142,156 @@ function App() {
   });
 
   return (
-    <ThemeProvider theme={theme}>
-      <AppProvider>
-        <Box>
-          <ContactNavbar />
-          <MainNavbar />
-          <Routes>
-            {/* ============================================================== Home ============================================================== */}
-            <Route path="/" element={<Home />} />
-            {/* ============================================================== About ============================================================== */}
-            <Route path="/about" element={<About />}>
-              <Route path="skect" element={<SKECT />} />
-              <Route path="our-leadership" element={<OurLeadership />} />
-              <Route path="achievements" element={<Achievements />} />
-              <Route path="kpgu-vadodara" element={<KpguVadodara />} />
-              <Route path="vision-mission" element={<VisionMission />} />
-              <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
-              <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk />} />
-              <Route path="message-from-the-provost" element={<MessageFromTheProvost />} />
-              <Route path="statutory-recognition" element={<StatutoryRecognition />} />
-              <Route path="awards-accolades" element={<AwardsAccolades />} />
-              <Route path="university-officers" element={<UniversityOfficers />} />
-              {/* =============================== Governance =============================== */}
-              <Route path="governance" element={<Governance />}>
-                <Route path="governing-body" element={<GoverningBody />} />
-                <Route path="board-of-management" element={<BoardOfManagement />} />
-                <Route path="academic-council" element={<AcademicCouncil />} />
-                <Route path="board-of-studies" element={<BoardOfStudies />} />
-                <Route path="finance-committee" element={<FinanceCommittee />} />
+    <>
+      <Helmet>
+        <title>KPGU - Drs. Kiran and Pallavi Patel Global University</title>
+        <meta
+          name="description"
+          content="Discover Drs. Kiran and Pallavi Patel Global University (KPGU) in Vadodara, established in 2021. Explore our diverse range of undergraduate, postgraduate, and diploma courses in Engineering & Technology, Management, Science, Pharmacy, Nursing, and Ayurvedic Medicine."
+        />
+
+        <meta
+          name="keywords"
+          content="KPGU, Drs. Kiran and Pallavi Patel Global University, Vadodara, University, Engineering, Technology, Management, Science, Pharmacy, Nursing, Ayurvedic Medicine, Undergraduate Courses, Postgraduate Courses, Diploma Courses, Higher Education, Education, Academic Programs, Accredited University, Gujarat, India, Global Education, Research, Innovation, Academic Excellence"
+        />
+      </Helmet>
+      <ThemeProvider theme={theme}>
+        <AppProvider>
+          <Box>
+            <ContactNavbar />
+            <MainNavbar />
+            <Routes>
+              {/* ============================================================== Home ============================================================== */}
+              <Route path="/" element={<Home />} />
+              {/* ============================================================== About ============================================================== */}
+              <Route path="/about" element={<About />}>
+                <Route path="skect" element={<SKECT />} />
+                <Route path="our-leadership" element={<OurLeadership />} />
+                <Route path="achievements" element={<Achievements />} />
+                <Route path="kpgu-vadodara" element={<KpguVadodara />} />
+                <Route path="vision-mission" element={<VisionMission />} />
+                <Route path="dr-kiran-c-patel-message" element={<DrKiranCPatelMessage />} />
+                <Route path="message-from-the-presidents-desk" element={<MessageFromThePresidentsDesk />} />
+                <Route path="message-from-the-provost" element={<MessageFromTheProvost />} />
+                <Route path="statutory-recognition" element={<StatutoryRecognition />} />
+                <Route path="awards-accolades" element={<AwardsAccolades />} />
+                <Route path="university-officers" element={<UniversityOfficers />} />
+                {/* =============================== Governance =============================== */}
+                <Route path="governance" element={<Governance />}>
+                  <Route path="governing-body" element={<GoverningBody />} />
+                  <Route path="board-of-management" element={<BoardOfManagement />} />
+                  <Route path="academic-council" element={<AcademicCouncil />} />
+                  <Route path="board-of-studies" element={<BoardOfStudies />} />
+                  <Route path="finance-committee" element={<FinanceCommittee />} />
+                </Route>
+                {/* =============================== Approvals =============================== */}
+                <Route path="approvals" element={<Approvals />}>
+                  <Route path="institute-of-technology" element={<InstituteOfTechnology />} />
+                  <Route path="institute-of-pharmacy" element={<InstituteOfPharmacy />} />
+                  <Route path="ugc-approval" element={<UgcApproval />} />
+                </Route>
+
               </Route>
-              {/* =============================== Approvals =============================== */}
-              <Route path="approvals" element={<Approvals />}>
-                <Route path="institute-of-technology" element={<InstituteOfTechnology />} />
-                <Route path="institute-of-pharmacy" element={<InstituteOfPharmacy />} />
-                <Route path="ugc-approval" element={<UgcApproval />} />
+              {/* ============================================================== Academic ============================================================== */}
+              <Route path="/academics" element={<Academic />}>
+                {/* =============================== Faculty =============================== */}
+                <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />} />
+                <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />} />
+                <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />} />
+                <Route path="faculty-of-sciences" element={<FacultyOfSciences />} />
+                <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />} />
+                {/* =============================== Schools =============================== */}
+                <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />} />
+                <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />} />
+                <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />} />
+                <Route path="krishna-school-of-sciences" element={<KrishnaSchoolOfSciences />} />
+                <Route path="krishna-school-of-physiotherapy-and-rehabilitation" element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />} />
+                <Route path="krishna-school-of-nursing" element={<KrishnaSchoolOfNursing />} />
+                <Route path="krishna-ayurved-medical-college" element={<KrishnaAyurvedMedicalCollege />} />
+                <Route path="krishna-school-of-pharmacy-and-research" element={<KrishnaSchoolOfPharmacyAndResearch />} />
+                <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
+                <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
+                <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
+                {/* =============================== Departments =============================== */}
+                {/* =============================== KSET =============================== */}
+                <Route path="kset/civil-engineering" element={<KsetCivilEngineering />} />
+                <Route path="kset/mechanical-engineering" element={<KsetMechanicalEngineering />} />
+                <Route path="kset/electrical-engineering" element={<KsetElectricalEngineering />} />
+                <Route path="kset/information-technology" element={<KsetInformationTechnology />} />
+                <Route path="kset/computer-science-and-engineering" element={<KsetComputerScienceEngineering />} />
+                {/* =============================== KSDS =============================== */}
+                <Route path="ksds/civil-engineering" element={<KsdsCivilEngineering />} />
+                <Route path="ksds/mechanical-engineering" element={<KsdsMechanicalEngineering />} />
+                <Route path="ksds/electrical-engineering" element={<KsdsElectricalEngineering />} />
+                <Route path="ksds/information-technology" element={<KsdsInformationTechnology />} />
+                <Route path="ksds/computer-science-and-engineering" element={<KsdsComputerScienceEngineering />} />
+                <Route path="ksds/chemical-engineering" element={<KsdsChemicalEngineering />} />
+                {/* =============================== KST =============================== */}
+                <Route path="kst/food-technology" element={<KstFoodTechnology />} />
+                <Route path="kst/computer-engineering" element={<KstComputerEngineering />} />
+                {/* =============================== KSS =============================== */}
+                <Route path="kss/biotechnology" element={<KssBiotechnology />} />
+                <Route path="kss/chemistry" element={<KssChemistry />} />
+                <Route path="kss/mathematics" element={<KssMathematics />} />
+                <Route path="kss/microbiology" element={<KssMicrobiology />} />
+                <Route path="kss/physics" element={<KssPhysics />} />
               </Route>
+              {/* ============================================================== Campus ============================================================== */}
+              <Route path="/campus" element={<Campus />}>
+                <Route path="campus-life" element={<CampusLife />} />
+                <Route path="facilities" element={<Facilities />} />
+                <Route path="gallery" element={<Gallery />} />
+              </Route>
+              {/* ============================================================== Research And Publications ============================================================== */}
+              <Route path="/research-publications" element={<ResearchPublications />}>
+                <Route path="innovation-research" element={<InnovationResearch />} />
+                <Route path="fdps" element={<Fdps />} />
+                <Route path="kpgu-journals" element={<KpguJournals />} />
+                <Route path="publications" element={<Publications />} />
+                <Route path="ipr" element={<Ipr />} />
+              </Route>
+              {/* ============================================================== Centers And Cells ============================================================== */}
+              <Route path="/centers-cells" element={<CentersCells />}>
+                <Route path="start-ups" element={<StartUps />} />
+                <Route path="internal-complaint-committee" element={<InternalComplaintCommittee />} />
+                <Route path="grievance-redressal-committee" element={<GrievanceRedressalCommittee />} />
+                <Route path="equal-opportunity-cell" element={<EqualOpportunityCell />} />
+                <Route path="anti-ragging" element={<AntiRagging />} />
+                <Route path="centers-of-excellence" element={<CentersOfExcellence />} />
 
-            </Route>
-            {/* ============================================================== Academic ============================================================== */}
-            <Route path="/academics" element={<Academic />}>
-              {/* =============================== Faculty =============================== */}
-              <Route path="faculty-of-engineering-and-technology" element={<FacultyOfEngineeringAndTechnology />} />
-              <Route path="faculty-of-medicine-and-healthcare" element={<FacultyOfMedicineAndHealthcare />} />
-              <Route path="faculty-of-commerce-and-management" element={<FacultyOfCommerceAndManagement />} />
-              <Route path="faculty-of-sciences" element={<FacultyOfSciences />} />
-              <Route path="faculty-of-humanities-and-policy-studies" element={<FacultyOfHumanitiesAndPolicyStudies />} />
-              {/* =============================== Schools =============================== */}
-              <Route path="krishna-school-of-business-management" element={<KrishnaSchoolOfBusinessManagement />} />
-              <Route path="krishna-school-of-commerce" element={<KrishnaSchoolOfCommerce />} />
-              <Route path="krishna-school-of-arts-and-humanities" element={<KrishnaSchoolOfArtsAndHumanities />} />
-              <Route path="krishna-school-of-sciences" element={<KrishnaSchoolOfSciences />} />
-              <Route path="krishna-school-of-physiotherapy-and-rehabilitation" element={<KrishnaSchoolOfPhysiotherapyAndRehabilitation />} />
-              <Route path="krishna-school-of-nursing" element={<KrishnaSchoolOfNursing />} />
-              <Route path="krishna-ayurved-medical-college" element={<KrishnaAyurvedMedicalCollege />} />
-              <Route path="krishna-school-of-pharmacy-and-research" element={<KrishnaSchoolOfPharmacyAndResearch />} />
-              <Route path="krishna-school-of-technology" element={<KrishnaSchoolOfTechnology />} />
-              <Route path="krishna-school-of-diploma-studies" element={<KrishnaSchoolOfDiplomaStudies />} />
-              <Route path="krishna-school-of-emerging-technology-and-applied-research" element={<KrishnaSchoolOfEmergingTechnologyAndAppliedResearch />} />
-              {/* =============================== Departments =============================== */}
-              {/* =============================== KSET =============================== */}
-              <Route path="kset/civil-engineering" element={<KsetCivilEngineering />} />
-              <Route path="kset/mechanical-engineering" element={<KsetMechanicalEngineering />} />
-              <Route path="kset/electrical-engineering" element={<KsetElectricalEngineering />} />
-              <Route path="kset/information-technology" element={<KsetInformationTechnology />} />
-              <Route path="kset/computer-science-and-engineering" element={<KsetComputerScienceEngineering />} />
-              {/* =============================== KSDS =============================== */}
-              <Route path="ksds/civil-engineering" element={<KsdsCivilEngineering />} />
-              <Route path="ksds/mechanical-engineering" element={<KsdsMechanicalEngineering />} />
-              <Route path="ksds/electrical-engineering" element={<KsdsElectricalEngineering />} />
-              <Route path="ksds/information-technology" element={<KsdsInformationTechnology />} />
-              <Route path="ksds/computer-science-and-engineering" element={<KsdsComputerScienceEngineering />} />
-              <Route path="ksds/chemical-engineering" element={<KsdsChemicalEngineering />} />
-              {/* =============================== KST =============================== */}
-              <Route path="kst/food-technology" element={<KstFoodTechnology />} />
-              <Route path="kst/computer-engineering" element={<KstComputerEngineering />} />
-              {/* =============================== KSS =============================== */}
-              <Route path="kss/biotechnology" element={<KssBiotechnology />} />
-              <Route path="kss/chemistry" element={<KssChemistry />} />
-              <Route path="kss/mathematics" element={<KssMathematics />} />
-              <Route path="kss/microbiology" element={<KssMicrobiology />} />
-              <Route path="kss/physics" element={<KssPhysics />} />
-            </Route>
-            {/* ============================================================== Campus ============================================================== */}
-            <Route path="/campus" element={<Campus />}>
-              <Route path="campus-life" element={<CampusLife />} />
-              <Route path="facilities" element={<Facilities />} />
-              <Route path="gallery" element={<Gallery />} />
-            </Route>
-            {/* ============================================================== Research And Publications ============================================================== */}
-            <Route path="/research-publications" element={<ResearchPublications />}>
-              <Route path="innovation-research" element={<InnovationResearch />} />
-              <Route path="fdps" element={<Fdps />} />
-              <Route path="kpgu-journals" element={<KpguJournals />} />
-              <Route path="publications" element={<Publications />} />
-              <Route path="ipr" element={<Ipr />} />
-            </Route>
-            {/* ============================================================== Centers And Cells ============================================================== */}
-            <Route path="/centers-cells" element={<CentersCells />}>
-              <Route path="start-ups" element={<StartUps />} />
-              <Route path="internal-complaint-committee" element={<InternalComplaintCommittee />} />
-              <Route path="grievance-redressal-committee" element={<GrievanceRedressalCommittee />} />
-              <Route path="equal-opportunity-cell" element={<EqualOpportunityCell />} />
-              <Route path="anti-ragging" element={<AntiRagging />} />
-              <Route path="centers-of-excellence" element={<CentersOfExcellence />} />
-              
-              {/* =============================== Krishna Center Of Career Advancement Corporate =============================== */}
-              <Route path="krishna-center-of-career-advancement-corporate" element={<KrishnaCenterOfCareerAdvancementCorporate />} />
-              {/* =============================== Krishna Center Of Institution Social Responsibility =============================== */}
-              <Route path="krishna-center-of-institution-social-responsibility" element={<KrishnaCenterOfInstitutionSocialResponsibility />} />
-              {/* =============================== Krishna Center Of International Affairs =============================== */}
-              <Route path="krishna-center-of-international-affairs" element={<KrishnaCenterOfInternationalAffairs />} />
-              {/* =============================== Krishna Center Of Startups And Entrepreneurship =============================== */}
-              <Route path="krishna-center-of-startups-and-entrepreneurship" element={<KrishnaCenterOfStartupsAndEntrepreneurship />} />
-              {/* =============================== Krishna Center Of Training In Disaster Management =============================== */}
-              <Route path="krishna-center-of-training-in-disaster-management" element={<KrishnaCenterOfTrainingInDisasterManagement />} />
-              {/* =============================== Krishna Centre Of Innovation Research =============================== */}
-              <Route path="krishna-centre-of-innovation-research" element={<KrishnaCentreOfInnovationResearch />} />
+                {/* =============================== Krishna Center Of Career Advancement Corporate =============================== */}
+                <Route path="krishna-center-of-career-advancement-corporate" element={<KrishnaCenterOfCareerAdvancementCorporate />} />
+                {/* =============================== Krishna Center Of Institution Social Responsibility =============================== */}
+                <Route path="krishna-center-of-institution-social-responsibility" element={<KrishnaCenterOfInstitutionSocialResponsibility />} />
+                {/* =============================== Krishna Center Of International Affairs =============================== */}
+                <Route path="krishna-center-of-international-affairs" element={<KrishnaCenterOfInternationalAffairs />} />
+                {/* =============================== Krishna Center Of Startups And Entrepreneurship =============================== */}
+                <Route path="krishna-center-of-startups-and-entrepreneurship" element={<KrishnaCenterOfStartupsAndEntrepreneurship />} />
+                {/* =============================== Krishna Center Of Training In Disaster Management =============================== */}
+                <Route path="krishna-center-of-training-in-disaster-management" element={<KrishnaCenterOfTrainingInDisasterManagement />} />
+                {/* =============================== Krishna Centre Of Innovation Research =============================== */}
+                <Route path="krishna-centre-of-innovation-research" element={<KrishnaCentreOfInnovationResearch />} />
 
-            </Route>
-            {/* ============================================================== Admission ============================================================== */}
-            <Route path="/admission" element={<Admission />}>
-              <Route path="programs" element={<Programs />} />
-              <Route path="admission-procedure" element={<AdmissionProcedure />} />
-              <Route path="education-loan" element={<EducationLoan />} />
-              <Route path="international-students" element={<InternationalStudents />} />
-              <Route path="scholarships" element={<Scholarships />} />
-            </Route>
-            <Route path="/admission-inquiry" element={<AdmissionInquiry />} ></Route>
-            <Route path="/student-corner" element={<StudentCorner />} />
-            <Route path="*" element={<Page404 />} />
-          </Routes>
+              </Route>
+              {/* ============================================================== Admission ============================================================== */}
+              <Route path="/admission" element={<Admission />}>
+                <Route path="programs" element={<Programs />} />
+                <Route path="admission-procedure" element={<AdmissionProcedure />} />
+                <Route path="education-loan" element={<EducationLoan />} />
+                <Route path="international-students" element={<InternationalStudents />} />
+                <Route path="scholarships" element={<Scholarships />} />
+              </Route>
+              <Route path="/admission-inquiry" element={<AdmissionInquiry />} ></Route>
+              <Route path="/student-corner" element={<StudentCorner />} />
+              <Route path="*" element={<Page404 />} />
+            </Routes>
 
-          {/* <Footer /> */}
-        </Box>
-        <ScrollToTop />
-      </AppProvider>
-    </ThemeProvider >
+            {/* <Footer /> */}
+          </Box>
+          <ScrollToTop />
+        </AppProvider>
+      </ThemeProvider >
+    </>
   );
 }
 

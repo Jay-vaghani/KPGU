@@ -63,7 +63,7 @@ function ContactNavbar() {
       maxWidth={maxWidth}
       mx={"auto"}
       px={2}
-      display={innerWidth < 1131 ? "none" : "block"}
+      display={innerWidth < 1227 ? "none" : "block"}
     >
       <Grid container py={0.5} alignItems={"center"}>
         <Grid item xs={4}>
